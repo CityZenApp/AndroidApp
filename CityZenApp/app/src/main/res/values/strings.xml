@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">CityZen</string>
+    <string name="oauth_communication_error">"Unable to reach the authorization server"</string>
+    <string name="loading">"Loading"</string>
+    <string name="retry">"Retry"</string>
+    <string name="oauth_failed_permissions">"Authorization failed: All listed permissions need to be granted"</string>
+    <string name="offline">"You are offline"</string>
+    <string name="confirmation_authorize_now">"You need to login with your OSM user account to apply changes to OpenStreetMap. Authorize now?"</string>
+    <string name="later">"Later"</string>
+    <string name="filter">Filter</string>
+    <string name="only_currently_opened">Only currently opened</string>
+    <!--Permission Request-->
+    <string name="write_storage_request">CityZen needs to have write permissions to provide map services</string>
+    <string name="write_storage_request_toast">CityZen must have write permissions to provide map services</string>
+    <string name="location_request">CityZen needs to have location to provide map services</string>
+    <string name="location_request_toast">CityZen must have location to provide map services</string>
+    <string name="allow_permission">Allow</string>
+    <string name="deny_permission">Deny</string>
+    <string name="no_pois_near_user_location">No POIs near your location</string>
+    <string name="enable_gps_to_continue">Can\'t find your location. \nEnable GPS to continue</string>
+    <string name="calculating_device_location">We are figuring out your location. \nPlease wait. </string>
+    <string name="user_agent">CityZen</string>
+    <string name="add_new_poi_toast">Click on the map to add \n Points of Interest</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="wifi">Wifi</string>
+    <string name="email">Email</string>
+    <string name="website">Website</string>
+    <string name="phone">Phone</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="opening_hours">Opening hours</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wen</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <string name="saturday">Sat</string>
+    <string name="sunday">Sun</string>
+    <string name="all_week_days">All</string>
+    <string name="enable">Enable</string>
+
+
+    <string name="osm_copyright" translatable="false"><![CDATA[<font color=\"#000\">© </font><font color=\"#1565C0\">OpenStreetMap </font><font color=\"#000\">contributors</font>]]></string>
+    <string name="directions_to_here">Directions to here</string>
+    <string name="create_poi">Create POI</string>
+    <string name="_24_7">24/7</string>
+    <string name="opening">Opening</string>
+    <string name="closing">Closing</string>
+    <string name="done">Done</string>
+    <string name="no_internet_to_update_poi">No internet access.  Connect to internet to continue</string>
+    <string name="session_expired_toast">Your session has expired.  Please login to continue</string>
+    <string name="internet_access">Internet Access</string>
+    <string name="edit">Edit</string>
+    <string name="street">Street</string>
+    <string name="city">City</string>
+    <string name="add_closing_hours">Add closing hours</string>
+    <string name="add_opening_hours">Add opening hours</string>
+    <string name="not_valid_website">Not a valid website</string>
+    <string name="not_valid_email">Not a valid email</string>
+    <string name="an_error_occurred">An error occurred</string>
+    <string name="updated_successfully">updated successfully</string>
+    <string name="editing_is_not_possible">Editing is not possible for</string>
+    <string name="poi_type">Point of interest type</string>
+    <string name="select_amenity_type">Select amenity type</string>
+    <string name="select_amenity_type_to_continue">Select amenity type to continue</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="wired">Wired</string>
+    <string name="wlan">Wlan</string>
+    <string name="created_succesfully">created successfully</string>
+    <string name="sort_by_name">Sort by name</string>
+    <string name="add_a_new_marker_on_the_map">Add a marker on the map</string>
+
+</resources>

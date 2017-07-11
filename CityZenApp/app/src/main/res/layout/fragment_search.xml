@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cityzen.cityzen.Fragments.SearchFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/searchToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <RelativeLayout
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:foregroundGravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:accessibilityLiveRegion="polite"
+                android:textDirection="firstStrong"
+                app:closeIcon="@drawable/ic_close_white"
+                app:defaultQueryHint="Search..."
+                app:searchIcon="@drawable/ic_search">
+
+            </android.support.v7.widget.SearchView>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/filterPoiListContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchToolbar"
+        android:background="@color/colorPrimary"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/filterCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_weight="1"
+            android:foreground="@color/colorWhite"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:text="@string/only_currently_opened"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textColorLink="@color/colorWhite"
+            app:buttonTint="@color/colorAppGreen" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/searchRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/filterPoiListContainer"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

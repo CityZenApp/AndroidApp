@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:clickable="true"
+    tools:context="com.cityzen.cityzen.Fragments.PoiListFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/poiListToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="POI title"
+        app:titleTextColor="@color/colorWhite" />
+
+    <LinearLayout
+        android:id="@+id/filterPoiListContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poiListToolbar"
+        android:background="@color/colorPrimary"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/filterCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:foreground="@color/colorWhite"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:text="@string/only_currently_opened"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textColorLink="@color/colorWhite"
+            app:buttonTint="@color/colorWhite" />
+
+        <CheckBox
+            android:id="@+id/filterCheckBoxName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="4dp"
+            android:foreground="@color/colorWhite"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:text="@string/sort_by_name"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textColorLink="@color/colorWhite"
+            app:buttonTint="@color/colorWhite" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/poiListRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mapViewPoiListContainer"
+        android:layout_below="@+id/filterPoiListContainer"
+        android:background="#80C7C7C7" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabPoiList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mapViewPoiListContainer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        app:backgroundTint="@color/colorAppGreen"
+        app:srcCompat="@drawable/ic_map_white" />
+
+    <RelativeLayout
+        android:id="@+id/mapViewPoiListContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <org.osmdroid.views.MapView
+            android:id="@+id/mapPoiList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+
+        <TextView
+            android:id="@+id/osmCopyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="4dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

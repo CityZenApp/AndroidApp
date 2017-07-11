@@ -1,0 +1,254 @@
+package com.cityzen.cityzen.Fragments;
+
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
+import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.LinearLayout;
+
+import com.cityzen.cityzen.Adapters.PlaceListAdapter;
+import com.cityzen.cityzen.Activities.MainActivity;
+import com.cityzen.cityzen.Models.DeviceLocationData;
+import com.cityzen.cityzen.Models.ParcelablePOI;
+import com.cityzen.cityzen.R;
+import com.cityzen.cityzen.Utils.Development.AppLog;
+import com.cityzen.cityzen.Utils.DeviceUtils.DeviceUtils;
+import com.cityzen.cityzen.Utils.MapUtils.OpeningHours.OpeningHoursUtils;
+import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewItemClickInterface;
+import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewTouchListener;
+import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Action;
+import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Pair;
+import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Place;
+import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Request;
+
+import org.osmdroid.bonuspack.location.NominatimPOIProvider;
+import org.osmdroid.bonuspack.location.POI;
+import org.osmdroid.util.GeoPoint;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+public class SearchFragment extends Fragment {
+
+    private RecyclerView recyclerView;
+    private PlaceListAdapter adapter;
+    private Toolbar toolbar;
+    private CheckBox filterCheckBox;
+    private LinearLayout filterLayoutContainer;
+    private boolean isFilterEnabled = false;
+    private SearchView searchView;
+    //List of the places that are queried in OSM search
+    private List<Place> searchedPlaces = new ArrayList<>();
+    private List<Place> adapterElements = new ArrayList<>();
+
+    public SearchFragment() {
+        // Required empty public constructor
+    }
+
+    public static SearchFragment newInstance() {
+        SearchFragment fragment = new SearchFragment();
+        return fragment;
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_search, container, false);
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        setupView();
+        setupToolbarAndFilter();
+
+    }
+
+    private void setupView() {
+        searchView = (SearchView) getActivity().findViewById(R.id.searchView);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                searchedPlaces.clear();//clear all previously searched places
+                adapterElements.clear();
+                if (query != null && query.length() > 0) {//at least one character
+                    search(query);
+                } else {
+                    searchedPlaces.clear();//clear all previously searched places
+                    adapterElements.clear();
+                    //reset the recyclerView
+                    adapter.resetAdapter();
+                }
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String query) {
+                if ((query == null || query.equals("")) && adapterElements != null && adapter != null) {
+                    searchedPlaces.clear();//clear all previously searched places
+                    adapterElements.clear();
+                    //reset the recyclerView
+                    adapter.resetAdapter();
+                }
+
+                //searching on text change flickers UI, maybe check on late updates
+                // else if (Connectivity.isConnected(getActivity()) && Connectivity.isConnectedFast(getActivity())) {
+                //                    searchedPlaces.clear();//clear all previously searched places
+                //                    adapterElements.clear();
+                //                    if (query != null && query.length() > 0)//at least one character
+                //                        search(query);
+                //                }
+                return false;
+            }
+        });
+    }
+
+    private void setupToolbarAndFilter() {
+        toolbar = (Toolbar) getActivity().findViewById(R.id.searchToolbar);
+        toolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                searchView.setIconified(false);//open searchView
+            }
+        });
+        filterCheckBox = (CheckBox) getActivity().findViewById(R.id.filterCheckBox);
+        filterCheckBox.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AppLog.log(searchedPlaces.size());
+                filterElements();
+            }
+        });
+        filterLayoutContainer = (LinearLayout) getActivity().findViewById(R.id.filterPoiListContainer);
+        toolbar.inflateMenu(R.menu.filter);
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                //Toggle filter
+                if (!isFilterEnabled) {
+                    toolbar.getMenu().getItem(0).setIcon(R.drawable.ic_filter_selected);
+                    isFilterEnabled = true;
+                    filterLayoutContainer.setVisibility(View.VISIBLE);
+                } else {
+                    filterCheckBox.setChecked(false);
+                    isFilterEnabled = false;
+                    toolbar.getMenu().getItem(0).setIcon(R.drawable.ic_filter_white);
+                    filterLayoutContainer.setVisibility(View.GONE);
+                }
+                return true;
+            }
+        });
+    }
+
+    private void filterElements() {
+        if (adapter == null) return;
+        if (filterCheckBox.isChecked()) {
+            //filter Elements by opening hours
+            List<Place> filteredElements = new ArrayList<Place>();
+            for (Place place : adapterElements) {
+                for (Map.Entry<String, String> tag : place.getTags().entrySet()) {
+                    if (tag.getKey().equals("opening_hours")) {
+                        if (OpeningHoursUtils.isOpenNow(tag.getValue()))
+                            filteredElements.add(place);
+                    }
+                }
+            }
+            adapterElements.clear();
+            adapterElements = new ArrayList<Place>(filteredElements);
+            adapter.resetAdapter(adapterElements);
+
+        } else {
+            //reset adapter to its original state
+            adapterElements.clear();
+            adapterElements = new ArrayList<Place>(searchedPlaces);
+            adapter.resetAdapter(adapterElements);
+        }
+    }
+
+    private void setupRecyclerView() {
+        if (adapter == null) {
+            recyclerView = (RecyclerView) getActivity().findViewById(R.id.searchRecyclerView);
+            adapter = new PlaceListAdapter(getActivity(), adapterElements);
+            recyclerView.setAdapter(adapter);
+            recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+            // Item touch Listener
+            recyclerView.addOnItemTouchListener(new RecyclerViewTouchListener(getActivity(), recyclerView, new RecyclerViewItemClickInterface() {
+                @Override
+                public void onClick(View view, int position) {
+                    searchView.clearFocus();
+                    openDetailedInfo(new ParcelablePOI(adapterElements.get(position)));
+                }
+
+                @Override
+                public void onLongClick(View view, int position) {
+
+                }
+            }));
+        } else {
+            adapter.resetAdapter(adapterElements);
+        }
+    }
+
+    private void openDetailedInfo(ParcelablePOI poi) {
+        FragmentManager fm = getActivity().getSupportFragmentManager();
+        PoiDetailsFragment dialogFragment = PoiDetailsFragment.newInstance(poi);
+        dialogFragment.show(fm, "PoiDetailsFragment");
+    }
+
+    /**
+     * Method not used, left for later updates
+     * Maybe tag oriented searches
+     */
+    private void searchForPoiTypes(final double lat, final double lon, final double altitude, final String poiType) throws IOException {
+        new AsyncTask<Void, Void, Void>() {
+            @Override
+            protected Void doInBackground(Void... voids) {
+                //altitude set to 13 or smth.... ???
+                NominatimPOIProvider poiProvider = new NominatimPOIProvider("CityZen");
+                ArrayList<POI> pois = poiProvider.getPOICloseTo(new GeoPoint(lat, lon, altitude), poiType, 50, 0.1);
+                //or : ArrayList<POI> pois = poiProvider.getPOIAlong(road.getRouteLow(), "fuel", 50, 2.0);
+                return null;
+            }
+        }.execute();
+    }
+
+    /**
+     * Search OSM for places with the specified name
+     *
+     * @param searchString Name of the place to be searched
+     */
+    private void search(String searchString) {
+        DeviceLocationData deviceLocationData = ((MainActivity) getActivity()).getLastKnownLocation();
+        Action action = new Action() {
+            @Override
+            public void action(ArrayList<Place> places) {
+                searchedPlaces = places;
+                adapterElements.clear();
+                adapterElements = new ArrayList<>(searchedPlaces);
+                setupRecyclerView();
+                filterElements();//filter elements if needed
+            }
+        };
+        ArrayList<Pair> pairs = new ArrayList<Pair>();
+        pairs.add(new Pair("q=", searchString));
+        pairs.add(new Pair("q=", searchString + " " + deviceLocationData.getLocality()));
+//        pairs.add(new Pair("q=", searchString + " " + deviceLocationData.getCountryName()));
+        if (DeviceUtils.isInternetConnected(getActivity()))
+            Request.getPlaces(action, pairs);
+    }
+}

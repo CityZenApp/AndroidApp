@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cityzen.cityzen.Fragments.SettingsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/cityscape" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:text="Username (this is a work in progress)"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:text="About us"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:text="Contact"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:text="License"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:text="Privacy and policy"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

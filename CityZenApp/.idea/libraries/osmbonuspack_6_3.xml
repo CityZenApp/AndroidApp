@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="osmbonuspack-6.3">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/b7fa6341ae3aa5c1641bace86ee4c47a96f55334/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/b7fa6341ae3aa5c1641bace86ee4c47a96f55334/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.MKergall/osmbonuspack/6.3/f7fc62ebf17281a23d655628af6b4fada225cf6b/osmbonuspack-6.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="BottomNavigationViewEx-1.1.7">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/be315edc826574960804e05e2704abd673a59395/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/be315edc826574960804e05e2704abd673a59395/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ittianyu/BottomNavigationViewEx/1.1.7/6c91fa09243e7368cbe2bc9550ea0360a6af4bde/BottomNavigationViewEx-1.1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

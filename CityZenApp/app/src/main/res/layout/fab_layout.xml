@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/mainFab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="56dp"
+        android:paddingBottom="@dimen/fab_padding"
+        android:paddingLeft="@dimen/fab_padding"
+        android:paddingRight="@dimen/fab_padding"
+        android:textColor="@android:color/white"
+        fab:fab_colorNormal="@color/colorPrimary"
+        fab:menu_backgroundColor="#997D7D7D"
+        fab:menu_colorNormal="@color/colorWhite"
+        fab:menu_colorPressed="@color/colorPrimary"
+        fab:menu_colorRipple="#62B2FF"
+        fab:menu_fab_label="CityZen"
+        fab:menu_icon="@drawable/ic_map_black_24dp"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true"
+        fab:menu_labels_textColor="@color/colorWhite"
+        tools:ignore="RtlHardcoded">
+        <!--fab:menu_labels_colorNormal="@color/transparent"-->
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabClearMap"
+            style="@style/CityZenMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_clear_all_white_18dp"
+            fab:fab_label="Clear Map"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabLocation"
+            style="@style/CityZenMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_searching_white_18dp"
+            fab:fab_label="My location"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabAdd"
+            style="@style/CityZenMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white_18dp"
+            fab:fab_label="Add"
+            fab:fab_size="mini" />
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabSearch"
+            style="@style/CityZenMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search_white_18dp"
+            fab:fab_label="Search"
+            fab:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</RelativeLayout>

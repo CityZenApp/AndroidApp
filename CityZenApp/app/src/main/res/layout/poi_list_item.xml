@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingBottom="21dp"
+    android:paddingTop="21dp">
+
+    <TextView
+        android:id="@+id/poiType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@color/colorAppGreen"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/poiTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:ellipsize="end"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:text="Title"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#7D7D7D" />
+
+    <TextView
+        android:id="@+id/poiAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:lines="2"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#7D7D7D"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/poiOpeningHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#7D7D7D"
+        android:visibility="gone" />
+</LinearLayout>
