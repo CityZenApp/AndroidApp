@@ -294,6 +294,4 @@ public class OAuthWebViewDialogFragment extends DialogFragment {
             onAuthorizationError(e);
         }
     }
-
-
 }

@@ -471,7 +471,10 @@ public class CreatePoiFragment extends Fragment implements TimeCallback, Feature
                 feature.getValue().equals("guest_house") ||
                 feature.getValue().equals("mobile_phone") ||
                 feature.getValue().equals("restaurant") ||
-                feature.getValue().equals("fast_food");
+                feature.getValue().equals("fast_food") ||
+                feature.getValue().equals("bus_station") ||
+                feature.getValue().equals("transportation")//for airports, train station, etc
+                ;
     }
 
     /**************************************Functions to extract the opening hours string from the form*************************************************/

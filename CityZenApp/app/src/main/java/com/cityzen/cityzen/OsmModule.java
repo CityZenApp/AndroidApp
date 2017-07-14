@@ -5,11 +5,6 @@ import android.content.SharedPreferences;
 import com.cityzen.cityzen.oauth.OAuth;
 
 import de.westnordost.osmapi.OsmConnection;
-import de.westnordost.osmapi.changesets.ChangesetsDao;
-import de.westnordost.osmapi.map.MapDataDao;
-import de.westnordost.osmapi.map.MapDataFactory;
-import de.westnordost.osmapi.map.OsmMapDataFactory;
-import de.westnordost.osmapi.notes.NotesDao;
 import de.westnordost.osmapi.user.UserDao;
 import oauth.signpost.OAuthConsumer;
 
@@ -27,38 +22,7 @@ public class OsmModule {
         return OAuth.loadConsumer(prefs);
     }
 
-    public static MapDataFactory mapDataFactory() {
-        return new OsmMapDataFactory();
-    }
-
-//    public static OverpassMapDataDao overpassMapDataDao(
-//            Provider<OverpassMapDataParser> parserProvider) {
-//        OsmConnection overpassConnection = new OsmConnection(
-//                OVERPASS_API_URL, ApplicationConstants.USER_AGENT, null);
-//        return new OverpassMapDataDao(overpassConnection, parserProvider);
-//    }
-//
-//    public static OverpassMapDataParser overpassMapDataParser() {
-//        return new OverpassMapDataParser(new ElementGeometryCreator(), new OsmMapDataFactory());
-//    }
-
-    public static ChangesetsDao changesetsDao(OsmConnection osm) {
-        return new ChangesetsDao(osm);
-    }
-
     public static UserDao userDao(OsmConnection osm) {
         return new UserDao(osm);
     }
-
-    public static NotesDao notesDao(OsmConnection osm) {
-        return new NotesDao(osm);
-    }
-
-    public static MapDataDao mapDataDao(OsmConnection osm) {
-        return new MapDataDao(osm);
-    }
-
-//    public static QuestTypes questTypeList() {
-//        return new QuestTypes(QuestTypes.TYPES);
-//    }
 }

@@ -36,6 +36,7 @@ import android.widget.TextView;
 
 import com.cityzen.cityzen.OsmModule;
 import com.cityzen.cityzen.R;
+import com.cityzen.cityzen.Utils.Development.AppLog;
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
@@ -150,14 +151,13 @@ public class MainActivity extends AppCompatActivity
 
         setupOsmConnection();
 
-
 //        AppLog.log("OAUTH");
 //        AppLog.log(osm.getUserAgent());
 //        AppLog.log(osm.getApiUrl());
 //        AppLog.log(osm.getOAuth().getConsumerKey());
 //        AppLog.log(osm.getOAuth().getConsumerSecret());
 //        AppLog.log(osm.getOAuth().getRequestParameters());
-
+//        logUserInfo();
     }
 
     @Override
@@ -187,72 +187,6 @@ public class MainActivity extends AppCompatActivity
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = getWindow();
             statusBatColor = window.getStatusBarColor();
-        }
-    }
-
-
-    private void putNetworkRequest(String endpointUrl, String method, String requestBody) {
-        HttpURLConnection connection = null;
-        try {
-            URL url = new URL(endpointUrl);
-            connection = (HttpURLConnection) url.openConnection();
-            connection.setConnectTimeout(DEFAULT_TIMEOUT);
-            connection.setReadTimeout(DEFAULT_TIMEOUT);
-            connection.setRequestMethod(method);
-            connection.setRequestProperty("Content-Type", "text/plain");
-
-            connection.setDoOutput(true);
-            connection.setDoInput(true);
-            //OAuth, authenticate call
-            createOAuthConsumer(OsmModule.oAuthConsumer(prefs)).sign(connection);
-
-            //write body string to request
-            OutputStream out = connection.getOutputStream();
-            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(out, "UTF-8"));
-            writer.write(requestBody);
-            writer.close();
-            out.close();
-
-            //establish connection
-            connection.connect();
-
-            //read response string
-            StringBuffer sb = new StringBuffer();
-            BufferedReader br;
-            if (200 <= connection.getResponseCode() && connection.getResponseCode() <= 299) {
-                br = new BufferedReader(new InputStreamReader((connection.getInputStream())));
-            } else {
-                br = new BufferedReader(new InputStreamReader((connection.getErrorStream())));
-            }
-            String inputLine = "";
-            while ((inputLine = br.readLine()) != null) {
-                sb.append(inputLine);
-            }
-            String result = sb.toString();
-            Log.wtf("RESULT ", result);
-            //If no authentication applied --> Couldn't authenticate you
-            //Created successfully --> 47976668 (changeset ID)
-
-
-            Map<String, List<String>> vv = connection.getHeaderFields();
-            for (Map.Entry<String, List<String>> entry : vv.entrySet()) {
-                Log.wtf("NODE", entry.getKey());
-                List l = entry.getValue();
-                for (int i = 0; i < l.size(); i++)
-                    Log.wtf("NODE", String.valueOf(l.get(i)));
-                Log.wtf("NODE", "--------------------------------------------");
-
-            }
-
-            Log.wtf("OSM_CONNEXTION", String.valueOf(connection.getResponseCode()));
-            Log.wtf("OSM_CONNEXTION", connection.getRequestMethod());
-            Log.wtf("OSM_CONNEXTION", connection.getResponseMessage());
-        } catch (IOException | OAuthExpectationFailedException | OAuthCommunicationException | OAuthMessageSignerException e) {
-            e.printStackTrace();
-        } finally {
-            if (connection != null) {
-                connection.disconnect();
-            }
         }
     }
 
@@ -344,87 +278,17 @@ public class MainActivity extends AppCompatActivity
         }
     };
 
-
-    private void editMap() {
+    /**
+     * Method used to get the name of the logged in user
+     */
+    private void logUserInfo() {
         new AsyncTask<Void, Void, Void>() {
             @Override
             protected Void doInBackground(Void... voids) {
-
-                //red eye  3883758268 /// needs updating
-
-
-//                Node node = mapDao.openChangeset()
-//                Node node = mapDao.closeChangeset();
-//                Node node = mapDao.updateMap();
-//                Node node = mapDao.updateChangeset();
-//                    Node node = mapDao.uploadChanges();
-
-                //commneting works
-//                ChangesetInfo changeset = new ChangesetsDao(osm).comment(Long.parseLong("47913399"), "Small park");
-
-                Iterable arraySet = new ArraySet();
-                MapDataDao mapDao = new MapDataDao(osm);
-
-//                "    <tag k=\"created_by\" v=\"OpenCity 0.1\"/>\n" +
-
-
-                //Node
-                String node =
-                        "<osm>\n" +
-                                " <node changeset=\"{id...}\" lat=\"...\" lon=\"...\">\n" +
-                                "   <tag k=\"note\" v=\"Just a node\"/>\n" +
-                                "   ...\n" +
-                                " </node>\n" +
-                                "</osm>";
-
-                //changeset
-                String body = "<?xml version=\"1.0\" encoding=\"UTF-8\"?> " +
-                        "<osm>\n" +
-                        "  <changeset>\n" +
-                        "    <tag k=\"comment\" v=\"Add Fast Food, Pizzeria \"/>\n" +
-                        "    <tag k=\"amenity\" v=\"fast_food\"/>\n" +
-                        "    <tag k=\"cuisine\" v=\"pizza\"/>\n" +
-                        "    <tag k=\"name\" v=\"Piceri ANI\"/>\n" +
-                        "    <tag k=\"lat\" v=\"41.32124\"/>\n" +
-                        "    <tag k=\"lon\" v=\"19.83695\"/>\n" +
-                        "  </changeset>\n" +
-                        "</osm>";
-
-//                makeRequest(OsmModule.OSM_API_URL + "changeset/create", "PUT", true, body);
-                putNetworkRequest(OsmModule.OSM_API_URL + "changeset/create", "PUT", body);
-
-                //               //                OsmModule.oAuthConsumer(prefs).getConsumerKey()
-
-
-//                Map<String, String> tags = new HashMap<>();
-//                tags.put("created_by", ApplicationConstants.USER_AGENT);
-//
-//                tags.put("amenity", "fast_food");
-//                tags.put("opening_hours", "fast_food");
-//                tags.put("comment", "Fast food");
-//                tags.put("source", "survey");
-//                tags.put("lat", "41.32125");
-//                tags.put("lon", "19.83695");
-
-//                osm.makeAuthenticatedRequest(
-//                        OSM_API_URL + "changeset/create",
-//                        "PUT",
-//                        new ApiResponseReader<Object>() {
-//                            @Override
-//                            public Object parse(InputStream in) throws Exception {
-//                                Log.wtf("OSM", in.toString());
-//                                return null;
-//                            }
-//                        }
-//                );
-
-//                mapDao.updateMap(tags, null, new Handler<DiffElement>() {
-//                    @Override
-//                    public void handle(DiffElement tea) {
-//
-//                    }
-//                });
-
+                AppLog.log("USER INFO");
+                AppLog.log(OsmModule.userDao(osm).getMine().id);
+//                AppLog.log(OsmModule.userDao(osm).getMine().);
+                AppLog.log(OsmModule.userDao(osm).get(OsmModule.userDao(osm).getMine().id).displayName);
 
                 return null;
             }
@@ -988,55 +852,6 @@ public class MainActivity extends AppCompatActivity
         // now finally we can upload our changes!
 //        questAutoSyncer.triggerAutoUpload();
 //        Toast.makeText(this, "onOAuthAuthorizationVerified", Toast.LENGTH_LONG).show();
-    }
-
-    public void makeRequest(String apiUrl, String method, boolean authenticate, String bodyString) {
-        HttpURLConnection connection = null;
-        try {
-            connection = sendRequest(apiUrl, method, authenticate, null, bodyString);
-
-        } catch (IOException e) {
-            throw new OsmConnectionException(e);
-        } catch (OAuthException e) {
-            // because it was the user's fault that he did not supply an oauth consumer and the
-            // error is kinda related with the call he made
-            throw new OsmAuthorizationException(e);
-        } finally {
-            if (connection != null) connection.disconnect();
-        }
-    }
-
-    private HttpURLConnection sendRequest(
-            String apiUrl, String method, boolean authenticate, ApiRequestWriter writer, String bodyString)
-            throws IOException, OAuthException {
-
-        URL url = new URL(apiUrl);
-        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-
-        // hotel wifi with signon
-        if (!url.getHost().equals(connection.getURL().getHost())) {
-            throw new RedirectedException();
-        }
-
-//        connection.setRequestProperty("User-Agent", "OpenCity");
-
-        connection.setConnectTimeout(DEFAULT_TIMEOUT);
-        connection.setReadTimeout(DEFAULT_TIMEOUT);
-        connection.setDoOutput(true);
-        connection.setDoInput(true);
-
-        // default is method=GET, doInput=true, doOutput=false
-
-        if (method != null) {
-            connection.setRequestMethod(method);
-        }
-
-        if (authenticate) {
-            createOAuthConsumer(OsmModule.oAuthConsumer(prefs)).sign(connection);
-        }
-
-
-        return connection;
     }
 
 

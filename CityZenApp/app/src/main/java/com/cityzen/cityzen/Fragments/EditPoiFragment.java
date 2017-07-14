@@ -694,7 +694,10 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
                 POI.getPoiClassType().equals("guest_house") ||
                 POI.getPoiClassType().equals("mobile_phone") ||
                 POI.getPoiClassType().equals("restaurant") ||
-                POI.getPoiClassType().equals("fast_food");
+                POI.getPoiClassType().equals("fast_food") ||
+                POI.getPoiClassType().equals("bus_station") ||
+                POI.getPoiClassType().equals("transportation")//for airports, train station, etc
+                ;
     }
 
     /**************************************Functions to extract the opening hours string from the form*************************************************/
