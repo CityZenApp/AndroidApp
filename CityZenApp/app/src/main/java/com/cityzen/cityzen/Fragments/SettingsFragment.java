@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 
 import com.cityzen.cityzen.R;
 
-
 public class SettingsFragment extends Fragment {
 
     public SettingsFragment() {
@@ -19,7 +18,6 @@ public class SettingsFragment extends Fragment {
         SettingsFragment fragment = new SettingsFragment();
         return fragment;
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

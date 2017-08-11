@@ -512,31 +512,33 @@ public class MainActivity extends AppCompatActivity
      * @param location Location of the device
      */
     public void saveLastKnownLocation(Location location) {
+        AppLog.log(location.getLatitude());
+        AppLog.log(location.getLongitude());
+        Geocoder gcd = new Geocoder(MainActivity.this, Locale.getDefault());
+        List<Address> addresses = null;
         try {
-            Geocoder gcd = new Geocoder(MainActivity.this, Locale.getDefault());
-            List<Address> addresses = null;
             addresses = gcd.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
-            if (addresses.size() > 0) {
-                DeviceLocationData deviceLocation =
-                        new DeviceLocationData(
-                                location.getLatitude(),
-                                location.getLongitude(),
-                                addresses.get(0).getLocality(),
-                                addresses.get(0).getCountryName());
-                new StorageUtil(MainActivity.this).saveLastKnownLocation(deviceLocation);
-                lastKnownLocation = deviceLocation;
-            } else {
-                DeviceLocationData deviceLocation =
-                        new DeviceLocationData(
-                                location.getLatitude(),
-                                location.getLongitude(),
-                                "",
-                                "");
-                new StorageUtil(MainActivity.this).saveLastKnownLocation(deviceLocation);
-                lastKnownLocation = deviceLocation;
-            }
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
+        }
+        if (addresses != null && addresses.size() > 0) {
+            DeviceLocationData deviceLocation =
+                    new DeviceLocationData(
+                            location.getLatitude(),
+                            location.getLongitude(),
+                            addresses.get(0).getLocality(),
+                            addresses.get(0).getCountryName());
+            new StorageUtil(MainActivity.this).saveLastKnownLocation(deviceLocation);
+            lastKnownLocation = deviceLocation;
+        } else {
+            DeviceLocationData deviceLocation =
+                    new DeviceLocationData(
+                            location.getLatitude(),
+                            location.getLongitude(),
+                            "",
+                            "");
+            new StorageUtil(MainActivity.this).saveLastKnownLocation(deviceLocation);
+            lastKnownLocation = deviceLocation;
         }
     }
 

@@ -18,52 +18,81 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:src="@drawable/cityscape" />
+                android:src="@drawable/temp_logo" />
 
-            <Button
+            <TextView
+                android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorWhite"
-                android:text="Username (this is a work in progress)"
-                android:textAlignment="textStart"
-                android:textAllCaps="false"
-                tools:ignore="RtlCompat" />
+                android:layout_marginTop="16dp"
+                android:text="@string/about_us"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
 
-            <Button
+            <TextView
+                android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorWhite"
-                android:text="About us"
-                android:textAlignment="textStart"
-                android:textAllCaps="false"
-                tools:ignore="RtlCompat" />
+                android:text="@string/about_text" />
 
-            <Button
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorWhite"
-                android:text="Contact"
-                android:textAlignment="textStart"
-                android:textAllCaps="false"
-                tools:ignore="RtlCompat" />
+                android:layout_marginTop="16dp"
+                android:text="@string/website"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
 
-            <Button
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorWhite"
-                android:text="License"
-                android:textAlignment="textStart"
-                android:textAllCaps="false"
-                tools:ignore="RtlCompat" />
+                android:autoLink="web"
+                android:text="@string/domain" />
 
-            <Button
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorWhite"
-                android:text="Privacy and policy"
-                android:textAlignment="textStart"
-                android:textAllCaps="false"
-                tools:ignore="RtlCompat" />
+                android:layout_marginTop="16dp"
+                android:text="@string/license"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="@string/license_link" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/privacy_policy"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="@string/privacy_policy_link" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/contact"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:autoLink="email"
+                android:text="@string/email_contact" />
+
+
         </LinearLayout>
     </ScrollView>
 

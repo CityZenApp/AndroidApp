@@ -71,5 +71,20 @@
     <string name="created_succesfully">created successfully</string>
     <string name="sort_by_name">Sort by name</string>
     <string name="add_a_new_marker_on_the_map">Add a marker on the map</string>
+    <string name="about_us">About us</string>
+    <string name="about_text">CityZen is an open source Android app that helps you navigate and explore your city easily.
+        It helps you find points of interest such as ATMs, gas stations, drugstores, mobile phone stores and other points that might interest you.
+        The app shows these POIs based on your location of your mobile phone, but it does so by respecting your privacy since we don\'t keep your navigation data.
+        The app is licensed in an open source because we want to engage as many people as possible in improving the app.
+        It is also a way of respecting tools and platforms such as OpenStreetMap that respect our freedoms.
+        If you are an OpenStreetMap contributor you can easily add information to the POIs by editing them.
+        \n\n CityZen app was initiated in Albania with a lot of ❤️ for free open source culture.</string>
+    <string name="domain">www.cityzenapp.co</string>
+    <string name="license_link">www.cityzenapp.co/license</string>
+    <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
+    <string name="email_contact">ping@cityzenapp.co</string>
+    <string name="license">License</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="contact">Contact</string>
 
 </resources>
