@@ -40,138 +40,35 @@
     <favorites_list name="CityZenApp" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Activities/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="535" column="49" selection-start-line="535" selection-start-column="49" selection-end-line="535" selection-end-column="49" />
+            <state relative-caret-position="5542">
+              <caret line="436" column="85" selection-start-line="436" selection-start-column="85" selection-end-line="436" selection-end-column="85" />
               <folding>
-                <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#5739#5769#0" expanded="false" />
-                <element signature="method#onBackPressed#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#updateStatusBarColor#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#revertStatusBarColor#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#getStatusBatColor#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#viewSetup#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#viewSetup#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#toggleFabPoiDetailsAfterRoute#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#toggleFabPoiDetailsAfterRoute#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#logUserInfo#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#logUserInfo#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#refreshAppNavigation#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#refreshAppNavigation#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#hideNavigation#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#showNavigation#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#showNavigationNoFab#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#requestWriteExternalStoragePermission#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#requestWriteExternalStoragePermission#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#requestLocationPermission#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#checkLocationServicesStatus#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#checkLocationServicesStatus#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#buildAlertMessageNoGps#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#buildAlertMessageNoGps#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#getDeviceLocation#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#getDeviceLocation#0;class#MainActivity#0" expanded="false" />
-                <element signature="class#20084:21899" expanded="false" />
-                <element signature="method#onLocationChanged#0;class#20084:21899" expanded="false" />
-                <element signature="method#onStatusChanged#0;class#20084:21899" expanded="false" />
-                <element signature="method#onProviderEnabled#0;class#20084:21899" expanded="false" />
-                <element signature="method#onProviderDisabled#0;class#20084:21899" expanded="false" />
-                <element signature="docComment;method#saveLastKnownLocation#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#notifyMapLocationChanged#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#notifyMapLocationChanged#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#showMyLocation#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#showMyLocation#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#getLastKnownLocation#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#onPermissionsGranted#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#onPermissionsDenied#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#25840#25930#0" expanded="false" />
-                <element signature="e#26695#26785#0" expanded="false" />
-                <element signature="docComment;method#openCategoryList#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#openCategoryList#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#showLoadingScreen#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#hideLoadingScreen#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#hideLoadingScreenWithNavigation#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#editPoi#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#editPoi#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#showDirectionsToPoi#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#showDirectionsToPoi#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#loadDirectionsIfPossible#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#loadDirectionsIfPossible#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#routeAddedOnMap#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#routeAddedOnMap#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#routeAddedOnMap#1;class#MainActivity#0" expanded="false" />
-                <element signature="method#clearRoute#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;field#locationEnabledReceiver#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#onDestroy#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#setupOsmConnection#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#setupOsmConnection#0;class#MainActivity#0" expanded="false" />
-                <element signature="docComment;method#checkAuthentication#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#checkAuthentication#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#recheckAuthentication#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#requestOAuthorized#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#onOAuthAuthorized#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#onOAuthAuthorizationVerified#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#35850#35884#0" expanded="false" />
+                <element signature="e#18267#18289#0" expanded="true" />
+                <element signature="e#35275#35310#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SettingsFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/SettingsFragment.java">
+      <file leaf-file-name="CategoriesFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/CategoriesFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_settings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
-              <folding>
-                <element signature="e#1057#1075#0" expanded="true" />
-                <element signature="e#1377#1397#0" expanded="true" />
-                <element signature="e#1606#1623#0" expanded="true" />
-                <element signature="e#1920#1936#0" expanded="true" />
-                <element signature="e#2145#2162#0" expanded="true" />
-                <element signature="e#2459#2481#0" expanded="true" />
-                <element signature="e#2690#2714#0" expanded="true" />
-                <element signature="e#3011#3040#0" expanded="true" />
-                <element signature="e#3249#3266#0" expanded="true" />
-                <element signature="e#3616#3639#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PoiDetailsFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/PoiDetailsFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="203" column="19" selection-start-line="203" selection-start-column="12" selection-end-line="203" selection-end-column="19" />
+            <state relative-caret-position="576">
+              <caret line="131" column="49" selection-start-line="131" selection-start-column="49" selection-end-line="131" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <file leaf-file-name="FilterCategory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/PoiCategoryFilter/FilterCategory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="86" column="51" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
+            <state relative-caret-position="628">
+              <caret line="126" column="53" selection-start-line="126" selection-start-column="53" selection-end-line="126" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -1749,7 +1646,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4507306422375" />
+        <entry key="$PROJECT_DIR$" value="4507827877179" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2100,19 +1997,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/oauth/OAuth.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/PoiCategoryFilter/FilterCategory.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_local_cafe_white.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/EditPoiFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/CreatePoiFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Prefs.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/OsmModule.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/oauth/OAuthWebViewDialogFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Activities/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/SettingsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Activities/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/PoiCategoryFilter/FilterCategory.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_phonelink_setup_white.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
       </list>
     </option>
   </component>
@@ -2187,28 +2085,6 @@
               <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="temp_logo.png" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CityZenApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2262,9 +2138,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2608,7 +2484,7 @@
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.49786097" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -2678,13 +2554,58 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Activities/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3636">
+          <caret line="535" column="49" selection-start-line="535" selection-start-column="49" selection-end-line="535" selection-end-column="49" />
+          <folding>
+            <element signature="e#18267#18289#0" expanded="true" />
+            <element signature="e#35275#35310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/SettingsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1098">
+          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/PoiDetailsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3096">
+          <caret line="203" column="19" selection-start-line="203" selection-start-column="12" selection-end-line="203" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1548">
+          <caret line="86" column="51" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/OsmModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
           <folding>
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="false" />
+            <element signature="e#806#807#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2709,8 +2630,8 @@
         <state relative-caret-position="864">
           <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
           <folding>
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="false" />
+            <element signature="e#806#807#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2736,21 +2657,6 @@
         <state relative-caret-position="180">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/PoiCategoryFilter/FilterCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="110" column="63" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -2797,8 +2703,8 @@
         <state relative-caret-position="54">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="false" />
+            <element signature="e#806#807#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2857,102 +2763,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Activities/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="535" column="49" selection-start-line="535" selection-start-column="49" selection-end-line="535" selection-end-column="49" />
-          <folding>
-            <element signature="method#onCreate#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#5739#5769#0" expanded="false" />
-            <element signature="method#onBackPressed#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#updateStatusBarColor#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#revertStatusBarColor#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getStatusBatColor#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#viewSetup#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#viewSetup#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#toggleFabPoiDetailsAfterRoute#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#toggleFabPoiDetailsAfterRoute#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#logUserInfo#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#logUserInfo#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#refreshAppNavigation#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#refreshAppNavigation#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#hideNavigation#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#showNavigation#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#showNavigationNoFab#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#requestWriteExternalStoragePermission#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#requestWriteExternalStoragePermission#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#requestLocationPermission#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#checkLocationServicesStatus#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#checkLocationServicesStatus#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#buildAlertMessageNoGps#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#buildAlertMessageNoGps#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#getDeviceLocation#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getDeviceLocation#0;class#MainActivity#0" expanded="false" />
-            <element signature="class#20084:21899" expanded="false" />
-            <element signature="method#onLocationChanged#0;class#20084:21899" expanded="false" />
-            <element signature="method#onStatusChanged#0;class#20084:21899" expanded="false" />
-            <element signature="method#onProviderEnabled#0;class#20084:21899" expanded="false" />
-            <element signature="method#onProviderDisabled#0;class#20084:21899" expanded="false" />
-            <element signature="docComment;method#saveLastKnownLocation#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#notifyMapLocationChanged#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#notifyMapLocationChanged#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#showMyLocation#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#showMyLocation#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#getLastKnownLocation#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onRequestPermissionsResult#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onPermissionsGranted#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onPermissionsDenied#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#25840#25930#0" expanded="false" />
-            <element signature="e#26695#26785#0" expanded="false" />
-            <element signature="docComment;method#openCategoryList#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#openCategoryList#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#showLoadingScreen#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#hideLoadingScreen#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#hideLoadingScreenWithNavigation#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#editPoi#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#editPoi#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#showDirectionsToPoi#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#showDirectionsToPoi#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#loadDirectionsIfPossible#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#loadDirectionsIfPossible#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#routeAddedOnMap#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#routeAddedOnMap#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#routeAddedOnMap#1;class#MainActivity#0" expanded="false" />
-            <element signature="method#clearRoute#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;field#locationEnabledReceiver#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#setupOsmConnection#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#setupOsmConnection#0;class#MainActivity#0" expanded="false" />
-            <element signature="docComment;method#checkAuthentication#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#checkAuthentication#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#recheckAuthentication#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#requestOAuthorized#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onOAuthAuthorized#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#onOAuthAuthorizationVerified#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#35850#35884#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/cityscape.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/cityscape.png" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/temp_logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_poi_details.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3384">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
@@ -2961,18 +2796,61 @@
         <state relative-caret-position="450">
           <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_poi_details.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Activities/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5542">
+          <caret line="436" column="85" selection-start-line="436" selection-start-column="85" selection-end-line="436" selection-end-column="85" />
+          <folding>
+            <element signature="e#18267#18289#0" expanded="true" />
+            <element signature="e#35275#35310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/CategoriesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="131" column="49" selection-start-line="131" selection-start-column="49" selection-end-line="131" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_phonelink_setup_white.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1002">
+          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3384">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="671">
+          <caret line="86" column="51" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -2985,32 +2863,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/PoiCategoryFilter/FilterCategory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
-          <folding>
-            <element signature="e#1057#1075#0" expanded="true" />
-            <element signature="e#1377#1397#0" expanded="true" />
-            <element signature="e#1606#1623#0" expanded="true" />
-            <element signature="e#1920#1936#0" expanded="true" />
-            <element signature="e#2145#2162#0" expanded="true" />
-            <element signature="e#2459#2481#0" expanded="true" />
-            <element signature="e#2690#2714#0" expanded="true" />
-            <element signature="e#3011#3040#0" expanded="true" />
-            <element signature="e#3249#3266#0" expanded="true" />
-            <element signature="e#3616#3639#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="86" column="51" selection-start-line="86" selection-start-column="51" selection-end-line="86" selection-end-column="51" />
+        <state relative-caret-position="628">
+          <caret line="126" column="53" selection-start-line="126" selection-start-column="53" selection-end-line="126" selection-end-column="53" />
           <folding />
         </state>
       </provider>

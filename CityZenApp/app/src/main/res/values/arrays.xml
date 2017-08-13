@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!--Points Of interest-->
-    <!--<array name="poi_titles"> &lt;!&ndash;Localization needed&ndash;&gt;-->
-    <!--<item>Bars/Cafes</item>-->
-    <!--<item>Hotel/Hostel</item>-->
-    <!--<item>Tourist attractions</item>-->
-    <!--<item>Bank/Atm</item>-->
-    <!--<item>Transportation</item>-->
-    <!--<item>Gas stations</item>-->
-    <!--<item>Drugstores</item>-->
-    <!--<item>Mobile phone store</item>-->
-    <!--<item>Restaurant/FastFood</item> &lt;!&ndash;\nFastFood&ndash;&gt;-->
-    <!--&lt;!&ndash;<item>FastFood</item>&ndash;&gt;-->
-    <!--</array> -->
 
     <!--Points Of interest-->
     <array name="poi_titles"> <!--Localization needed-->
@@ -25,8 +12,10 @@
         <item>Hotels/Hostels</item>
         <item>Public transport</item>
         <item>Gas stations</item>
-        <item>Drugstores\nHealthcare centers</item> <!--\nFastFood-->
+        <item>Drugstores\nHealthcare centers</item>
         <item>Banks/ATMs</item>
+        <item>Mobile phone store</item>
+        <item>Super Markets</item>
     </array>
 
     <array name="poi_id"> <!--Don't localize, used for app functionality-->
@@ -40,21 +29,9 @@
         <item>7</item>
         <item>8</item>
         <item>9</item>
+        <item>10</item>
+        <item>11</item>
     </array>
-
-
-    <!--<array name="poi_icons">-->
-    <!--<item>@drawable/ic_local_cafe_white</item>-->
-    <!--<item>@drawable/ic_home_white</item>-->
-    <!--<item>@drawable/ic_nature_people_white</item>-->
-    <!--<item>@drawable/ic_local_atm_white</item>-->
-    <!--<item>@drawable/ic_directions_bus_white</item>-->
-    <!--<item>@drawable/ic_local_gas_station_white</item>-->
-    <!--<item>@drawable/ic_local_pharmacy_white</item>-->
-    <!--<item>@drawable/ic_phonelink_setup_white</item>-->
-    <!--<item>@drawable/ic_restaurant_white</item>-->
-    <!--<item>@drawable/ic_room_service_white_24dp</item>-->
-    <!--</array>-->
 
     <array name="poi_icons">
         <item>@drawable/ic_local_cafe_white</item>
@@ -67,6 +44,9 @@
         <item>@drawable/ic_local_gas_station_white</item>
         <item>@drawable/ic_local_pharmacy_white</item>
         <item>@drawable/ic_local_atm_white</item>
+        <item>@drawable/ic_phonelink_setup_white</item>
+        <item>@drawable/ic_store_white_24dp</item>
+
     </array>
 
     <array name="poi_colors">
@@ -80,5 +60,7 @@
         <item>#E15D5D</item>
         <item>#2abade</item>
         <item>#25e458</item>
+        <item>#e3f94d3a</item>
+        <item>#898dff</item>
     </array>
 </resources>

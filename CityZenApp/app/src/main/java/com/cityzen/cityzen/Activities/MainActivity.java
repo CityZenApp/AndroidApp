@@ -425,7 +425,7 @@ public class MainActivity extends AppCompatActivity
      */
     private void buildAlertMessageNoGps() {
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("OpenCity must have location to provide map services. \nDo you want to enable location?")
+        builder.setMessage(R.string.alert_message)
                 .setCancelable(false)
                 .setPositiveButton(R.string.enable, new DialogInterface.OnClickListener() {
                     public void onClick(final DialogInterface dialog, final int id) {
@@ -454,13 +454,13 @@ public class MainActivity extends AppCompatActivity
             return;
         }
         //get initial location state
-        if (getLastKnownLocation() == null) {
-            Location initialLocation = locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER);
+//        if (getLastKnownLocation() == null) {
+            Location initialLocation = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
             if (initialLocation != null) {
                 saveLastKnownLocation(initialLocation);
                 notifyMapLocationChanged();
             }
-        }
+//        }
 
         locationListener = new LocationListener() {
             @Override
