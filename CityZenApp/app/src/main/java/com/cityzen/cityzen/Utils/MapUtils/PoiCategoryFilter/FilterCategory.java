@@ -123,6 +123,12 @@ public class FilterCategory {
                 tags.add(new OsmTag("amenity", "bank"));
                 tags.add(new OsmTag("amenity", "atm"));
                 break;
+            case 10:
+                tags.add(new OsmTag("shop", "mobile_phone"));
+                break;
+            case 11:
+                tags.add(new OsmTag("shop", "supermarket"));
+                break;
             default:
                 break;
         }

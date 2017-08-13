@@ -86,5 +86,6 @@
     <string name="license">License</string>
     <string name="privacy_policy">Privacy policy</string>
     <string name="contact">Contact</string>
+    <string name="alert_message">OpenCity must have location to provide map services.  Do you want to enable location?</string>
 
 </resources>
