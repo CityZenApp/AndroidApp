@@ -4,7 +4,6 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Place;
-import com.cityzen.cityzen.Utils.Development.AppLog;
 
 import java.util.Map;
 
@@ -90,7 +89,6 @@ public class ParcelablePOI implements Parcelable {
         boolean isAtm = false;
         if (tags != null)
             for (Map.Entry<String, String> tag : tags.entrySet()) {
-                AppLog.log(tag.getKey());
                 if (tag.getKey().equals("name")) {
                     this.poiName = tag.getValue();
                     this.fullName = tag.getValue();

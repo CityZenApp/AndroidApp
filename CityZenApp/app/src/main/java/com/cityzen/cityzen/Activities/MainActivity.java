@@ -13,7 +13,6 @@ import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -22,11 +21,9 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.util.ArraySet;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -36,7 +33,6 @@ import android.widget.TextView;
 
 import com.cityzen.cityzen.OsmModule;
 import com.cityzen.cityzen.R;
-import com.cityzen.cityzen.Utils.Development.AppLog;
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
@@ -62,37 +58,16 @@ import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.Marker;
 import org.osmdroid.views.overlay.Polyline;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.List;
 import java.util.Locale;
-import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
-
-import de.westnordost.osmapi.ApiRequestWriter;
 import de.westnordost.osmapi.OsmConnection;
-import de.westnordost.osmapi.common.errors.OsmAuthorizationException;
-import de.westnordost.osmapi.common.errors.OsmConnectionException;
-import de.westnordost.osmapi.common.errors.RedirectedException;
-import de.westnordost.osmapi.map.MapDataDao;
 import info.metadude.java.library.overpass.models.Element;
 import oauth.signpost.OAuthConsumer;
-import oauth.signpost.exception.OAuthCommunicationException;
-import oauth.signpost.exception.OAuthException;
-import oauth.signpost.exception.OAuthExpectationFailedException;
-import oauth.signpost.exception.OAuthMessageSignerException;
 import pub.devrel.easypermissions.AppSettingsDialog;
 import pub.devrel.easypermissions.EasyPermissions;
-
-import static com.cityzen.cityzen.Network.Authenticator.createOAuthConsumer;
 
 public class MainActivity extends AppCompatActivity
         implements OAuthWebViewDialogFragment.OAuthListener,
@@ -142,9 +117,6 @@ public class MainActivity extends AppCompatActivity
         //request permissions
         requestWriteExternalStoragePermission();
 
-        /**
-         * This need to be checked on final design updates
-         */
         getStatusBatColor();
         updateStatusBarColor();
         viewSetup();
@@ -281,19 +253,19 @@ public class MainActivity extends AppCompatActivity
     /**
      * Method used to get the name of the logged in user
      */
-    private void logUserInfo() {
-        new AsyncTask<Void, Void, Void>() {
-            @Override
-            protected Void doInBackground(Void... voids) {
-                AppLog.log("USER INFO");
-                AppLog.log(OsmModule.userDao(osm).getMine().id);
-//                AppLog.log(OsmModule.userDao(osm).getMine().);
-                AppLog.log(OsmModule.userDao(osm).get(OsmModule.userDao(osm).getMine().id).displayName);
-
-                return null;
-            }
-        }.execute();
-    }
+//    private void logUserInfo() {
+//        new AsyncTask<Void, Void, Void>() {
+//            @Override
+//            protected Void doInBackground(Void... voids) {
+//                AppLog.log("USER INFO");
+//                AppLog.log(OsmModule.userDao(osm).getMine().id);
+////                AppLog.log(OsmModule.userDao(osm).getMine().);
+//                AppLog.log(OsmModule.userDao(osm).get(OsmModule.userDao(osm).getMine().id).displayName);
+//
+//                return null;
+//            }
+//        }.execute();
+//    }
 
     /*****************************************Bottom Navigation methods***********************************************/
     /**
@@ -512,8 +484,6 @@ public class MainActivity extends AppCompatActivity
      * @param location Location of the device
      */
     public void saveLastKnownLocation(Location location) {
-        AppLog.log(location.getLatitude());
-        AppLog.log(location.getLongitude());
         Geocoder gcd = new Geocoder(MainActivity.this, Locale.getDefault());
         List<Address> addresses = null;
         try {

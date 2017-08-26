@@ -34,7 +34,6 @@ import com.cityzen.cityzen.Network.UpdatePoiTask;
 import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Fragments.Timer.TimeCallback;
 import com.cityzen.cityzen.Fragments.Timer.TimePickerFragment;
-import com.cityzen.cityzen.Utils.Development.AppLog;
 import com.cityzen.cityzen.Utils.Development.AppToast;
 import com.cityzen.cityzen.Utils.DeviceUtils.DeviceUtils;
 import com.cityzen.cityzen.Utils.MapUtils.MapUtils;
@@ -200,13 +199,11 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
                 protected Void doInBackground(Void... voids) {
                     MapDataDao mapDao = new MapDataDao(osm);
                     editNode = mapDao.getNode(POI.getId());
-                    if (editNode != null)
-                        if (editNode.getTags() != null)
-                            for (Map.Entry<String, String> tag : editNode.getTags().entrySet()) {
-                                AppLog.log(tag.getKey() + " " + tag.getValue());
-                            }
-                    AppLog.log(editNode == null);
-                    AppLog.log("-------------------------------------------");
+//                    if (editNode != null)
+//                        if (editNode.getTags() != null)
+//                            for (Map.Entry<String, String> tag : editNode.getTags().entrySet()) {
+//                                AppLog.log(tag.getKey() + " " + tag.getValue());
+//                            }
                     return null;
                 }
 
@@ -638,8 +635,7 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
                 @Override
                 public void onFailure(String errorMessage) {
                     openChangesetId = null;//clear changeset
-                    AppLog.log(errorMessage);
-                    new AppToast(getActivity()).centerViewToast(getString(R.string.an_error_occurred));
+                     new AppToast(getActivity()).centerViewToast(getString(R.string.an_error_occurred));
                 }
             }).execute();
         else {

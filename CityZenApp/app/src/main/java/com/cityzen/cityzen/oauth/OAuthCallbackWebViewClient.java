@@ -89,7 +89,7 @@ public class OAuthCallbackWebViewClient extends WebViewClient
 	@Override
 	public boolean shouldOverrideUrlLoading(WebView view, String stringUrl)
 	{
-		Log.i(TAG, "Loading URL " + stringUrl);
+//		Log.i(TAG, "Loading URL " + stringUrl);
 		if (!stringUrl.startsWith(CALLBACK_URL)) return false;
 
 		try

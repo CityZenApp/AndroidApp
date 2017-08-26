@@ -4,9 +4,6 @@ import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/**
- * Created by antoine on 8/22/15.
- */
 public class Adress implements Parcelable {
 
     protected double lat, lon;

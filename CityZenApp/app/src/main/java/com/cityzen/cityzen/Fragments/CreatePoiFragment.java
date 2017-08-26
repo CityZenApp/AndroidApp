@@ -33,7 +33,6 @@ import com.cityzen.cityzen.Network.OsmOperationCallback;
 import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Fragments.Timer.TimeCallback;
 import com.cityzen.cityzen.Fragments.Timer.TimePickerFragment;
-import com.cityzen.cityzen.Utils.Development.AppLog;
 import com.cityzen.cityzen.Utils.Development.AppToast;
 import com.cityzen.cityzen.Utils.MapUtils.MapUtils;
 
@@ -624,7 +623,6 @@ public class CreatePoiFragment extends Fragment implements TimeCallback, Feature
             @Override
             public void onFailure(String errorMessage) {
                 openChangesetId = null;//clear changeset
-                AppLog.log(errorMessage);
                 new AppToast(getActivity()).centerViewToast(getString(R.string.an_error_occurred));
             }
         }).execute();

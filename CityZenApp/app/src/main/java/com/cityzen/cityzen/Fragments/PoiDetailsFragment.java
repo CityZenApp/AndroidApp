@@ -61,7 +61,7 @@ public class PoiDetailsFragment extends DialogFragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             POI = getArguments().getParcelable("POI");
-            AppLog.log(POI);
+
         }
         storageUtil = new StorageUtil(getActivity());
         setStyle(DialogFragment.STYLE_NO_TITLE, R.style.Theme_AppCompat_Light_Dialog_Alert);
