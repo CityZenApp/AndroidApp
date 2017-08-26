@@ -131,6 +131,17 @@ public class MapFragment extends Fragment implements MapEventsReceiver {
                     //check authentication before creating
                     if (!((MainActivity) getActivity()).checkAuthentication()) return;
                     ((MainActivity) getActivity()).hideNavigation();
+
+                    //hide crete poi data
+                    try {
+                        mapPoiCreationFormContainer.setVisibility(View.GONE);
+                        addPoiMarker = false;
+                        if (createPoiMarker == null) return;
+                        if (createPoiMarker.isInfoWindowShown())
+                            createPoiMarker.closeInfoWindow();
+                        MapUtils.deleteMarker(createPoiMarker, map);
+                    } catch (Exception e) {
+                    }
                     openCreatePoiFragment(createPoiMarker);
                 } else {
                     new AppToast(getActivity()).toast(getString(R.string.add_a_new_marker_on_the_map));
@@ -140,6 +151,7 @@ public class MapFragment extends Fragment implements MapEventsReceiver {
     }
 
     public void openCreatePoiFragment(Marker marker) {
+        if (marker == null) return;
         Fragment fragment = CreatePoiFragment.newInstance(marker.getPosition().getLatitude(), marker.getPosition().getLongitude());
         FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.container, fragment, "CreatePoiFragment");// give your fragment container id in first parameter
@@ -286,7 +298,7 @@ public class MapFragment extends Fragment implements MapEventsReceiver {
 
             @Override
             public void onFailure() {
-
+                new AppToast(getActivity()).centerViewToast(getString(R.string.osm_routing_unavailable));
             }
         }).execute();
     }
@@ -312,7 +324,7 @@ public class MapFragment extends Fragment implements MapEventsReceiver {
 
             @Override
             public void onFailure() {
-
+                new AppToast(getActivity()).centerViewToast(getString(R.string.osm_routing_unavailable));
             }
         }).execute();
     }

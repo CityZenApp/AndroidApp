@@ -42,7 +42,7 @@
 
 
     <string name="osm_copyright" translatable="false"><![CDATA[<font color=\"#000\">© </font><font color=\"#1565C0\">OpenStreetMap </font><font color=\"#000\">contributors</font>]]></string>
-    <string name="directions_to_here">Directions to here</string>
+    <string name="directions_to_here">Directions by car</string>
     <string name="create_poi">Create POI</string>
     <string name="_24_7">24/7</string>
     <string name="opening">Opening</string>
@@ -87,5 +87,8 @@
     <string name="privacy_policy">Privacy policy</string>
     <string name="contact">Contact</string>
     <string name="alert_message">OpenCity must have location to provide map services.  Do you want to enable location?</string>
+    <string name="osm_routing_unavailable">OSM routing isn\'t available at this time. Try again later</string>
+    <string name="house_number">House number</string>
+    <string name="postcode">Postcode</string>
 
 </resources>

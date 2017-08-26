@@ -18,6 +18,9 @@ import org.osmdroid.views.overlay.Polyline;
 
 import java.util.ArrayList;
 
+import okhttp3.Route;
+
+
 /**
  * Created by Valdio Veliu on 03/05/2017.
  */
@@ -54,11 +57,14 @@ public class RouteCreationTask extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
-        createPolyline();
-        if (roadOverlay != null)
-            callback.onPolylineCreated(roadOverlay);
-        else
-            callback.onFailure();
+        boolean roadBuiltSuccesfully = createPolyline();
+        if (!roadBuiltSuccesfully) callback.onFailure();
+        else {
+            if (roadOverlay != null)
+                callback.onPolylineCreated(roadOverlay);
+            else
+                callback.onFailure();
+        }
     }
 
     private void getRoadBetweenLocations() {
@@ -70,8 +76,9 @@ public class RouteCreationTask extends AsyncTask<Void, Void, Void> {
         road = roadManager.getRoad(waypoints);
     }
 
-    private void createPolyline() {
-        if (map == null) return;
+    private boolean createPolyline() {
+        if (map == null || road.mStatus == Road.STATUS_INVALID || road.mStatus == Road.STATUS_TECHNICAL_ISSUE)
+            return false;// some error with the road
         roadOverlay = RoadManager.buildRoadOverlay(road);
         roadOverlay.setColor(context.getResources().getColor(R.color.colorAccent));
         roadOverlay.setWidth(16);
@@ -92,6 +99,7 @@ public class RouteCreationTask extends AsyncTask<Void, Void, Void> {
 //        }
         map.getOverlays().add(roadOverlay);
         map.invalidate();
+        return true;
     }
 
 }

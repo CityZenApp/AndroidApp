@@ -132,21 +132,28 @@ public class CategoriesFragment extends Fragment {
                 if (poiTagsReceived == FilterCategory.getFilters(position).size() && poiElements.size() > 0)
                     displayPOIs(titles.getString(position), poiElements, categoryIDs.getInteger(position, -1));
                 else if (poiTagsReceived == FilterCategory.getFilters(position).size() && poiElements.size() == 0) {
-                    new AppToast(getActivity()).toast(getString(R.string.no_pois_near_user_location));
+                    try {
+                        new AppToast(getActivity()).toast(getString(R.string.no_pois_near_user_location));
+                    } catch (Exception e) {
+                    }
                     ((MainActivity) getActivity()).hideLoadingScreenWithNavigation();
                 }
             }
 
             @Override
             public void onFailure() {
-                poiTagsReceived++;
-                // in case there are separate network calls and some fail
-                //if there are POI available, display them
-                if (poiTagsReceived == FilterCategory.getFilters(position).size() && poiElements.size() > 0)
-                    displayPOIs(titles.getString(position), poiElements, categoryIDs.getInteger(position, -1));
-                else if (poiTagsReceived == FilterCategory.getFilters(position).size() && poiElements.size() == 0) {
-                    new AppToast(getActivity()).toast(getString(R.string.no_pois_near_user_location));
-                    ((MainActivity) getActivity()).hideLoadingScreenWithNavigation();
+                try {
+                    poiTagsReceived++;
+                    // in case there are separate network calls and some fail
+                    //if there are POI available, display them
+                    if (poiTagsReceived == FilterCategory.getFilters(position).size() && poiElements.size() > 0)
+                        displayPOIs(titles.getString(position), poiElements, categoryIDs.getInteger(position, -1));
+                    else if (poiTagsReceived == FilterCategory.getFilters(position).size() && poiElements.size() == 0) {
+                        new AppToast(getActivity()).toast(getString(R.string.no_pois_near_user_location));
+                        ((MainActivity) getActivity()).hideLoadingScreenWithNavigation();
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
             }
         });

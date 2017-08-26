@@ -10,19 +10,26 @@ public class FilterCategory {
 
     /**
      * <!--Points Of interest-->
-     * <array name="poi_titles">
-     * <item>Bars/Cafes</item>
-     * <item>Hotel/Hostel</item>
+     * <array name="poi_titles"> <!--Localization needed-->
+     * <item>Cafes</item>
+     * <item>Bars/Clubs</item>
+     * <item>Restaurants</item>
+     * <item>Fast food</item>
      * <item>Tourist attractions</item>
-     * <item>Bank/Atm</item>
-     * <item>Transportation</item>
+     * <item>Hotels/Hostels</item>
+     * <item>Public transport</item>
      * <item>Gas stations</item>
-     * <item>Drugstores</item>
+     * <item>Drugstores\nHealthcare centers</item>
+     * <item>Banks/ATMs</item>
      * <item>Mobile phone store</item>
-     * <item>Restaurant/FastFood</item>
+     * <item>Super Markets</item>
+     * <item>Shopping Malls</item> <!-- http://wiki.openstreetmap.org/wiki/Tag:shop%3Dmall-->
+     * <item>Parkings</item>
+     * <item>Rent a bicycle</item>
+     * <item>Rent a car &amp; Care sharing</item>
      * </array>
      * <p>
-     * <array name="poi_id">
+     * <array name="poi_id"> <!--Don't localize, used for app functionality-->
      * <item>0</item>
      * <item>1</item>
      * <item>2</item>
@@ -32,65 +39,26 @@ public class FilterCategory {
      * <item>6</item>
      * <item>7</item>
      * <item>8</item>
+     * <item>9</item>
+     * <item>10</item>
+     * <item>11</item>
+     * <item>12</item>
+     * <item>13</item>
+     * <item>14</item>
+     * <item>15</item>
      * </array>
      */
-   /* public static ArrayList<OsmTag> getFilters(int poiId) {
-        ArrayList<OsmTag> tags = new ArrayList<>();
-        switch (poiId) {
-            case 0://Bars/Cafes
-                tags.add(new OsmTag("amenity", "bar"));
-                tags.add(new OsmTag("amenity", "cafe"));
-                break;
-            case 1://Hotel/Hostel
-                tags.add(new OsmTag("tourism", "hotel"));
-                tags.add(new OsmTag("tourism", "hostel"));
-                tags.add(new OsmTag("tourism", "guest_house"));
-                break;
-            case 2://Tourist attractions
-                tags.add(new OsmTag("tourism", "attraction"));
-                tags.add(new OsmTag("historic", "monument"));
-                break;
-            case 3://Bank/Atm
-                tags.add(new OsmTag("amenity", "bank"));
-                tags.add(new OsmTag("amenity", "atm"));
-                break;
-            case 4://Transportation
-                tags.add(new OsmTag("building", "transportation"));
-                tags.add(new OsmTag("amenity", "taxi"));
-                tags.add(new OsmTag("amenity", "bus_station"));
-                break;
-            case 5://Gas stations
-                tags.add(new OsmTag("amenity", "fuel"));
-                tags.add(new OsmTag("amenity", "parking"));
-                break;
-            case 6://Drugstores
-                tags.add(new OsmTag("amenity", "pharmacy"));
-                tags.add(new OsmTag("amenity", "hospital"));
-                break;
-            case 7://Mobile phone store
-                tags.add(new OsmTag("shop", "mobile_phone"));
-                break;
-            case 8://Restaurant/FastFood
-                tags.add(new OsmTag("amenity", "restaurant"));
-                tags.add(new OsmTag("amenity", "fast_food"));
-                break;
-//            case 9:
-//                tags.add(new OsmTag("amenity", "fast_food"));
-//                break;
-            default:
-                break;
-        }
-        return tags;
-    }
-   */
+
     public static ArrayList<OsmTag> getFilters(int poiId) {
         ArrayList<OsmTag> tags = new ArrayList<>();
         switch (poiId) {
             case 0:
                 tags.add(new OsmTag("amenity", "cafe"));
+                tags.add(new OsmTag("shop", "coffee"));
                 break;
             case 1:
                 tags.add(new OsmTag("amenity", "bar"));
+                tags.add(new OsmTag("amenity", "nightclub"));
                 break;
             case 2:
                 tags.add(new OsmTag("amenity", "restaurant"));
@@ -128,6 +96,20 @@ public class FilterCategory {
                 break;
             case 11:
                 tags.add(new OsmTag("shop", "supermarket"));
+                break;
+            case 12:
+                tags.add(new OsmTag("shop", "mall"));
+                break;
+            case 13:
+                tags.add(new OsmTag("amenity", "parking"));
+                tags.add(new OsmTag("amenity", "parking_space"));
+                break;
+            case 14:
+                tags.add(new OsmTag("amenity", "bicycle_rental"));
+                break;
+            case 15:
+                tags.add(new OsmTag("amenity", "car_rental"));
+                tags.add(new OsmTag("amenity", "car_sharing"));
                 break;
             default:
                 break;

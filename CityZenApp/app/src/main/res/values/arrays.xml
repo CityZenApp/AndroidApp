@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
+    <!--https://github.com/CityZenApp/CityZen-Android/wiki/Scrapbook-->
     <!--Points Of interest-->
     <array name="poi_titles"> <!--Localization needed-->
         <item>Cafes</item>
@@ -16,6 +16,10 @@
         <item>Banks/ATMs</item>
         <item>Mobile phone store</item>
         <item>Super Markets</item>
+        <item>Shopping Malls</item> <!-- http://wiki.openstreetmap.org/wiki/Tag:shop%3Dmall-->
+        <item>Parkings</item>
+        <item>Rent a bicycle</item>
+        <item>Rent a car &amp; \nCar sharing</item>
     </array>
 
     <array name="poi_id"> <!--Don't localize, used for app functionality-->
@@ -31,6 +35,10 @@
         <item>9</item>
         <item>10</item>
         <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
     </array>
 
     <array name="poi_icons">
@@ -46,6 +54,10 @@
         <item>@drawable/ic_local_atm_white</item>
         <item>@drawable/ic_phonelink_setup_white</item>
         <item>@drawable/ic_store_white_24dp</item>
+        <item>@drawable/ic_local_mall_white_24dp</item>
+        <item>@drawable/ic_local_parking_white_24dp</item>
+        <item>@drawable/ic_directions_bike_white_24dp</item>
+        <item>@drawable/ic_directions_car_white_24dp</item>
 
     </array>
 
@@ -62,5 +74,9 @@
         <item>#25e458</item>
         <item>#e3f94d3a</item>
         <item>#898dff</item>
+        <item>#FEC006</item>
+        <item>#FF89BB</item>
+        <item>#ea13ec2c</item>
+        <item>#BB89FF</item>
     </array>
 </resources>

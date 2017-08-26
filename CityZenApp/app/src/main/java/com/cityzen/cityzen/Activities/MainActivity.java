@@ -455,11 +455,11 @@ public class MainActivity extends AppCompatActivity
         }
         //get initial location state
 //        if (getLastKnownLocation() == null) {
-            Location initialLocation = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-            if (initialLocation != null) {
-                saveLastKnownLocation(initialLocation);
-                notifyMapLocationChanged();
-            }
+        Location initialLocation = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        if (initialLocation != null) {
+            saveLastKnownLocation(initialLocation);
+            notifyMapLocationChanged();
+        }
 //        }
 
         locationListener = new LocationListener() {
@@ -548,7 +548,8 @@ public class MainActivity extends AppCompatActivity
     public void notifyMapLocationChanged() {
         if (navigation != null && navigation.getSelectedItemId() == R.id.navigation_map) {
             MapFragment fragment = (MapFragment) getSupportFragmentManager().findFragmentByTag("MapFragment");
-            fragment.setupMyLocation();
+            if (fragment != null)
+                fragment.setupMyLocation();
         }
     }
 

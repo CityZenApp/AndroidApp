@@ -81,6 +81,7 @@ public class MapUtils {
     }
 
     public static Marker addMarker(Context context, MapView map, double latitude, double longitude) {
+        if (map == null || context == null) return null;
         Marker marker = new Marker(map);
         marker.setPosition(new GeoPoint(latitude, longitude));
         marker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
@@ -92,6 +93,7 @@ public class MapUtils {
     }
 
     public static Marker myLocation(Context context, MapView map, double latitude, double longitude) {
+        if (map == null || context == null) return null;
         Marker marker = new Marker(map);
         marker.setPosition(new GeoPoint(latitude, longitude));
         marker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);

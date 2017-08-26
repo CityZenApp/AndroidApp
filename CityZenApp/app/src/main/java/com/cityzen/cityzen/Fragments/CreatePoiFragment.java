@@ -87,6 +87,8 @@ public class CreatePoiFragment extends Fragment implements TimeCallback, Feature
     private TextView createPoiFeature;
     private EditText createName;
     private EditText createStreet;
+    private EditText createHouseNumber;
+    private EditText createPostCode;
     private EditText createCity;
     private EditText createPhone;
     private EditText createWebsite;
@@ -203,11 +205,7 @@ public class CreatePoiFragment extends Fragment implements TimeCallback, Feature
         GeoPoint position = new GeoPoint(latitude, longitude);
         controller.setCenter(position);
         controller.setZoom(18);
-
-
         MapUtils.addMarker(getActivity(), map, latitude, longitude);
-
-
     }
 
     private void setupView() {
@@ -215,6 +213,8 @@ public class CreatePoiFragment extends Fragment implements TimeCallback, Feature
         createPoiFeature.setOnClickListener(clickListener);
         createName = (EditText) getActivity().findViewById(R.id.createName);
         createStreet = (EditText) getActivity().findViewById(R.id.createStreet);
+        createHouseNumber = (EditText) getActivity().findViewById(R.id.createHouseNumber);
+        createPostCode = (EditText) getActivity().findViewById(R.id.createPostCode);
         createCity = (EditText) getActivity().findViewById(R.id.createCity);
         createPhone = (EditText) getActivity().findViewById(R.id.createPhone);
         createWebsite = (EditText) getActivity().findViewById(R.id.createWebsite);
@@ -638,6 +638,10 @@ public class CreatePoiFragment extends Fragment implements TimeCallback, Feature
         tags.put(poiFeature.getKey(), poiFeature.getValue());
         if (createName.getText().toString().length() > 0)//update name
             tags.put("name", createName.getText().toString());
+        if (createHouseNumber.getText().toString().length() > 0)
+            tags.put("addr:housenumber", createHouseNumber.getText().toString());
+        if (createPostCode.getText().toString().length() > 0)
+            tags.put("addr:postcode", createPostCode.getText().toString());
         if (createStreet.getText().toString().length() > 0)
             tags.put("addr:street", createStreet.getText().toString());
         if (createCity.getText().toString().length() > 0)
