@@ -300,15 +300,16 @@ public class SearchFragment extends Fragment {
                 public void run() {
                     if (searchView != null && adapterElements != null && adapter != null)
                         if ((searchText == null || searchText.equals(""))) {
-                            getActivity().runOnUiThread(new Runnable() {
-                                @Override
-                                public void run() {
-                                    searchedPlaces.clear();//clear all previously searched places
-                                    adapterElements.clear();
-                                    //reset the recyclerView
-                                    adapter.resetAdapter();
-                                }
-                            });
+                            if (getActivity() != null)
+                                getActivity().runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        searchedPlaces.clear();//clear all previously searched places
+                                        adapterElements.clear();
+                                        //reset the recyclerView
+                                        adapter.resetAdapter();
+                                    }
+                                });
                         }
                 }
             }, 0, 1000);//Clear view every second
