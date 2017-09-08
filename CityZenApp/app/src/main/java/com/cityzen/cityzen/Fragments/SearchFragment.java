@@ -21,7 +21,7 @@ import com.cityzen.cityzen.Activities.MainActivity;
 import com.cityzen.cityzen.Models.DeviceLocationData;
 import com.cityzen.cityzen.Models.ParcelablePOI;
 import com.cityzen.cityzen.R;
-import com.cityzen.cityzen.Utils.Development.AppLog;
+import com.cityzen.cityzen.Utils.DeviceUtils.Connectivity;
 import com.cityzen.cityzen.Utils.DeviceUtils.DeviceUtils;
 import com.cityzen.cityzen.Utils.MapUtils.OpeningHours.OpeningHoursUtils;
 import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewItemClickInterface;
@@ -39,6 +39,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class SearchFragment extends Fragment {
 
@@ -52,6 +54,7 @@ public class SearchFragment extends Fragment {
     //List of the places that are queried in OSM search
     private List<Place> searchedPlaces = new ArrayList<>();
     private List<Place> adapterElements = new ArrayList<>();
+    private String searchText;
 
     public SearchFragment() {
         // Required empty public constructor
@@ -75,14 +78,18 @@ public class SearchFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         setupView();
         setupToolbarAndFilter();
-
+        clearSearchView();
     }
 
     private void setupView() {
         searchView = (SearchView) getActivity().findViewById(R.id.searchView);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+            boolean isTyping = false;
+
             @Override
             public boolean onQueryTextSubmit(String query) {
+                searchText = query;
                 searchedPlaces.clear();//clear all previously searched places
                 adapterElements.clear();
                 if (query != null && query.length() > 0) {//at least one character
@@ -96,22 +103,53 @@ public class SearchFragment extends Fragment {
                 return false;
             }
 
+
+            private Timer timer = new Timer();
+            private final long DELAY = 600; // milliseconds
+
             @Override
-            public boolean onQueryTextChange(String query) {
+            public boolean onQueryTextChange(final String query) {
+                searchText = query;
                 if ((query == null || query.equals("")) && adapterElements != null && adapter != null) {
                     searchedPlaces.clear();//clear all previously searched places
                     adapterElements.clear();
                     //reset the recyclerView
                     adapter.resetAdapter();
-                }
+                } else {
+                    //automatic search
+                    if (!isTyping) {
+//                        AppLog.log("started typing");
+                        // Send notification for start typing event
+                        isTyping = true;
+                    }
+                    timer.cancel();
+                    timer = new Timer();
+                    timer.schedule(
+                            new TimerTask() {
+                                @Override
+                                public void run() {
+                                    isTyping = false;
+//                                    AppLog.log("stopped typing");
+                                    //send notification for stopped typing event
+                                    //searching on text change with DELAY time of search
+                                    if (Connectivity.isConnected(getActivity()) && Connectivity.isConnectedFast(getActivity())) {
+                                        searchedPlaces.clear();//clear all previously searched places
+                                        adapterElements.clear();
+                                        if (query != null && query.length() > 0)//at least one character
+                                            search(query);
+                                        else {
+                                            searchedPlaces.clear();//clear all previously searched places
+                                            adapterElements.clear();
+                                            //reset the recyclerView
+                                            adapter.resetAdapter();
+                                        }
+                                    }
+                                }
+                            },
+                            DELAY
+                    );
 
-                //searching on text change flickers UI, maybe check on late updates
-                // else if (Connectivity.isConnected(getActivity()) && Connectivity.isConnectedFast(getActivity())) {
-                //                    searchedPlaces.clear();//clear all previously searched places
-                //                    adapterElements.clear();
-                //                    if (query != null && query.length() > 0)//at least one character
-                //                        search(query);
-                //                }
+                }
                 return false;
             }
         });
@@ -129,7 +167,7 @@ public class SearchFragment extends Fragment {
         filterCheckBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AppLog.log(searchedPlaces.size());
+//                AppLog.log(searchedPlaces.size());
                 filterElements();
             }
         });
@@ -246,9 +284,37 @@ public class SearchFragment extends Fragment {
         };
         ArrayList<Pair> pairs = new ArrayList<Pair>();
         pairs.add(new Pair("q=", searchString));
-        pairs.add(new Pair("q=", searchString + " " + deviceLocationData.getLocality()));
+        if (deviceLocationData != null && deviceLocationData.getLocality() != null)
+            pairs.add(new Pair("q=", searchString + " " + deviceLocationData.getLocality()));
 //        pairs.add(new Pair("q=", searchString + " " + deviceLocationData.getCountryName()));
         if (DeviceUtils.isInternetConnected(getActivity()))
             Request.getPlaces(action, pairs);
+    }
+
+
+    private void clearSearchView() {
+        Timer timer = new Timer();
+        try {
+            timer.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    if (searchView != null && adapterElements != null && adapter != null)
+                        if ((searchText == null || searchText.equals(""))) {
+                            if (getActivity() != null)
+                                getActivity().runOnUiThread(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        searchedPlaces.clear();//clear all previously searched places
+                                        adapterElements.clear();
+                                        //reset the recyclerView
+                                        adapter.resetAdapter();
+                                    }
+                                });
+                        }
+                }
+            }, 0, 1000);//Clear view every second
+        } catch (Exception e) {
+            timer.cancel();
+        }
     }
 }

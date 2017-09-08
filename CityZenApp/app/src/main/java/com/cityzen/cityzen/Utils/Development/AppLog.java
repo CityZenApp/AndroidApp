@@ -8,14 +8,14 @@ import android.util.Log;
 
 public class AppLog {
     public static void log(String s) {
-        Log.wtf("OPEN_CITY", s);
+        Log.wtf("CITYZEN", s);
     }
 
     public static void log(int s) {
-        Log.wtf("OPEN_CITY", String.valueOf(s));
+        Log.wtf("CITYZEN", String.valueOf(s));
     }
 
     public static void log(Object s) {
-        Log.wtf("OPEN_CITY", String.valueOf(s));
+        Log.wtf("CITYZEN", String.valueOf(s));
     }
 }

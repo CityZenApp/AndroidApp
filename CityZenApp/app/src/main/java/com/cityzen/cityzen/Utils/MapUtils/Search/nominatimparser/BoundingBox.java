@@ -1,9 +1,5 @@
 package com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser;
 
-
-/**
- * Created by antoine on 8/19/15.
- */
 public class BoundingBox {
 
     private double[] boundingbox;

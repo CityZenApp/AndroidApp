@@ -34,7 +34,6 @@ import com.cityzen.cityzen.Network.UpdatePoiTask;
 import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Fragments.Timer.TimeCallback;
 import com.cityzen.cityzen.Fragments.Timer.TimePickerFragment;
-import com.cityzen.cityzen.Utils.Development.AppLog;
 import com.cityzen.cityzen.Utils.Development.AppToast;
 import com.cityzen.cityzen.Utils.DeviceUtils.DeviceUtils;
 import com.cityzen.cityzen.Utils.MapUtils.MapUtils;
@@ -89,6 +88,8 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
     private EditText editName;
     private TextView editStreet;
     private TextView editCity;
+    private EditText editPostcode;
+    private EditText editHouseNumber;
     private EditText editPhone;
     private EditText editWebsite;
     private EditText editEmail;
@@ -101,6 +102,8 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
 
     //strings used to extract data from POI tags
     private String name = null;
+    private String housenumber = null;
+    private String postcode = null;
     private String street = null;
     private String city = null;
     private String phone = null;
@@ -196,13 +199,11 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
                 protected Void doInBackground(Void... voids) {
                     MapDataDao mapDao = new MapDataDao(osm);
                     editNode = mapDao.getNode(POI.getId());
-                    if (editNode != null)
-                        if (editNode.getTags() != null)
-                            for (Map.Entry<String, String> tag : editNode.getTags().entrySet()) {
-                                AppLog.log(tag.getKey() + " " + tag.getValue());
-                            }
-                    AppLog.log(editNode == null);
-                    AppLog.log("-------------------------------------------");
+//                    if (editNode != null)
+//                        if (editNode.getTags() != null)
+//                            for (Map.Entry<String, String> tag : editNode.getTags().entrySet()) {
+//                                AppLog.log(tag.getKey() + " " + tag.getValue());
+//                            }
                     return null;
                 }
 
@@ -239,6 +240,14 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
                 if (tag.getKey().equals("name")) {
                     name = tag.getValue();
                     editName.setText(name);
+                }
+                if (tag.getKey().equals("addr:housenumber")) {
+                    housenumber = tag.getValue();
+                    editHouseNumber.setText(housenumber);
+                }
+                if (tag.getKey().equals("addr:postcode")) {
+                    postcode = tag.getValue();
+                    editPostcode.setText(postcode);
                 }
                 if (tag.getKey().equals("addr:street")) {
                     street = tag.getValue();
@@ -296,6 +305,8 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
         editName = (EditText) getActivity().findViewById(R.id.editName);
         editStreet = (EditText) getActivity().findViewById(R.id.editStreet);
         editCity = (EditText) getActivity().findViewById(R.id.editCity);
+        editHouseNumber = (EditText) getActivity().findViewById(R.id.editHouseNumber);
+        editPostcode = (EditText) getActivity().findViewById(R.id.editPostcode);
         editPhone = (EditText) getActivity().findViewById(R.id.editPhone);
         editWebsite = (EditText) getActivity().findViewById(R.id.editWebsite);
         editEmail = (EditText) getActivity().findViewById(R.id.editEmail);
@@ -562,6 +573,10 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
         String comment = "Updating";
         if (name != null && !name.equalsIgnoreCase(editName.getText().toString()))
             comment += " name,";
+        if (postcode != null && !postcode.equalsIgnoreCase(editPostcode.getText().toString()))
+            comment += " postcode,";
+        if (housenumber != null && !housenumber.equalsIgnoreCase(editHouseNumber.getText().toString()))
+            comment += " housenumber,";
         if (street != null && !street.equalsIgnoreCase(editStreet.getText().toString()))
             comment += " street address,";
         if (city != null && !city.equalsIgnoreCase(editCity.getText().toString()))
@@ -579,6 +594,10 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
         }
 
         //if no tags found, they are just being added
+        if (housenumber == null && editHouseNumber.getText().length() > 0)
+            comment += " adding housenumber,";
+        if (postcode == null && editPostcode.getText().length() > 0)
+            comment += " adding postcode,";
         if (street == null && editStreet.getText().length() > 0)
             comment += " adding street address,";
         if (city == null && editCity.getText().length() > 0)
@@ -616,8 +635,7 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
                 @Override
                 public void onFailure(String errorMessage) {
                     openChangesetId = null;//clear changeset
-                    AppLog.log(errorMessage);
-                    new AppToast(getActivity()).centerViewToast(getString(R.string.an_error_occurred));
+                     new AppToast(getActivity()).centerViewToast(getString(R.string.an_error_occurred));
                 }
             }).execute();
         else {
@@ -638,6 +656,16 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
             tags.put("name", editName.getText().toString());
         else if (editName.getText().length() > 0)//adding new name
             tags.put("name", editName.getText().toString());
+
+        if (housenumber != null && !editHouseNumber.getText().toString().equals(housenumber))
+            tags.put("addr:housenumber", editHouseNumber.getText().toString());
+        else if (editHouseNumber.getText().length() > 0)
+            tags.put("addr:housenumber", editHouseNumber.getText().toString());
+
+        if (postcode != null && !editPostcode.getText().toString().equals(postcode))
+            tags.put("addr:postcode", editPostcode.getText().toString());
+        else if (editPostcode.getText().length() > 0)
+            tags.put("addr:postcode", editPostcode.getText().toString());
 
         if (street != null && !editStreet.getText().toString().equals(street))
             tags.put("addr:street", editStreet.getText().toString());

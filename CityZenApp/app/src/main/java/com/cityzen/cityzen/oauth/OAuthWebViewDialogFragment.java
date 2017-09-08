@@ -209,13 +209,13 @@ public class OAuthWebViewDialogFragment extends DialogFragment {
         webView.setVisibility(View.INVISIBLE);
 
         if (authorizeURL == null) {
-            Log.i(TAG, "Step 1: Retrieving request token...");
+//            Log.i(TAG, "Step 1: Retrieving request token...");
             new RetrieveRequestTokenTask().execute();
         } else if (verificationCode == null) {
-            Log.i(TAG, "Step 2: Authorize app on web page...");
+//            Log.i(TAG, "Step 2: Authorize app on web page...");
             webView.loadUrl(authorizeURL);
         } else {
-            Log.i(TAG, "Step 3: Retrieving access token and getting permissions...");
+//            Log.i(TAG, "Step 3: Retrieving access token and getting permissions...");
             new RetrieveAccessTokenTask().execute();
         }
     }
@@ -230,7 +230,7 @@ public class OAuthWebViewDialogFragment extends DialogFragment {
         errorGroup.setVisibility(View.VISIBLE);
         if (webView != null) webView.setVisibility(View.INVISIBLE);
 
-        Log.e(TAG, "Error during authorization", e);
+//        Log.e(TAG, "Error during authorization", e);
     }
 
 	/* ------------------------------------------------------------------------------------------ */

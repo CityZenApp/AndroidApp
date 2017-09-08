@@ -6,9 +6,9 @@ import java.util.ArrayList;
 
 public class ApplicationConstants {
     public final static String
-            NAME = "CityZen",
-            VERSION = "0.1",
-            USER_AGENT = NAME /*+ " " + VERSION*/;
+            NAME = "CityZen Android app",
+            VERSION = "v.1.0",
+            USER_AGENT = NAME + " " + VERSION;
 
     public static ArrayList<OsmFeature> OSM_TAGS = setupTags();
 

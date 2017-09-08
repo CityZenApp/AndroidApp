@@ -1,8 +1,5 @@
 package com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser;
 
-/**
- * Created by antoine on 8/20/15.
- */
 public class Pair implements Comparable<Pair> {
 
     public final String first;

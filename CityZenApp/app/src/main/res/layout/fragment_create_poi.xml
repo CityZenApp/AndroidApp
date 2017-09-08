@@ -89,6 +89,15 @@
                         android:text="@string/address" />
 
                     <EditText
+                        android:id="@+id/createHouseNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="@string/house_number"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/darkBackground" />
+
+                    <EditText
                         android:id="@+id/createStreet"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -103,6 +112,15 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.5"
                         android:hint="@string/city"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/darkBackground" />
+
+                    <EditText
+                        android:id="@+id/createPostCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:hint="@string/postcode"
                         android:textColor="@android:color/black"
                         android:textColorHint="@color/darkBackground" />
                 </LinearLayout>
