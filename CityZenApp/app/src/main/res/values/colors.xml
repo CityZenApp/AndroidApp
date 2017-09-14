@@ -8,4 +8,5 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorAppGreen">#47df86</color>
     <color name="darkBackground">#cbcbcb</color>
+    <color name="logoBackground">#d8331d</color>
 </resources>

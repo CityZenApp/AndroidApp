@@ -186,6 +186,8 @@
                 android:orientation="vertical">
 
                 <Button
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
                     android:id="@+id/poiDialogDirectionsButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

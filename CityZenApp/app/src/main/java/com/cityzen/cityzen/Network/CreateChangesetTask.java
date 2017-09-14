@@ -57,9 +57,9 @@ public class CreateChangesetTask extends AsyncTask {
         }
         if (body != null) {
             response = createChangeset(OsmModule.OSM_API_URL + "changeset/create", "PUT", body);
-            AppLog.log(response);
-            AppLog.log("Subscribed to: " + subscribeUserToChangeset(response));
-            AppLog.log("--------------------------------------");
+//            AppLog.log(response);
+//            AppLog.log("Subscribed to: " + subscribeUserToChangeset(response));
+//            AppLog.log("--------------------------------------");
         }
         return null;
     }

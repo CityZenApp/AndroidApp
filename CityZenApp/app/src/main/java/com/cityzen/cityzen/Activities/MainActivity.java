@@ -13,6 +13,7 @@ import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -33,6 +34,7 @@ import android.widget.TextView;
 
 import com.cityzen.cityzen.OsmModule;
 import com.cityzen.cityzen.R;
+import com.cityzen.cityzen.Utils.Development.AppLog;
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
@@ -252,20 +254,26 @@ public class MainActivity extends AppCompatActivity
 
     /**
      * Method used to get the name of the logged in user
+     *
+     * @param getUserInfo
      */
-//    private void logUserInfo() {
-//        new AsyncTask<Void, Void, Void>() {
-//            @Override
-//            protected Void doInBackground(Void... voids) {
-//                AppLog.log("USER INFO");
-//                AppLog.log(OsmModule.userDao(osm).getMine().id);
-////                AppLog.log(OsmModule.userDao(osm).getMine().);
-//                AppLog.log(OsmModule.userDao(osm).get(OsmModule.userDao(osm).getMine().id).displayName);
-//
-//                return null;
-//            }
-//        }.execute();
-//    }
+    public void logUserInfo(final SettingsFragment.getUserInfo getUserInfo) {
+        new AsyncTask<Object, Object, Void>() {
+            @Override
+            protected Void doInBackground(Object... voids) {
+                try {
+                    String username = OsmModule.userDao(osm).get(OsmModule.userDao(osm).getMine().id).displayName;
+                    if (username != null)
+                        getUserInfo.onResponse(username);
+                    else
+                        getUserInfo.onFailure();
+                } catch (Exception e) {
+                    getUserInfo.onFailure();
+                }
+                return null;
+            }
+        }.execute();
+    }
 
     /*****************************************Bottom Navigation methods***********************************************/
     /**
@@ -647,6 +655,12 @@ public class MainActivity extends AppCompatActivity
                     .remove(poiListFragment)
                     .commit();
 
+        //if MapFragment is open close any routing
+        MapFragment MapFragment = (MapFragment) getSupportFragmentManager().findFragmentByTag("MapFragment");
+        if (MapFragment != null) {
+            MapFragment.clearMapDisplay();
+        }
+
         Fragment fragment = EditPoiFragment.newInstance(poi);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.container, fragment, "EditPoiFragment");// give your fragment container id in first parameter
@@ -825,6 +839,34 @@ public class MainActivity extends AppCompatActivity
         // now finally we can upload our changes!
 //        questAutoSyncer.triggerAutoUpload();
 //        Toast.makeText(this, "onOAuthAuthorizationVerified", Toast.LENGTH_LONG).show();
+
+
+        //if SettingsFragment is open close any routing
+        SettingsFragment SettingsFragment = (SettingsFragment) getSupportFragmentManager().findFragmentByTag("SettingsFragment");
+        if (SettingsFragment != null) {
+            SettingsFragment.loadUsername();
+        }
+
+    }
+
+
+    //login, logout from OSM
+    public void loginToOSM() {
+        OAuthWebViewDialogFragment dlg = OAuthWebViewDialogFragment.create(
+                OAuth.createConsumer(), OAuth.createProvider());
+        dlg.show(getFragmentManager(), OAuthWebViewDialogFragment.TAG);
+    }
+
+    public void logoutFromOSM() {
+        OAuth.deleteConsumer(prefs);
+        //clear the connection
+        setupOsmConnection();
+
+        //if SettingsFragment is open close any routing
+        SettingsFragment SettingsFragment = (SettingsFragment) getSupportFragmentManager().findFragmentByTag("SettingsFragment");
+        if (SettingsFragment != null) {
+            SettingsFragment.loadUsername();
+        }
     }
 
 

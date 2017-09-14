@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 
 import com.cityzen.cityzen.R;
+import com.cityzen.cityzen.Utils.Development.AppLog;
 
 import java.util.List;
 import java.util.Map;
@@ -49,7 +50,7 @@ public class ElementListAdapter extends RecyclerView.Adapter<ElementListAdapter.
         boolean hasName = false;
         boolean hasAddress = false;
         boolean hasOpeningHours = false;
-
+        String poiCategory = "";
         Map<String, String> tags = data.get(position).tags;
         if (tags != null)
             for (Map.Entry<String, String> tag : tags.entrySet()) {
@@ -72,7 +73,21 @@ public class ElementListAdapter extends RecyclerView.Adapter<ElementListAdapter.
                     holder.openingHours.setText(tag.getValue());
                     hasOpeningHours = true;
                 }
+
+                if (tag.getKey().equals("amenity") ||
+                        tag.getKey().equals("shop") ||
+                        tag.getKey().equals("tourism") ||
+                        tag.getKey().equals("historic") ||
+                        tag.getKey().equals("building") ||
+                        tag.getKey().equals("public_transport") ||
+                        tag.getKey().equals("healthcare")) {
+                    poiCategory = tag.getValue();
+                }
+
             }
+        if (!hasName && !poiCategory.equals("") && poiCategory.length() > 1)
+            holder.title.setText((poiCategory.substring(0, 1).toUpperCase() + poiCategory.substring(1).toLowerCase())
+                    .replaceAll("_", " "));
 
         if (!hasName && tags != null)
             updatePoiNameIfNeeded(categoryId, tags, holder);
@@ -112,33 +127,7 @@ public class ElementListAdapter extends RecyclerView.Adapter<ElementListAdapter.
         }
     }
 
-    /**
-     * <array name="poi_titles">
-     * <item>Bars/Cafes</item>
-     * <item>Hotel/Hostel</item>
-     * <item>Tourist attractions</item>
-     * <item>Atm</item>
-     * <item>Transportation</item>
-     * <item>Gas stations</item>
-     * <item>Drugstores</item>
-     * <item>Mobile phone store</item>
-     * <item>Restaurants</item>
-     * <item>FastFood</item>
-     * </array>
-     * <p>
-     * <array name="poi_id">
-     * <item>1</item>
-     * <item>2</item>
-     * <item>3</item>
-     * <item>4</item>
-     * <item>5</item>
-     * <item>6</item>
-     * <item>7</item>
-     * <item>8</item>
-     * <item>9</item>
-     * <item>10</item>
-     * </array>
-     */
+
     private void updatePoiNameIfNeeded(int categoryId, Map<String, String> tags, ViewHolder holder) {
         switch (categoryId) {
             case 1:
@@ -148,13 +137,11 @@ public class ElementListAdapter extends RecyclerView.Adapter<ElementListAdapter.
             case 3:
                 break;
             case 4:
-                //atm
-                if (tags != null)
-                    for (Map.Entry<String, String> tag : tags.entrySet())
-                        if (tag.getKey().equals("operator"))
-                            holder.title.setText(tag.getValue());
                 break;
             case 5:
+
+                break;
+            case 6:
                 //Transportation
                 if (tags != null)
                     for (Map.Entry<String, String> tag : tags.entrySet())
@@ -163,9 +150,6 @@ public class ElementListAdapter extends RecyclerView.Adapter<ElementListAdapter.
                             holder.title.setText(transportation.replaceAll("_", " "));
                         }
                 break;
-            case 6:
-
-                break;
             case 7:
 
                 break;
@@ -173,13 +157,35 @@ public class ElementListAdapter extends RecyclerView.Adapter<ElementListAdapter.
 
                 break;
             case 9:
+                //atm
+                if (tags != null)
+                    for (Map.Entry<String, String> tag : tags.entrySet())
+                        if (tag.getKey().equals("operator"))
+                            holder.title.setText(tag.getValue());
 
                 break;
             case 10:
+
+                break;
+            case 11:
+
+                break;
+            case 12:
+
+                break;
+            case 13:
+
+                break;
+            case 14:
+
+                break;
+            case 15:
 
                 break;
             default:
                 break;
         }
     }
+
+
 }
