@@ -4,22 +4,22 @@
     <!--https://github.com/CityZenApp/CityZen-Android/wiki/Scrapbook-->
     <!--Points Of interest-->
     <array name="poi_titles"> <!--Localization needed-->
-        <item>Cafes</item>
-        <item>Bars/Clubs</item>
-        <item>Restaurants</item>
-        <item>Fast food</item>
-        <item>Tourist attractions</item>
-        <item>Hotels/Hostels</item>
-        <item>Public transport</item>
-        <item>Gas stations</item>
-        <item>Drugstores\nHealthcare centers</item>
-        <item>Banks/ATMs</item>
-        <item>Mobile phone store</item>
-        <item>Super Markets</item>
-        <item>Shopping Malls</item> <!-- http://wiki.openstreetmap.org/wiki/Tag:shop%3Dmall-->
-        <item>Parkings</item>
-        <item>Rent a bicycle</item>
-        <item>Rent a car &amp; \nCar sharing</item>
+        <item>@string/Cafes</item>
+        <item>@string/Bars_Clubs</item>
+        <item>@string/Restaurants</item>
+        <item>@string/FastFood</item>
+        <item>@string/Tourism</item>
+        <item>@string/Hotels_Hostels</item>
+        <item>@string/Transportation</item>
+        <item>@string/GasStations</item>
+        <item>@string/Pharmacy_Healthcare</item>
+        <item>@string/Banks_ATMs_Exchange</item>
+        <item>@string/MobilePhoneStore</item>
+        <item>@string/Markets_Kiosks</item>
+        <item>@string/Shopping_Malls</item> <!-- http://wiki.openstreetmap.org/wiki/Tag:shop%3Dmall-->
+        <item>@string/Parkings</item>
+        <item>@string/RentBicycle</item>
+        <item>@string/RentCar_CareSharing</item>
     </array>
 
     <array name="poi_id"> <!--Don't localize, used for app functionality-->

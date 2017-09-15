@@ -16,7 +16,7 @@
     <string name="location_request_toast">CityZen must have location to provide map services</string>
     <string name="allow_permission">Allow</string>
     <string name="deny_permission">Deny</string>
-    <string name="no_pois_near_user_location">No POIs near your location</string>
+    <string name="no_pois_near_user_location">no services found near your location</string>
     <string name="enable_gps_to_continue">Can\'t find your location. \nEnable GPS to continue</string>
     <string name="calculating_device_location">We are figuring out your location. \nPlease wait. </string>
     <string name="user_agent">CityZen</string>
@@ -42,7 +42,7 @@
 
 
     <string name="osm_copyright" translatable="false"><![CDATA[<font color=\"#000\">© </font><font color=\"#1565C0\">OpenStreetMap </font><font color=\"#000\">contributors</font>]]></string>
-    <string name="directions_to_here">Directions by car</string>
+    <string name="directions_to_here">directions by car</string>
     <string name="create_poi">Create POI</string>
     <string name="_24_7">24/7</string>
     <string name="opening">Opening</string>
@@ -71,14 +71,10 @@
     <string name="created_succesfully">created successfully</string>
     <string name="sort_by_name">Sort by name</string>
     <string name="add_a_new_marker_on_the_map">Add a marker on the map</string>
-    <string name="about_us">About us</string>
-    <string name="about_text">CityZen is an open source Android app that helps you navigate and explore your city easily.
-        It helps you find points of interest such as ATMs, gas stations, drugstores, mobile phone stores and other points that might interest you.
-        The app shows these POIs based on your location of your mobile phone, but it does so by respecting your privacy since we don\'t keep your navigation data.
-        The app is licensed in an open source because we want to engage as many people as possible in improving the app.
-        It is also a way of respecting tools and platforms such as OpenStreetMap that respect our freedoms.
-        If you are an OpenStreetMap contributor you can easily add information to the POIs by editing them.
-        \n\n CityZen app was initiated in Albania with a lot of ❤️ for free open source culture.</string>
+    <string name="about_us">About the project</string>
+    <string name="about_text">CityZen is an open source Android app that helps you navigate and explore the city easily.
+        With CityZen you find points of interest (POIs) such as ATMs, gas stations, drugstores, mobile phone stores and other interesting services near you. The app shows these POIs based on your location of your smartphone, but it does so by respecting your privacy since we don’t keep your navigation data.
+The app is open source licensed because we want the project to be empowered by the community for the community. We initiated this project as a way of empowering tools and platforms such as OpenStreetMap that respect our freedoms. If you are an OpenStreetMap contributor you can easily add information to the POIs by editing them inside CityZen.</string>
     <string name="domain">www.cityzenapp.co</string>
     <string name="license_link">www.cityzenapp.co/license</string>
     <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
@@ -90,5 +86,32 @@
     <string name="osm_routing_unavailable">OSM routing isn\'t available at this time. Try again later</string>
     <string name="house_number">House number</string>
     <string name="postcode">Postcode</string>
+    <string name="get_involved">Get involved</string>
+    <string name="get_involved_link">www.github.com/CityZenApp</string>
+    <string name="credits">Credits</string>
+    <string name="credits_link">www.cityzenapp.co/credits</string>
+    <string name="open_source_culture">CityZen app was initiated in Albania with a lot of ♥\n for free and open source culture.</string>
 
+
+    <!--POI List-->
+    <string name="Cafes">Cafes</string>
+    <string name="Bars_Clubs">Bars/Clubs</string>
+    <string name="Restaurants">Restaurants</string>
+    <string name="FastFood">Fast food</string>
+    <string name="Tourism">Tourism</string>
+    <string name="Hotels_Hostels">Hotels/Hostels</string>
+    <string name="Transportation">Transportation</string>
+    <string name="GasStations">Gas stations</string>
+    <string name="Pharmacy_Healthcare">Pharmacy/Healthcare</string>
+    <string name="Banks_ATMs_Exchange">Banks/ATMs/Exchange</string>
+    <string name="MobilePhoneStore">Mobile phone store</string>
+    <string name="Markets_Kiosks">Markets/Kiosks</string>
+    <string name="Shopping_Malls">Shopping Malls</string>
+    <string name="Parkings">Parkings</string>
+    <string name="RentBicycle">Rent a bicycle</string>
+    <string name="RentCar_CareSharing">Rent a car &amp; Care sharing</string>
+    <string name="logged_in_as">Logged in as:</string>
+
+    <string name="login_to_osm">Login to OSM</string>
+    <string name="logout">LogOut</string>
 </resources>

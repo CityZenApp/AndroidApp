@@ -1,5 +1,6 @@
 package com.cityzen.cityzen.Fragments;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
 
@@ -83,6 +85,8 @@ public class SearchFragment extends Fragment {
 
     private void setupView() {
         searchView = (SearchView) getActivity().findViewById(R.id.searchView);
+        searchView.setIconified(false);
+
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
             boolean isTyping = false;
@@ -217,7 +221,7 @@ public class SearchFragment extends Fragment {
         }
     }
 
-    private void setupRecyclerView() {
+    private void setupRecyclerView() throws Exception{
         if (adapter == null) {
             recyclerView = (RecyclerView) getActivity().findViewById(R.id.searchRecyclerView);
             adapter = new PlaceListAdapter(getActivity(), adapterElements);
@@ -278,7 +282,10 @@ public class SearchFragment extends Fragment {
                 searchedPlaces = places;
                 adapterElements.clear();
                 adapterElements = new ArrayList<>(searchedPlaces);
-                setupRecyclerView();
+                try {
+                    setupRecyclerView();
+                } catch (Exception ignored) {
+                }
                 filterElements();//filter elements if needed
             }
         };

@@ -60,11 +60,9 @@ public class UpdatePoiTask extends AsyncTask {
 
             try {
                 String body = XML_Util.updateNodeXmlBody(tagsToUpdate, node.getId(), changesetId, poi.getLatitude(), poi.getLongitude(), node.getVersion());
-                AppLog.log(body);
 
                 response = updateNode(node.getId(), body);
                 //return the new version of the POI
-                AppLog.log(response);
             } catch (Exception e) {
                 e.printStackTrace();
             }

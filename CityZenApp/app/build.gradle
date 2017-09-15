@@ -48,5 +48,6 @@ dependencies {
     compile 'com.github.clans:fab:1.6.4'
     compile 'com.github.ittianyu:BottomNavigationViewEx:1.1.7'
     compile 'pub.devrel:easypermissions:0.4.0'
+    compile 'io.github.rockerhieu:emojicon:1.4.0'
     testCompile 'junit:junit:4.12'
 }

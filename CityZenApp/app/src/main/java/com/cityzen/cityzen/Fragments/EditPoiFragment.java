@@ -34,6 +34,7 @@ import com.cityzen.cityzen.Network.UpdatePoiTask;
 import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Fragments.Timer.TimeCallback;
 import com.cityzen.cityzen.Fragments.Timer.TimePickerFragment;
+import com.cityzen.cityzen.Utils.Development.AppLog;
 import com.cityzen.cityzen.Utils.Development.AppToast;
 import com.cityzen.cityzen.Utils.DeviceUtils.DeviceUtils;
 import com.cityzen.cityzen.Utils.MapUtils.MapUtils;
@@ -173,6 +174,13 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
         // deactivate map
         if (map != null)
             map.onDetach();
+
+        //check if the app goes back to MapFragment
+        //if MapFragment is open close any routing
+        MapFragment MapFragment = (MapFragment) getActivity().getSupportFragmentManager().findFragmentByTag("MapFragment");
+        if (MapFragment != null) {
+            ((MainActivity) getActivity()).showNavigation();
+        }
     }
 
     @Override
@@ -635,7 +643,7 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
                 @Override
                 public void onFailure(String errorMessage) {
                     openChangesetId = null;//clear changeset
-                     new AppToast(getActivity()).centerViewToast(getString(R.string.an_error_occurred));
+                    new AppToast(getActivity()).centerViewToast(getString(R.string.an_error_occurred));
                 }
             }).execute();
         else {

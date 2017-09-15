@@ -172,9 +172,14 @@ public class PoiDetailsFragment extends DialogFragment {
                         && !tag.getKey().contains("historic")
                         && !tag.getKey().contains("tourism")
                         && !tag.getKey().contains("building")
-                        //add more constraints if necessary to remove form detailed preview
+                        && !tag.getKey().contains("wikipedia")
+                    //add more constraints if necessary to remove form detailed preview
                         )
-                    poiDialogContent.addView(inflateRowItem(tag.getKey(), tag.getValue()));
+                    poiDialogContent.addView(
+                            inflateRowItem(
+                                    tag.getKey().replaceAll("_", " ").substring(0, 1).toUpperCase() + tag.getKey().replaceAll("_", " ").substring(1).toLowerCase(),
+                                    tag.getValue()
+                            ));
             }
         updateFavoriteButton();
     }
@@ -200,15 +205,15 @@ public class PoiDetailsFragment extends DialogFragment {
         titleTextView.setText(title);
         valueTextView.setText(value);
         //Linking content
-        if (title.equals("email") || title.equals("contact:email")) {
+        if (title.toLowerCase().equals("email") || title.toLowerCase().equals("contact:email")) {
             Linkify.addLinks(valueTextView, Linkify.EMAIL_ADDRESSES);
             valueTextView.setLinksClickable(true);
         }
-        if (title.equals("website") || title.equals("contact:website")) {
+        if (title.toLowerCase().equals("website") || title.toLowerCase().equals("contact:website")) {
             Linkify.addLinks(valueTextView, Linkify.WEB_URLS);
             valueTextView.setLinksClickable(true);
         }
-        if (title.equals("phone") || title.equals("phone:mobile") || title.equals("contact:mobile") || title.equals("contact:phone")) {
+        if (title.toLowerCase().equals("phone") || title.toLowerCase().equals("phone:mobile") || title.toLowerCase().equals("contact:mobile") || title.toLowerCase().equals("contact:phone")) {
             Linkify.addLinks(valueTextView, Linkify.PHONE_NUMBERS);
             valueTextView.setLinksClickable(true);
         }

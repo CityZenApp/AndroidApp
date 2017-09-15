@@ -133,7 +133,7 @@ public class CategoriesFragment extends Fragment {
                     displayPOIs(titles.getString(position), poiElements, categoryIDs.getInteger(position, -1));
                 else if (poiTagsReceived == FilterCategory.getFilters(position).size() && poiElements.size() == 0) {
                     try {
-                        new AppToast(getActivity()).toast(getString(R.string.no_pois_near_user_location));
+                        new AppToast(getActivity()).longToast(getString(R.string.no_pois_near_user_location));
                     } catch (Exception e) {
                     }
                     ((MainActivity) getActivity()).hideLoadingScreenWithNavigation();

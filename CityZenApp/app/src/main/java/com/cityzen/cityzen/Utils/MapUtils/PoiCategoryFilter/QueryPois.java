@@ -59,7 +59,10 @@ public class QueryPois {
         streamsResponseCall.enqueue(new Callback<OverpassResponse>() {
             @Override
             public void onResponse(Call<OverpassResponse> call, Response<OverpassResponse> response) {
-                listener.onPoiReceived(response.body().elements);
+                if (response != null && response.body() != null && response.body().elements != null)
+                    listener.onPoiReceived(response.body().elements);
+                else
+                    listener.onFailure();
             }
 
             @Override
