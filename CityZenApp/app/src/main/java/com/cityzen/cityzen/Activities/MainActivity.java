@@ -538,7 +538,8 @@ public class MainActivity extends AppCompatActivity
     private void showMyLocation() {
         if (navigation.getSelectedItemId() == R.id.navigation_map) {
             MapFragment fragment = (MapFragment) getSupportFragmentManager().findFragmentByTag("MapFragment");
-            fragment.showMyLocation();
+            if (fragment != null)
+                fragment.showMyLocation();
         }
     }
 

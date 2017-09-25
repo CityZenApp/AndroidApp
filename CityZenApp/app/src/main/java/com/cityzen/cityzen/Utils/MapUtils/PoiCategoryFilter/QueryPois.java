@@ -21,7 +21,7 @@ public class QueryPois {
     private double latitude;
     private double longitude;
     private boolean sortByDistance = true;
-    private int maxResponseCount = 20;
+    private int maxResponseCount = 10000;
     private PoiResponseListener listener;
 
     public QueryPois(int radius, double latitude, double longitude, boolean sortByDistance, int maxResponseCount, PoiResponseListener listener) {

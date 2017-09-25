@@ -173,6 +173,7 @@ public class PoiDetailsFragment extends DialogFragment {
                         && !tag.getKey().contains("tourism")
                         && !tag.getKey().contains("building")
                         && !tag.getKey().contains("wikipedia")
+                        && !tag.getKey().contains("wikidata")
                     //add more constraints if necessary to remove form detailed preview
                         )
                     poiDialogContent.addView(

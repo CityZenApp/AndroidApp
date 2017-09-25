@@ -58,7 +58,7 @@ public class Request {
         protected Void doInBackground(Pair... params) {
             StringBuilder jsonResult = new StringBuilder();
             StringBuilder sb = new StringBuilder(QUERY);
-            sb.append("format=json&polygon=0&addressdetails=0&extratags=1&limit=20&");
+            sb.append("format=json&polygon=0&addressdetails=0&extratags=1&limit=50&");
             for (ArrayList<Pair> pairs : parameters) {
                 for (Pair p : pairs) {
                     sb.append(p.first + "=" + p.second + "&");

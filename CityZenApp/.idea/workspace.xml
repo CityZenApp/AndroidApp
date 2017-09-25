@@ -41,84 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Activities/MainActivity.java">
+      <file leaf-file-name="CategoriesFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/CategoriesFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1093">
-              <caret line="852" column="17" selection-start-line="852" selection-start-column="17" selection-end-line="852" selection-end-column="17" />
-              <folding>
-                <element signature="method#buildAlertMessageNoGps#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#getDeviceLocation#0;class#MainActivity#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FilterCategory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/PoiCategoryFilter/FilterCategory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1738">
-              <caret line="79" column="58" selection-start-line="79" selection-start-column="58" selection-end-line="79" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppLog.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/Development/AppLog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdatePoiTask.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Network/UpdatePoiTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReverseGeocodingTask.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/OsmNodeUtils/ReverseGeocodingTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateChangesetTask.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Network/CreateChangesetTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditPoiFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/EditPoiFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueryPois.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/PoiCategoryFilter/QueryPois.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+            <state relative-caret-position="2068">
+              <caret line="124" column="37" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -127,18 +54,58 @@
       <file leaf-file-name="SearchFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/SearchFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6204">
-              <caret line="326" column="1" selection-start-line="326" selection-start-column="1" selection-end-line="326" selection-end-column="1" />
+            <state relative-caret-position="2332">
+              <caret line="148" column="61" selection-start-line="148" selection-start-column="61" selection-end-line="148" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OAuth.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/oauth/OAuth.java">
+      <file leaf-file-name="Request.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/Search/nominatimparser/Request.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="946">
-              <caret line="54" column="37" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="37" />
+            <state relative-caret-position="1012">
+              <caret line="60" column="81" selection-start-line="60" selection-start-column="81" selection-end-line="60" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="44" column="45" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PoiDetailsFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/PoiDetailsFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="178" column="45" selection-start-line="178" selection-start-column="45" selection-end-line="178" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryPois.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/PoiCategoryFilter/QueryPois.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -1677,7 +1644,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$PROJECT_DIR$" value="4511440613379" />
-        <entry key="C:\Users\valdi\Desktop\CityZen-Android\CityZenApp" value="4515639065500" />
+        <entry key="C:\Users\valdi\Desktop\CityZen-Android\CityZenApp" value="4518955405051" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2048,22 +2015,27 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/map_button_background.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_poi_details.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_favorite_poi_true.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/PoiDetailsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/CategoriesFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Adapters/ElementListAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/SettingsFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/SearchFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/oauth/OAuth.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Activities/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/PoiCategoryFilter/FilterCategory.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/PoiCategoryFilter/QueryPois.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/EditPoiFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Network/CreateChangesetTask.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/OsmNodeUtils/ReverseGeocodingTask.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Network/UpdatePoiTask.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/Development/AppLog.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/SettingsFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/MapFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/SearchFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/DeviceUtils/Connectivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Activities/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/PoiListFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/PoiCategoryFilter/QueryPois.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/Search/nominatimparser/Request.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/PoiDetailsFragment.java" />
       </list>
     </option>
   </component>
@@ -2098,6 +2070,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2156,72 +2132,12 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CityZenApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cityzen" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapUtils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CityZenApp" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cityzen" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MapUtils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PoiCategoryFilter" />
+              <option name="myItemId" value="Fragments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2570,7 +2486,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.50213903" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.50213903" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6129412" sideWeight="0.49786097" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.49786097" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2581,6 +2497,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2792696" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2593,7 +2510,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2645,20 +2561,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/OpeningHours/OpeningHoursUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/OsmNodeUtils/NodeInfoTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/OsmNodeUtils/NodeResponseListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -2760,14 +2662,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="50" column="48" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2788,7 +2682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="34" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2796,7 +2689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
           <caret line="99" column="80" selection-start-line="99" selection-start-column="80" selection-end-line="99" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2824,21 +2716,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/Search/nominatimparser/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-821">
-          <caret line="87" column="72" selection-start-line="87" selection-start-column="72" selection-end-line="87" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/Development/AppToast.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-          <folding>
-            <element signature="e#867#868#0" expanded="false" />
-            <element signature="e#935#936#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2846,7 +2727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2857,29 +2737,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Adapters/ElementListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1518">
-          <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/MapFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1603">
-          <caret line="325" column="37" selection-start-line="325" selection-start-column="37" selection-end-line="325" selection-end-column="37" />
-          <folding>
-            <element signature="e#13892#13935#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2890,14 +2751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/CategoriesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="176" column="23" selection-start-line="176" selection-start-column="23" selection-end-line="176" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Activities/SplashScreenActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -2905,34 +2758,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/PoiListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3916">
-          <caret line="223" column="48" selection-start-line="223" selection-start-column="46" selection-end-line="223" selection-end-column="48" />
-          <folding>
-            <element signature="method#sortByName#0;class#PoiListFragment#0" expanded="false" />
-            <element signature="method#sortByClosestToLocation#0;class#PoiListFragment#0" expanded="false" />
-            <element signature="method#distance#0;class#PoiListFragment#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/PoiDetailsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/OsmModule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding>
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2940,7 +2769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="597" column="55" selection-start-line="597" selection-start-column="55" selection-end-line="597" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2948,101 +2776,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1144">
           <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2530">
-          <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/SettingsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="54" column="57" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/SearchFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6204">
-          <caret line="326" column="1" selection-start-line="326" selection-start-column="1" selection-end-line="326" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/oauth/OAuth.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="946">
           <caret line="54" column="37" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Activities/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1093">
-          <caret line="852" column="17" selection-start-line="852" selection-start-column="17" selection-end-line="852" selection-end-column="17" />
-          <folding>
-            <element signature="method#buildAlertMessageNoGps#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#getDeviceLocation#0;class#MainActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/PoiCategoryFilter/QueryPois.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/PoiCategoryFilter/FilterCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1738">
-          <caret line="79" column="58" selection-start-line="79" selection-start-column="58" selection-end-line="79" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/EditPoiFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Network/CreateChangesetTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
+        <state relative-caret-position="858">
           <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/OsmNodeUtils/ReverseGeocodingTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Network/UpdatePoiTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
+        <state relative-caret-position="902">
           <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3050,6 +2807,135 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/SettingsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="80" column="21" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/MapFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="289" column="43" selection-start-line="289" selection-start-column="43" selection-end-line="289" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/EditPoiFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="563" column="93" selection-start-line="563" selection-start-column="91" selection-end-line="563" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/DeviceUtils/Connectivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/PoiCategoryFilter/FilterCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/OsmNodeUtils/ReverseGeocodingTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/PoiListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="96" column="5" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Adapters/ElementListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/OsmNodeUtils/NodeInfoTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Activities/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="610" column="27" selection-start-line="610" selection-start-column="27" selection-end-line="610" selection-end-column="27" />
+          <folding>
+            <element signature="method#buildAlertMessageNoGps#0;class#MainActivity#0" expanded="false" />
+            <element signature="method#getDeviceLocation#0;class#MainActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/CategoriesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2068">
+          <caret line="124" column="37" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/PoiCategoryFilter/QueryPois.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/SearchFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2332">
+          <caret line="148" column="61" selection-start-line="148" selection-start-column="61" selection-end-line="148" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Utils/MapUtils/Search/nominatimparser/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="60" column="81" selection-start-line="60" selection-start-column="81" selection-end-line="60" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="44" column="45" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cityzen/cityzen/Fragments/PoiDetailsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="178" column="45" selection-start-line="178" selection-start-column="45" selection-end-line="178" selection-end-column="45" />
           <folding />
         </state>
       </provider>

@@ -289,7 +289,8 @@ public class MapFragment extends Fragment implements MapEventsReceiver {
                     map.getOverlays().remove(routeDestinationMarker);
                 //add destination marker if
                 routeDestinationMarker = MapUtils.addMarker(getActivity(), map, toLatitude, toLongitude);
-                ((MainActivity) getActivity()).routeAddedOnMap(routeDestinationMarker, existingRoute);
+                if (getActivity() != null)
+                    ((MainActivity) getActivity()).routeAddedOnMap(routeDestinationMarker, existingRoute);
 
                 //start task to redraw the route ever 30 seconds, if no previous timer is set ont this route
                 if (routeUpdateTimer == null)

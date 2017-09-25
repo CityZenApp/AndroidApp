@@ -78,14 +78,17 @@ public class SettingsFragment extends Fragment {
 
             @Override
             public void onFailure() {
-                getActivity().runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        loginUsername.setVisibility(View.GONE);
-                        authenticateToOSM.setVisibility(View.VISIBLE);
-                        authenticateToOSM.setText(getText(R.string.login_to_osm));
-                    }
-                });
+                try {
+                    getActivity().runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            loginUsername.setVisibility(View.GONE);
+                            authenticateToOSM.setVisibility(View.VISIBLE);
+                            authenticateToOSM.setText(getText(R.string.login_to_osm));
+                        }
+                    });
+                } catch (Exception ignored) {
+                }
             }
         });
     }
