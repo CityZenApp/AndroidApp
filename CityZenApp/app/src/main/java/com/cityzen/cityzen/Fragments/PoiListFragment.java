@@ -87,11 +87,13 @@ public class PoiListFragment extends Fragment {
         //get form MainActivity
         poiElements = ((MainActivity) getActivity()).getPoiElementsOfCategory();
         //sort by closest to location
-        List<Element> sortedElements = sortByClosestToLocation(
-                new ArrayList<Element>(poiElements),
-                ((MainActivity) getActivity()).getLastKnownLocation());
-        poiElements = new ArrayList<>(sortedElements);
-        adapterElements = new ArrayList<>(poiElements);
+        if (poiElements != null) {
+            List<Element> sortedElements = sortByClosestToLocation(
+                    new ArrayList<Element>(poiElements),
+                    ((MainActivity) getActivity()).getLastKnownLocation());
+            poiElements = new ArrayList<>(sortedElements);
+            adapterElements = new ArrayList<>(poiElements);
+        }
     }
 
     @Override

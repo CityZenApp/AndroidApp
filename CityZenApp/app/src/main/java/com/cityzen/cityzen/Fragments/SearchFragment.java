@@ -145,7 +145,8 @@ public class SearchFragment extends Fragment {
                                             searchedPlaces.clear();//clear all previously searched places
                                             adapterElements.clear();
                                             //reset the recyclerView
-                                            adapter.resetAdapter();
+                                            if (adapter != null)
+                                                adapter.resetAdapter();
                                         }
                                     }
                                 }
@@ -221,7 +222,7 @@ public class SearchFragment extends Fragment {
         }
     }
 
-    private void setupRecyclerView() throws Exception{
+    private void setupRecyclerView() throws Exception {
         if (adapter == null) {
             recyclerView = (RecyclerView) getActivity().findViewById(R.id.searchRecyclerView);
             adapter = new PlaceListAdapter(getActivity(), adapterElements);
