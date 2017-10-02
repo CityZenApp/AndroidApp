@@ -82,7 +82,7 @@ The app is open source licensed because we want the project to be empowered by t
     <string name="license">License</string>
     <string name="privacy_policy">Privacy policy</string>
     <string name="contact">Contact</string>
-    <string name="alert_message">OpenCity must have location to provide map services.  Do you want to enable location?</string>
+    <string name="alert_message">CityZen must have location to provide map services.  Do you want to enable location?</string>
     <string name="osm_routing_unavailable">OSM routing isn\'t available at this time. Try again later</string>
     <string name="house_number">House number</string>
     <string name="postcode">Postcode</string>
