@@ -1,2 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="app_name">CityZen</string>
+    <string name="retry">Riprova</string>
+    <string name="offline">Tu non sei in linea</string>
+    <string name="later">Dopo</string>
+    <string name="filter">Filtra</string>
+    </resources>
