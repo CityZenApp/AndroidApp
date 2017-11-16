@@ -6,4 +6,6 @@
     <string name="only_currently_opened">Vetëm ato që janë hapur</string>
     <string name="allow_permission">Lejo</string>
     <string name="deny_permission">Mos lejo</string>
+    <string name="oauth_communication_error">Nuk mund të arrihet serveri autorizues</string>
+    <string name="retry">Provo sërisht</string>
     </resources>
