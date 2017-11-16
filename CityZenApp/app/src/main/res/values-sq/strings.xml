@@ -1,3 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources><string name="app_name">CityZen</string>
+    <string name="loading">Duke u ngarkuar</string>
+    <string name="later">Më vonë</string>
+    <string name="filter">Filtro</string>
+    <string name="only_currently_opened">Vetëm ato që janë hapur</string>
+    <string name="allow_permission">Lejo</string>
+    <string name="deny_permission">Mos lejo</string>
     </resources>
