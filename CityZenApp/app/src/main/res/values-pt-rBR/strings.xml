@@ -6,4 +6,5 @@
     <string name="offline">Você está offline</string>
     <string name="confirmation_authorize_now">Você precisa fazer login com sua conta de usuário do OSM para aplicar modificações no OpenStreetMap. Autorizar agora?</string>
     <string name="later">Mais tarde</string>
+    <string name="filter">Filtro</string>
     </resources>
