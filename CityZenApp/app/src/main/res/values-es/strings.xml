@@ -1,2 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="app_name">CityZen</string>
+    <string name="later">Después</string>
+    <string name="user_agent">CityZen</string>
+    <string name="wifi">Wifi</string>
+    <string name="name">Nombre</string>
+    </resources>
