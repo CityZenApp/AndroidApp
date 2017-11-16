@@ -1,2 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="app_name">CityZen</string>
+    <string name="loading">Carregando</string>
+    <string name="retry">Tentar de novo</string>
+    <string name="oauth_failed_permissions">Autorização falhou: Todas as permissões listadas precisam ser concedidas</string>
+    <string name="offline">Você está offline</string>
+    <string name="confirmation_authorize_now">Você precisa fazer login com sua conta de usuário do OSM para aplicar modificações no OpenStreetMap. Autorizar agora?</string>
+    <string name="later">Mais tarde</string>
+    </resources>
