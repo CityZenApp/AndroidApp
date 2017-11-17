@@ -66,4 +66,15 @@
     <string name="select_amenity_type_to_continue">Selecione o tipo de facilidade para continuar</string>
     <string name="yes">Sim</string>
     <string name="no">Não</string>
+    <string name="wlan">Rede local sem fio</string>
+    <string name="created_succesfully">Criado com sucesso</string>
+    <string name="sort_by_name">Classificar por nome</string>
+    <string name="add_a_new_marker_on_the_map">Adicionar um marcador no mapa</string>
+    <string name="about_us">Sobre o projeto</string>
+    <string name="about_text">CityZen é um aplicativo Android de código aberto que ajuda você a navegar e explorar a cidade facilmente. Com CityZen você encontra Pontos de Interesse (POIs, em inglês) tais como Caixas de Autoatendimento, postos de combustível, farmácias, loja de celulares e outros serviços de interesse perto de você. O aplicativo mostra estes POIs baseado na localização do seu smartphone, mas respeitando a sua privacidade, uma vez que não armazenamos seus dados de navegação. O aplicativo é licenciado como Código Aberto porque queremos que o projeto seja impulsionado pela comunidade pra comunidade. Iniciamos este projeto como uma maneira de impulsionar ferramentas e plataformas tal como o OpenStreetMap que respeita nossa liberdade. Se você for um colaborador do OpenStreetMap, você pode facilmente adicionar informação aos POIs editando no próprio CityZen.</string>
+    <string name="domain">www.cityzenapp.co</string>
+    <string name="license_link">www.cityzenapp.co/license</string>
+    <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
+    <string name="email_contact">ping@cityzenapp.co</string>
+    <string name="license">Licença</string>
     </resources>
