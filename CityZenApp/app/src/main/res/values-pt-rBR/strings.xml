@@ -6,7 +6,7 @@
     <string name="offline">Você está offline</string>
     <string name="confirmation_authorize_now">Você precisa fazer login com sua conta de usuário do OSM para aplicar modificações no OpenStreetMap. Autorizar agora?</string>
     <string name="later">Mais tarde</string>
-    <string name="filter">Filtro</string>
+    <string name="filter">Filtrar</string>
     <string name="only_currently_opened">Aberto agora apenas</string>
     <string name="write_storage_request">CityZen necessita ter permissão de escrita para providenciar serviços de mapa</string>
     <string name="write_storage_request_toast">CityZen deve ter permissão de escrita para providenciar serviços de mapa</string>
