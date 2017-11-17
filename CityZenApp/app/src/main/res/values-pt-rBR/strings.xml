@@ -7,4 +7,63 @@
     <string name="confirmation_authorize_now">Você precisa fazer login com sua conta de usuário do OSM para aplicar modificações no OpenStreetMap. Autorizar agora?</string>
     <string name="later">Mais tarde</string>
     <string name="filter">Filtro</string>
+    <string name="only_currently_opened">Aberto agora apenas</string>
+    <string name="write_storage_request">CityZen necessita ter permissão de escrita para providenciar serviços de mapa</string>
+    <string name="write_storage_request_toast">CityZen deve ter permissão de escrita para providenciar serviços de mapa</string>
+    <string name="location_request">CityZen necessita de sua localização para providenciar serviços de mapa</string>
+    <string name="location_request_toast">CityZen deve ter sua localização para providenciar serviços de mapa</string>
+    <string name="allow_permission">Permitir</string>
+    <string name="deny_permission">Negar</string>
+    <string name="no_pois_near_user_location">Serviços não encontrados perto de você</string>
+    <string name="enable_gps_to_continue">Sua localização não pode ser averiguada
+\nAtive o GPS para continuar</string>
+    <string name="calculating_device_location">Estamos buscando sua localização
+\nPor favor, aguarde.</string>
+    <string name="user_agent">CityZen</string>
+    <string name="add_new_poi_toast">Clique no mapa para adicionar
+\nPontos de Interesse</string>
+    <string name="add">Adicionar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="wifi">Wifi</string>
+    <string name="email">Email</string>
+    <string name="website">Website</string>
+    <string name="phone">Fone</string>
+    <string name="name">Nome</string>
+    <string name="address">Endereço</string>
+    <string name="opening_hours">Horários de funcionamento</string>
+    <string name="monday">Seg</string>
+    <string name="tuesday">Ter</string>
+    <string name="wednesday">Qua</string>
+    <string name="thursday">Qui</string>
+    <string name="friday">Sex</string>
+    <string name="saturday">Sáb</string>
+    <string name="sunday">Dom</string>
+    <string name="all_week_days">Todos</string>
+    <string name="enable">Ativar</string>
+
+
+    <string name="directions_to_here">Rotas de carro</string>
+    <string name="create_poi">Criar Ponto de Interesse</string>
+    <string name="_24_7">24/7</string>
+    <string name="opening">Abertura</string>
+    <string name="closing">Fechamento</string>
+    <string name="done">Feito</string>
+    <string name="no_internet_to_update_poi">Sem acesso a internet. Conecte para continuar</string>
+    <string name="session_expired_toast">Sua sessão expirou. Por favor, faça login para continuar</string>
+    <string name="internet_access">Acesso à Internet</string>
+    <string name="edit">Editar</string>
+    <string name="street">Rua</string>
+    <string name="city">Cidade</string>
+    <string name="add_closing_hours">Adicionar horários de fechamento</string>
+    <string name="add_opening_hours">Adicionar horários de abertura</string>
+    <string name="not_valid_website">Website inválido</string>
+    <string name="not_valid_email">Email inválido</string>
+    <string name="an_error_occurred">Um erro ocorreu</string>
+    <string name="updated_successfully">Atualizado com sucesso</string>
+    <string name="editing_is_not_possible">Edição não é possível para</string>
+    <string name="poi_type">Tipo de Ponto de Interesse</string>
+    <string name="select_amenity_type">Selecione o tipo de facilidade</string>
+    <string name="select_amenity_type_to_continue">Selecione o tipo de facilidade para continuar</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
     </resources>
