@@ -64,4 +64,8 @@
     <string name="add_a_new_marker_on_the_map">Ajouter un marqueur sur la carte</string>
     <string name="about_us">A propos du projet</string>
     <string name="about_text">CityZen est une application Android open source qui vous aide à naviguer et à explorer facilement la ville. Avec CityZen, vous trouverez des points d\'intérêt tels que des guichets automatiques, des stations-service, des pharmacies, des magasins de téléphonie mobile et d\'autres services intéressants près de chez vous. L\'application affiche ces POI en fonction de le votre position, mais elle le fait en respectant votre vie privée car nous ne conservons pas vos données de navigation. L\'application est sous licence open source car nous voulons que le projet soit habilité par la communauté pour la communauté. Nous avons initié ce projet comme un moyen d\'habiliter des outils et des plateformes telles que OpenStreetMap qui respectent nos libertés. Si vous êtes un contributeur OpenStreetMap, vous pouvez facilement ajouter des informations aux POI en les éditant dans CityZen.</string>
+    <string name="domain">www.cityzenapp.co</string>
+    <string name="license_link">www.cityzenapp.co/license</string>
+    <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
+    <string name="email_contact">ping@cityzenapp.co</string>
     </resources>
