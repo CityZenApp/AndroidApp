@@ -68,4 +68,12 @@
     <string name="license_link">www.cityzenapp.co/license</string>
     <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
     <string name="email_contact">ping@cityzenapp.co</string>
+    <string name="license">Licence</string>
+    <string name="privacy_policy">Politique de confidentialité</string>
+    <string name="contact">Contact</string>
+    <string name="alert_message">CityZen a besoin de votre position pour fournir les services cartographiques. Voulez-vous activer la localisation ?</string>
+    <string name="osm_routing_unavailable">La navigation OSM n\'est pas disponible pour le moment. Veuillez réessayer plus tard</string>
+    <string name="house_number">Numéro de maison</string>
+    <string name="postcode">Code postal</string>
+    <string name="get_involved">Participer</string>
     </resources>
