@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources><string name="app_name">CityZen</string>
     <string name="oauth_communication_error">Δεν ήταν δυνατή η σύνδεση με τον διακομιστή ταυτοποίησης</string>
-    <string name="retry">Δοκίμασε ξανά</string>
+    <string name="retry">Δοκιμάστε ξανά</string>
     <string name="later">Αργότερα</string>
     <string name="filter">Φίλτρο</string>
     <string name="user_agent">CityZen</string>
-    <string name="add_new_poi_toast">Κάνε κλικ στο χάρτη για να προσθέσεις
-\nΣημεία Ενδιαφέροντος</string>
+    <string name="add_new_poi_toast">Κάντε κλικ στο χάρτη για να προσθέσετε
+\n Σημεία Ενδιαφέροντος</string>
     <string name="cancel">Άκυρο</string>
     <string name="wifi">Wifi</string>
     <string name="email">Email</string>
@@ -23,7 +23,7 @@
     <string name="saturday">Σα</string>
     <string name="sunday">Κυ</string>
     <string name="all_week_days">Όλες</string>
-    <string name="_24_7">24/7</string>
+    <string name="_24_7">όλο το 24ωρο</string>
     <string name="done">Έγινε</string>
     <string name="internet_access">Πρόσβαση internet</string>
     <string name="edit">Επεξεργασία</string>
@@ -39,4 +39,64 @@
     <string name="get_involved_link">www.github.com/CityZenApp</string>
     <string name="credits_link">www.cityzenapp.co/credits</string>
     <string name="Pharmacy_Healthcare">Φαρμακεία/φροντίδα υγείας</string>
-    </resources>
+    <string name="loading">Φόρτωση</string>
+    <string name="write_storage_request">Για την παροχή υπηρεσιών χάρτη, το CityZen χρειάζεται άδειες εγγραφής</string>
+    <string name="write_storage_request_toast">Για την παροχή υπηρεσιών χάρτη, το CityZen χρειάζεται άδειες εγγραφής</string>
+    <string name="location_request">Για την παροχή υπηρεσιών χάρτη, το CityZen χρειάζεται τοποθεσία</string>
+    <string name="location_request_toast">Για την παροχή υπηρεσιών χάρτη, το CityZen χρειάζεται τοποθεσία</string>
+    <string name="allow_permission">Επιτρέπεται</string>
+    <string name="deny_permission">Δεν επιτρέπεται</string>
+    <string name="no_pois_near_user_location">Δεν βρέθηκαν υπηρεσίες κοντά στην τοποθεσία σας</string>
+    <string name="enable_gps_to_continue">Η τοποθεσία σας δεν μπορεί να βρεθεί.
+\nΕνεργοποιήστε το GPS για να συνεχίσετε</string>
+    <string name="calculating_device_location">Προσπαθούμε να εντοπίσουμε τη θέση σας.
+\nΠαρακαλώ περιμένετε.</string>
+    <string name="add">Προσθήκη</string>
+    <string name="enable">Ενεργοποίηση</string>
+
+
+    <string name="directions_to_here">οδηγίες με αυτοκίνητο</string>
+    <string name="create_poi">Δημιουργία Σημείου Ενδιαφέροντος</string>
+    <string name="opening">Άνοιγμα</string>
+    <string name="closing">Κλείσιμο</string>
+    <string name="no_internet_to_update_poi">Δεν υπάρχει πρόσβαση στο διαδίκτυο. Συνδεθείτε για να συνεχίσετε</string>
+    <string name="session_expired_toast">Ο χρόνος σύνδεσής σας έληξε. Παρακαλώ επανασυνδεθείτε για να συνεχίσετε</string>
+    <string name="add_closing_hours">Προσθήκη ώρας κλεισίματος</string>
+    <string name="add_opening_hours">Προσθήκη ωρών λειτουργίας</string>
+    <string name="not_valid_website">Μη έγκυρη ιστοσελίδα</string>
+    <string name="not_valid_email">Μη έγκυρο email</string>
+    <string name="editing_is_not_possible">Η επεξεργασία δεν είναι δυνατή για</string>
+    <string name="poi_type">τύπος Σημείου Ενδιαφέροντος</string>
+    <string name="select_amenity_type">Επιλογή τύπου παροχής</string>
+    <string name="select_amenity_type_to_continue">Επιλέξτε τύπο παροχής για να συνεχίσετε</string>
+    <string name="yes">Ναι</string>
+    <string name="no">Όχι</string>
+    <string name="wired">Ενσύρματο</string>
+    <string name="wlan">Ασύρματο τοπικό δίκτυο (Wlan)</string>
+    <string name="created_succesfully">δημιουργήθηκε επιτυχώς</string>
+    <string name="sort_by_name">Ταξινόμηση κατά όνομα</string>
+    <string name="add_a_new_marker_on_the_map">Προσθήκη δείκτη στο χάρτη</string>
+    <string name="privacy_policy">Πολιτική απορρήτου</string>
+    <string name="contact">Επικοινωνία</string>
+    <string name="alert_message">Για την παροχή υπηρεσιών χάρτη, το CityZen πρέπει να έχει τοποθεσία. Θέλετε να την ενεργοποιήσετε;</string>
+    <string name="osm_routing_unavailable">Η δρομολόγηση του OSM δεν είναι διαθέσιμη αυτήν τη στιγμή. Δοκιμάστε αργότερα</string>
+    <string name="postcode">Τ.Κ.</string>
+    <string name="Cafes">Λίστα Σημείων Ενδιαφέροντος</string>
+    <string name="Bars_Clubs">Μπαρ/Club</string>
+    <string name="Restaurants">Εστιατόρια</string>
+    <string name="Tourism">Τουρισμός</string>
+    <string name="Hotels_Hostels">Ξενοδοχεία/Ξενώνες</string>
+    <string name="Transportation">Μέσα Μεταφοράς</string>
+    <string name="GasStations">Βενζινάδικα</string>
+    <string name="Banks_ATMs_Exchange">Τράπεζες/ΑΤΜ/Συνάλλαγμα</string>
+    <string name="MobilePhoneStore">Κατάστημα κινητής τηλεφωνίας</string>
+    <string name="Markets_Kiosks">Αγορές/Περίπτερα</string>
+    <string name="Shopping_Malls">Εμπορικά κέντρα</string>
+    <string name="Parkings">Χώροι στάθμευσης</string>
+    <string name="RentBicycle">Ενοικίαση ποδηλάτων</string>
+    <string name="RentCar_CareSharing">Ενοικίαση αυτοκινήτων &amp; Car sharing</string>
+    <string name="logged_in_as">Έχετε συνδεθεί ως:</string>
+
+    <string name="login_to_osm">Σύνδεση στο OSM</string>
+    <string name="logout">Αποσύνδεση</string>
+</resources>
