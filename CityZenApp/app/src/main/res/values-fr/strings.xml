@@ -1,3 +1,67 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources><string name="app_name">CityZen</string>
+    <string name="oauth_communication_error">Impossible de se connecter au serveur d\'autorisation</string>
+    <string name="loading">En cours de chargement</string>
+    <string name="retry">Réessayer</string>
+    <string name="oauth_failed_permissions">Autorisation échouée: Toutes les permissions listées doivent être acceptées</string>
+    <string name="offline">Vous êtes hors-ligne</string>
+    <string name="confirmation_authorize_now">Vous devez vous connecter avec votre compte OSM pour modifier les données. Se connecter maintenant ?</string>
+    <string name="only_currently_opened">Uniquement ceux ouverts pour le moment</string>
+    <string name="write_storage_request">CityZen a besoin des permissions d\'écriture pour fournir les services cartographiques</string>
+    <string name="write_storage_request_toast">CityZen doit avoir les permissions d\'écriture pour fournir les services cartographiques</string>
+    <string name="location_request">CityZen a besoin des permissions de localisation pour fournir les services cartographiques</string>
+    <string name="location_request_toast">CityZen doit avoir les permissions de localisation pour fournir les services cartographiques</string>
+    <string name="allow_permission">Autoriser</string>
+    <string name="deny_permission">Refuser</string>
+    <string name="no_pois_near_user_location">Aucun service trouvé près de votre position</string>
+    <string name="enable_gps_to_continue">Impossible de définir votre position.
+\nActiver le GPS pour continuer</string>
+    <string name="calculating_device_location">Nous sommes en train de définir votre position.
+\nVeuillez patienter.</string>
+    <string name="user_agent">CityZen</string>
+    <string name="add_new_poi_toast">Cliquer dans la carte pour ajouter
+\ndes points d\'intérêt</string>
+    <string name="add">Ajouter</string>
+    <string name="cancel">Annuler</string>
+    <string name="wifi">WiFi</string>
+    <string name="email">E-mail</string>
+    <string name="website">Site internet</string>
+    <string name="phone">Téléphone</string>
+    <string name="name">Nom</string>
+    <string name="address">Adresse</string>
+    <string name="opening_hours">Heures d\'ouverture</string>
+    <string name="monday">Lun</string>
+    <string name="tuesday">Mar</string>
+    <string name="wednesday">Mer</string>
+    <string name="thursday">Jeu</string>
+    <string name="friday">Ven</string>
+    <string name="saturday">Sam</string>
+    <string name="sunday">Dim</string>
+    <string name="all_week_days">Tous</string>
+    <string name="enable">Activer</string>
+
+
+    <string name="create_poi">Créer un POI</string>
+    <string name="_24_7">24/7</string>
+    <string name="done">Terminé</string>
+    <string name="no_internet_to_update_poi">Pas d\'accès internet. Activer la connexion pour continuer</string>
+    <string name="session_expired_toast">Votre session a expiré. Veuillez vous connecter pour continuer</string>
+    <string name="internet_access">Accès internet</string>
+    <string name="edit">Modifier</string>
+    <string name="street">Rue</string>
+    <string name="city">Ville</string>
+    <string name="add_closing_hours">Ajouter les heures de fermeture</string>
+    <string name="add_opening_hours">Ajouter les heures d\'ouverture</string>
+    <string name="not_valid_website">Site internet invalide</string>
+    <string name="not_valid_email">E-mail invalide</string>
+    <string name="an_error_occurred">Une erreur est survenue</string>
+    <string name="updated_successfully">mise à jour réussie</string>
+    <string name="editing_is_not_possible">La mise à jour n\'est pas possible pour</string>
+    <string name="poi_type">Type de point d\'intérêt</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="sort_by_name">Trier par nom</string>
+    <string name="add_a_new_marker_on_the_map">Ajouter un marqueur sur la carte</string>
+    <string name="about_us">A propos du projet</string>
+    <string name="about_text">CityZen est une application Android open source qui vous aide à naviguer et à explorer facilement la ville. Avec CityZen, vous trouverez des points d\'intérêt tels que des guichets automatiques, des stations-service, des pharmacies, des magasins de téléphonie mobile et d\'autres services intéressants près de chez vous. L\'application affiche ces POI en fonction de le votre position, mais elle le fait en respectant votre vie privée car nous ne conservons pas vos données de navigation. L\'application est sous licence open source car nous voulons que le projet soit habilité par la communauté pour la communauté. Nous avons initié ce projet comme un moyen d\'habiliter des outils et des plateformes telles que OpenStreetMap qui respectent nos libertés. Si vous êtes un contributeur OpenStreetMap, vous pouvez facilement ajouter des informations aux POI en les éditant dans CityZen.</string>
     </resources>
