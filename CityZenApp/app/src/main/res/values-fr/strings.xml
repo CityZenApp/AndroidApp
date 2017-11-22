@@ -76,4 +76,7 @@
     <string name="house_number">Numéro de maison</string>
     <string name="postcode">Code postal</string>
     <string name="get_involved">Participer</string>
+    <string name="get_involved_link">www.github.com/CityZenApp</string>
+    <string name="credits">Crédits</string>
+    <string name="credits_link">www.cityzenapp.co/credits</string>
     </resources>
