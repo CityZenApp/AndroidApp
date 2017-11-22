@@ -79,4 +79,27 @@
     <string name="get_involved_link">www.github.com/CityZenApp</string>
     <string name="credits">Crédits</string>
     <string name="credits_link">www.cityzenapp.co/credits</string>
-    </resources>
+    <string name="open_source_culture">L\'application CityZen a été initiée en Albanie avec beaucoup d\'♥ pour la culture libre et open source.</string>
+
+
+    <string name="Cafes">Cafés</string>
+    <string name="Bars_Clubs">Bars/Clubs</string>
+    <string name="Restaurants">Restaurants</string>
+    <string name="FastFood">Restauration rapide</string>
+    <string name="Tourism">Tourisme</string>
+    <string name="Hotels_Hostels">Hôtels/Auberges</string>
+    <string name="Transportation">Transport</string>
+    <string name="GasStations">Stations-service</string>
+    <string name="Pharmacy_Healthcare">Pharmacie/Soins de santé</string>
+    <string name="Banks_ATMs_Exchange">Banques/ATMs/Bureaux de change</string>
+    <string name="MobilePhoneStore">Magasins de téléphonie mobile</string>
+    <string name="Markets_Kiosks">Marchés/Kiosques</string>
+    <string name="Shopping_Malls">Centres commerciaux</string>
+    <string name="Parkings">Parkings</string>
+    <string name="RentBicycle">Location de vélo</string>
+    <string name="RentCar_CareSharing">Location de voiture &amp; Voitures partagées</string>
+    <string name="logged_in_as">Connecté comme :</string>
+
+    <string name="login_to_osm">Se connecter à OSM</string>
+    <string name="logout">Se déconnecter</string>
+</resources>
