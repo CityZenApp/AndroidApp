@@ -1,2 +1,116 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="app_name">CityZen</string>
+    <string name="oauth_communication_error">Klarte ikke å få kontakt med identitetsbekreftelsestjeneren</string>
+    <string name="loading">Laster</string>
+    <string name="retry">Prøv igjen</string>
+    <string name="oauth_failed_permissions">Identitetsbekreftelse mislyktes: Alle opplistede tilganger må gis</string>
+    <string name="offline">Du er frakoblet</string>
+    <string name="confirmation_authorize_now">Du må logge inn med en OSM-brukerkonto for å gjøre endringer i OpenStreetMap. Autoriser nå?</string>
+    <string name="later">Senere</string>
+    <string name="filter">Filtrer</string>
+    <string name="only_currently_opened">Bare åpnede</string>
+    <string name="write_storage_request">CityZen trenger skrivetilganger for å tilby karttjenester</string>
+    <string name="write_storage_request_toast">CityZen må ha skrivetilganger for å tilby karttjenester</string>
+    <string name="location_request">CityZen må ha plasseringstilgang for å tilby karttjenester</string>
+    <string name="location_request_toast">CityZen må ha plasseringstilgang for å tilby karttjenester</string>
+    <string name="allow_permission">Tillat</string>
+    <string name="deny_permission">Nekt</string>
+    <string name="no_pois_near_user_location">ingen tjenester funnet nær din plassering</string>
+    <string name="enable_gps_to_continue">Kan ikke finne din plassering.
+\nSkru på GPS for å fortsette</string>
+    <string name="calculating_device_location">Finner plasseringen din.
+\nVent.</string>
+    <string name="user_agent">CityZen</string>
+    <string name="add_new_poi_toast">Klikk på kartet for å legge til
+\ninteressepunkter</string>
+    <string name="add">Legg til</string>
+    <string name="cancel">Avbryt</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="email">E-postadresse</string>
+    <string name="website">Nettside</string>
+    <string name="phone">Telefon</string>
+    <string name="name">Navn</string>
+    <string name="address">Adresse</string>
+    <string name="opening_hours">Åpningstid</string>
+    <string name="monday">Man</string>
+    <string name="tuesday">Tir</string>
+    <string name="wednesday">Ons</string>
+    <string name="thursday">Tor</string>
+    <string name="friday">Fre</string>
+    <string name="saturday">Lør</string>
+    <string name="sunday">Søn</string>
+    <string name="all_week_days">Alle</string>
+    <string name="enable">Skru på</string>
+
+
+    <string name="directions_to_here">kjørehenvisninger</string>
+    <string name="create_poi">Opprett interessepunkt</string>
+    <string name="_24_7">24/7</string>
+    <string name="opening">Åpningstid</string>
+    <string name="closing">Stengetid</string>
+    <string name="done">Ferdig</string>
+    <string name="no_internet_to_update_poi">Ingen internettilgang. Koble til Internett for å fortsette</string>
+    <string name="session_expired_toast">Økta di har utløpt. Logg inn for å fortsette</string>
+    <string name="internet_access">Internettilgang</string>
+    <string name="edit">Rediger</string>
+    <string name="street">Gate</string>
+    <string name="city">By</string>
+    <string name="add_closing_hours">Legg til stengetid</string>
+    <string name="add_opening_hours">Legg til åpningstid</string>
+    <string name="not_valid_website">Ikke en gyldig nettside</string>
+    <string name="not_valid_email">Ikke en gyldig e-postadresse</string>
+    <string name="an_error_occurred">En feil inntraff</string>
+    <string name="updated_successfully">oppdatert</string>
+    <string name="editing_is_not_possible">Redigering er ikke tilgjengelig for</string>
+    <string name="poi_type">Interessepunktstype</string>
+    <string name="select_amenity_type">Velg rekreasjonstype</string>
+    <string name="select_amenity_type_to_continue">Velg rekreasjonstype for å fortsette</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nei</string>
+    <string name="wired">Trådbundet</string>
+    <string name="wlan">WLAN</string>
+    <string name="created_succesfully">opprettet</string>
+    <string name="sort_by_name">Sorter etter navn</string>
+    <string name="add_a_new_marker_on_the_map">Legg til en markør i kartet</string>
+    <string name="about_us">Om prosjektet</string>
+    <string name="about_text">CityZen er fri programvare for Android som hjelper deg å navigere og utforske byen. Med CityZen kan du finne interessepunkter som minibanker, bensinstasjoner, apotek, mobiltelefonbutikker og andre interessante tjenester nær deg. Programmet viser disse interessepunktene basert på din plassering, men respekterer ditt personvern i det å ikke lagre navigasjonsdataen. Programmet er fri programvare for å være for gemenskapen, av gemenskapen. Det bruker andre verktøy og plattformer som respekterer brukerfrihet, som OpenStreetMap. Hvis du er en bidragsyter der kan du enkelt finne informasjon om interessepunkt og redigere dem i CityZen.</string>
+    <string name="domain">www.cityzenapp.co</string>
+    <string name="license_link">www.cityzenapp.co/license</string>
+    <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
+    <string name="email_contact">ping@cityzenapp.co</string>
+    <string name="license">Lisens</string>
+    <string name="privacy_policy">Personvernspraksis</string>
+    <string name="contact">Kontakt</string>
+    <string name="alert_message">CityZen trenger plasseringstilgang for å tilby karttjenester. Ønsker du å skru det på?</string>
+    <string name="osm_routing_unavailable">OSM-ruting er ikke tilgjengelig nå. Prøv igjen senere</string>
+    <string name="house_number">Husnummer</string>
+    <string name="postcode">Postnummer</string>
+    <string name="get_involved">Involver deg</string>
+    <string name="get_involved_link">www.github.com/CityZenApp</string>
+    <string name="credits">Bidragsytere</string>
+    <string name="credits_link">www.cityzenapp.co/credits</string>
+    <string name="open_source_culture">CityZen ble igangsatt i Albania, med mye ♥
+\n for fri programvare og kultur.</string>
+
+
+    <string name="Cafes">Kaféer</string>
+    <string name="Bars_Clubs">Barer/klubber</string>
+    <string name="Restaurants">Restauranter</string>
+    <string name="FastFood">Hurtigmat</string>
+    <string name="Tourism">Turisme</string>
+    <string name="Hotels_Hostels">Hoteller/pensjonat</string>
+    <string name="Transportation">Transport</string>
+    <string name="GasStations">Bensinstasjoner</string>
+    <string name="Pharmacy_Healthcare">Farmasøyt/helsevesen</string>
+    <string name="Banks_ATMs_Exchange">Banker/minibank/veksling</string>
+    <string name="MobilePhoneStore">Mobiltelefonbutikk</string>
+    <string name="Markets_Kiosks">Markeder/kiosker</string>
+    <string name="Shopping_Malls">Kjøpesentre</string>
+    <string name="Parkings">Parkering</string>
+    <string name="RentBicycle">Lei en sykkel</string>
+    <string name="RentCar_CareSharing">Billeie og bildeling</string>
+    <string name="logged_in_as">Innlogget som:</string>
+
+    <string name="login_to_osm">Logg inn i OSM</string>
+    <string name="logout">Logg ut</string>
+</resources>
