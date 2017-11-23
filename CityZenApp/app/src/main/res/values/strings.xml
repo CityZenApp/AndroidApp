@@ -5,7 +5,7 @@
     <string name="retry">"Retry"</string>
     <string name="oauth_failed_permissions">"Authorization failed: All listed permissions need to be granted"</string>
     <string name="offline">"You are offline"</string>
-    <string name="confirmation_authorize_now">"You need to log in with your OSM user account to apply changes to OpenStreetMap. Authorize now?"</string>
+    <string name="confirmation_authorize_now">"An OSM user account in needed to make changes in OpenStreetMap. Log in now?"</string>
     <string name="later">"Later"</string>
     <string name="filter">Filter</string>
     <string name="only_currently_opened">Only currently opened</string>
