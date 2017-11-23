@@ -72,9 +72,9 @@
     <string name="sort_by_name">Sort by name</string>
     <string name="add_a_new_marker_on_the_map">Add a marker on the map</string>
     <string name="about_us">About the project</string>
-    <string name="about_text">CityZen is a libre software Android app that helps you navigate and explore the city easily.
-        Find points of interest (POIs) such as ATMs, gas stations, drugstores, mobile phone stores and other interesting services near you. They are relevant to your position, but privacy is maintained, as navigation data is not kept.
-The app is libre software licensed, to empowered by the community, for the community. The project makes use of tools and platforms such as OpenStreetMap that respects user freedom. OpenStreetMap contributors can easily add information to POIs by editing them inside CityZen.</string>
+    <string name="about_text">A libre software Android app that helping you navigate and explore the city.
+        Find points of interest, and other interesting services near you. They are relevant to your position, but privacy is maintained, as navigation data is not kept.
+The libre software licensing empowers community, by and for the community, and the project makes use of tools and platforms that respects user freedom, such as OpenStreetMap. If you have an account there, you can add information to POIs by editing them inside CityZen.</string>
     <string name="domain">www.cityzenapp.co</string>
     <string name="license_link">https://github.com/CityZenApp/Android-Development/blob/master/LICENSE</string>
     <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
