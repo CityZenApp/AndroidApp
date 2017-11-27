@@ -1,7 +1,8 @@
 # CityZen-Android
 Cityzen Android App, Openstreetmap contributor
 
-
+<a href="https://f-droid.org/packages/com.cityzen.cityzen" target="_blank">
+<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="90"/></a>
 
 ### Screenshots
 |![Screenshot](https://github.com/CityZenApp/CityZen-Android/blob/master/Screenshots/Screenshot_1499769190.png)|![Screenshot](https://github.com/CityZenApp/CityZen-Android/blob/master/Screenshots/Screenshot_1499770149.png)|![Screenshot](https://github.com/CityZenApp/CityZen-Android/blob/master/Screenshots/Screenshot_1499769543.png)|![Screenshot](https://github.com/CityZenApp/CityZen-Android/blob/master/Screenshots/Screenshot_1499769465.png)|
