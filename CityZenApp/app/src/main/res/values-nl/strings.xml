@@ -1,2 +1,116 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="app_name">CityZen</string>
+    <string name="oauth_communication_error">Er kan geen verbinding worden gemaakt met de authorisatieserver</string>
+    <string name="loading">Bezig met laden</string>
+    <string name="retry">Opnieuw proberen</string>
+    <string name="oauth_failed_permissions">Authorisatie mislukt: alle vermelde rechten moeten worden toegekend</string>
+    <string name="offline">U bent offline</string>
+    <string name="confirmation_authorize_now">U moet inloggen met uw OSM-gebruikersaccount om wijzigingen aan te kunnen brengen. Wilt u nu authoriseren?</string>
+    <string name="later">Later</string>
+    <string name="filter">Filteren</string>
+    <string name="only_currently_opened">Alleen huidige geopende</string>
+    <string name="write_storage_request">CityZen heeft schrijfrechten nodig om kaartdiensten te kunnen leveren</string>
+    <string name="write_storage_request_toast">CityZen heeft schrijfrechten nodig om kaartdiensten te kunnen leveren</string>
+    <string name="location_request">CityZen heeft uw locatie nodig om kaartdiensten te kunnen leveren</string>
+    <string name="location_request_toast">CityZen heeft uw locatie nodig om kaartdiensten te kunnen leveren</string>
+    <string name="allow_permission">Toestaan</string>
+    <string name="deny_permission">Weigeren</string>
+    <string name="no_pois_near_user_location">er zijn geen diensten gevonden in de buurt van uw locatie</string>
+    <string name="enable_gps_to_continue">Uw locatie kan niet worden gevonden.
+\nSchakel GPS in om door te gaan</string>
+    <string name="calculating_device_location">We zijn uw locatie aan het uitvogelen.
+\nEven geduld.</string>
+    <string name="user_agent">CityZen</string>
+    <string name="add_new_poi_toast">Klik op de kaart om
+\n Interessante plaatsen toe te voegen</string>
+    <string name="add">Toevoegen</string>
+    <string name="cancel">Annuleren</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="email">E-mailadres</string>
+    <string name="website">Website</string>
+    <string name="phone">Telefoonnummer</string>
+    <string name="name">Naam</string>
+    <string name="address">Adres</string>
+    <string name="opening_hours">Openingstijden</string>
+    <string name="monday">Ma</string>
+    <string name="tuesday">Di</string>
+    <string name="wednesday">Woe</string>
+    <string name="thursday">Do</string>
+    <string name="friday">Vrij</string>
+    <string name="saturday">Za</string>
+    <string name="sunday">Zo</string>
+    <string name="all_week_days">Alle</string>
+    <string name="enable">Inschakelen</string>
+
+
+    <string name="directions_to_here">routebeschrijving met auto</string>
+    <string name="create_poi">POI creëren</string>
+    <string name="_24_7">24/7</string>
+    <string name="opening">Openingstijd</string>
+    <string name="closing">Sluitingstijd</string>
+    <string name="done">Afronden</string>
+    <string name="no_internet_to_update_poi">Geen internetverbinding. Verbind met het internet om door te gaan</string>
+    <string name="session_expired_toast">Uw sessie is verlopen. Log in om door te gaan</string>
+    <string name="internet_access">Internettoegang</string>
+    <string name="edit">Bewerken</string>
+    <string name="street">Straat</string>
+    <string name="city">Stad</string>
+    <string name="add_closing_hours">Sluitingstijd toevoegen</string>
+    <string name="add_opening_hours">Openingstijd toevoegen</string>
+    <string name="not_valid_website">Ongeldige website</string>
+    <string name="not_valid_email">Ongeldig e-mailadres</string>
+    <string name="an_error_occurred">Er is een fout opgetreden</string>
+    <string name="updated_successfully">succesvol bijgewerkt</string>
+    <string name="editing_is_not_possible">Bewerken is niet mogelijk voor</string>
+    <string name="poi_type">POI-type</string>
+    <string name="select_amenity_type">Gemakstype</string>
+    <string name="select_amenity_type_to_continue">Selecteer een type om door te gaan</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nee</string>
+    <string name="wired">Bekabeld</string>
+    <string name="wlan">Draadloos</string>
+    <string name="created_succesfully">succesvol gecreëerd</string>
+    <string name="sort_by_name">Sorteren op naam</string>
+    <string name="add_a_new_marker_on_the_map">Markering toevoegen op kaart</string>
+    <string name="about_us">Over het project</string>
+    <string name="about_text">CityZen is een open bron Android-app die u helpt om gemakkelijk te navigeren in steden en deze te verkennen. Met CityZen kunt u interessante plaatsen (POI\'s) vinden, zoals geldautomaten, tankstations, apotheken, mobiele telefoon-winkels en andere interessante diensten. De app laat deze POI\'s zien op basis van de locatie van uw smartphone, maar respecteert daarbij uw privacy omdat we geen navigatiegegevens bewaren. De app heeft een open source-licentie omdat we willen dat het project wordt aangedreven door de gemeenschap, voor de gemeenschap. We zijn dit project gestart om hulpprogramma\'s en platformen zoals OpenStreetMap aan te drijven omdat deze onze vrijheid beschermen. Als u een OSM-bijdrager bent, dan kunt u met CityZen heel gemakkelijk informatie aan de POI\'s toevoegen.</string>
+    <string name="domain">www.cityzenapp.co</string>
+    <string name="license_link">www.cityzenapp.co/license</string>
+    <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
+    <string name="email_contact">ping@cityzenapp.co</string>
+    <string name="license">Licentie</string>
+    <string name="privacy_policy">Privacy-overeenkomst</string>
+    <string name="contact">Contact</string>
+    <string name="alert_message">CityZen heeft uw locatie nodig om kaartdiensten te kunnen leveren. Wilt u uw locatie inschakelen?</string>
+    <string name="osm_routing_unavailable">OSM-routebeschrijving is momenteel niet beschikbaar. Probeer het later opnieuw.</string>
+    <string name="house_number">Huisnummer</string>
+    <string name="postcode">Postcode</string>
+    <string name="get_involved">Bijdragen</string>
+    <string name="get_involved_link">www.github.com/CityZenApp</string>
+    <string name="credits">Met dank aan</string>
+    <string name="credits_link">www.cityzenapp.co/credits</string>
+    <string name="open_source_culture">CityZen is begonnen in Albanië met veel ♥
+\n voor de vrije en open bron-cultuur.</string>
+
+
+    <string name="Cafes">Café\'s</string>
+    <string name="Bars_Clubs">Bars/Discotheken</string>
+    <string name="Restaurants">Restaurants</string>
+    <string name="FastFood">Fast-food</string>
+    <string name="Tourism">Toerisme</string>
+    <string name="Hotels_Hostels">Hotels/Hostels</string>
+    <string name="Transportation">Vervoer</string>
+    <string name="GasStations">Tankstations</string>
+    <string name="Pharmacy_Healthcare">Drogisterijen/Gezondheidscentra</string>
+    <string name="Banks_ATMs_Exchange">Banken/Geldautomaten/GWK\'s</string>
+    <string name="MobilePhoneStore">Mobiele telefoonwinkel</string>
+    <string name="Markets_Kiosks">Markten/Kiosken</string>
+    <string name="Shopping_Malls">Winkelcentra</string>
+    <string name="Parkings">Parkeerplaatsen</string>
+    <string name="RentBicycle">Fiets huren</string>
+    <string name="RentCar_CareSharing">Auto huren en delen</string>
+    <string name="logged_in_as">Ingelogd als:</string>
+
+    <string name="login_to_osm">Inloggen op OSM</string>
+    <string name="logout">Uitloggen</string>
+</resources>
