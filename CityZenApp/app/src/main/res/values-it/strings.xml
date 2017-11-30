@@ -50,7 +50,7 @@
     <string name="closing">Chiusura</string>
     <string name="done">Fatto</string>
     <string name="no_internet_to_update_poi">Nessun accesso a internet. Connettersi a internet per continuare</string>
-    <string name="session_expired_toast">La vostra sessione è scaduta. Prego accedere.</string>
+    <string name="session_expired_toast">La vostra sessione è scaduta. Prego accedere</string>
     <string name="internet_access">Accesso internet</string>
     <string name="edit">Modifica</string>
     <string name="street">Strada</string>
