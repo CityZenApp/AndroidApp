@@ -81,4 +81,6 @@
     <string name="license">Lizenz</string>
     <string name="privacy_policy">Datenschutzbestimmungen</string>
     <string name="contact">Kontakt</string>
+    <string name="alert_message">CityZen benötigt Ihren aktuellen Standort, um Kartendienste bereitzustellen. Wollen Sie den Ortungsdienst aktivieren?</string>
+    <string name="osm_routing_unavailable">OSM Routen sind aktuell nicht verfügbar. Versuchen Sie es später erneut</string>
     </resources>
