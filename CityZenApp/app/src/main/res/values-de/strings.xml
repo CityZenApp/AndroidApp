@@ -21,4 +21,6 @@
     <string name="calculating_device_location">Wir ermitteln Ihren Standort.
 \nBitte warten.</string>
     <string name="user_agent">CityZen</string>
+    <string name="add_new_poi_toast">Klicken Sie auf die Karte,
+\num Points of Interest hinzuzufügen</string>
     </resources>
