@@ -40,4 +40,9 @@
     <string name="saturday">Sa</string>
     <string name="sunday">So</string>
     <string name="all_week_days">Alle</string>
+    <string name="enable">Aktivieren</string>
+
+
+    <string name="directions_to_here">Anfahrt mit dem Auto</string>
+    <string name="create_poi">POI anlegen</string>
     </resources>
