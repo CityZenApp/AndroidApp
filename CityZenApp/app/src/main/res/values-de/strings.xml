@@ -93,4 +93,16 @@
 \nfür freie Software Kultur.</string>
 
 
+    <string name="Cafes">Cafés</string>
+    <string name="Bars_Clubs">Bars/Clubs</string>
+    <string name="Restaurants">Restaurants</string>
+    <string name="FastFood">Schnellrestaurant</string>
+    <string name="Tourism">Tourismus</string>
+    <string name="Hotels_Hostels">Hotels/Hostels</string>
+    <string name="Transportation">Öffentliche Verkehrsmittel</string>
+    <string name="GasStations">Tankstellen</string>
+    <string name="Pharmacy_Healthcare">Apotheke/Praxen</string>
+    <string name="Banks_ATMs_Exchange">Banken/Geldautomaten/Wechselstuben</string>
+    <string name="MobilePhoneStore">Handyladen</string>
+    <string name="Markets_Kiosks">Markt/Kioske</string>
     </resources>
