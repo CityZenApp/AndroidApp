@@ -83,4 +83,6 @@
     <string name="contact">Kontakt</string>
     <string name="alert_message">CityZen benötigt Ihren aktuellen Standort, um Kartendienste bereitzustellen. Wollen Sie den Ortungsdienst aktivieren?</string>
     <string name="osm_routing_unavailable">OSM Routen sind aktuell nicht verfügbar. Versuchen Sie es später erneut</string>
+    <string name="house_number">Hausnummer</string>
+    <string name="postcode">PLZ</string>
     </resources>
