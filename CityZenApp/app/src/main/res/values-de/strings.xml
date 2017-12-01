@@ -55,4 +55,7 @@
     <string name="edit">Ändern</string>
     <string name="street">Straße</string>
     <string name="city">Ort</string>
+    <string name="add_closing_hours">Schließzeiten hinzufügen</string>
+    <string name="add_opening_hours">Öffnungszeiten hinzufügen</string>
+    <string name="not_valid_website">Keine gültige Internetseite</string>
     </resources>
