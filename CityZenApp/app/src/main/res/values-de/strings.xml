@@ -85,4 +85,12 @@
     <string name="osm_routing_unavailable">OSM Routen sind aktuell nicht verfügbar. Versuchen Sie es später erneut</string>
     <string name="house_number">Hausnummer</string>
     <string name="postcode">PLZ</string>
+    <string name="get_involved">Mitmachen</string>
+    <string name="get_involved_link">www.github.com/CityZenApp</string>
+    <string name="credits">Anerkennung</string>
+    <string name="credits_link">www.cityzenapp.co/credits</string>
+    <string name="open_source_culture">CityZen wurde in Albanien initiiert, mit einem großen ♥
+\nfür freie Software Kultur.</string>
+
+
     </resources>
