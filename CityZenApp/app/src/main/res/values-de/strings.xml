@@ -18,4 +18,7 @@
     <string name="write_storage_request_toast">CityZen benötigt Schreibrechte, um Kartendienste bereitzustellen</string>
     <string name="location_request">CityZen benötigt Ihren Ort, um Kartendienste bereitzustellen</string>
     <string name="location_request_toast">CityZen benötigt Ihren Standort, um Kartendienste bereitzustellen</string>
+    <string name="calculating_device_location">Wir ermitteln Ihren Standort.
+\nBitte warten.</string>
+    <string name="user_agent">CityZen</string>
     </resources>
