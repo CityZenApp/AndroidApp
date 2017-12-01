@@ -65,4 +65,6 @@
     <string name="poi_type">Point of interest Typ</string>
     <string name="select_amenity_type">Annehmlichkeitstyp auswählen</string>
     <string name="select_amenity_type_to_continue">Annehmlichkeitstyp auswählen, um fortzufahren</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
     </resources>
