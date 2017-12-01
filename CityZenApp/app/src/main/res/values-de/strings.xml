@@ -78,4 +78,5 @@
     <string name="license_link">www.cityzenapp.co/license</string>
     <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
     <string name="email_contact">ping@cityzenapp.co</string>
+    <string name="license">Lizenz</string>
     </resources>
