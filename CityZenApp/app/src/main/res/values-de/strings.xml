@@ -1,4 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources><string name="app_name">CityZen</string>
     <string name="allow_permission">Erlauben</string>
+    <string name="deny_permission">Verweigern</string>
+    <string name="no_pois_near_user_location">Keine Angebote in der Nähe gefunden</string>
+    <string name="enable_gps_to_continue">Ihr aktueller Ort kann nicht ermittelt werden 
+\nGPS aktivieren, um fortzufahren</string>
     </resources>
