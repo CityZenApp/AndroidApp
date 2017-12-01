@@ -20,12 +20,12 @@ public class FilterCategory {
      * <item>Transportation</item>
      * <item>Gas stations</item>
      * <item>Pharmacies &amp; healthcare</item>
-     * <item>Banks &amp; ATMs</item>
+     * <item>Financial services</item>
      * <item>Mobile phone stores</item>
      * <item>Markets &amp; kiosks</item>
      * <item>Shopping malls</item>
      * <item>Parking</item>
-     * <item>Rent a bicycle</item>
+     * <item>Bicycle rental</item>
      * <item>Car rental &amp; sharing</item>
      * </array>
      * <p>
