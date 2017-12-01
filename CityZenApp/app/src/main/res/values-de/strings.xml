@@ -67,4 +67,9 @@
     <string name="select_amenity_type_to_continue">Annehmlichkeitstyp auswählen, um fortzufahren</string>
     <string name="yes">Ja</string>
     <string name="no">Nein</string>
+    <string name="wired">Kabelgebunden</string>
+    <string name="wlan">WLAN</string>
+    <string name="created_succesfully">Erfolgreich angelegt</string>
+    <string name="sort_by_name">Nach Name sortieren</string>
+    <string name="add_a_new_marker_on_the_map">Markierung zur Karte hinzufügen</string>
     </resources>
