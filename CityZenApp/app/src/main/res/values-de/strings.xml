@@ -59,4 +59,10 @@
     <string name="add_opening_hours">Öffnungszeiten hinzufügen</string>
     <string name="not_valid_website">Keine gültige Internetseite</string>
     <string name="not_valid_email">Keine gültige E-Mail Adresse</string>
+    <string name="an_error_occurred">Es ist ein Fehler aufgetreten</string>
+    <string name="updated_successfully">Aktualisierung erfolgreich</string>
+    <string name="editing_is_not_possible">Änderung nicht möglich für</string>
+    <string name="poi_type">Point of interest Typ</string>
+    <string name="select_amenity_type">Annehmlichkeitstyp auswählen</string>
+    <string name="select_amenity_type_to_continue">Annehmlichkeitstyp auswählen, um fortzufahren</string>
     </resources>
