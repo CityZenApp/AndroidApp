@@ -51,4 +51,8 @@
     <string name="done">Erledigt</string>
     <string name="no_internet_to_update_poi">Keine Internetverbindung. Mit dem Internet verbinden, um fortzufahren</string>
     <string name="session_expired_toast">Ihre Sitzung ist abgelaufen. Bitte anmelden, um fortzufahren</string>
+    <string name="internet_access">Internetzugang</string>
+    <string name="edit">Ändern</string>
+    <string name="street">Straße</string>
+    <string name="city">Ort</string>
     </resources>
