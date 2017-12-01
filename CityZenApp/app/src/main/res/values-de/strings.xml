@@ -23,4 +23,21 @@
     <string name="user_agent">CityZen</string>
     <string name="add_new_poi_toast">Klicken Sie auf die Karte,
 \num Points of Interest hinzuzufügen</string>
+    <string name="add">Hinzufügen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="wifi">WLAN</string>
+    <string name="email">E-Mail</string>
+    <string name="website">Internetseite</string>
+    <string name="phone">Telefon</string>
+    <string name="name">Name</string>
+    <string name="address">Adresse</string>
+    <string name="opening_hours">Öffnungszeiten</string>
+    <string name="monday">Mo</string>
+    <string name="tuesday">Di</string>
+    <string name="wednesday">Mi</string>
+    <string name="thursday">Do</string>
+    <string name="friday">Fr</string>
+    <string name="saturday">Sa</string>
+    <string name="sunday">So</string>
+    <string name="all_week_days">Alle</string>
     </resources>
