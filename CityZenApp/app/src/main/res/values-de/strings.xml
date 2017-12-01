@@ -5,4 +5,14 @@
     <string name="no_pois_near_user_location">Keine Angebote in der Nähe gefunden</string>
     <string name="enable_gps_to_continue">Ihr aktueller Ort kann nicht ermittelt werden 
 \nGPS aktivieren, um fortzufahren</string>
+    <string name="oauth_communication_error">Autorisierungs-Server nicht erreichbar</string>
+    <string name="loading">Läd</string>
+    <string name="retry">Wiederholen</string>
+    <string name="oauth_failed_permissions">Autorisierung fehlgeschlagen: Alle gelisteten Rechte müssen gewährt werden</string>
+    <string name="offline">Sie sind offline</string>
+    <string name="confirmation_authorize_now">Sie müssen sich mit Ihrem OSM Benutzerkonto anmelden, um Änderungen an OpenStreetMap vorzunehmen. Jetzt autorisieren?</string>
+    <string name="later">Später</string>
+    <string name="filter">Filter</string>
+    <string name="only_currently_opened">Nur aktuell Geöffnete</string>
+    <string name="write_storage_request">CityZen benötigt Schreibrechte, um Kartendienste zur Verfügung zu stellen</string>
     </resources>
