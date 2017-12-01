@@ -45,4 +45,6 @@
 
     <string name="directions_to_here">Anfahrt mit dem Auto</string>
     <string name="create_poi">POI anlegen</string>
+    <string name="_24_7">24/7</string>
+    <string name="opening">Öffnet</string>
     </resources>
