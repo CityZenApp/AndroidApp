@@ -58,4 +58,5 @@
     <string name="add_closing_hours">Schließzeiten hinzufügen</string>
     <string name="add_opening_hours">Öffnungszeiten hinzufügen</string>
     <string name="not_valid_website">Keine gültige Internetseite</string>
+    <string name="not_valid_email">Keine gültige E-Mail Adresse</string>
     </resources>
