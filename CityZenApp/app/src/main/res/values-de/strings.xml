@@ -15,4 +15,7 @@
     <string name="filter">Filter</string>
     <string name="only_currently_opened">Nur aktuell Geöffnete</string>
     <string name="write_storage_request">CityZen benötigt Schreibrechte, um Kartendienste zur Verfügung zu stellen</string>
+    <string name="write_storage_request_toast">CityZen benötigt Schreibrechte, um Kartendienste bereitzustellen</string>
+    <string name="location_request">CityZen benötigt Ihren Ort, um Kartendienste bereitzustellen</string>
+    <string name="location_request_toast">CityZen benötigt Ihren Standort, um Kartendienste bereitzustellen</string>
     </resources>
