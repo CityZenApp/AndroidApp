@@ -50,7 +50,7 @@
     <string name="done">Done</string>
     <string name="no_internet_to_update_poi">No Internet access, it is needed to continue</string>
     <string name="session_expired_toast">Session expired. Please log in again to continue</string>
-    <string name="internet_access">Internet Access</string>
+    <string name="internet_access">Internet access</string>
     <string name="edit">Edit</string>
     <string name="street">Street</string>
     <string name="city">City</string>
@@ -95,21 +95,21 @@ The libre software licensing empowers community, by and for the community, and t
 
     <!--POI List-->
     <string name="Cafes">Cafés</string>
-    <string name="Bars_Clubs">Bars/clubs</string>
+    <string name="Bars_Clubs">Bars &amp; clubs</string>
     <string name="Restaurants">Restaurants</string>
     <string name="FastFood">Fast food</string>
     <string name="Tourism">Tourism</string>
-    <string name="Hotels_Hostels">Hotels/hostels</string>
+    <string name="Hotels_Hostels">Accommodation</string>
     <string name="Transportation">Transportation</string>
     <string name="GasStations">Gas stations</string>
-    <string name="Pharmacy_Healthcare">Pharmacy/healthcare</string>
-    <string name="Banks_ATMs_Exchange">Banks/ATMs/exchanges</string>
+    <string name="Pharmacy_Healthcare">Pharmacies &amp; healthcare</string>
+    <string name="Banks_ATMs_Exchange">Financial services</string>
     <string name="MobilePhoneStore">Mobile phone stores</string>
-    <string name="Markets_Kiosks">Markets/kiosks</string>
+    <string name="Markets_Kiosks">Markets &amp; kiosks</string>
     <string name="Shopping_Malls">Shopping malls</string>
     <string name="Parkings">Parking</string>
     <string name="RentBicycle">Bicycle rental</string>
-    <string name="RentCar_CareSharing">Rent a car &amp; Care sharing</string>
+    <string name="RentCar_CareSharing">Car rental &amp; sharing</string>
     <string name="logged_in_as">Logged in as:</string>
 
     <string name="login_to_osm">Log in to OSM</string>
