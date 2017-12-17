@@ -73,7 +73,7 @@
     <string name="sort_by_name">按名稱排序</string>
     <string name="add_a_new_marker_on_the_map">在地圖上增加一個標記</string>
     <string name="about_us">關於該專案</string>
-    <string name="about_text">CityZen 是一個開放原始碼的 Android 應用程式，可以幫助您輕鬆的導覽和探索城市。有了 CityZen，您可以在自己所在附近，找到興趣點(POI)，例如自動提款機、加油站、藥房、手機商店以及其他有趣的服務。應用程式根據您智慧手機的位置顯示這些興趣點，但是，它是尊重您隱私的，因為我們不會保留您的導覽資料。該應用程式是開放原始碼的授權，因為我們希望該專案能夠成為社群授權給社群。我們發起這個專案，是為了作授權方式的工具和平台，例如 OpenStreetMap 那樣重視我們的自由度。如果您是 OpenStreetMap 貢獻者，您可以在 CityZen 內編輯它們，輕鬆地將資訊加到 POI 中。</string>
+    <string name="about_text">CityZen 是一個開放原始碼的 Android 應用程式，可以幫助您輕鬆的導覽和探索城市。有了 CityZen，您可以在自己所在附近，找到興趣點(POI)，例如自動提款機、加油站、藥房、手機商店以及其他有趣的服務。應用程式根據您智慧手機的定位顯示這些興趣點，但是，它是尊重您隱私的，因為我們不會保留您的導覽資料。此應用程式是開放原始碼的授權，因為我們希望該專案能夠成為社群授權給社群。我們發起這個專案，是為了作授權方式的工具和平台，例如 OpenStreetMap 那樣重視我們的自由度。如果您是 OpenStreetMap 貢獻者，您可以在 CityZen 內編輯它們，輕鬆地將資訊加到 POI 中。</string>
     <string name="domain">www.cityzenapp.co</string>
     <string name="license_link">www.cityzenapp.co/license</string>
     <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
@@ -81,7 +81,7 @@
     <string name="license">授權</string>
     <string name="privacy_policy">隱私政策</string>
     <string name="contact">聯絡</string>
-    <string name="alert_message">CityZen 必須定位以提供地圖服務。您想啟用定位？</string>
+    <string name="alert_message">CityZen 必須定位以提供地圖服務。您想啟用定位嗎？</string>
     <string name="osm_routing_unavailable">OSM 路徑目前不能使用。稍後再試</string>
     <string name="house_number">門牌號碼</string>
     <string name="postcode">郵遞區號</string>
