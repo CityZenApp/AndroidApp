@@ -4,9 +4,9 @@
     <color name="colorPrimary">#5d98e1</color>
     <!--<color name="colorPrimaryDark">#303F9F</color>-->
     <color name="colorPrimaryDark">#E0E0E0</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#d8331d</color>
     <color name="colorWhite">#ffffff</color>
-    <color name="colorAppGreen">#47df86</color>
+    <color name="colorAppGreen">#d8331d</color>
     <color name="darkBackground">#cbcbcb</color>
     <color name="logoBackground">#d8331d</color>
 </resources>
