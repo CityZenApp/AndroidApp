@@ -6,6 +6,111 @@
     <string name="only_currently_opened">Vetëm ato që janë hapur</string>
     <string name="allow_permission">Lejo</string>
     <string name="deny_permission">Mos lejo</string>
-    <string name="oauth_communication_error">Nuk mund të arrihet serveri autorizues</string>
-    <string name="retry">Provo sërisht</string>
-    </resources>
+    <string name="oauth_communication_error">Nuk mund të kontaktohet serveri autorizues</string>
+    <string name="retry">Provo sërish</string>
+    <string name="oauth_failed_permissions">Autorizimi dështoi: Të gjitha lejet e listuara duhet të aprovohen</string>
+    <string name="offline">Ju nuk jeni në linjë</string>
+    <string name="confirmation_authorize_now">Ju duhet të hyni me llogarinë tuaj në OSM që të aplikoni ndryshime në OpenStreetMap. Doni ta autorizoni tani?</string>
+    <string name="write_storage_request">CityZen duhet të ketë leje për shkrim që të sigurojë shërbimet e hartës</string>
+    <string name="write_storage_request_toast">CityZen duhet të ketë leje për shkrim që të sigurojë shërbimet e hartës</string>
+    <string name="location_request">CityZen duhet të ketë vendndodhjen që të sigurojë shërbimet e hartës</string>
+    <string name="location_request_toast">CityZen duhet të ketë vendndodhjen që të sigurojë shërbimet e hartës</string>
+    <string name="no_pois_near_user_location">nuk u gjendën shërbime afër vendndodhjes suaj</string>
+    <string name="enable_gps_to_continue">Nuk mund të gjendet vendndodhja juaj.
+\nAktivizoni GPS për të vazhduar</string>
+    <string name="calculating_device_location">Jemi duke zbuluar vendndodhjen tuaj.
+\nJu lutem prisni.</string>
+    <string name="user_agent">CityZen</string>
+    <string name="add_new_poi_toast">Klikoni në hartë për të shtuar
+\nPika Interesi</string>
+    <string name="add">Shto</string>
+    <string name="cancel">Anullo</string>
+    <string name="wifi">WiFi</string>
+    <string name="email">Adresë elektronike</string>
+    <string name="website">Uebfaqja</string>
+    <string name="phone">Telefon</string>
+    <string name="name">Emër</string>
+    <string name="address">Adresa</string>
+    <string name="opening_hours">Orari i punës</string>
+    <string name="monday">Hën</string>
+    <string name="tuesday">Mar</string>
+    <string name="wednesday">Mër</string>
+    <string name="thursday">Enj</string>
+    <string name="friday">Pre</string>
+    <string name="saturday">Sht</string>
+    <string name="sunday">Die</string>
+    <string name="all_week_days">Të gjitha</string>
+    <string name="enable">Aktivizo</string>
+
+
+    <string name="directions_to_here">drejtime me makinë</string>
+    <string name="create_poi">Krijo PI</string>
+    <string name="_24_7">24/7</string>
+    <string name="opening">Hapja</string>
+    <string name="closing">Mbyllja</string>
+    <string name="done">E kryer</string>
+    <string name="no_internet_to_update_poi">Nuk ka lidhje në internet. Lidhuni me internet për të vazhduar</string>
+    <string name="session_expired_toast">Seanca juaj ka skaduar. Ju lutem hyni përsëri për të vazhduar</string>
+    <string name="internet_access">Lidhja me Internet</string>
+    <string name="edit">Redakto</string>
+    <string name="street">Rruga</string>
+    <string name="city">Qyteti</string>
+    <string name="add_closing_hours">Shto orën e mbylljes</string>
+    <string name="add_opening_hours">Shto orën e hapjes</string>
+    <string name="not_valid_website">Nuk është një faqe interneti e vlefshme</string>
+    <string name="not_valid_email">Nuk është një postë elektronike e vlefshme</string>
+    <string name="an_error_occurred">Ndodhi një gabim</string>
+    <string name="updated_successfully">u përditësua</string>
+    <string name="editing_is_not_possible">Redaktimi nuk është i mundur për</string>
+    <string name="poi_type">Lloji i Pikës së Interesit</string>
+    <string name="select_amenity_type">Zgjidh llojin e shërbimit të ndërtesës</string>
+    <string name="select_amenity_type_to_continue">Zgjidh llojin e shërbimit të ndërtesës për të vazhduar</string>
+    <string name="yes">Po</string>
+    <string name="no">Jo</string>
+    <string name="wired">Me kabëll</string>
+    <string name="wlan">Me WiFi</string>
+    <string name="created_succesfully">krijuar me sukses</string>
+    <string name="sort_by_name">Klasifiko sipas emrit</string>
+    <string name="add_a_new_marker_on_the_map">Shto një shenjë në hartë</string>
+    <string name="about_us">Rreth projektit</string>
+    <string name="about_text">CityZen është një aplikacion Android me kodburim të hapur i cili ju ndihmon që të navigoni dhe eksploroni qytetin me lehtësi. Me anë të CityZen ju do të gjeni Pika Interesi (PI) si ATM, stacione karburanti, farmaci, dyqane telefonash dhe shërbime të tjera interesante rrotull jush. Aplikacioni i shfaq këto PI bazuar në vendndodhjen e telefonit tuaj, por e bën këtë duke respektuar privatësinë tuaj sepse ne nuk ruajmë të dhënat tuaja të navigimit. Aplikaconi është nën një licensë me kodburim të hapur sepse ne duam që projekti të fuqizohet nga komuniteti për komunitetin. Ne e nisëm këtë projekt si një mënyrë për të fuqizuar mjetet dhe platformat si OpenStreetMap të cilat respektojnë liritë tona. Nëse ju jeni një kontribues në OpenStreetMap ju mund të shtoni lehtësisht informacion rreth PI duke i redaktuar ato brenda CityZen.</string>
+    <string name="domain">www.cityzenapp.co</string>
+    <string name="license_link">www.cityzenapp.co/license</string>
+    <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
+    <string name="email_contact">ping@cityzenapp.co</string>
+    <string name="license">Licensa</string>
+    <string name="privacy_policy">Politika e privatësisë</string>
+    <string name="contact">Kontakt</string>
+    <string name="alert_message">CityZen duhet të ketë vendndodhjen që të ofrojë shërbimet e hartës. Dëshironi të aktivizoni vendndodhjen?</string>
+    <string name="osm_routing_unavailable">Udhëzimi i rrugës sipas OSM nuk është i mundur për momentin. Provoni më vonë</string>
+    <string name="house_number">Numri i shtëpisë</string>
+    <string name="postcode">Kodi postar</string>
+    <string name="get_involved">Përfshihuni</string>
+    <string name="get_involved_link">www.github.com/CityZenApp</string>
+    <string name="credits">Kreditet</string>
+    <string name="credits_link">www.cityzenapp.co/credits</string>
+    <string name="open_source_culture">Aplikacioni CityZen u krijua në Shqipëri me shumë dashuri ♥
+\npër kulturën e lirë dhe me kodburim të hapur.</string>
+
+
+    <string name="Cafes">Kafene</string>
+    <string name="Bars_Clubs">Bare/Klube</string>
+    <string name="Restaurants">Restorante</string>
+    <string name="FastFood">Ushqim i shpejtë</string>
+    <string name="Tourism">Turizëm</string>
+    <string name="Hotels_Hostels">Hotele/Hostele</string>
+    <string name="Transportation">Transport</string>
+    <string name="GasStations">Stacionet e karburantit</string>
+    <string name="Pharmacy_Healthcare">Farmaci/Kujdesi për shëndetin</string>
+    <string name="Banks_ATMs_Exchange">Banka/ATM/Këmbim valute</string>
+    <string name="MobilePhoneStore">Dyqan telefoni</string>
+    <string name="Markets_Kiosks">Market/Kioska</string>
+    <string name="Shopping_Malls">Qendra Tregtare</string>
+    <string name="Parkings">Parking</string>
+    <string name="RentBicycle">Biçikleta me qira</string>
+    <string name="RentCar_CareSharing">Makina me qira</string>
+    <string name="logged_in_as">Hyrë si:</string>
+
+    <string name="login_to_osm">Hyni në OSM</string>
+    <string name="logout">Dilni</string>
+</resources>
