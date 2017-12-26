@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources><string name="app_name">CityZen</string>
-    <string name="oauth_communication_error">無法到達授權伺服器</string>
+    <string name="oauth_communication_error">無法連接至授權伺服器</string>
     <string name="loading">載入中</string>
     <string name="retry">重試</string>
-    <string name="oauth_failed_permissions">授權失敗：需要授予所有被列出的權限</string>
+    <string name="oauth_failed_permissions">授權失敗：需要授予下列的存取權</string>
     <string name="offline">您正離線</string>
-    <string name="confirmation_authorize_now">您需要登錄您的 OSM 使用者帳戶才能將變更套用到 OpenStreetMap。現在授權嗎？</string>
+    <string name="confirmation_authorize_now">您需要登入您的 OSM 帳號才能將變更套用到 OpenStreetMap。現在授權嗎？</string>
     <string name="later">稍後</string>
     <string name="filter">篩選</string>
     <string name="only_currently_opened">僅目前開啟</string>
