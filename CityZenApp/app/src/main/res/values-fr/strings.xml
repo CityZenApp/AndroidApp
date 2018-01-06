@@ -102,4 +102,8 @@
 
     <string name="login_to_osm">Se connecter à OSM</string>
     <string name="logout">Se déconnecter</string>
-</resources>
+<string name="later">Plus tard</string>
+    <string name="filter">Filtrer</string>
+    <string name="wlan">WLAN</string>
+    <string name="created_succesfully">créé avec succès</string>
+    </resources>
