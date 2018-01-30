@@ -1,2 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="app_name">CityZen</string>
+    <string name="loading">Завантаження</string>
+    <string name="retry">Повторити</string>
+    <string name="offline">Ви в автономному режимі</string>
+    <string name="later">Пізніше</string>
+    <string name="filter">Фільтр</string>
+    <string name="allow_permission">Дозволити</string>
+    <string name="deny_permission">Заборонити</string>
+    <string name="user_agent">CityZen</string>
+    <string name="add_new_poi_toast">Натисніть на карту, щоб додати
+\n  Цікаві місця</string>
+    <string name="add">Додати</string>
+    <string name="cancel">Скасувати</string>
+    <string name="email">Електронна пошта</string>
+    <string name="website">Веб-сайт</string>
+    <string name="phone">Телефон</string>
+    <string name="name">Ім\'я</string>
+    <string name="address">Адреса</string>
+    <string name="logout">Вийти</string>
+</resources>
