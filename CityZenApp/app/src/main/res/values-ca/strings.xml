@@ -1,2 +1,116 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="app_name">CityZen</string>
+    <string name="oauth_communication_error">No s\'ha pogut accedir al servidor d\'autorització</string>
+    <string name="loading">S\'està carregant</string>
+    <string name="retry">Torna-ho a intentar</string>
+    <string name="oauth_failed_permissions">L\'autorització ha fallat: cal que doneu tots els permisos següents</string>
+    <string name="offline">Esteu fora de línia</string>
+    <string name="confirmation_authorize_now">Cal que inicieu sessió amb el compte d\'OSM per a fer canvis a l\'OpenStreetmap. Voleu connectar-vos ara?</string>
+    <string name="later">Després</string>
+    <string name="filter">Filtre</string>
+    <string name="only_currently_opened">Només els oberts ara mateix</string>
+    <string name="write_storage_request">CityZen requereix permisos d\'escriptura per a proporcionar serveis cartogràfics</string>
+    <string name="write_storage_request_toast">CityZen requereix permisos d\'escriptura per a proporcionar serveis cartogràfics</string>
+    <string name="location_request">CitiyZen requereix la ubicació per a proporcionar serveis cartogràfics</string>
+    <string name="location_request_toast">CityZen requereix la ubicació per a proporcionar serveis cartogràfics</string>
+    <string name="allow_permission">Autoritza</string>
+    <string name="deny_permission">Denega</string>
+    <string name="no_pois_near_user_location">no s\'ha trobat cap servei prop de la vostra ubicació</string>
+    <string name="enable_gps_to_continue">No puc trobar la vostra ubicació.
+\nActiveu la geolocalització per a continuar</string>
+    <string name="calculating_device_location">Estem deduint la vostra ubicació.
+\nEspereu.</string>
+    <string name="user_agent">CityZen</string>
+    <string name="add_new_poi_toast">Feu clic al mapa per a afegir-hi
+\npunts d\'interès</string>
+    <string name="add">Afegeix</string>
+    <string name="cancel">Cancel·la</string>
+    <string name="wifi">WiFi</string>
+    <string name="email">Correu electrònic</string>
+    <string name="website">Lloc web</string>
+    <string name="phone">Telèfon</string>
+    <string name="name">Nom</string>
+    <string name="address">Adreça</string>
+    <string name="opening_hours">Horari d\'obertura</string>
+    <string name="monday">dl.</string>
+    <string name="tuesday">dt.</string>
+    <string name="wednesday">dc.</string>
+    <string name="thursday">dj.</string>
+    <string name="friday">dv.</string>
+    <string name="saturday">ds.</string>
+    <string name="sunday">dg.</string>
+    <string name="all_week_days">tots</string>
+    <string name="enable">Activa</string>
+
+
+    <string name="directions_to_here">Indicacions pel cotxe</string>
+    <string name="create_poi">Crea un PDI</string>
+    <string name="_24_7">24/7</string>
+    <string name="opening">Obertura</string>
+    <string name="closing">Tancament</string>
+    <string name="done">Fet</string>
+    <string name="no_internet_to_update_poi">No hi ha accés a internet. Connecteu a internet per a continuar</string>
+    <string name="session_expired_toast">La sessió ha expirat. Inicieu sessió per a continuar</string>
+    <string name="internet_access">Accés a internet</string>
+    <string name="edit">Edita</string>
+    <string name="street">Carrer</string>
+    <string name="city">Ciutat</string>
+    <string name="add_closing_hours">Afegeix horari de tancament</string>
+    <string name="add_opening_hours">Afegeix horari d\'obertura</string>
+    <string name="not_valid_website">No és un lloc web vàlid</string>
+    <string name="not_valid_email">No és una adreça electrònica vàlida</string>
+    <string name="an_error_occurred">S\'ha produït un error</string>
+    <string name="updated_successfully">s\'ha actualitzat correctament</string>
+    <string name="editing_is_not_possible">No es pot editar</string>
+    <string name="poi_type">Tipus de punt d\'interès</string>
+    <string name="select_amenity_type">Seleccioneu el tipus de servei</string>
+    <string name="select_amenity_type_to_continue">Seleccioneu el tipus de servei per a continuar</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="wired">Connexió amb cable</string>
+    <string name="wlan">WLAN</string>
+    <string name="created_succesfully">s\'ha creat correctament</string>
+    <string name="sort_by_name">Ordena pel nom</string>
+    <string name="add_a_new_marker_on_the_map">Afegeix un marcador al mapa</string>
+    <string name="about_us">Quant al projecte</string>
+    <string name="about_text">CityZen és una aplicació d\'Android de codi obert que us ajuda a navegar i explorar la ciutat fàcilment. Amb CityZen podeu trobar punts d\'interès (PDI), com per exemple caixers automàtics, gasolineres, farmàcies, botigues de telefonia mòbil i altres serveis interessants a prop vostre. L\'aplicació mostra aquests PDI segons la ubicació del telèfon, però ho fa respectant la vostra privadesa, ja que no conservem les dades de navegació. L\'aplicació es troba publicada amb una llicència de codi obert perquè volem que el projecte estigui de la comunitat i per a la comunitat. Hem iniciat aquest projecte com una forma d\'habilitar eines i plataformes com ara OpenStreetMap que respecten les nostres llibertats. Si sou col·laborador de l\'OpenStreetMap, podeu afegir fàcilment informació en els PDI, editant-los des de CityZen.</string>
+    <string name="domain">www.cityzenapp.co</string>
+    <string name="license_link">www.cityzenapp.co/license</string>
+    <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
+    <string name="email_contact">ping@cityzenapp.co</string>
+    <string name="license">Llicència</string>
+    <string name="privacy_policy">Política de privadesa</string>
+    <string name="contact">Contacte</string>
+    <string name="alert_message">CityZen requereix la ubicació per a proporcionar serveis cartogràfics. Voleu activar la ubicació?</string>
+    <string name="osm_routing_unavailable">La navegació OSM no està disponible actualment. Torneu a intentar-ho més tard</string>
+    <string name="house_number">Número de casa</string>
+    <string name="postcode">Codi postal</string>
+    <string name="get_involved">Col·laboració</string>
+    <string name="get_involved_link">www.github.com/CityZenApp</string>
+    <string name="credits">Crèdits</string>
+    <string name="credits_link">www.cityzenapp.co/credits</string>
+    <string name="open_source_culture">L\'aplicació CityZen es va iniciar a Albània amb molt de ♥
+\n per la cultura de codi lliure i obert.</string>
+
+
+    <string name="Cafes">Cafès</string>
+    <string name="Bars_Clubs">Bars i clubs</string>
+    <string name="Restaurants">Restaurants</string>
+    <string name="FastFood">Menjar ràpid</string>
+    <string name="Tourism">Turisme</string>
+    <string name="Hotels_Hostels">Hotels i hostals</string>
+    <string name="Transportation">Transport</string>
+    <string name="GasStations">Estacions de servei</string>
+    <string name="Pharmacy_Healthcare">Farmàcies i cura personal</string>
+    <string name="Banks_ATMs_Exchange">Bancs, caixer automàtics i canvi de divisa</string>
+    <string name="MobilePhoneStore">Botigues de telefonia mòbil</string>
+    <string name="Markets_Kiosks">Mercats i quioscos</string>
+    <string name="Shopping_Malls">Centres comercials</string>
+    <string name="Parkings">Aparcaments</string>
+    <string name="RentBicycle">Lloguer de bicicletes</string>
+    <string name="RentCar_CareSharing">Lloguer i compartició de cotxes</string>
+    <string name="logged_in_as">Sessió iniciada com a:</string>
+
+    <string name="login_to_osm">Sessió iniciada a OSM</string>
+    <string name="logout">Tanca la sessió</string>
+</resources>
