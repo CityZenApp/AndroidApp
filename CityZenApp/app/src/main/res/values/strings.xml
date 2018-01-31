@@ -1,30 +1,30 @@
 <resources>
     <string name="app_name">CityZen</string>
-    <string name="oauth_communication_error">"Unable to reach the authorization server"</string>
+    <string name="oauth_communication_error">"Could not contact the authorization server"</string>
     <string name="loading">"Loading"</string>
     <string name="retry">"Retry"</string>
     <string name="oauth_failed_permissions">"Authorization failed: All listed permissions need to be granted"</string>
     <string name="offline">"You are offline"</string>
-    <string name="confirmation_authorize_now">"You need to login with your OSM user account to apply changes to OpenStreetMap. Authorize now?"</string>
+    <string name="confirmation_authorize_now">"An OSM user account in needed to make changes in OpenStreetMap. Log in now?"</string>
     <string name="later">"Later"</string>
     <string name="filter">Filter</string>
     <string name="only_currently_opened">Only currently opened</string>
     <!--Permission Request-->
-    <string name="write_storage_request">CityZen needs to have write permissions to provide map services</string>
-    <string name="write_storage_request_toast">CityZen must have write permissions to provide map services</string>
-    <string name="location_request">CityZen needs to have location to provide map services</string>
-    <string name="location_request_toast">CityZen must have location to provide map services</string>
+    <string name="write_storage_request">CityZen needs write permissions to provide map services</string>
+    <string name="write_storage_request_toast">CityZen needs write permissions to provide map services</string>
+    <string name="location_request">CityZen needs location access to provide map services</string>
+    <string name="location_request_toast">CityZen needs location access to provide map services</string>
     <string name="allow_permission">Allow</string>
     <string name="deny_permission">Deny</string>
-    <string name="no_pois_near_user_location">no services found near your location</string>
+    <string name="no_pois_near_user_location">no services found near you</string>
     <string name="enable_gps_to_continue">Can\'t find your location. \nEnable GPS to continue</string>
-    <string name="calculating_device_location">We are figuring out your location. \nPlease wait. </string>
+    <string name="calculating_device_location">Determining location. \nPlease wait. </string>
     <string name="user_agent">CityZen</string>
-    <string name="add_new_poi_toast">Click on the map to add \n Points of Interest</string>
+    <string name="add_new_poi_toast">Click on the map to add \n points of interest</string>
     <string name="add">Add</string>
     <string name="cancel">Cancel</string>
-    <string name="wifi">Wifi</string>
-    <string name="email">Email</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="email">E-mail address</string>
     <string name="website">Website</string>
     <string name="phone">Phone</string>
     <string name="name">Name</string>
@@ -48,18 +48,18 @@
     <string name="opening">Opening</string>
     <string name="closing">Closing</string>
     <string name="done">Done</string>
-    <string name="no_internet_to_update_poi">No internet access.  Connect to internet to continue</string>
-    <string name="session_expired_toast">Your session has expired.  Please login to continue</string>
-    <string name="internet_access">Internet Access</string>
+    <string name="no_internet_to_update_poi">No Internet access, it is needed to continue</string>
+    <string name="session_expired_toast">Session expired. Please log in again to continue</string>
+    <string name="internet_access">Internet access</string>
     <string name="edit">Edit</string>
     <string name="street">Street</string>
     <string name="city">City</string>
     <string name="add_closing_hours">Add closing hours</string>
     <string name="add_opening_hours">Add opening hours</string>
     <string name="not_valid_website">Not a valid website</string>
-    <string name="not_valid_email">Not a valid email</string>
+    <string name="not_valid_email">Not a valid e-mail address</string>
     <string name="an_error_occurred">An error occurred</string>
-    <string name="updated_successfully">updated successfully</string>
+    <string name="updated_successfully">updated</string>
     <string name="editing_is_not_possible">Editing is not possible for</string>
     <string name="poi_type">Point of interest type</string>
     <string name="select_amenity_type">Select amenity type</string>
@@ -67,51 +67,51 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="wired">Wired</string>
-    <string name="wlan">Wlan</string>
-    <string name="created_succesfully">created successfully</string>
+    <string name="wlan">WLAN</string>
+    <string name="created_succesfully">created</string>
     <string name="sort_by_name">Sort by name</string>
     <string name="add_a_new_marker_on_the_map">Add a marker on the map</string>
     <string name="about_us">About the project</string>
-    <string name="about_text">CityZen is an open source Android app that helps you navigate and explore the city easily.
-        With CityZen you find points of interest (POIs) such as ATMs, gas stations, drugstores, mobile phone stores and other interesting services near you. The app shows these POIs based on your location of your smartphone, but it does so by respecting your privacy since we don’t keep your navigation data.
-The app is open source licensed because we want the project to be empowered by the community for the community. We initiated this project as a way of empowering tools and platforms such as OpenStreetMap that respect our freedoms. If you are an OpenStreetMap contributor you can easily add information to the POIs by editing them inside CityZen.</string>
+    <string name="about_text">A libre software Android app that helping you navigate and explore the city.
+        Find points of interest, and other interesting services near you. They are relevant to your position, but privacy is maintained, as navigation data is not kept.
+The libre software licensing empowers community, by and for the community, and the project makes use of tools and platforms that respects user freedom, such as OpenStreetMap. If you have an account there, you can add information to POIs by editing them inside CityZen.</string>
     <string name="domain">www.cityzenapp.co</string>
-    <string name="license_link">www.cityzenapp.co/license</string>
+    <string name="license_link">https://github.com/CityZenApp/Android-Development/blob/master/LICENSE</string>
     <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
     <string name="email_contact">ping@cityzenapp.co</string>
     <string name="license">License</string>
     <string name="privacy_policy">Privacy policy</string>
     <string name="contact">Contact</string>
-    <string name="alert_message">CityZen must have location to provide map services.  Do you want to enable location?</string>
+    <string name="alert_message">CityZen needs location access to provide map services. Do you want to enable it now?</string>
     <string name="osm_routing_unavailable">OSM routing isn\'t available at this time. Try again later</string>
     <string name="house_number">House number</string>
     <string name="postcode">Postcode</string>
     <string name="get_involved">Get involved</string>
-    <string name="get_involved_link">www.github.com/CityZenApp</string>
+    <string name="get_involved_link">https://www.github.com/CityZenApp</string>
     <string name="credits">Credits</string>
     <string name="credits_link">www.cityzenapp.co/credits</string>
-    <string name="open_source_culture">CityZen app was initiated in Albania with a lot of ♥\n for free and open source culture.</string>
+    <string name="open_source_culture">CityZen app was initiated in Albania with ♥\n for free software and its culture.</string>
 
 
     <!--POI List-->
-    <string name="Cafes">Cafes</string>
-    <string name="Bars_Clubs">Bars/Clubs</string>
+    <string name="Cafes">Cafés</string>
+    <string name="Bars_Clubs">Bars &amp; clubs</string>
     <string name="Restaurants">Restaurants</string>
     <string name="FastFood">Fast food</string>
     <string name="Tourism">Tourism</string>
-    <string name="Hotels_Hostels">Hotels/Hostels</string>
+    <string name="Hotels_Hostels">Accommodation</string>
     <string name="Transportation">Transportation</string>
     <string name="GasStations">Gas stations</string>
-    <string name="Pharmacy_Healthcare">Pharmacy/Healthcare</string>
-    <string name="Banks_ATMs_Exchange">Banks/ATMs/Exchange</string>
-    <string name="MobilePhoneStore">Mobile phone store</string>
-    <string name="Markets_Kiosks">Markets/Kiosks</string>
-    <string name="Shopping_Malls">Shopping Malls</string>
-    <string name="Parkings">Parkings</string>
-    <string name="RentBicycle">Rent a bicycle</string>
-    <string name="RentCar_CareSharing">Rent a car &amp; Care sharing</string>
+    <string name="Pharmacy_Healthcare">Pharmacies &amp; healthcare</string>
+    <string name="Banks_ATMs_Exchange">Financial services</string>
+    <string name="MobilePhoneStore">Mobile phone stores</string>
+    <string name="Markets_Kiosks">Markets &amp; kiosks</string>
+    <string name="Shopping_Malls">Shopping malls</string>
+    <string name="Parkings">Parking</string>
+    <string name="RentBicycle">Bicycle rental</string>
+    <string name="RentCar_CareSharing">Car rental &amp; sharing</string>
     <string name="logged_in_as">Logged in as:</string>
 
-    <string name="login_to_osm">Login to OSM</string>
-    <string name="logout">LogOut</string>
+    <string name="login_to_osm">Log in to OSM</string>
+    <string name="logout">Log out</string>
 </resources>
