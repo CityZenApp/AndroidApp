@@ -12,17 +12,17 @@ public class FilterCategory {
      * <!--Points Of interest-->
      * <array name="poi_titles"> <!--Localization needed-->
      * <item>Cafés</item>
-     * <item>Bars &amp; clubs</item>
+     * <item>Bars/clubs</item>
      * <item>Restaurants</item>
      * <item>Fast food</item>
      * <item>Tourism</item>
-     * <item>Hotels &amp; hostels</item>
+     * <item>Hotels/hostels</item>
      * <item>Transportation</item>
      * <item>Gas stations</item>
-     * <item>Pharmacies &amp; healthcare</item>
+     * <item>Pharmacies/healthcare</item>
      * <item>Banks, ATMs &amp; exchange</item>
      * <item>Mobile phone stores</item>
-     * <item>Markets &amp; kiosks</item>
+     * <item>Markets/kiosks</item>
      * <item>Shopping malls</item>
      * <item>Parking</item>
      * <item>Rent a bicycle</item>
