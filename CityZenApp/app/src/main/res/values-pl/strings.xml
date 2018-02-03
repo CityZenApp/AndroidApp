@@ -1,2 +1,116 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="app_name">CityZen</string>
+    <string name="oauth_communication_error">Brak połączenia z serwerem uwierzytelniającym</string>
+    <string name="loading">Ładowanie</string>
+    <string name="retry">Ponów</string>
+    <string name="oauth_failed_permissions">Uwierzytelnianie nieudane: Musisz posiadać wszystkie podane uprawnienia</string>
+    <string name="offline">Brak połączenia z siecią</string>
+    <string name="confirmation_authorize_now">Aby wprowadzić zmiany do OpenStreetMap musisz zalogować się na konto OSM. Wykonać?</string>
+    <string name="later">Potem</string>
+    <string name="filter">Filtr</string>
+    <string name="only_currently_opened">Tylko obecnie otwarte</string>
+    <string name="write_storage_request">Prośba o nadanie uprawnień</string>
+    <string name="write_storage_request_toast">CityZen potrzebuje prawa do zapisu aby zapewnić obsługę map</string>
+    <string name="location_request">CityZen potrzebuje danych o lokalizacji aby zapewnić obsługę map</string>
+    <string name="location_request_toast">CityZen potrzebuje danych o lokalizacji aby zapewnić obsługę map</string>
+    <string name="allow_permission">Zezwól</string>
+    <string name="deny_permission">Odrzuć</string>
+    <string name="no_pois_near_user_location">nie odnaleziono żadnej usługi w Twoim pobliżu</string>
+    <string name="enable_gps_to_continue">Nie mogę odnaleźć Twojej lokacji.
+\nAby kontynuować włącz GPS</string>
+    <string name="calculating_device_location">Ustalam Twoje położenie.
+\nProszę czekać.</string>
+    <string name="user_agent">CityZen</string>
+    <string name="add_new_poi_toast">Kliknij na mapę, aby dodać
+\nCiekawe miejsce</string>
+    <string name="add">Dodaj</string>
+    <string name="cancel">Zrezygnuj</string>
+    <string name="wifi">Wifi</string>
+    <string name="email">Email</string>
+    <string name="website">Strona www</string>
+    <string name="phone">Telefon</string>
+    <string name="name">Imię</string>
+    <string name="address">Adres</string>
+    <string name="opening_hours">Godziny otwarcia</string>
+    <string name="monday">Pon</string>
+    <string name="tuesday">Wto</string>
+    <string name="wednesday">Śro</string>
+    <string name="thursday">Czw</string>
+    <string name="friday">Pią</string>
+    <string name="saturday">Sob</string>
+    <string name="sunday">Nie</string>
+    <string name="all_week_days">Wszystko</string>
+    <string name="enable">Uruchom</string>
+
+
+    <string name="directions_to_here">podróż samochodem</string>
+    <string name="create_poi">Stwórz ważne miejsce (POI)</string>
+    <string name="_24_7">24/7</string>
+    <string name="opening">Godziny otwarcia</string>
+    <string name="closing">Godzina zamknięcia</string>
+    <string name="done">Gotowe</string>
+    <string name="no_internet_to_update_poi">Brak połączenia internetowego. Aby kontynuować, połącz z internetem</string>
+    <string name="session_expired_toast">Sesja wygasła. Aby kontynuować, zaloguj się ponownie</string>
+    <string name="internet_access">Połączenie z internetem</string>
+    <string name="edit">Edytuj</string>
+    <string name="street">Ulica</string>
+    <string name="city">Miasto</string>
+    <string name="add_closing_hours">Dodaj godzinę zamknięcia</string>
+    <string name="add_opening_hours">Dodaj godziny otwarcia</string>
+    <string name="not_valid_website">Nieprawidłowy adres www</string>
+    <string name="not_valid_email">Nieprawidłowy adres email</string>
+    <string name="an_error_occurred">Wystąpił błąd</string>
+    <string name="updated_successfully">uaktualniono pomyślnie</string>
+    <string name="editing_is_not_possible">Nie można edytować</string>
+    <string name="poi_type">Typ ciekawego miejsca (POI)</string>
+    <string name="select_amenity_type">Wybierz rodzaj udogodnienia</string>
+    <string name="select_amenity_type_to_continue">Aby kontynuować, wybierz typ udogodnienia</string>
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
+    <string name="wired">Przewodowe</string>
+    <string name="wlan">Bezprzewodowe</string>
+    <string name="created_succesfully">stworzono pomyślnie</string>
+    <string name="sort_by_name">Posortuj wg nazw</string>
+    <string name="add_a_new_marker_on_the_map">Dodaj znacznik na mapie</string>
+    <string name="about_us">O projekcie</string>
+    <string name="domain">www.cityzenapp.co</string>
+    <string name="license_link">www.cityzenapp.co/license</string>
+    <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
+    <string name="email_contact">ping@cityzenapp.co</string>
+    <string name="license">Licencja</string>
+    <string name="privacy_policy">Polityka prywatności</string>
+    <string name="contact">Kontakt</string>
+    <string name="alert_message">CityZen musi znać Twoją lokację, aby zapewnić obsługę map. Czy udostępnić dane o lokalizacji?</string>
+    <string name="osm_routing_unavailable">Wyznacznie tras OSM nie jest w tej chwili dostępne. Spróbuj ponownie później</string>
+    <string name="house_number">Numer domu</string>
+    <string name="postcode">Kod pocztowy</string>
+    <string name="get_involved">Dołącz do nas</string>
+    <string name="get_involved_link">www.github.com/CityZenApp</string>
+    <string name="credits">Podziękowania</string>
+    <string name="credits_link">www.cityzenapp.co/credits</string>
+    <string name="open_source_culture">CItyZen zostało stworzone w Albanii, z mnóstwem ♥
+\ndla kultury wolnego i otwartego oprogramowania.</string>
+
+
+    <string name="Cafes">Lista POI</string>
+    <string name="Bars_Clubs">Bary/Kluby</string>
+    <string name="Restaurants">Restauracje</string>
+    <string name="FastFood">"
+\n"</string>
+    <string name="Tourism">Turystka</string>
+    <string name="Hotels_Hostels">Hotele/Hostele</string>
+    <string name="Transportation">Trasport</string>
+    <string name="GasStations">Stacje benzynowe</string>
+    <string name="Pharmacy_Healthcare">Apteki/Służba zdrowia</string>
+    <string name="Banks_ATMs_Exchange">Banki/Bankomaty/Kantory</string>
+    <string name="MobilePhoneStore">Sklep z telefonami komórkowymi</string>
+    <string name="Markets_Kiosks">Kioski</string>
+    <string name="Shopping_Malls">Domy handlowe</string>
+    <string name="Parkings">Parkingi</string>
+    <string name="RentBicycle">Wypożyczlnie rowerów</string>
+    <string name="RentCar_CareSharing">Wypożyczalnie samochodów</string>
+    <string name="logged_in_as">Zalogowan(y/a) jako:</string>
+
+    <string name="login_to_osm">Nazwa użytkownika OSM</string>
+    <string name="logout">Wyloguj</string>
+</resources>
