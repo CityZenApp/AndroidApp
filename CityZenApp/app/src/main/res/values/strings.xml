@@ -95,17 +95,17 @@ The app is open source licensed because we want the project to be empowered by t
 
     <!--POI List-->
     <string name="Cafes">Cafés</string>
-    <string name="Bars_Clubs">Bars &amp; clubs</string>
+    <string name="Bars_Clubs">Bars/clubs</string>
     <string name="Restaurants">Restaurants</string>
     <string name="FastFood">Fast food</string>
     <string name="Tourism">Tourism</string>
-    <string name="Hotels_Hostels">Hotels &amp; hostels</string>
+    <string name="Hotels_Hostels">Hotels/hostels</string>
     <string name="Transportation">Transportation</string>
     <string name="GasStations">Gas stations</string>
-    <string name="Pharmacy_Healthcare">Pharmacies &amp; healthcare</string>
+    <string name="Pharmacy_Healthcare">Pharmacies/healthcare</string>
     <string name="Banks_ATMs_Exchange">Banks, ATMs &amp; exchange</string>
     <string name="MobilePhoneStore">Mobile phone stores</string>
-    <string name="Markets_Kiosks">Markets &amp; kiosks</string>
+    <string name="Markets_Kiosks">Markets/kiosks</string>
     <string name="Shopping_Malls">Shopping malls</string>
     <string name="Parking">Parking</string>
     <string name="RentBicycle">Rent a bicycle</string>
