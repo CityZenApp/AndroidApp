@@ -17,7 +17,7 @@
         <item>@string/MobilePhoneStore</item>
         <item>@string/Markets_Kiosks</item>
         <item>@string/Shopping_Malls</item> <!-- http://wiki.openstreetmap.org/wiki/Tag:shop%3Dmall-->
-        <item>@string/Parkings</item>
+        <item>@string/Parking</item>
         <item>@string/RentBicycle</item>
         <item>@string/RentCar_CareSharing</item>
     </array>

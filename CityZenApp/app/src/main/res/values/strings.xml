@@ -48,9 +48,9 @@
     <string name="opening">Opening</string>
     <string name="closing">Closing</string>
     <string name="done">Done</string>
-    <string name="no_internet_to_update_poi">No internet access.  Connect to internet to continue</string>
-    <string name="session_expired_toast">Your session has expired.  Please login to continue</string>
-    <string name="internet_access">Internet Access</string>
+    <string name="no_internet_to_update_poi">No internet access. Connect to internet to continue</string>
+    <string name="session_expired_toast">Your session expired. Please log in to continue</string>
+    <string name="internet_access">Internet access</string>
     <string name="edit">Edit</string>
     <string name="street">Street</string>
     <string name="city">City</string>
@@ -67,7 +67,7 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="wired">Wired</string>
-    <string name="wlan">Wlan</string>
+    <string name="wlan">Wi-Fi</string>
     <string name="created_succesfully">created successfully</string>
     <string name="sort_by_name">Sort by name</string>
     <string name="add_a_new_marker_on_the_map">Add a marker on the map</string>
@@ -82,7 +82,7 @@ The app is open source licensed because we want the project to be empowered by t
     <string name="license">License</string>
     <string name="privacy_policy">Privacy policy</string>
     <string name="contact">Contact</string>
-    <string name="alert_message">CityZen must have location to provide map services.  Do you want to enable location?</string>
+    <string name="alert_message">CityZen needs your location to provide map services. Do you want to enable location?</string>
     <string name="osm_routing_unavailable">OSM routing isn\'t available at this time. Try again later</string>
     <string name="house_number">House number</string>
     <string name="postcode">Postcode</string>
@@ -94,24 +94,24 @@ The app is open source licensed because we want the project to be empowered by t
 
 
     <!--POI List-->
-    <string name="Cafes">Cafes</string>
-    <string name="Bars_Clubs">Bars/Clubs</string>
+    <string name="Cafes">Cafés</string>
+    <string name="Bars_Clubs">Bars/clubs</string>
     <string name="Restaurants">Restaurants</string>
     <string name="FastFood">Fast food</string>
     <string name="Tourism">Tourism</string>
-    <string name="Hotels_Hostels">Hotels/Hostels</string>
+    <string name="Hotels_Hostels">Hotels/hostels</string>
     <string name="Transportation">Transportation</string>
     <string name="GasStations">Gas stations</string>
-    <string name="Pharmacy_Healthcare">Pharmacy/Healthcare</string>
-    <string name="Banks_ATMs_Exchange">Banks/ATMs/Exchange</string>
-    <string name="MobilePhoneStore">Mobile phone store</string>
-    <string name="Markets_Kiosks">Markets/Kiosks</string>
-    <string name="Shopping_Malls">Shopping Malls</string>
-    <string name="Parkings">Parkings</string>
+    <string name="Pharmacy_Healthcare">Pharmacies/healthcare</string>
+    <string name="Banks_ATMs_Exchange">Banks, ATMs &amp; exchange</string>
+    <string name="MobilePhoneStore">Mobile phone stores</string>
+    <string name="Markets_Kiosks">Markets/kiosks</string>
+    <string name="Shopping_Malls">Shopping malls</string>
+    <string name="Parking">Parking</string>
     <string name="RentBicycle">Rent a bicycle</string>
-    <string name="RentCar_CareSharing">Rent a car &amp; Care sharing</string>
+    <string name="RentCar_CareSharing">Rent a car &amp; Car sharing</string>
     <string name="logged_in_as">Logged in as:</string>
 
-    <string name="login_to_osm">Login to OSM</string>
-    <string name="logout">LogOut</string>
+    <string name="login_to_osm">Log in to OSM</string>
+    <string name="logout">Log out</string>
 </resources>
