@@ -51,6 +51,7 @@ public class SearchFragment extends Fragment {
     private Toolbar toolbar;
     private CheckBox filterCheckBox;
     private LinearLayout filterLayoutContainer;
+    private LinearLayout emptyView;
     private boolean isFilterEnabled = false;
     private SearchView searchView;
     //List of the places that are queried in OSM search
@@ -84,9 +85,9 @@ public class SearchFragment extends Fragment {
     }
 
     private void setupView() {
-        searchView = (SearchView) getActivity().findViewById(R.id.searchView);
+        emptyView = getActivity().findViewById(R.id.emptySearchResult);
+        searchView = getActivity().findViewById(R.id.searchView);
         searchView.setIconified(false);
-
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
             boolean isTyping = false;
@@ -201,7 +202,7 @@ public class SearchFragment extends Fragment {
         if (adapter == null) return;
         if (filterCheckBox.isChecked()) {
             //filter Elements by opening hours
-            List<Place> filteredElements = new ArrayList<Place>();
+            List<Place> filteredElements = new ArrayList<>();
             for (Place place : adapterElements) {
                 for (Map.Entry<String, String> tag : place.getTags().entrySet()) {
                     if (tag.getKey().equals("opening_hours")) {
@@ -211,7 +212,7 @@ public class SearchFragment extends Fragment {
                 }
             }
             adapterElements.clear();
-            adapterElements = new ArrayList<Place>(filteredElements);
+            adapterElements = new ArrayList<>(filteredElements);
             adapter.resetAdapter(adapterElements);
 
         } else {
@@ -219,6 +220,14 @@ public class SearchFragment extends Fragment {
             adapterElements.clear();
             adapterElements = new ArrayList<Place>(searchedPlaces);
             adapter.resetAdapter(adapterElements);
+        }
+
+        if (adapter.getItemCount() < 1) {
+            emptyView.setVisibility(View.VISIBLE);
+            recyclerView.setVisibility(View.GONE);
+        } else {
+            emptyView.setVisibility(View.GONE);
+            recyclerView.setVisibility(View.VISIBLE);
         }
     }
 
@@ -290,7 +299,7 @@ public class SearchFragment extends Fragment {
                 filterElements();//filter elements if needed
             }
         };
-        ArrayList<Pair> pairs = new ArrayList<Pair>();
+        ArrayList<Pair> pairs = new ArrayList<>();
         pairs.add(new Pair("q=", searchString));
         if (deviceLocationData != null && deviceLocationData.getLocality() != null)
             pairs.add(new Pair("q=", searchString + " " + deviceLocationData.getLocality()));
