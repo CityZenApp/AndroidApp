@@ -4,15 +4,15 @@
     <string name="loading">載入中</string>
     <string name="retry">重試</string>
     <string name="oauth_failed_permissions">授權失敗：需要授予下列的存取權</string>
-    <string name="offline">您正離線</string>
-    <string name="confirmation_authorize_now">您需要登入您的 OSM 帳號才能將變更套用到 OpenStreetMap。現在授權嗎？</string>
+    <string name="offline">您處於離線</string>
+    <string name="confirmation_authorize_now">您需要登入您的 OSM 帳號，才能將變更套用到 OpenStreetMap。現在授權嗎？</string>
     <string name="later">稍後</string>
     <string name="filter">篩選</string>
     <string name="only_currently_opened">僅目前開啟</string>
-    <string name="write_storage_request">CityZen 需要有寫入權限才能提供地圖服務</string>
-    <string name="write_storage_request_toast">CityZen 必須要有寫入權限才能提供地圖服務</string>
-    <string name="location_request">CityZen 需要定位置才能提供地圖服務</string>
-    <string name="location_request_toast">CityZen 必須定位置才能提供地圖服務</string>
+    <string name="write_storage_request">CityZen 需要有寫入權限，才能提供地圖服務</string>
+    <string name="write_storage_request_toast">CityZen 必須要有寫入權限，才能提供地圖服務</string>
+    <string name="location_request">CityZen 需要定位，才能提供地圖服務</string>
+    <string name="location_request_toast">CityZen 必須定位，才能提供地圖服務</string>
     <string name="allow_permission">允許</string>
     <string name="deny_permission">拒绝</string>
     <string name="no_pois_near_user_location">在您位置的附近找不到服務</string>
@@ -25,7 +25,7 @@
 \n興趣點</string>
     <string name="add">新增</string>
     <string name="cancel">取消</string>
-    <string name="wifi">Wifi</string>
+    <string name="wifi">Wi-Fi</string>
     <string name="email">Email</string>
     <string name="website">網站</string>
     <string name="phone">電話</string>
@@ -43,7 +43,7 @@
     <string name="enable">啟用</string>
 
 
-    <string name="directions_to_here">駕駛方向</string>
+    <string name="directions_to_here">車輛指引</string>
     <string name="create_poi">建立 POI</string>
     <string name="_24_7">24/7</string>
     <string name="opening">營業中</string>
@@ -53,8 +53,8 @@
     <string name="session_expired_toast">您的對話已過期。請登錄以繼續</string>
     <string name="internet_access">網際網路存取</string>
     <string name="edit">編輯</string>
-    <string name="street">街</string>
-    <string name="city">市</string>
+    <string name="street">街道</string>
+    <string name="city">城市</string>
     <string name="add_closing_hours">增加休息時間</string>
     <string name="add_opening_hours">增加營業時間</string>
     <string name="not_valid_website">不是一個有效的網站</string>
@@ -65,15 +65,15 @@
     <string name="poi_type">興趣點類型</string>
     <string name="select_amenity_type">選擇便利設施類型</string>
     <string name="select_amenity_type_to_continue">選擇便利設施類型以繼續</string>
-    <string name="yes">是的</string>
-    <string name="no">不是</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
     <string name="wired">有線網路</string>
     <string name="wlan">無線網路</string>
     <string name="created_succesfully">已建立成功</string>
     <string name="sort_by_name">按名稱排序</string>
     <string name="add_a_new_marker_on_the_map">在地圖上增加一個標記</string>
-    <string name="about_us">關於該專案</string>
-    <string name="about_text">CityZen 是一個開放原始碼的 Android 應用程式，可以幫助您輕鬆的導覽和探索城市。有了 CityZen，您可以在自己所在附近，找到興趣點(POI)，例如自動提款機、加油站、藥房、手機商店以及其他有趣的服務。應用程式根據您智慧手機的定位顯示這些興趣點，但是，它是尊重您隱私的，因為我們不會保留您的導覽資料。此應用程式是開放原始碼的授權，因為我們希望該專案能夠成為社群授權給社群。我們發起這個專案，是為了作授權方式的工具和平台，例如 OpenStreetMap 那樣重視我們的自由度。如果您是 OpenStreetMap 貢獻者，您可以在 CityZen 內編輯它們，輕鬆地將資訊加到 POI 中。</string>
+    <string name="about_us">關於此專案</string>
+    <string name="about_text">CityZen 是一個開放原始碼的 Android 應用程式，可以幫助您輕鬆的導覽和探索城市。有了 CityZen，您可以在自己所在附近，找到興趣點 (POI)，例如自動提款機、加油站、藥房、手機商店以及其他有趣的服務。應用程式根據您智慧手機的定位顯示這些興趣點，但是，它是尊重您隱私的，因為我們不會保留您的導覽資料。此應用程式是開放原始碼的授權，因為我們希望該專案能夠成為社群授權給社群。我們發起這個專案，是為了作授權方式的工具和平台，例如尊重我們自由度的 OpenStreetMap。如果您是 OpenStreetMap 貢獻者，您可以在 CityZen 內編輯它們，輕鬆地將資訊加到 POI 中。</string>
     <string name="domain">www.cityzenapp.co</string>
     <string name="license_link">www.cityzenapp.co/license</string>
     <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
@@ -81,7 +81,7 @@
     <string name="license">授權</string>
     <string name="privacy_policy">隱私政策</string>
     <string name="contact">聯絡</string>
-    <string name="alert_message">CityZen 必須定位以提供地圖服務。您想啟用定位嗎？</string>
+    <string name="alert_message">CityZen 必須定位，以提供地圖服務。您想啟用定位嗎？</string>
     <string name="osm_routing_unavailable">OSM 路徑目前不能使用。稍後再試</string>
     <string name="house_number">門牌號碼</string>
     <string name="postcode">郵遞區號</string>
@@ -89,7 +89,7 @@
     <string name="get_involved_link">www.github.com/CityZenApp</string>
     <string name="credits">信用卡</string>
     <string name="credits_link">www.cityzenapp.co/credits</string>
-    <string name="open_source_culture">CityZen 的應用程式是在阿爾巴尼亞創始與很多♥
+    <string name="open_source_culture">CityZen 應用程式是在阿爾巴尼亞創始與很多♥
 \n 為免費和開放原始碼精神。</string>
 
 
@@ -101,15 +101,15 @@
     <string name="Hotels_Hostels">旅館/民宿</string>
     <string name="Transportation">交通運輸</string>
     <string name="GasStations">加油站</string>
-    <string name="Pharmacy_Healthcare">藥房/醫療保健</string>
+    <string name="Pharmacy_Healthcare">藥房/醫療</string>
     <string name="Banks_ATMs_Exchange">銀行/ATM/匯兌</string>
     <string name="MobilePhoneStore">手機商店</string>
     <string name="Markets_Kiosks">市場/報攤</string>
     <string name="Shopping_Malls">購物商場</string>
     <string name="Parkings">停車場</string>
-    <string name="RentBicycle">自行車出租</string>
-    <string name="RentCar_CareSharing">汽車出租和照管分享</string>
-    <string name="logged_in_as">登錄為：</string>
+    <string name="RentBicycle">自行車租借</string>
+    <string name="RentCar_CareSharing">汽車租賃和汽車共享</string>
+    <string name="logged_in_as">已登錄為：</string>
 
     <string name="login_to_osm">登錄到 OSM</string>
     <string name="logout">登出</string>
