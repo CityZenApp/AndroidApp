@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.cityzen.cityzen.Adapters.ParcelablePoiListAdapter;
 import com.cityzen.cityzen.Models.ParcelablePOI;
@@ -21,6 +22,7 @@ public class FavoritesFragment extends Fragment {
 
     private StorageUtil storageUtil;
     private RecyclerView recyclerView;
+    private LinearLayout emptyView;
     private ParcelablePoiListAdapter adapter;
 
     public FavoritesFragment() {
@@ -52,8 +54,10 @@ public class FavoritesFragment extends Fragment {
     }
 
     private void setupRecyclerView() {
+        emptyView = getActivity().findViewById(R.id.emptyFavorites);
+
         if (adapter == null) {
-            recyclerView = (RecyclerView) getActivity().findViewById(R.id.favoritesRecyclerView);
+            recyclerView = getActivity().findViewById(R.id.favoritesRecyclerView);
             adapter = new ParcelablePoiListAdapter(getActivity(), storageUtil.getFavoritePOIs());
             recyclerView.setAdapter(adapter);
             recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -70,6 +74,14 @@ public class FavoritesFragment extends Fragment {
 
                 }
             }));
+
+            if (adapter.getItemCount() < 1) {
+                emptyView.setVisibility(View.VISIBLE);
+                recyclerView.setVisibility(View.GONE);
+            } else {
+                emptyView.setVisibility(View.GONE);
+                recyclerView.setVisibility(View.VISIBLE);
+            }
         } else {
 //            adapter.resetAdapter(searchedPlaces);
         }
