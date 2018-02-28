@@ -17,7 +17,6 @@ import java.util.Map;
 /**
  * Created by Valdio Veliu on 26/04/2017.
  */
-
 public class PlaceListAdapter extends RecyclerView.Adapter<PlaceListAdapter.ViewHolder> {
 
     private Context context;

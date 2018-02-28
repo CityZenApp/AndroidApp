@@ -17,7 +17,6 @@ import java.util.Map;
 /**
  * Created by Valdio Veliu on 26/04/2017.
  */
-
 public class ParcelablePoiListAdapter extends RecyclerView.Adapter<ParcelablePoiListAdapter.ViewHolder> {
 
     private Context context;
@@ -32,8 +31,7 @@ public class ParcelablePoiListAdapter extends RecyclerView.Adapter<ParcelablePoi
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         //Inflate the layout, initialize the View Holder
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.place_list_item, parent, false);
-        ParcelablePoiListAdapter.ViewHolder holder = new ParcelablePoiListAdapter.ViewHolder(v);
-        return holder;
+       return new ParcelablePoiListAdapter.ViewHolder(v);
     }
 
     @Override
