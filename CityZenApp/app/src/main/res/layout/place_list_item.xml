@@ -17,7 +17,7 @@
         android:layout_marginTop="2dp"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        app:srcCompat="@drawable/search_ic_location"
+        app:srcCompat="@drawable/ic_map_marker"
         android:tint="@color/colorWhite"
         android:padding="6dp"
         android:background="@drawable/circular_background"/>

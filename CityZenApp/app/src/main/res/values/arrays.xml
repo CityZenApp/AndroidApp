@@ -55,9 +55,9 @@
         <item>@drawable/ic_phonelink_setup_white</item>
         <item>@drawable/ic_store_white_24dp</item>
         <item>@drawable/ic_local_mall_white_24dp</item>
-        <item>@drawable/ic_local_parking_white_24dp</item>
-        <item>@drawable/ic_directions_bike_white_24dp</item>
-        <item>@drawable/ic_directions_car_white_24dp</item>
+        <item>@drawable/ic_local_parking</item>
+        <item>@drawable/ic_local_bike</item>
+        <item>@drawable/ic_local_car</item>
 
     </array>
 
