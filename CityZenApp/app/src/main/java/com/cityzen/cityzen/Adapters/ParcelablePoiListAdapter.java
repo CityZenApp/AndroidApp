@@ -86,34 +86,34 @@ public class ParcelablePoiListAdapter extends RecyclerView.Adapter<ParcelablePoi
                 setupItemIcon(R.drawable.ic_local_cafe_white, R.color.category_bar_cafe, holder.coverImage);
                 break;
             case "pub":
-                setupItemIcon(R.drawable.search_ic_location, R.color.category_building, holder.coverImage);
+                setupItemIcon(R.drawable.ic_map_marker, R.color.category_building, holder.coverImage);
                 break;
             case "restaurant":
                 setupItemIcon(R.drawable.ic_restaurant_white, R.color.category_restaurant, holder.coverImage);
                 break;
             case "city":
-                setupItemIcon(R.drawable.ic_location_city_black_24dp, R.color.category_building, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_city, R.color.category_building, holder.coverImage);
                 break;
             case "administrative":
-                setupItemIcon(R.drawable.ic_location_city_black_24dp, R.color.category_building, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_city, R.color.category_building, holder.coverImage);
                 break;
             case "mall":
-                setupItemIcon(R.drawable.ic_location_city_black_24dp, R.color.category_building, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_city, R.color.category_building, holder.coverImage);
                 break;
             case "residential":
-                setupItemIcon(R.drawable.ic_location_city_black_24dp, R.color.category_building, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_city, R.color.category_building, holder.coverImage);
                 break;
             case "bank":
                 setupItemIcon(R.drawable.ic_local_atm_white, R.color.category_atm, holder.coverImage);
                 break;
             case "locality":
-                setupItemIcon(R.drawable.ic_location_city_black_24dp, R.color.category_building, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_city, R.color.category_building, holder.coverImage);
                 break;
             case "village":
-                setupItemIcon(R.drawable.ic_location_city_black_24dp, R.color.category_building, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_city, R.color.category_building, holder.coverImage);
                 break;
             case "university":
-                setupItemIcon(R.drawable.ic_location_city_black_24dp, R.color.category_building, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_city, R.color.category_building, holder.coverImage);
                 break;
             case "hotel":
                 setupItemIcon(R.drawable.ic_home_white, R.color.category_home, holder.coverImage);
@@ -137,22 +137,22 @@ public class ParcelablePoiListAdapter extends RecyclerView.Adapter<ParcelablePoi
                 setupItemIcon(R.drawable.ic_local_atm_white, R.color.category_atm, holder.coverImage);
                 break;
             case "taxi":
-                setupItemIcon(R.drawable.search_transit_station, R.color.category_transit, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_transit_station_white, R.color.category_transit, holder.coverImage);
                 break;
             case "bus_stop":
-                setupItemIcon(R.drawable.search_transit_station, R.color.category_transit, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_transit_station_white, R.color.category_transit, holder.coverImage);
                 break;
             case "bus_station":
-                setupItemIcon(R.drawable.search_transit_station, R.color.category_transit, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_transit_station_white, R.color.category_transit, holder.coverImage);
                 break;
             case "transportation":
-                setupItemIcon(R.drawable.search_transit_station, R.color.category_transit, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_transit_station_white, R.color.category_transit, holder.coverImage);
                 break;
             case "fuel":
                 setupItemIcon(R.drawable.ic_local_gas_station_white, R.color.category_gas, holder.coverImage);
                 break;
             case "hospital":
-                setupItemIcon(R.drawable.search_doctor, R.color.category_health, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_doctor_white, R.color.category_health, holder.coverImage);
                 break;
             case "pharmacy":
                 setupItemIcon(R.drawable.ic_local_pharmacy_white, R.color.category_health, holder.coverImage);
@@ -170,7 +170,7 @@ public class ParcelablePoiListAdapter extends RecyclerView.Adapter<ParcelablePoi
                 setupItemIcon(R.drawable.ic_home_white, R.color.category_home, holder.coverImage);
                 break;
             default:
-                setupItemIcon(R.drawable.ic_location, R.color.category_building, holder.coverImage);
+                setupItemIcon(R.drawable.ic_map_marker, R.color.category_building, holder.coverImage);
                 break;
         }
     }

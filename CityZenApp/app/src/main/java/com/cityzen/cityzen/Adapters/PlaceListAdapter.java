@@ -146,22 +146,22 @@ public class PlaceListAdapter extends RecyclerView.Adapter<PlaceListAdapter.View
                 setupItemIcon(R.drawable.ic_local_atm_white, R.color.category_atm, holder.coverImage);
                 break;
             case "taxi":
-                setupItemIcon(R.drawable.search_transit_station, R.color.category_transit, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_transit_station_white, R.color.category_transit, holder.coverImage);
                 break;
             case "bus_stop":
-                setupItemIcon(R.drawable.search_transit_station, R.color.category_transit, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_transit_station_white, R.color.category_transit, holder.coverImage);
                 break;
             case "bus_station":
-                setupItemIcon(R.drawable.search_transit_station, R.color.category_transit, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_transit_station_white, R.color.category_transit, holder.coverImage);
                 break;
             case "transportation":
-                setupItemIcon(R.drawable.search_transit_station, R.color.category_transit, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_transit_station_white, R.color.category_transit, holder.coverImage);
                 break;
             case "fuel":
                 setupItemIcon(R.drawable.ic_local_gas_station_white, R.color.category_gas, holder.coverImage);
                 break;
             case "hospital":
-                setupItemIcon(R.drawable.search_doctor, R.color.category_health, holder.coverImage);
+                setupItemIcon(R.drawable.ic_local_doctor_white, R.color.category_health, holder.coverImage);
                 break;
             case "pharmacy":
                 setupItemIcon(R.drawable.ic_local_pharmacy_white, R.color.category_health, holder.coverImage);
