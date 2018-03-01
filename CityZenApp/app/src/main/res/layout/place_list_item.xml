@@ -17,7 +17,10 @@
         android:layout_marginTop="2dp"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        app:srcCompat="@drawable/search_ic_location" />
+        app:srcCompat="@drawable/search_ic_location"
+        android:tint="@color/colorWhite"
+        android:padding="6dp"
+        android:background="@drawable/circular_background"/>
 
     <LinearLayout
         android:layout_width="match_parent"
