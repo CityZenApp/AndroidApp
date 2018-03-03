@@ -1,6 +1,10 @@
 package com.cityzen.cityzen.Adapters;
 
 import android.content.Context;
+import android.graphics.PorterDuff;
+import android.support.annotation.ColorRes;
+import android.support.annotation.DrawableRes;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +21,6 @@ import java.util.Map;
 /**
  * Created by Valdio Veliu on 26/04/2017.
  */
-
 public class PlaceListAdapter extends RecyclerView.Adapter<PlaceListAdapter.ViewHolder> {
 
     private Context context;
@@ -32,8 +35,7 @@ public class PlaceListAdapter extends RecyclerView.Adapter<PlaceListAdapter.View
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         //Inflate the layout, initialize the View Holder
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.place_list_item, parent, false);
-        PlaceListAdapter.ViewHolder holder = new PlaceListAdapter.ViewHolder(v);
-        return holder;
+        return new PlaceListAdapter.ViewHolder(v);
     }
 
     @Override
@@ -78,107 +80,112 @@ public class PlaceListAdapter extends RecyclerView.Adapter<PlaceListAdapter.View
 
         ViewHolder(View itemView) {
             super(itemView);
-            title = (TextView) itemView.findViewById(R.id.placeTitle);
-            coverImage = (ImageView) itemView.findViewById(R.id.placeImage);
-            openingHours = (TextView) itemView.findViewById(R.id.placeOpeningHours);
+            title = itemView.findViewById(R.id.placeTitle);
+            coverImage = itemView.findViewById(R.id.placeImage);
+            openingHours = itemView.findViewById(R.id.placeOpeningHours);
         }
     }
 
     private void setupPlaceIcon(String type, PlaceListAdapter.ViewHolder holder) {
         switch (type) {
             case "bar":
-                holder.coverImage.setImageResource(R.drawable.search_cafe);
+                setupItemIcon(R.drawable.ic_local_bar_white_24dp, R.color.category_bar_cafe, holder.coverImage);
                 break;
             case "cafe":
-                holder.coverImage.setImageResource(R.drawable.search_cafe);
+                setupItemIcon(R.drawable.ic_local_cafe_white, R.color.category_bar_cafe, holder.coverImage);
                 break;
             case "pub":
-                holder.coverImage.setImageResource(R.drawable.search_ic_location);
+                setupItemIcon(R.drawable.ic_map_marker, R.color.category_building, holder.coverImage);
                 break;
             case "restaurant":
-                holder.coverImage.setImageResource(R.drawable.search_restaurant);
+                setupItemIcon(R.drawable.ic_restaurant_white, R.color.category_restaurant, holder.coverImage);
                 break;
             case "city":
-                holder.coverImage.setImageResource(R.drawable.ic_location_city_black_24dp);
+                setupItemIcon(R.drawable.ic_local_city, R.color.category_building, holder.coverImage);
                 break;
             case "administrative":
-                holder.coverImage.setImageResource(R.drawable.ic_location_city_black_24dp);
+                setupItemIcon(R.drawable.ic_local_city, R.color.category_building, holder.coverImage);
                 break;
             case "mall":
-                holder.coverImage.setImageResource(R.drawable.ic_location_city_black_24dp);
+                setupItemIcon(R.drawable.ic_local_city, R.color.category_building, holder.coverImage);
                 break;
             case "residential":
-                holder.coverImage.setImageResource(R.drawable.ic_location_city_black_24dp);
+                setupItemIcon(R.drawable.ic_local_city, R.color.category_building, holder.coverImage);
                 break;
             case "bank":
-                holder.coverImage.setImageResource(R.drawable.search_ic_local_atm);
+                setupItemIcon(R.drawable.ic_local_atm_white, R.color.category_atm, holder.coverImage);
                 break;
             case "locality":
-                holder.coverImage.setImageResource(R.drawable.ic_location_city_black_24dp);
+                setupItemIcon(R.drawable.ic_local_city, R.color.category_building, holder.coverImage);
                 break;
             case "village":
-                holder.coverImage.setImageResource(R.drawable.ic_location_city_black_24dp);
+                setupItemIcon(R.drawable.ic_local_city, R.color.category_building, holder.coverImage);
                 break;
             case "university":
-                holder.coverImage.setImageResource(R.drawable.ic_location_city_black_24dp);
-                break;
-            case "supermarket":
-                holder.coverImage.setImageResource(R.drawable.search_ic_home);
+                setupItemIcon(R.drawable.ic_local_city, R.color.category_building, holder.coverImage);
                 break;
             case "hotel":
-                holder.coverImage.setImageResource(R.drawable.search_ic_home);
+                setupItemIcon(R.drawable.ic_home_white, R.color.category_home, holder.coverImage);
                 break;
             case "hostel":
-                holder.coverImage.setImageResource(R.drawable.search_ic_home);
+                setupItemIcon(R.drawable.ic_home_white, R.color.category_home, holder.coverImage);
                 break;
             case "guest_house":
-                holder.coverImage.setImageResource(R.drawable.search_ic_home);
+                setupItemIcon(R.drawable.ic_home_white, R.color.category_home, holder.coverImage);
                 break;
             case "attraction":
-                holder.coverImage.setImageResource(R.drawable.search_ic_nature_people);
+                setupItemIcon(R.drawable.ic_nature_people_white, R.color.category_attraction, holder.coverImage);
                 break;
             case "pedestrian":
-                holder.coverImage.setImageResource(R.drawable.search_ic_nature_people);
+                setupItemIcon(R.drawable.ic_nature_people_white, R.color.category_attraction, holder.coverImage);
                 break;
             case "monument":
-                holder.coverImage.setImageResource(R.drawable.search_ic_nature_people);
+                setupItemIcon(R.drawable.ic_nature_people_white, R.color.category_attraction, holder.coverImage);
                 break;
             case "atm":
-                holder.coverImage.setImageResource(R.drawable.search_ic_local_atm);
+                setupItemIcon(R.drawable.ic_local_atm_white, R.color.category_atm, holder.coverImage);
                 break;
             case "taxi":
-                holder.coverImage.setImageResource(R.drawable.search_transit_station);
+                setupItemIcon(R.drawable.ic_local_transit_station_white, R.color.category_transit, holder.coverImage);
                 break;
             case "bus_stop":
-                holder.coverImage.setImageResource(R.drawable.search_transit_station);
+                setupItemIcon(R.drawable.ic_local_transit_station_white, R.color.category_transit, holder.coverImage);
                 break;
             case "bus_station":
-                holder.coverImage.setImageResource(R.drawable.search_transit_station);
+                setupItemIcon(R.drawable.ic_local_transit_station_white, R.color.category_transit, holder.coverImage);
                 break;
             case "transportation":
-                holder.coverImage.setImageResource(R.drawable.search_transit_station);
+                setupItemIcon(R.drawable.ic_local_transit_station_white, R.color.category_transit, holder.coverImage);
                 break;
             case "fuel":
-                holder.coverImage.setImageResource(R.drawable.search_gas_station);
+                setupItemIcon(R.drawable.ic_local_gas_station_white, R.color.category_gas, holder.coverImage);
                 break;
             case "hospital":
-                holder.coverImage.setImageResource(R.drawable.search_doctor);
+                setupItemIcon(R.drawable.ic_local_doctor_white, R.color.category_health, holder.coverImage);
                 break;
             case "pharmacy":
-                holder.coverImage.setImageResource(R.drawable.search_doctor);
+                setupItemIcon(R.drawable.ic_local_pharmacy_white, R.color.category_health, holder.coverImage);
                 break;
             case "mobile_phone":
-                holder.coverImage.setImageResource(R.drawable.search_ic_phonelink_setup);
+                setupItemIcon(R.drawable.ic_phonelink_setup_white, R.color.category_communication, holder.coverImage);
                 break;
             case "mobile_shop":
-                holder.coverImage.setImageResource(R.drawable.search_ic_phonelink_setup);
+                setupItemIcon(R.drawable.ic_phonelink_setup_white, R.color.category_communication, holder.coverImage);
                 break;
             case "fast_food":
-                holder.coverImage.setImageResource(R.drawable.search_ic_room_service);
+                setupItemIcon(R.drawable.ic_room_service_white_24dp, R.color.category_fast_food, holder.coverImage);
+                break;
+            case "supermarket":
+                setupItemIcon(R.drawable.ic_home_white, R.color.category_home, holder.coverImage);
                 break;
             default:
-                holder.coverImage.setImageResource(R.drawable.search_ic_location);
+                setupItemIcon(R.drawable.ic_map_marker, R.color.category_building, holder.coverImage);
                 break;
         }
+    }
+
+    private void setupItemIcon(@DrawableRes int icon, @ColorRes int backgroundColor, ImageView iconView) {
+        iconView.setImageResource(icon);
+        iconView.getBackground().setColorFilter(ContextCompat.getColor(context, backgroundColor), PorterDuff.Mode.SRC_IN);
     }
 }

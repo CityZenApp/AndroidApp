@@ -359,7 +359,7 @@ public class PoiListFragment extends Fragment {
      */
     private void setupRecyclerView() {
         if (adapter == null) {
-            recyclerView = (RecyclerView) getActivity().findViewById(R.id.poiListRecyclerview);
+            recyclerView = getActivity().findViewById(R.id.poiListRecyclerview);
             adapter = new ElementListAdapter(getActivity(), poiName, categoryId, adapterElements);
             recyclerView.setAdapter(adapter);
             recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 2));

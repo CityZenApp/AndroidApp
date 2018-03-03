@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -16,6 +18,7 @@ import com.cityzen.cityzen.Models.ParcelablePOI;
 import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewItemClickInterface;
 import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewTouchListener;
+import com.cityzen.cityzen.Utils.RecyclerView.SimpleDividerItemDecoration;
 import com.cityzen.cityzen.Utils.StorageUtil;
 
 public class FavoritesFragment extends Fragment {
@@ -61,6 +64,7 @@ public class FavoritesFragment extends Fragment {
             adapter = new ParcelablePoiListAdapter(getActivity(), storageUtil.getFavoritePOIs());
             recyclerView.setAdapter(adapter);
             recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+            recyclerView.addItemDecoration(new SimpleDividerItemDecoration(getContext()));
 
             // Item touch Listener
             recyclerView.addOnItemTouchListener(new RecyclerViewTouchListener(getActivity(), recyclerView, new RecyclerViewItemClickInterface() {
