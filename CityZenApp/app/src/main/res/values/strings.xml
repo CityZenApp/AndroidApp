@@ -114,9 +114,15 @@ The app is open source licensed because we want the project to be empowered by t
 
     <string name="login_to_osm">Log in to OSM</string>
     <string name="logout">Log out</string>
-    <string name="no_results">No Results</string>
+
+    <!--Search List-->
+    <string name="no_results">No results</string>
     <string name="search_again">Please try another search term</string>
     <string name="search_icon">search icon</string>
 
+    <!--Favorites List-->
+    <string name="no_favorites">No favorites</string>
+    <string name="mark_locations_as_favorites">Locations marked as favorites will show up here</string>
+    <string name="favorites_icon">favorites icon</string>
 
 </resources>
