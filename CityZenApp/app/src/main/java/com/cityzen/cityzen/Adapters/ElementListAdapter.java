@@ -19,7 +19,6 @@ import info.metadude.java.library.overpass.models.Element;
 /**
  * Created by Valdio Veliu on 26/04/2017.
  */
-
 public class ElementListAdapter extends RecyclerView.Adapter<ElementListAdapter.ViewHolder> {
 
     private Context context;
@@ -38,17 +37,14 @@ public class ElementListAdapter extends RecyclerView.Adapter<ElementListAdapter.
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         //Inflate the layout, initialize the View Holder
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.poi_list_item, parent, false);
-        ElementListAdapter.ViewHolder holder = new ElementListAdapter.ViewHolder(v);
-        return holder;
+        return new ElementListAdapter.ViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(ElementListAdapter.ViewHolder holder, int position) {
         //Use the provided View Holder on the onCreateViewHolder method to populate the current row on the RecyclerView
         holder.title.setText(poiName);
-//        holder.poiType.setText(data.get(position).get);
         boolean hasName = false;
-        boolean hasAddress = false;
         boolean hasOpeningHours = false;
         String poiCategory = "";
         Map<String, String> tags = data.get(position).tags;
@@ -57,17 +53,6 @@ public class ElementListAdapter extends RecyclerView.Adapter<ElementListAdapter.
                 if (tag.getKey().equals("name")) {
                     holder.title.setText(tag.getValue());
                     hasName = true;
-                }
-                if (tag.getKey().equals("addr:street")) {
-                    holder.address.setText(tag.getValue());
-                    hasAddress = true;
-                }
-                if (tag.getKey().equals("addr:city") && !holder.address.getText().equals("")) {
-                    holder.address.setText(holder.address.getText() + ", " + tag.getValue());
-                    hasAddress = true;
-                } else if (tag.getKey().equals("addr:city") && holder.address.getText().equals("")) {
-                    holder.address.setText(tag.getValue());// no city address
-                    hasAddress = true;
                 }
                 if (tag.getKey().equals("opening_hours")) {
                     holder.openingHours.setText(tag.getValue());
@@ -91,10 +76,6 @@ public class ElementListAdapter extends RecyclerView.Adapter<ElementListAdapter.
 
         if (!hasName && tags != null)
             updatePoiNameIfNeeded(categoryId, tags, holder);
-        if (hasAddress)
-            holder.address.setVisibility(View.VISIBLE);
-        else
-            holder.address.setVisibility(View.GONE);
         if (hasOpeningHours)
             holder.openingHours.setVisibility(View.VISIBLE);
         else
@@ -113,17 +94,13 @@ public class ElementListAdapter extends RecyclerView.Adapter<ElementListAdapter.
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView poiType;
         TextView title;
-        TextView address;
         TextView openingHours;
 
         ViewHolder(View itemView) {
             super(itemView);
-            poiType = (TextView) itemView.findViewById(R.id.poiType);
-            title = (TextView) itemView.findViewById(R.id.poiTitle);
-            address = (TextView) itemView.findViewById(R.id.poiAddress);
-            openingHours = (TextView) itemView.findViewById(R.id.poiOpeningHours);
+            title = itemView.findViewById(R.id.poiTitle);
+            openingHours = itemView.findViewById(R.id.poiOpeningHours);
         }
     }
 
@@ -186,6 +163,4 @@ public class ElementListAdapter extends RecyclerView.Adapter<ElementListAdapter.
                 break;
         }
     }
-
-
 }
