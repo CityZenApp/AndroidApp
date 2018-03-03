@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--<color name="colorPrimary">#3F51B5</color>-->
-    <color name="colorPrimary">#5d98e1</color>
-    <!--<color name="colorPrimaryDark">#303F9F</color>-->
-    <color name="colorPrimaryDark">#E0E0E0</color>
-    <color name="colorAccent">#d8331d</color>
+    <color name="colorPrimary">#D8331D</color>
+    <color name="colorPrimaryDark">#9E0000</color>
+    <color name="colorAccent">#D8331D</color>
     <color name="colorWhite">#ffffff</color>
-    <color name="colorAppGreen">#d8331d</color>
+    <color name="colorAppGreen">#D8331D</color>
     <color name="darkBackground">#cbcbcb</color>
-    <color name="logoBackground">#d8331d</color>
+    <color name="logoBackground">#D8331D</color>
 
     <!-- category item colors -->
     <color name="category_bar_cafe">#F59F00</color>
