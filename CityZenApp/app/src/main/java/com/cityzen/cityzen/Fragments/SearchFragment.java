@@ -33,6 +33,7 @@ import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Action;
 import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Pair;
 import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Place;
 import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Request;
+import com.cityzen.cityzen.Utils.RecyclerView.SimpleDividerItemDecoration;
 
 import org.osmdroid.bonuspack.location.NominatimPOIProvider;
 import org.osmdroid.bonuspack.location.POI;
@@ -163,14 +164,14 @@ public class SearchFragment extends Fragment {
     }
 
     private void setupToolbarAndFilter() {
-        toolbar = (Toolbar) getActivity().findViewById(R.id.searchToolbar);
+        toolbar = getActivity().findViewById(R.id.searchToolbar);
         toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 searchView.setIconified(false);//open searchView
             }
         });
-        filterCheckBox = (CheckBox) getActivity().findViewById(R.id.filterCheckBox);
+        filterCheckBox = getActivity().findViewById(R.id.filterCheckBox);
         filterCheckBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -178,7 +179,7 @@ public class SearchFragment extends Fragment {
                 filterElements();
             }
         });
-        filterLayoutContainer = (LinearLayout) getActivity().findViewById(R.id.filterPoiListContainer);
+        filterLayoutContainer = getActivity().findViewById(R.id.filterPoiListContainer);
         toolbar.inflateMenu(R.menu.filter);
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
@@ -234,13 +235,11 @@ public class SearchFragment extends Fragment {
 
     private void setupRecyclerView() throws Exception {
         if (adapter == null) {
-            recyclerView = (RecyclerView) getActivity().findViewById(R.id.searchRecyclerView);
+            recyclerView = getActivity().findViewById(R.id.searchRecyclerView);
             adapter = new PlaceListAdapter(getActivity(), adapterElements);
             recyclerView.setAdapter(adapter);
             recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-            recyclerView.addItemDecoration(new
-                    DividerItemDecoration(getActivity(),
-                    DividerItemDecoration.VERTICAL));
+            recyclerView.addItemDecoration(new SimpleDividerItemDecoration(getContext()));
 
             // Item touch Listener
             recyclerView.addOnItemTouchListener(new RecyclerViewTouchListener(getActivity(), recyclerView, new RecyclerViewItemClickInterface() {
