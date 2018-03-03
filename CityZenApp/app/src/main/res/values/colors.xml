@@ -9,16 +9,24 @@
     <color name="logoBackground">#D8331D</color>
 
     <!-- category item colors -->
-    <color name="category_bar_cafe">#F59F00</color>
+    <color name="category_cafe">#F59F00</color>
+    <color name="category_bar">#5f3dc4</color>
     <color name="category_building">#757575</color>
     <color name="category_restaurant">#E15D5D</color>
     <color name="category_atm">#15AABF</color>
     <color name="category_home">#82C91E</color>
+    <color name="category_hotel">#1864AB</color>
+    <color name="category_room_service">#F76707</color>
     <color name="category_attraction">#BE4BDB</color>
     <color name="category_transit">#12B886</color>
     <color name="category_gas">#E64980</color>
     <color name="category_health">#7950F2</color>
     <color name="category_communication">#4CAF50</color>
+    <color name="category_market">#C2255C</color>
+    <color name="category_mall">#F76707</color>
+    <color name="category_parking">#1971C2</color>
+    <color name="category_bike_rental">#5c940d</color>
+    <color name="category_car_rental">#A61E4d</color>
     <color name="category_fast_food">#E03131</color>
 
 </resources>

@@ -62,21 +62,21 @@
     </array>
 
     <array name="poi_colors">
-        <item>#5D98E1</item>
-        <item>#47DF86</item>
-        <item>#FEC006</item>
-        <item>#FF89BB</item>
-        <item>#ea13ec2c</item>
-        <item>#BB89FF</item>
-        <item>#e3f93ac6</item>
-        <item>#E15D5D</item>
-        <item>#2abade</item>
-        <item>#25e458</item>
-        <item>#e3f94d3a</item>
-        <item>#898dff</item>
-        <item>#FEC006</item>
-        <item>#FF89BB</item>
-        <item>#ea13ec2c</item>
-        <item>#BB89FF</item>
+        <item>@color/category_cafe</item>
+        <item>@color/category_bar</item>
+        <item>@color/category_restaurant</item>
+        <item>@color/category_fast_food</item>
+        <item>@color/category_home</item>
+        <item>@color/category_hotel</item>
+        <item>@color/category_transit</item>
+        <item>@color/category_gas</item>
+        <item>@color/category_health</item>
+        <item>@color/category_atm</item>
+        <item>@color/category_communication</item>
+        <item>@color/category_market</item>
+        <item>@color/category_mall</item>
+        <item>@color/category_parking</item>
+        <item>@color/category_bike_rental</item>
+        <item>@color/category_car_rental</item>
     </array>
 </resources>
