@@ -71,6 +71,7 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/mapViewPoiListContainer"
         android:layout_below="@+id/filterPoiListContainer"
+        android:padding="4dp"
         android:background="#80C7C7C7" />
 
     <android.support.design.widget.FloatingActionButton
