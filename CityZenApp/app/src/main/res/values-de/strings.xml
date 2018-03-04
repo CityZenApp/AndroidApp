@@ -94,23 +94,34 @@
 
 
     <string name="Cafes">Cafés</string>
-    <string name="Bars_Clubs">Bars/Clubs</string>
+    <string name="Bars_Clubs">Bars</string>
     <string name="Restaurants">Restaurants</string>
     <string name="FastFood">Schnellrestaurant</string>
     <string name="Tourism">Tourismus</string>
-    <string name="Hotels_Hostels">Hotels/Hostels</string>
+    <string name="Hotels_Hostels">Hotels</string>
     <string name="Transportation">Öffentliche Verkehrsmittel</string>
     <string name="GasStations">Tankstellen</string>
-    <string name="Pharmacy_Healthcare">Apotheke/Praxen</string>
-    <string name="Banks_ATMs_Exchange">Banken/Geldautomaten/Wechselstuben</string>
+    <string name="Pharmacy_Healthcare">Apotheken</string>
+    <string name="Banks_ATMs_Exchange">Finanzdienste</string>
     <string name="MobilePhoneStore">Handyladen</string>
-    <string name="Markets_Kiosks">Markt/Kioske</string>
-    <string name="Shopping_Malls">Einkaufszentren</string>
+    <string name="Markets_Kiosks">Märkte</string>
+    <string name="Shopping_Malls">Einkäufe</string>
     <string name="Parkings">Parken</string>
     <string name="RentBicycle">Fahrradverleih</string>
-    <string name="RentCar_CareSharing">Autovermietung &amp; Car-Sharing</string>
+    <string name="RentCar_CareSharing">Autovermietung</string>
     <string name="logged_in_as">Angemeldet als:</string>
 
     <string name="login_to_osm">Anmeldung bei OSM</string>
     <string name="logout">Abmelden</string>
+<string name="Bakeries">Bäckereien</string>
+    <string name="Post_Offices">Postamt</string>
+    <string name="Parking">Parkplätze</string>
+    <string name="no_results">Keine Treffer</string>
+    <string name="search_again">Bitte versuche einen anderen Suchbegriff</string>
+    <string name="search_icon">Suche Icon</string>
+
+    <string name="no_favorites">Keine Favoriten</string>
+    <string name="mark_locations_as_favorites">Orte markiert als Favoriten erscheinen hier</string>
+    <string name="favorites_icon">Favoriten Icon</string>
+
 </resources>
