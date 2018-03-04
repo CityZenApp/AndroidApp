@@ -4,18 +4,18 @@
     <!--https://github.com/CityZenApp/CityZen-Android/wiki/Scrapbook-->
     <!--Points Of interest-->
     <array name="poi_titles">
-        <item>@string/Hotels_Hostels</item>
-        <item>@string/Banks_ATMs_Exchange</item>
         <item>@string/Bars_Clubs</item>
+        <item>@string/RentBicycle</item>
         <item>@string/Cafes</item>
+        <item>@string/RentCar_CareSharing</item>
         <item>@string/FastFood</item>
+        <item>@string/Banks_ATMs_Exchange</item>
         <item>@string/GasStations</item>
+        <item>@string/Hotels_Hostels</item>
         <item>@string/Markets_Kiosks</item>
         <item>@string/MobilePhoneStore</item>
         <item>@string/Parking</item>
         <item>@string/Pharmacy_Healthcare</item>
-        <item>@string/RentBicycle</item>
-        <item>@string/RentCar_CareSharing</item>
         <item>@string/Restaurants</item>
         <item>@string/Shopping_Malls</item>
         <item>@string/Tourism</item>
@@ -43,18 +43,18 @@
     </array>
 
     <array name="poi_icons">
-        <item>@drawable/ic_home_white</item>
-        <item>@drawable/ic_local_atm_white</item>
         <item>@drawable/ic_local_bar_white_24dp</item>
+        <item>@drawable/ic_local_bike</item>
         <item>@drawable/ic_local_cafe_white</item>
+        <item>@drawable/ic_local_car</item>
         <item>@drawable/ic_local_fast_food</item>
+        <item>@drawable/ic_local_atm_white</item>
         <item>@drawable/ic_local_gas_station_white</item>
+        <item>@drawable/ic_home_white</item>
         <item>@drawable/ic_store_white_24dp</item>
         <item>@drawable/ic_phonelink_setup_white</item>
         <item>@drawable/ic_local_parking</item>
         <item>@drawable/ic_local_pharmacy_white</item>
-        <item>@drawable/ic_local_bike</item>
-        <item>@drawable/ic_local_car</item>
         <item>@drawable/ic_restaurant_white</item>
         <item>@drawable/ic_local_mall_white_24dp</item>
         <item>@drawable/ic_nature_people_white</item>
@@ -62,18 +62,18 @@
     </array>
 
     <array name="poi_colors">
-        <item>@color/category_accomodation</item>
-        <item>@color/category_atm</item>
         <item>@color/category_bar</item>
+        <item>@color/category_bike_rental</item>
         <item>@color/category_cafe</item>
+        <item>@color/category_car_rental</item>
         <item>@color/category_fast_food</item>
+        <item>@color/category_atm</item>
         <item>@color/category_gas_station</item>
+        <item>@color/category_accomodation</item>
         <item>@color/category_market</item>
         <item>@color/category_mobile_phone_store</item>
         <item>@color/category_parking</item>
         <item>@color/category_pharmacy</item>
-        <item>@color/category_rental_bike</item>
-        <item>@color/category_rental_car</item>
         <item>@color/category_restaurant</item>
         <item>@color/category_shopping_mall</item>
         <item>@color/category_tourism</item>

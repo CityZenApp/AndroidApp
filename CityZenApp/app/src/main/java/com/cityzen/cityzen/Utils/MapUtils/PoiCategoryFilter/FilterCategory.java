@@ -5,31 +5,43 @@ import java.util.ArrayList;
 /**
  * Created by Valdio Veliu on 29/04/2017.
  */
-
 public class FilterCategory {
 
     /**
-     * category_accomodation
-     * category_atm
-     * category_bar
-     * category_cafe
-     * category_fast_food
-     * category_gas_station
-     * category_market
-     * category_mobile_phone_store
-     * category_parking
-     * category_pharmacy
-     * category_rental_bike
-     * category_rental_car
-     * category_restaurant
-     * category_shopping_mall
-     * category_tourism
-     * category_transportation
+     * get filters for OSM tags for a given POI id.
      */
     public static ArrayList<OsmTag> getFilters(int poiId) {
         ArrayList<OsmTag> tags = new ArrayList<>();
         switch (poiId) {
             case 0:
+                tags.add(new OsmTag("amenity", "bar"));
+                tags.add(new OsmTag("amenity", "nightclub"));
+                tags.add(new OsmTag("amenity", "pub"));
+                break;
+            case 1:
+                tags.add(new OsmTag("amenity", "bicycle_rental"));
+                break;
+            case 2:
+                tags.add(new OsmTag("amenity", "cafe"));
+                tags.add(new OsmTag("shop", "coffee"));
+                break;
+            case 3:
+                tags.add(new OsmTag("amenity", "car_rental"));
+                tags.add(new OsmTag("amenity", "car_sharing"));
+                break;
+            case 4:
+                tags.add(new OsmTag("amenity", "fast_food"));
+                break;
+            case 5:
+                tags.add(new OsmTag("amenity", "atm"));
+                tags.add(new OsmTag("amenity", "bank"));
+                tags.add(new OsmTag("amenity", "bureau_de_change"));
+                break;
+            case 6:
+                tags.add(new OsmTag("amenity", "fuel"));
+                tags.add(new OsmTag("shop", "fuel"));
+                break;
+            case 7:
                 tags.add(new OsmTag("building", "hotel"));
                 tags.add(new OsmTag("tourism", "hotel"));
                 tags.add(new OsmTag("tourism", "apartment"));
@@ -37,28 +49,7 @@ public class FilterCategory {
                 tags.add(new OsmTag("tourism", "motel"));
                 tags.add(new OsmTag("tourism", "guest_house"));
                 break;
-            case 1:
-                tags.add(new OsmTag("amenity", "atm"));
-                tags.add(new OsmTag("amenity", "bank"));
-                tags.add(new OsmTag("amenity", "bureau_de_change"));
-                break;
-            case 2:
-                tags.add(new OsmTag("amenity", "bar"));
-                tags.add(new OsmTag("amenity", "nightclub"));
-                tags.add(new OsmTag("amenity", "pub"));
-                break;
-            case 3:
-                tags.add(new OsmTag("amenity", "cafe"));
-                tags.add(new OsmTag("shop", "coffee"));
-                break;
-            case 4:
-                tags.add(new OsmTag("amenity", "fast_food"));
-                break;
-            case 5:
-                tags.add(new OsmTag("amenity", "fuel"));
-                tags.add(new OsmTag("shop", "fuel"));
-                break;
-            case 6:
+            case 8:
                 tags.add(new OsmTag("amenity", "marketplace"));
                 tags.add(new OsmTag("building", "retail"));
                 tags.add(new OsmTag("building", "kiosks"));
@@ -69,15 +60,15 @@ public class FilterCategory {
                 tags.add(new OsmTag("shop", "variety_store"));
                 tags.add(new OsmTag("shop", "tabacco"));
                 break;
-            case 7:
+            case 9:
                 tags.add(new OsmTag("shop", "mobile_phone"));
                 break;
-            case 8:
+            case 10:
                 tags.add(new OsmTag("amenity", "parking"));
                 tags.add(new OsmTag("amenity", "parking_space"));
                 tags.add(new OsmTag("building", "parking"));
                 break;
-            case 9:
+            case 11:
                 tags.add(new OsmTag("amenity", "clinic"));
                 tags.add(new OsmTag("amenity", "doctors"));
                 tags.add(new OsmTag("amenity", "dentist"));
@@ -85,13 +76,6 @@ public class FilterCategory {
                 tags.add(new OsmTag("amenity", "hospital"));
                 tags.add(new OsmTag("shop", "herbalist"));
                 tags.add(new OsmTag("healthcare", "alternative"));
-                break;
-            case 10:
-                tags.add(new OsmTag("amenity", "bicycle_rental"));
-                break;
-            case 11:
-                tags.add(new OsmTag("amenity", "car_rental"));
-                tags.add(new OsmTag("amenity", "car_sharing"));
                 break;
             case 12:
                 tags.add(new OsmTag("amenity", "restaurant"));
