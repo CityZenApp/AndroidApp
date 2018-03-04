@@ -9,25 +9,23 @@
     <color name="logoBackground">#D8331D</color>
 
     <!-- category item colors -->
-    <color name="category_cafe">#F59F00</color>
-    <color name="category_bar">#5f3dc4</color>
-    <color name="category_building">#757575</color>
-    <color name="category_restaurant">#E15D5D</color>
-    <color name="category_bakery">#F08C00</color>
-    <color name="category_atm">#15AABF</color>
-    <color name="category_home">#82C91E</color>
-    <color name="category_hotel">#1864AB</color>
-    <color name="category_room_service">#F76707</color>
-    <color name="category_attraction">#BE4BDB</color>
-    <color name="category_transit">#12B886</color>
-    <color name="category_gas">#E64980</color>
-    <color name="category_health">#7950F2</color>
-    <color name="category_communication">#4CAF50</color>
-    <color name="category_market">#C2255C</color>
-    <color name="category_mall">#F76707</color>
-    <color name="category_parking">#1971C2</color>
-    <color name="category_bike_rental">#5c940d</color>
-    <color name="category_car_rental">#A61E4d</color>
-    <color name="category_fast_food">#E03131</color>
-
+    <color name="category_accomodation">#FA5252</color>
+    <color name="category_atm">#E64980</color>
+    <color name="category_bakery">#AE3EC9</color>
+    <color name="category_bar">#7950F2</color>
+    <color name="category_cafe">#4C6EF5</color>
+    <color name="category_fast_food">#228BE6</color>
+    <color name="category_gas_station">#15AABF</color>
+    <color name="category_market">#0CA678</color>
+    <color name="category_mobile_phone_store">#40C057</color>
+    <color name="category_parking">#82C91E</color>
+    <color name="category_pharmacy">#FAB005</color>
+    <color name="category_post_office">#FD7E14</color>
+    <color name="category_rental_bike">#495057</color>
+    <color name="category_rental_car">#F783AC</color>
+    <color name="category_restaurant">#3BC9DB</color>
+    <color name="category_shopping_mall">#B197FC</color>
+    <color name="category_tourism">#1864AB</color>
+    <color name="category_transportation">#20C997</color>
+    <color name="category_building">#20C997</color>
 </resources>
