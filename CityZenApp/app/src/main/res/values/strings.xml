@@ -98,6 +98,7 @@ The app is open source licensed because we want the project to be empowered by t
     <string name="Bars_Clubs">Bars</string>
     <string name="Restaurants">Restaurants</string>
     <string name="Bakeries">Bakeries &amp; Pastries</string>
+    <string name="Post_Offices">Post offices</string>
     <string name="FastFood">Fast food</string>
     <string name="Tourism">Tourism</string>
     <string name="Hotels_Hostels">Hotels</string>
