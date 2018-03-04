@@ -20,15 +20,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginBottom="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_margin="16dp"
                 android:gravity="center_vertical">
 
                 <ImageButton
                     android:id="@+id/poiDialogClose"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
                     android:background="@android:color/transparent"
                     app:srcCompat="@drawable/ic_close_dialog" />
 
@@ -43,7 +41,7 @@
                     android:ellipsize="end"
                     android:maxLines="1"
                     android:scrollHorizontally="true"
-                    android:text="Poi title"
+                    tools:text="Poi title"
                     android:textAlignment="center"
                     android:textSize="18sp" />
 
@@ -64,7 +62,6 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="16dp"
                     android:background="@android:color/transparent"
                     app:srcCompat="@drawable/ic_mode_edit_dialog" />
             </RelativeLayout>
@@ -94,7 +91,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.5"
-                        android:text="Fast Food" />
+                        tools:text="Fast Food" />
                 </LinearLayout>
 
 
