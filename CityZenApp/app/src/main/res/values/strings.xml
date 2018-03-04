@@ -94,22 +94,23 @@ The app is open source licensed because we want the project to be empowered by t
 
 
     <!--POI List-->
-    <string name="Cafes">Cafés</string>
-    <string name="Bars_Clubs">Bars/clubs</string>
+    <string name="Cafes">Cafes</string>
+    <string name="Bars_Clubs">Bars</string>
     <string name="Restaurants">Restaurants</string>
+    <string name="Bakeries">Bakeries &amp; Pastries</string>
     <string name="FastFood">Fast food</string>
     <string name="Tourism">Tourism</string>
-    <string name="Hotels_Hostels">Hotels/hostels</string>
+    <string name="Hotels_Hostels">Hotels</string>
     <string name="Transportation">Transportation</string>
     <string name="GasStations">Gas stations</string>
-    <string name="Pharmacy_Healthcare">Pharmacies/healthcare</string>
-    <string name="Banks_ATMs_Exchange">Banks, ATMs &amp; exchange</string>
-    <string name="MobilePhoneStore">Mobile phone stores</string>
-    <string name="Markets_Kiosks">Markets/kiosks</string>
-    <string name="Shopping_Malls">Shopping malls</string>
+    <string name="Pharmacy_Healthcare">Pharmacies</string>
+    <string name="Banks_ATMs_Exchange">Financial services</string>
+    <string name="MobilePhoneStore">Mobile stores</string>
+    <string name="Markets_Kiosks">Markets</string>
+    <string name="Shopping_Malls">Shopping</string>
     <string name="Parking">Parking</string>
-    <string name="RentBicycle">Rent a bicycle</string>
-    <string name="RentCar_CareSharing">Rent a car &amp; Car sharing</string>
+    <string name="RentBicycle">Bike rental</string>
+    <string name="RentCar_CareSharing">Car rental</string>
     <string name="logged_in_as">Logged in as:</string>
 
     <string name="login_to_osm">Log in to OSM</string>

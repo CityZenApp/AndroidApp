@@ -63,7 +63,7 @@
             android:textAlignment="center"
             android:textColor="@color/colorWhite"
             android:textColorLink="@color/colorWhite"
-            app:buttonTint="@color/colorAppGreen" />
+            app:buttonTint="@color/colorWhite" />
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
