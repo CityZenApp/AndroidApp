@@ -4,12 +4,11 @@
     <!--https://github.com/CityZenApp/CityZen-Android/wiki/Scrapbook-->
     <!--Points Of interest-->
     <array name="poi_titles">
+        <item>@string/Bakeries</item>
         <item>@string/Bars_Clubs</item>
         <item>@string/RentBicycle</item>
         <item>@string/Cafes</item>
         <item>@string/RentCar_CareSharing</item>
-        <item>@string/Bakeries</item>
-        <item>@string/Post_Offices</item>
         <item>@string/FastFood</item>
         <item>@string/Banks_ATMs_Exchange</item>
         <item>@string/GasStations</item>
@@ -18,6 +17,7 @@
         <item>@string/MobilePhoneStore</item>
         <item>@string/Parking</item>
         <item>@string/Pharmacy_Healthcare</item>
+        <item>@string/Post_Offices</item>
         <item>@string/Restaurants</item>
         <item>@string/Shopping_Malls</item>
         <item>@string/Tourism</item>
