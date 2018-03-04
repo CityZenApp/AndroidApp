@@ -24,7 +24,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
     private final int height;
     private final int width;
     private Context context;
-    private TypedArray icons, colors, titles;
+    private TypedArray icons, colors, titles, types;
 
     public CategoryAdapter(Context context, Display display) {
         this.context = context;
@@ -34,6 +34,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
         icons = res.obtainTypedArray(R.array.poi_icons);
         colors = res.obtainTypedArray(R.array.poi_colors);
         titles = res.obtainTypedArray(R.array.poi_titles);
+        types = res.obtainTypedArray(R.array.poi_types);
         Point size = new Point();
         display.getSize(size);
         width = size.x;
@@ -56,6 +57,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
         //set the height manually to RecyclerView items
         holder.container.getLayoutParams().height = width / 3;
+        holder.itemView.setTag(types.getString(position));
     }
 
     @Override
