@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CityZen</string>
+    <string name="app_name" translatable="false">CityZen</string>
     <string name="oauth_communication_error">"Unable to reach the authorization server"</string>
     <string name="loading">"Loading"</string>
     <string name="retry">"Retry"</string>
@@ -40,7 +40,6 @@
     <string name="all_week_days">All</string>
     <string name="enable">Enable</string>
 
-
     <string name="osm_copyright" translatable="false"><![CDATA[<font color=\"#000\">© </font><font color=\"#1565C0\">OpenStreetMap </font><font color=\"#000\">contributors</font>]]></string>
     <string name="directions_to_here">directions by car</string>
     <string name="create_poi">Create POI</string>
@@ -75,10 +74,10 @@
     <string name="about_text">CityZen is an open source Android app that helps you navigate and explore the city easily.
         With CityZen you find points of interest (POIs) such as ATMs, gas stations, drugstores, mobile phone stores and other interesting services near you. The app shows these POIs based on your location of your smartphone, but it does so by respecting your privacy since we don’t keep your navigation data.
 The app is open source licensed because we want the project to be empowered by the community for the community. We initiated this project as a way of empowering tools and platforms such as OpenStreetMap that respect our freedoms. If you are an OpenStreetMap contributor you can easily add information to the POIs by editing them inside CityZen.</string>
-    <string name="domain">www.cityzenapp.co</string>
-    <string name="license_link">www.cityzenapp.co/license</string>
-    <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
-    <string name="email_contact">ping@cityzenapp.co</string>
+    <string name="domain" translatable="false">www.cityzenapp.co</string>
+    <string name="license_link" translatable="false">www.cityzenapp.co/license</string>
+    <string name="privacy_policy_link" translatable="false">www.cityzenapp.co/app-privacy-policy</string>
+    <string name="email_contact" translatable="false">ping@cityzenapp.co</string>
     <string name="license">License</string>
     <string name="privacy_policy">Privacy policy</string>
     <string name="contact">Contact</string>
@@ -87,9 +86,9 @@ The app is open source licensed because we want the project to be empowered by t
     <string name="house_number">House number</string>
     <string name="postcode">Postcode</string>
     <string name="get_involved">Get involved</string>
-    <string name="get_involved_link">www.github.com/CityZenApp</string>
+    <string name="get_involved_link" translatable="false">www.github.com/CityZenApp</string>
     <string name="credits">Credits</string>
-    <string name="credits_link">www.cityzenapp.co/credits</string>
+    <string name="credits_link" translatable="false">www.cityzenapp.co/credits</string>
     <string name="open_source_culture">CityZen app was initiated in Albania with a lot of ♥\n for free and open source culture.</string>
 
 
