@@ -19,7 +19,6 @@ import com.cityzen.cityzen.R;
 /**
  * Created by Valdio Veliu on 25/04/2017.
  */
-
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
 
     private final int height;
@@ -56,14 +55,13 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
         holder.imageView.setImageResource(icons.getResourceId(position, R.drawable.ic_local_atm_white));
 
         //set the height manually to RecyclerView items
-        holder.container.getLayoutParams().height = width / 2;
+        holder.container.getLayoutParams().height = width / 3;
     }
 
     @Override
     public int getItemCount() {
         return titles.length();
     }
-
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         LinearLayout container;
@@ -72,9 +70,9 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
         ViewHolder(View itemView) {
             super(itemView);
-            container = (LinearLayout) itemView.findViewById(R.id.poi_container);
-            title = (TextView) itemView.findViewById(R.id.poi_title);
-            imageView = (ImageView) itemView.findViewById(R.id.poi_image);
+            container = itemView.findViewById(R.id.poi_container);
+            title = itemView.findViewById(R.id.poi_title);
+            imageView = itemView.findViewById(R.id.poi_image);
         }
     }
 }

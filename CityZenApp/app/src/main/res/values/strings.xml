@@ -94,9 +94,10 @@ The app is open source licensed because we want the project to be empowered by t
 
 
     <!--POI List-->
-    <string name="Cafes">Cafés</string>
+    <string name="Cafes">Cafes</string>
     <string name="Bars_Clubs">Bars/clubs</string>
     <string name="Restaurants">Restaurants</string>
+    <string name="Bakeries">Bakeries &amp; Pastries</string>
     <string name="FastFood">Fast food</string>
     <string name="Tourism">Tourism</string>
     <string name="Hotels_Hostels">Hotels/hostels</string>
