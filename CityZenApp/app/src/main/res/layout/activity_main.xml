@@ -37,6 +37,6 @@
         android:clickable="true"
         android:visibility="gone"
         app:fabSize="normal"
-        app:srcCompat="@drawable/search_ic_location" />
+        app:srcCompat="@drawable/ic_map_marker" />
 
 </RelativeLayout>

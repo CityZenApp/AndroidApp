@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
@@ -32,6 +33,7 @@ import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Action;
 import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Pair;
 import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Place;
 import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Request;
+import com.cityzen.cityzen.Utils.RecyclerView.SimpleDividerItemDecoration;
 
 import org.osmdroid.bonuspack.location.NominatimPOIProvider;
 import org.osmdroid.bonuspack.location.POI;
@@ -51,6 +53,7 @@ public class SearchFragment extends Fragment {
     private Toolbar toolbar;
     private CheckBox filterCheckBox;
     private LinearLayout filterLayoutContainer;
+    private LinearLayout emptyView;
     private boolean isFilterEnabled = false;
     private SearchView searchView;
     //List of the places that are queried in OSM search
@@ -84,9 +87,9 @@ public class SearchFragment extends Fragment {
     }
 
     private void setupView() {
-        searchView = (SearchView) getActivity().findViewById(R.id.searchView);
+        emptyView = getActivity().findViewById(R.id.emptySearchResult);
+        searchView = getActivity().findViewById(R.id.searchView);
         searchView.setIconified(false);
-
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
             boolean isTyping = false;
@@ -161,14 +164,14 @@ public class SearchFragment extends Fragment {
     }
 
     private void setupToolbarAndFilter() {
-        toolbar = (Toolbar) getActivity().findViewById(R.id.searchToolbar);
+        toolbar = getActivity().findViewById(R.id.searchToolbar);
         toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 searchView.setIconified(false);//open searchView
             }
         });
-        filterCheckBox = (CheckBox) getActivity().findViewById(R.id.filterCheckBox);
+        filterCheckBox = getActivity().findViewById(R.id.filterCheckBox);
         filterCheckBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -176,7 +179,7 @@ public class SearchFragment extends Fragment {
                 filterElements();
             }
         });
-        filterLayoutContainer = (LinearLayout) getActivity().findViewById(R.id.filterPoiListContainer);
+        filterLayoutContainer = getActivity().findViewById(R.id.filterPoiListContainer);
         toolbar.inflateMenu(R.menu.filter);
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
@@ -201,7 +204,7 @@ public class SearchFragment extends Fragment {
         if (adapter == null) return;
         if (filterCheckBox.isChecked()) {
             //filter Elements by opening hours
-            List<Place> filteredElements = new ArrayList<Place>();
+            List<Place> filteredElements = new ArrayList<>();
             for (Place place : adapterElements) {
                 for (Map.Entry<String, String> tag : place.getTags().entrySet()) {
                     if (tag.getKey().equals("opening_hours")) {
@@ -211,7 +214,7 @@ public class SearchFragment extends Fragment {
                 }
             }
             adapterElements.clear();
-            adapterElements = new ArrayList<Place>(filteredElements);
+            adapterElements = new ArrayList<>(filteredElements);
             adapter.resetAdapter(adapterElements);
 
         } else {
@@ -220,14 +223,23 @@ public class SearchFragment extends Fragment {
             adapterElements = new ArrayList<Place>(searchedPlaces);
             adapter.resetAdapter(adapterElements);
         }
+
+        if (adapter.getItemCount() < 1) {
+            emptyView.setVisibility(View.VISIBLE);
+            recyclerView.setVisibility(View.GONE);
+        } else {
+            emptyView.setVisibility(View.GONE);
+            recyclerView.setVisibility(View.VISIBLE);
+        }
     }
 
     private void setupRecyclerView() throws Exception {
         if (adapter == null) {
-            recyclerView = (RecyclerView) getActivity().findViewById(R.id.searchRecyclerView);
+            recyclerView = getActivity().findViewById(R.id.searchRecyclerView);
             adapter = new PlaceListAdapter(getActivity(), adapterElements);
             recyclerView.setAdapter(adapter);
             recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+            recyclerView.addItemDecoration(new SimpleDividerItemDecoration(getContext()));
 
             // Item touch Listener
             recyclerView.addOnItemTouchListener(new RecyclerViewTouchListener(getActivity(), recyclerView, new RecyclerViewItemClickInterface() {
@@ -290,7 +302,7 @@ public class SearchFragment extends Fragment {
                 filterElements();//filter elements if needed
             }
         };
-        ArrayList<Pair> pairs = new ArrayList<Pair>();
+        ArrayList<Pair> pairs = new ArrayList<>();
         pairs.add(new Pair("q=", searchString));
         if (deviceLocationData != null && deviceLocationData.getLocality() != null)
             pairs.add(new Pair("q=", searchString + " " + deviceLocationData.getLocality()));

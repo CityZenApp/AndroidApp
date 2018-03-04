@@ -71,8 +71,7 @@ public class PoiDetailsFragment extends DialogFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_poi_details, container, false);
-        return rootView;
+        return inflater.inflate(R.layout.fragment_poi_details, container, false);
     }
 
     @Override
@@ -105,15 +104,15 @@ public class PoiDetailsFragment extends DialogFragment {
 
 
     private void viewSetup() {
-        TextView osmCopyright = (TextView) getDialog().findViewById(R.id.osmCopyright);
+        TextView osmCopyright = getDialog().findViewById(R.id.osmCopyright);
         osmCopyright.setText(Html.fromHtml(getString(R.string.osm_copyright)));
-        poiDialogDirectionsButton = (Button) getDialog().findViewById(R.id.poiDialogDirectionsButton);
-        favoriteImageButton = (ImageButton) getDialog().findViewById(R.id.poiDialogFavorite);
-        poiDialogEdit = (ImageButton) getDialog().findViewById(R.id.poiDialogEdit);
-        poiTitleDialog = (TextView) getDialog().findViewById(R.id.poiTitleDialog);
-        poiDialogAddress = (TextView) getDialog().findViewById(R.id.poiDialogAddress);
-        poiDialogContent = (LinearLayout) getDialog().findViewById(R.id.poiDialogContent);
-        ImageButton poiDialogClose = (ImageButton) getDialog().findViewById(R.id.poiDialogClose);
+        poiDialogDirectionsButton = getDialog().findViewById(R.id.poiDialogDirectionsButton);
+        favoriteImageButton = getDialog().findViewById(R.id.poiDialogFavorite);
+        poiDialogEdit = getDialog().findViewById(R.id.poiDialogEdit);
+        poiTitleDialog = getDialog().findViewById(R.id.poiTitleDialog);
+        poiDialogAddress = getDialog().findViewById(R.id.poiDialogAddress);
+        poiDialogContent = getDialog().findViewById(R.id.poiDialogContent);
+        ImageButton poiDialogClose = getDialog().findViewById(R.id.poiDialogClose);
         poiDialogClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -161,7 +160,7 @@ public class PoiDetailsFragment extends DialogFragment {
 
     private void loadDataToUI() {
         poiTitleDialog.setText(POI.getPoiName());
-        poiDialogAddress.setText(POI.getFullName());
+        poiDialogAddress.setText(createAddressDisplayString(POI));
         //display tags to view
         if (POI.getTags() != null)
             for (Map.Entry<String, String> tag : POI.getTags().entrySet()) {
@@ -183,6 +182,31 @@ public class PoiDetailsFragment extends DialogFragment {
                             ));
             }
         updateFavoriteButton();
+    }
+
+    private String createAddressDisplayString(ParcelablePOI poi) {
+        String address = "";
+        if (poi.getTags().containsKey("addr:street")) {
+            if (poi.getTags().containsKey("addr:housenumber")) {
+                address += poi.getTags().get("addr:street") + " " + poi.getTags().get("addr:housenumber");
+            } else {
+                address = poi.getTags().get("addr:street");
+            }
+        }
+
+        if ((poi.getTags().containsKey("addr:postcode") || poi.getTags().containsKey("addr:city")) && address.length() > 0) {
+            address += "\n";
+        }
+
+        if (poi.getTags().containsKey("addr:postcode") && poi.getTags().containsKey("addr:city")) {
+            address += poi.getTags().get("addr:postcode") + " " + poi.getTags().get("addr:city");
+        } else if (poi.getTags().containsKey("addr:postcode")) {
+            address += poi.getTags().get("addr:postcode");
+        } else if (poi.getTags().containsKey("addr:city")) {
+            address += poi.getTags().get("addr:city");
+        }
+
+        return address;
     }
 
     private void updateFavoriteButton() {

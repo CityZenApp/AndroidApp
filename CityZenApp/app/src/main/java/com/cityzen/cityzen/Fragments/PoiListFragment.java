@@ -89,7 +89,7 @@ public class PoiListFragment extends Fragment {
         //sort by closest to location
         if (poiElements != null) {
             List<Element> sortedElements = sortByClosestToLocation(
-                    new ArrayList<Element>(poiElements),
+                    new ArrayList<>(poiElements),
                     ((MainActivity) getActivity()).getLastKnownLocation());
             poiElements = new ArrayList<>(sortedElements);
             adapterElements = new ArrayList<>(poiElements);
@@ -359,7 +359,7 @@ public class PoiListFragment extends Fragment {
      */
     private void setupRecyclerView() {
         if (adapter == null) {
-            recyclerView = (RecyclerView) getActivity().findViewById(R.id.poiListRecyclerview);
+            recyclerView = getActivity().findViewById(R.id.poiListRecyclerview);
             adapter = new ElementListAdapter(getActivity(), poiName, categoryId, adapterElements);
             recyclerView.setAdapter(adapter);
             recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 2));

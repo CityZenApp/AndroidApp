@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CityZen</string>
+    <string name="app_name" translatable="false">CityZen</string>
     <string name="oauth_communication_error">"Unable to reach the authorization server"</string>
     <string name="loading">"Loading"</string>
     <string name="retry">"Retry"</string>
@@ -40,7 +40,6 @@
     <string name="all_week_days">All</string>
     <string name="enable">Enable</string>
 
-
     <string name="osm_copyright" translatable="false"><![CDATA[<font color=\"#000\">© </font><font color=\"#1565C0\">OpenStreetMap </font><font color=\"#000\">contributors</font>]]></string>
     <string name="directions_to_here">directions by car</string>
     <string name="create_poi">Create POI</string>
@@ -48,9 +47,9 @@
     <string name="opening">Opening</string>
     <string name="closing">Closing</string>
     <string name="done">Done</string>
-    <string name="no_internet_to_update_poi">No internet access.  Connect to internet to continue</string>
-    <string name="session_expired_toast">Your session has expired.  Please login to continue</string>
-    <string name="internet_access">Internet Access</string>
+    <string name="no_internet_to_update_poi">No internet access. Connect to internet to continue</string>
+    <string name="session_expired_toast">Your session expired. Please log in to continue</string>
+    <string name="internet_access">Internet access</string>
     <string name="edit">Edit</string>
     <string name="street">Street</string>
     <string name="city">City</string>
@@ -67,7 +66,7 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="wired">Wired</string>
-    <string name="wlan">Wlan</string>
+    <string name="wlan">Wi-Fi</string>
     <string name="created_succesfully">created successfully</string>
     <string name="sort_by_name">Sort by name</string>
     <string name="add_a_new_marker_on_the_map">Add a marker on the map</string>
@@ -75,43 +74,56 @@
     <string name="about_text">CityZen is an open source Android app that helps you navigate and explore the city easily.
         With CityZen you find points of interest (POIs) such as ATMs, gas stations, drugstores, mobile phone stores and other interesting services near you. The app shows these POIs based on your location of your smartphone, but it does so by respecting your privacy since we don’t keep your navigation data.
 The app is open source licensed because we want the project to be empowered by the community for the community. We initiated this project as a way of empowering tools and platforms such as OpenStreetMap that respect our freedoms. If you are an OpenStreetMap contributor you can easily add information to the POIs by editing them inside CityZen.</string>
-    <string name="domain">www.cityzenapp.co</string>
-    <string name="license_link">www.cityzenapp.co/license</string>
-    <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
-    <string name="email_contact">ping@cityzenapp.co</string>
+    <string name="domain" translatable="false">www.cityzenapp.co</string>
+    <string name="license_link" translatable="false">www.cityzenapp.co/license</string>
+    <string name="privacy_policy_link" translatable="false">www.cityzenapp.co/app-privacy-policy</string>
+    <string name="email_contact" translatable="false">ping@cityzenapp.co</string>
     <string name="license">License</string>
     <string name="privacy_policy">Privacy policy</string>
     <string name="contact">Contact</string>
-    <string name="alert_message">CityZen must have location to provide map services.  Do you want to enable location?</string>
+    <string name="alert_message">CityZen needs your location to provide map services. Do you want to enable location?</string>
     <string name="osm_routing_unavailable">OSM routing isn\'t available at this time. Try again later</string>
     <string name="house_number">House number</string>
     <string name="postcode">Postcode</string>
     <string name="get_involved">Get involved</string>
-    <string name="get_involved_link">www.github.com/CityZenApp</string>
+    <string name="get_involved_link" translatable="false">www.github.com/CityZenApp</string>
     <string name="credits">Credits</string>
-    <string name="credits_link">www.cityzenapp.co/credits</string>
+    <string name="credits_link" translatable="false">www.cityzenapp.co/credits</string>
     <string name="open_source_culture">CityZen app was initiated in Albania with a lot of ♥\n for free and open source culture.</string>
 
 
     <!--POI List-->
     <string name="Cafes">Cafes</string>
-    <string name="Bars_Clubs">Bars/Clubs</string>
+    <string name="Bars_Clubs">Bars</string>
     <string name="Restaurants">Restaurants</string>
+    <string name="Bakeries">Bakeries &amp; Pastries</string>
+    <string name="Post_Offices">Post offices</string>
     <string name="FastFood">Fast food</string>
     <string name="Tourism">Tourism</string>
-    <string name="Hotels_Hostels">Hotels/Hostels</string>
+    <string name="Hotels_Hostels">Hotels</string>
     <string name="Transportation">Transportation</string>
     <string name="GasStations">Gas stations</string>
-    <string name="Pharmacy_Healthcare">Pharmacy/Healthcare</string>
-    <string name="Banks_ATMs_Exchange">Banks/ATMs/Exchange</string>
-    <string name="MobilePhoneStore">Mobile phone store</string>
-    <string name="Markets_Kiosks">Markets/Kiosks</string>
-    <string name="Shopping_Malls">Shopping Malls</string>
-    <string name="Parkings">Parkings</string>
-    <string name="RentBicycle">Rent a bicycle</string>
-    <string name="RentCar_CareSharing">Rent a car &amp; Care sharing</string>
+    <string name="Pharmacy_Healthcare">Pharmacies</string>
+    <string name="Banks_ATMs_Exchange">Financial services</string>
+    <string name="MobilePhoneStore">Mobile stores</string>
+    <string name="Markets_Kiosks">Markets</string>
+    <string name="Shopping_Malls">Shopping</string>
+    <string name="Parking">Parking</string>
+    <string name="RentBicycle">Bike rental</string>
+    <string name="RentCar_CareSharing">Car rental</string>
     <string name="logged_in_as">Logged in as:</string>
 
-    <string name="login_to_osm">Login to OSM</string>
-    <string name="logout">LogOut</string>
+    <string name="login_to_osm">Log in to OSM</string>
+    <string name="logout">Log out</string>
+
+    <!--Search List-->
+    <string name="no_results">No results</string>
+    <string name="search_again">Please try another search term</string>
+    <string name="search_icon">search icon</string>
+
+    <!--Favorites List-->
+    <string name="no_favorites">No favorites</string>
+    <string name="mark_locations_as_favorites">Locations marked as favorites will show up here</string>
+    <string name="favorites_icon">favorites icon</string>
+
 </resources>

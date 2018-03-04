@@ -73,11 +73,11 @@ public class CategoriesFragment extends Fragment {
      * Setup RecyclerView in {@link CategoriesFragment}
      */
     private void setupRecyclerView() {
-        RecyclerView recyclerView = (RecyclerView) getActivity().findViewById(R.id.recyclerview);
+        RecyclerView recyclerView = getActivity().findViewById(R.id.recyclerview);
         Display display = getActivity().getWindowManager().getDefaultDisplay();
         CategoryAdapter adapter = new CategoryAdapter(getActivity(), display);
         recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 2));
+        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 3));
 
         // Item touch Listener
         recyclerView.addOnItemTouchListener(new RecyclerViewTouchListener(getActivity(), recyclerView, new RecyclerViewItemClickInterface() {

@@ -42,7 +42,7 @@ public class ParcelablePOI implements Parcelable {
      */
 
     private String poiName;             //POI name
-    private String fullName = "";             //POI name + address
+    private String fullName = "";       //POI name + address
     private String osmType = "";        //e.g. node
     private String poiClassName = "";   //e.g. amenity
     private String poiClassType = "";   //e.g. bar

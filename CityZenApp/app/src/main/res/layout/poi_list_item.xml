@@ -1,62 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="6dp"
-    android:background="@color/colorWhite"
-    android:orientation="vertical"
-    android:paddingBottom="21dp"
-    android:paddingTop="21dp">
+    card_view:cardCornerRadius="3dp"
+    card_view:cardUseCompatPadding="true">
 
-    <TextView
-        android:id="@+id/poiType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:background="@color/colorAppGreen"
-        android:textColor="@color/colorWhite" />
-
-    <TextView
-        android:id="@+id/poiTitle"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        android:ellipsize="end"
-        android:foregroundGravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:maxLines="1"
-        android:text="Title"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="#7D7D7D" />
+        android:layout_margin="24dp"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/poiAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        android:foregroundGravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:lines="2"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="#7D7D7D"
-        android:visibility="gone" />
+        <TextView
+            android:id="@+id/poiTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#3C3C3C"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Pizzeria Alfonso" />
 
-    <TextView
-        android:id="@+id/poiOpeningHours"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        android:foregroundGravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="#7D7D7D"
-        android:visibility="gone" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/poiOpeningHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxLines="2"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#7D7D7D"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:text="Pizzeria Alfonso" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

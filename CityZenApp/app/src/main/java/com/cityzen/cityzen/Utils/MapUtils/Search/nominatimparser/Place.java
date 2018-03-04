@@ -11,7 +11,7 @@ public class Place extends Adress {
     private float importance;
     private String license, osm_type, display_name, entityClass, type;
     private BoundingBox boundingBox;
-    private Map<String, String> tags = new HashMap<String, String>();
+    private Map<String, String> tags = new HashMap<>();
 
     public Place(long place_id, long osm_id, double lat, double lon, float importance, String license, String osm_type, String display_name, String entityClass, String type, BoundingBox boundingBox, Map<String, String> tags) {
         super(display_name, android.R.mipmap.sym_def_app_icon, lat, lon);

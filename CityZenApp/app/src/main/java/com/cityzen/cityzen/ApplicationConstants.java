@@ -1,5 +1,7 @@
 package com.cityzen.cityzen;
 
+import android.content.Context;
+
 import com.cityzen.cityzen.Models.OsmFeature;
 
 import java.util.ArrayList;
@@ -7,7 +9,7 @@ import java.util.ArrayList;
 public class ApplicationConstants {
     public final static String
             NAME = "CityZen Android app",
-            VERSION = "v.1.0",
+            VERSION = "v"+BuildConfig.VERSION_NAME,
             USER_AGENT = NAME + " " + VERSION;
 
     public static ArrayList<OsmFeature> OSM_TAGS = setupTags();
