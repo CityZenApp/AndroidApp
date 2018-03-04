@@ -8,6 +8,8 @@
         <item>@string/RentBicycle</item>
         <item>@string/Cafes</item>
         <item>@string/RentCar_CareSharing</item>
+        <item>@string/Bakeries</item>
+        <item>@string/Post_Offices</item>
         <item>@string/FastFood</item>
         <item>@string/Banks_ATMs_Exchange</item>
         <item>@string/GasStations</item>
@@ -40,9 +42,11 @@
         <item>14</item>
         <item>15</item>
         <item>16</item>
+        <item>17</item>
     </array>
 
     <array name="poi_icons">
+        <item>@drawable/ic_local_bakery</item>
         <item>@drawable/ic_local_bar_white_24dp</item>
         <item>@drawable/ic_local_bike</item>
         <item>@drawable/ic_local_cafe_white</item>
@@ -55,13 +59,15 @@
         <item>@drawable/ic_phonelink_setup_white</item>
         <item>@drawable/ic_local_parking</item>
         <item>@drawable/ic_local_pharmacy_white</item>
+        <item>@drawable/ic_local_post_office</item>
         <item>@drawable/ic_restaurant_white</item>
-        <item>@drawable/ic_local_mall_white_24dp</item>
+        <item>@drawable/ic_room_service_white_24dp</item>
         <item>@drawable/ic_nature_people_white</item>
         <item>@drawable/ic_directions_bus_white</item>
     </array>
 
     <array name="poi_colors">
+        <item>@color/category_bakery</item>
         <item>@color/category_bar</item>
         <item>@color/category_bike_rental</item>
         <item>@color/category_cafe</item>
@@ -74,6 +80,7 @@
         <item>@color/category_mobile_phone_store</item>
         <item>@color/category_parking</item>
         <item>@color/category_pharmacy</item>
+        <item>@color/category_post_office</item>
         <item>@color/category_restaurant</item>
         <item>@color/category_shopping_mall</item>
         <item>@color/category_tourism</item>
