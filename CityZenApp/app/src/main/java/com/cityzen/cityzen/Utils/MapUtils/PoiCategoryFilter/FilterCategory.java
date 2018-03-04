@@ -3,12 +3,20 @@ package com.cityzen.cityzen.Utils.MapUtils.PoiCategoryFilter;
 import java.util.ArrayList;
 
 /**
- * Created by Valdio Veliu on 29/04/2017.
+ * Filter categories for POI ids.
+ *
+ * @author Valdio Veliu
+ * @author Andy Scherzinger
  */
 public class FilterCategory {
 
     /**
-     * get filters for OSM tags for a given POI id.
+     * retrieve the {@link OsmTag}s for the POI id.
+     *
+     * based on arrays <code>poi_titles</code> and <code>poi_id</code>.
+     *
+     * @param poiId the POI id
+     * @return list of corresponding {@link OsmTag}s
      */
     public static ArrayList<OsmTag> getFilters(int poiId) {
         ArrayList<OsmTag> tags = new ArrayList<>();
