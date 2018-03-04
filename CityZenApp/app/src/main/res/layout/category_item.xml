@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="22dp"
-        android:minHeight="50dp"
+        android:minHeight="48dp"
         app:srcCompat="@drawable/ic_local_atm_white" />
 
     <TextView
