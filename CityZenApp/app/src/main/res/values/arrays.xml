@@ -47,7 +47,7 @@
         <item>@drawable/ic_local_atm_white</item>
         <item>@drawable/ic_local_bar_white_24dp</item>
         <item>@drawable/ic_local_cafe_white</item>
-        <item>@drawable/ic_room_service_white_24dp</item>
+        <item>@drawable/ic_local_fast_food</item>
         <item>@drawable/ic_local_gas_station_white</item>
         <item>@drawable/ic_store_white_24dp</item>
         <item>@drawable/ic_phonelink_setup_white</item>
