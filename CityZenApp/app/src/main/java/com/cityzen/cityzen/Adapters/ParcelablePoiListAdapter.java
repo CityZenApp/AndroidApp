@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.cityzen.cityzen.Models.ParcelablePOI;
 import com.cityzen.cityzen.R;
+import com.cityzen.cityzen.Utils.MapUtils.OsmTags;
 import com.cityzen.cityzen.Utils.RecyclerView.CategoryColoringUtil;
 
 import java.util.List;
@@ -47,7 +48,7 @@ public class ParcelablePoiListAdapter extends RecyclerView.Adapter<ParcelablePoi
         Map<String, String> tags = data.get(position).getTags();
         if (tags != null) {
             for (Map.Entry<String, String> tag : tags.entrySet()) {
-                if (tag.getKey().equals("opening_hours"))
+                if (tag.getKey().equals(OsmTags.OPENING_HOURS))
                     holder.openingHours.setText(tag.getValue());
             }
         }

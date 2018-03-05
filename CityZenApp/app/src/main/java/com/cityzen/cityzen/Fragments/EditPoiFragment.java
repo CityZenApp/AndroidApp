@@ -38,6 +38,7 @@ import com.cityzen.cityzen.Utils.Development.AppLog;
 import com.cityzen.cityzen.Utils.Development.AppToast;
 import com.cityzen.cityzen.Utils.DeviceUtils.DeviceUtils;
 import com.cityzen.cityzen.Utils.MapUtils.MapUtils;
+import com.cityzen.cityzen.Utils.MapUtils.OsmTags;
 
 import org.osmdroid.api.IMapController;
 import org.osmdroid.config.Configuration;
@@ -239,7 +240,7 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
     private void loadNodeInfoToUI(Node node) {
         if (node.getTags() != null)
             for (Map.Entry<String, String> tag : node.getTags().entrySet()) {
-                if (tag.getKey().equals("opening_hours")) {
+                if (tag.getKey().equals(OsmTags.OPENING_HOURS)) {
                     opening_hours = tag.getValue();
                     editExistingOpeningHours.setText(opening_hours);
                     openingHoursMainContainer.setVisibility(View.GONE);
@@ -299,10 +300,10 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
     }
 
     private void setupView() {
-        editExistingOpeningHoursContainer = (LinearLayout) getActivity().findViewById(R.id.editExistingOpeningHoursContainer);
+        editExistingOpeningHoursContainer = getActivity().findViewById(R.id.editExistingOpeningHoursContainer);
         editExistingOpeningHoursContainer.setVisibility(View.GONE);
-        editExistingOpeningHours = (TextView) getActivity().findViewById(R.id.editExistingOpeningHours);
-        editExistingOpeningHoursButton = (Button) getActivity().findViewById(R.id.editExistingOpeningHoursButton);
+        editExistingOpeningHours = getActivity().findViewById(R.id.editExistingOpeningHours);
+        editExistingOpeningHoursButton = getActivity().findViewById(R.id.editExistingOpeningHoursButton);
         editExistingOpeningHoursButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -310,25 +311,25 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
                 openingHoursMainContainer.setVisibility(View.VISIBLE);
             }
         });
-        editName = (EditText) getActivity().findViewById(R.id.editName);
+        editName = getActivity().findViewById(R.id.editName);
         editStreet = (EditText) getActivity().findViewById(R.id.editStreet);
         editCity = (EditText) getActivity().findViewById(R.id.editCity);
-        editHouseNumber = (EditText) getActivity().findViewById(R.id.editHouseNumber);
-        editPostcode = (EditText) getActivity().findViewById(R.id.editPostcode);
-        editPhone = (EditText) getActivity().findViewById(R.id.editPhone);
-        editWebsite = (EditText) getActivity().findViewById(R.id.editWebsite);
-        editEmail = (EditText) getActivity().findViewById(R.id.editEmail);
-        editInternetContainer = (LinearLayout) getActivity().findViewById(R.id.editInternetContainer);
+        editHouseNumber = getActivity().findViewById(R.id.editHouseNumber);
+        editPostcode = getActivity().findViewById(R.id.editPostcode);
+        editPhone = getActivity().findViewById(R.id.editPhone);
+        editWebsite = getActivity().findViewById(R.id.editWebsite);
+        editEmail = getActivity().findViewById(R.id.editEmail);
+        editInternetContainer = getActivity().findViewById(R.id.editInternetContainer);
         if (!canHaveInternet()) editInternetContainer.setVisibility(View.GONE);
 
-        editInternet = (Spinner) getActivity().findViewById(R.id.editInternet);
+        editInternet = getActivity().findViewById(R.id.editInternet);
         dropdownItems = new String[]{"", getString(R.string.yes), getString(R.string.no), getString(R.string.wifi), getString(R.string.wired), getString(R.string.wlan)};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_dropdown_item, dropdownItems);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_dropdown_item, dropdownItems);
         editInternet.setAdapter(adapter);
 
-        TextView osmCopyright = (TextView) getActivity().findViewById(R.id.osmCopyrightEditPoi);
+        TextView osmCopyright = getActivity().findViewById(R.id.osmCopyrightEditPoi);
         osmCopyright.setText(Html.fromHtml(getString(R.string.osm_copyright)));
-        toolbar = (Toolbar) getActivity().findViewById(R.id.editPoiToolbar);
+        toolbar = getActivity().findViewById(R.id.editPoiToolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -347,7 +348,7 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
     }
 
     private void mapSetup() {
-        map = (MapView) getActivity().findViewById(R.id.createPoiMap);
+        map = getActivity().findViewById(R.id.createPoiMap);
         //important! set your user agent to prevent getting banned from the osm servers
         Configuration.getInstance().load(getActivity(), PreferenceManager.getDefaultSharedPreferences(getActivity()));
         map.setTileSource(TileSourceFactory.MAPNIK);
@@ -368,22 +369,22 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
 
     private void openingHoursLayoutSetup() {
         openingHoursMainContainer = getActivity().findViewById(R.id.openingHoursMainContainer);
-        hoursSwitch24_7 = (Switch) getActivity().findViewById(R.id.hoursSwitch24_7);
+        hoursSwitch24_7 = getActivity().findViewById(R.id.hoursSwitch24_7);
         hoursSwitch24_7.setChecked(false);
-        extendedOpeningHoursContainer = (LinearLayout) getActivity().findViewById(R.id.extendedOpeningHoursContainer);
+        extendedOpeningHoursContainer = getActivity().findViewById(R.id.extendedOpeningHoursContainer);
         extendedOpeningHoursContainer.setVisibility(View.VISIBLE);
-        openingHours = (TextView) getActivity().findViewById(R.id.openingHours);
-        closingHours = (TextView) getActivity().findViewById(R.id.closingHours);
+        openingHours = getActivity().findViewById(R.id.openingHours);
+        closingHours = getActivity().findViewById(R.id.closingHours);
 
         //week CheckBoxes
-        checkboxMonday = (CheckBox) getActivity().findViewById(R.id.checkboxMonday);
-        checkboxTuesday = (CheckBox) getActivity().findViewById(R.id.checkboxTuesday);
-        checkboxWednesday = (CheckBox) getActivity().findViewById(R.id.checkboxWednesday);
-        checkboxThursday = (CheckBox) getActivity().findViewById(R.id.checkboxThursday);
-        checkboxFriday = (CheckBox) getActivity().findViewById(R.id.checkboxFriday);
-        checkboxSaturday = (CheckBox) getActivity().findViewById(R.id.checkboxSaturday);
-        checkboxSunday = (CheckBox) getActivity().findViewById(R.id.checkboxSunday);
-        checkboxAll = (CheckBox) getActivity().findViewById(R.id.checkboxAll);
+        checkboxMonday = getActivity().findViewById(R.id.checkboxMonday);
+        checkboxTuesday = getActivity().findViewById(R.id.checkboxTuesday);
+        checkboxWednesday = getActivity().findViewById(R.id.checkboxWednesday);
+        checkboxThursday = getActivity().findViewById(R.id.checkboxThursday);
+        checkboxFriday = getActivity().findViewById(R.id.checkboxFriday);
+        checkboxSaturday = getActivity().findViewById(R.id.checkboxSaturday);
+        checkboxSunday = getActivity().findViewById(R.id.checkboxSunday);
+        checkboxAll = getActivity().findViewById(R.id.checkboxAll);
         checkboxMonday.setOnClickListener(openingHoursViewListener);
         checkboxTuesday.setOnClickListener(openingHoursViewListener);
         checkboxWednesday.setOnClickListener(openingHoursViewListener);
@@ -407,7 +408,6 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
         });
         openingHours.setOnClickListener(openingHoursViewListener);
         closingHours.setOnClickListener(openingHoursViewListener);
-
     }
 
     View.OnClickListener openingHoursViewListener = new View.OnClickListener() {
@@ -523,15 +523,13 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
     }
 
     private boolean allDaysAreSelected() {
-        if (checkboxMonday.isChecked() &&
+        return checkboxMonday.isChecked() &&
                 checkboxTuesday.isChecked() &&
                 checkboxWednesday.isChecked() &&
                 checkboxThursday.isChecked() &&
                 checkboxFriday.isChecked() &&
                 checkboxSaturday.isChecked() &&
-                checkboxSunday.isChecked())
-            return true;
-        return false;
+                checkboxSunday.isChecked();
     }
 
     public void showTimePickerDialog() {
@@ -710,7 +708,7 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
         if (openingHoursMainContainer.getVisibility() == View.VISIBLE) {
             String openingHours = filterOpeningHours();
             if (openingHours != null && !openingHours.equalsIgnoreCase(getString(R.string.add_opening_hours)) && !openingHours.equalsIgnoreCase(getString(R.string.add_closing_hours)))
-                tags.put("opening_hours", openingHours);
+                tags.put(OsmTags.OPENING_HOURS, openingHours);
         }
 
         return tags;
@@ -747,7 +745,7 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
      * Returns a valid opening_hours formant for OSM
      */
     private String filterOpeningHours() {
-        String opening_hours = null;
+        String opening_hours;
         if (hoursSwitch24_7.isChecked()) return "24/7";
         String days = "";
         if (!areAnyDaysSelected()) return null;
@@ -846,12 +844,12 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
     }
 
     private void hideLoadingScreen() {
-        FrameLayout loaderContainer = (FrameLayout) getActivity().findViewById(R.id.loadingScreenContainer);
+        FrameLayout loaderContainer = getActivity().findViewById(R.id.loadingScreenContainer);
         loaderContainer.setVisibility(View.GONE);
     }
 
     private void showLoadingScreen() {
-        FrameLayout loaderContainer = (FrameLayout) getActivity().findViewById(R.id.loadingScreenContainer);
+        FrameLayout loaderContainer = getActivity().findViewById(R.id.loadingScreenContainer);
         loaderContainer.setVisibility(View.VISIBLE);
     }
 }

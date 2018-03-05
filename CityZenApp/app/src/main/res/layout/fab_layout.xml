@@ -20,7 +20,7 @@
         fab:menu_colorNormal="@color/colorWhite"
         fab:menu_colorPressed="@color/colorPrimary"
         fab:menu_colorRipple="@color/colorPrimaryDark"
-        fab:menu_fab_label="CityZen"
+        fab:menu_fab_label="@string/app_name"
         fab:menu_icon="@drawable/ic_map_black_24dp"
         fab:menu_labels_ellipsize="end"
         fab:menu_labels_singleLine="true"
@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_clear_all_white_18dp"
-            fab:fab_label="Clear Map"
+            fab:fab_label="@string/clear_map"
             fab:fab_size="mini" />
 
         <com.github.clans.fab.FloatingActionButton
@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_location_searching_white_18dp"
-            fab:fab_label="My location"
+            fab:fab_label="@string/my_location"
             fab:fab_size="mini" />
 
         <com.github.clans.fab.FloatingActionButton
@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_add_white_18dp"
-            fab:fab_label="Add"
+            fab:fab_label="@string/add"
             fab:fab_size="mini" />
 
 
@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_search_white_18dp"
-            fab:fab_label="Search"
+            fab:fab_label="@string/search"
             fab:fab_size="mini" />
 
     </com.github.clans.fab.FloatingActionMenu>

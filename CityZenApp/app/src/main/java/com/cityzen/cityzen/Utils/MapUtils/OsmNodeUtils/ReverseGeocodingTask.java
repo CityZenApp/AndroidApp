@@ -5,6 +5,7 @@ import android.location.Address;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
+import com.cityzen.cityzen.ApplicationConstants;
 import com.cityzen.cityzen.Models.ParcelablePOI;
 import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Utils.Development.AppLog;
@@ -45,7 +46,7 @@ public class ReverseGeocodingTask extends AsyncTask<Void, Void, Void> {
 
     @Override
     protected Void doInBackground(Void... voids) {
-        GeocoderNominatim nominatim = new GeocoderNominatim(context.getResources().getString(R.string.user_agent));
+        GeocoderNominatim nominatim = new GeocoderNominatim(ApplicationConstants.USER_AGENT);
         try {
             List<Address> addresses = nominatim.getFromLocation(latitude, longitude, 1);//only get one location
             if (addresses != null && addresses.size() > 0) {

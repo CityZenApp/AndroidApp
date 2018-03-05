@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.cityzen.cityzen.R;
+import com.cityzen.cityzen.Utils.MapUtils.OsmTags;
 import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Place;
 import com.cityzen.cityzen.Utils.RecyclerView.CategoryColoringUtil;
 
@@ -46,7 +47,7 @@ public class PlaceListAdapter extends RecyclerView.Adapter<PlaceListAdapter.View
         Map<String, String> tags = data.get(position).getTags();
         if (tags != null) {
             for (Map.Entry<String, String> tag : tags.entrySet()) {
-                if (tag.getKey().equals("opening_hours")) {
+                if (tag.getKey().equals(OsmTags.OPENING_HOURS)) {
                     holder.openingHours.setText(tag.getValue());
                     hasOpeningHours = true;
                 }

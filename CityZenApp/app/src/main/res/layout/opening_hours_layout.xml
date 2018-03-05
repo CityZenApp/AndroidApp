@@ -60,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
-                android:text="--:--"
+                android:text="@string/empty_timestamp"
                 android:textAlignment="center"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -83,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
-                android:text="--:--"
+                android:text="@string/empty_timestamp"
                 android:textAlignment="center"
                 android:textSize="16sp" />
         </LinearLayout>

@@ -35,6 +35,7 @@ import com.cityzen.cityzen.Fragments.Timer.TimeCallback;
 import com.cityzen.cityzen.Fragments.Timer.TimePickerFragment;
 import com.cityzen.cityzen.Utils.Development.AppToast;
 import com.cityzen.cityzen.Utils.MapUtils.MapUtils;
+import com.cityzen.cityzen.Utils.MapUtils.OsmTags;
 
 import org.osmdroid.api.IMapController;
 import org.osmdroid.config.Configuration;
@@ -656,7 +657,7 @@ public class CreatePoiFragment extends Fragment implements TimeCallback, Feature
         }
         String openingHours = filterOpeningHours();
         if (openingHours != null && !openingHours.equalsIgnoreCase(getString(R.string.add_opening_hours)) && !openingHours.equalsIgnoreCase(getString(R.string.add_closing_hours)))
-            tags.put("opening_hours", openingHours);
+            tags.put(OsmTags.OPENING_HOURS, openingHours);
         return tags;
     }
 }
