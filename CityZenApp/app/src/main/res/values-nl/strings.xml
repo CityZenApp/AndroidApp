@@ -82,7 +82,7 @@
     <string name="privacy_policy">Privacy-overeenkomst</string>
     <string name="contact">Contact</string>
     <string name="alert_message">CityZen heeft uw locatie nodig om kaartdiensten te kunnen leveren. Wilt u uw locatie inschakelen?</string>
-    <string name="osm_routing_unavailable">OSM-routebeschrijving is momenteel niet beschikbaar. Probeer het later opnieuw.</string>
+    <string name="osm_routing_unavailable">OSM-routebeschrijving is momenteel niet beschikbaar. Probeer het later opnieuw</string>
     <string name="house_number">Huisnummer</string>
     <string name="postcode">Postcode</string>
     <string name="get_involved">Bijdragen</string>
