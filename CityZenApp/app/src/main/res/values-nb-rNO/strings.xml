@@ -113,4 +113,15 @@
 
     <string name="login_to_osm">Logg inn i OSM</string>
     <string name="logout">Logg ut</string>
+<string name="Bakeries">Bakeri og konditori</string>
+    <string name="Post_Offices">Postkontor</string>
+    <string name="Parking">Parkeringsplass</string>
+    <string name="no_results">Ingen resultat</string>
+    <string name="search_again">Prøv å endre søket ditt</string>
+    <string name="search_icon">søkeikon</string>
+
+    <string name="no_favorites">Ingen favoritter</string>
+    <string name="mark_locations_as_favorites">Favorittmarkerte plasseringer vil vises her</string>
+    <string name="favorites_icon">favorittikon</string>
+
 </resources>
