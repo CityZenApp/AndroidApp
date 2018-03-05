@@ -24,25 +24,25 @@
         <item>@string/Transportation</item>
     </array>
 
-    <array name="poi_id"> <!--Don't localize, used for app functionality-->
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-        <item>13</item>
-        <item>14</item>
-        <item>15</item>
-        <item>16</item>
-        <item>17</item>
+    <array name="poi_types"> <!--Don't localize, used for app functionality-->
+        <item>bakeries</item>
+        <item>bars</item>
+        <item>bike_rental</item>
+        <item>cafes</item>
+        <item>car_rental</item>
+        <item>fast_food</item>
+        <item>financial_services</item>
+        <item>gas_stations</item>
+        <item>hotels</item>
+        <item>markets</item>
+        <item>mobile_stores</item>
+        <item>parking</item>
+        <item>pharmacies</item>
+        <item>post_offices</item>
+        <item>restaurants</item>
+        <item>shopping</item>
+        <item>tourism</item>
+        <item>transportation</item>
     </array>
 
     <array name="poi_icons">

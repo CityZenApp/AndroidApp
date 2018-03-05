@@ -9,6 +9,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,8 +34,8 @@ import java.util.List;
 import info.metadude.java.library.overpass.models.Element;
 
 public class CategoriesFragment extends Fragment {
+    private static final String TAG = CategoriesFragment.class.getName();
     private TypedArray titles;
-    private TypedArray categoryIDs;
     //integer to keep track of the number of OSM tag requests
     int poiTagsReceived = 0;
 
@@ -53,7 +54,6 @@ public class CategoriesFragment extends Fragment {
         //get POI data from resources
         Resources res = getActivity().getResources();
         titles = res.obtainTypedArray(R.array.poi_titles);
-        categoryIDs = res.obtainTypedArray(R.array.poi_id);
     }
 
     @Override
@@ -85,10 +85,10 @@ public class CategoriesFragment extends Fragment {
             public void onClick(View view, int position) {
                 try {
                     ((MainActivity) getActivity()).showLoadingScreen();
-                    openCategory(position, ((MainActivity) getActivity()).getLastKnownLocation());
+                    openCategory(position, ((MainActivity) getActivity()).getLastKnownLocation(),(String) view.getTag());
                     poiTagsReceived = 0;// reset the number
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    Log.e(TAG, "Error opening category");
                 }
             }
 
@@ -105,7 +105,7 @@ public class CategoriesFragment extends Fragment {
      * @param lastKnownLocation Devices last known location, around which to query points of interest
      * @throws IOException
      */
-    private void openCategory(final int position, DeviceLocationData lastKnownLocation) throws IOException {
+    private void openCategory(final int position, DeviceLocationData lastKnownLocation, final String type) throws IOException {
         boolean isGpsEnabled;
         boolean isNetworkEnabled;
         if (lastKnownLocation == null) {
@@ -129,9 +129,9 @@ public class CategoriesFragment extends Fragment {
                     poiElements.add(element);
                 poiTagsReceived++;
                 //if there are POI available, display them
-                if (poiTagsReceived == FilterCategory.getFilters(position).size() && poiElements.size() > 0)
-                    displayPOIs(titles.getString(position), poiElements, categoryIDs.getInteger(position, -1));
-                else if (poiTagsReceived == FilterCategory.getFilters(position).size() && poiElements.size() == 0) {
+                if (poiTagsReceived == FilterCategory.getFilters(type).size() && poiElements.size() > 0)
+                    displayPOIs(titles.getString(position), poiElements, position);
+                else if (poiTagsReceived == FilterCategory.getFilters(type).size() && poiElements.size() == 0) {
                     try {
                         new AppToast(getActivity()).longToast(getString(R.string.no_pois_near_user_location));
                     } catch (Exception e) {
@@ -146,9 +146,9 @@ public class CategoriesFragment extends Fragment {
                     poiTagsReceived++;
                     // in case there are separate network calls and some fail
                     //if there are POI available, display them
-                    if (poiTagsReceived == FilterCategory.getFilters(position).size() && poiElements.size() > 0)
-                        displayPOIs(titles.getString(position), poiElements, categoryIDs.getInteger(position, -1));
-                    else if (poiTagsReceived == FilterCategory.getFilters(position).size() && poiElements.size() == 0) {
+                    if (poiTagsReceived == FilterCategory.getFilters(type).size() && poiElements.size() > 0)
+                        displayPOIs(titles.getString(position), poiElements, position);
+                    else if (poiTagsReceived == FilterCategory.getFilters(type).size() && poiElements.size() == 0) {
                         new AppToast(getActivity()).toast(getString(R.string.no_pois_near_user_location));
                         ((MainActivity) getActivity()).hideLoadingScreenWithNavigation();
                     }
@@ -159,7 +159,7 @@ public class CategoriesFragment extends Fragment {
         });
 
         //get the filter tags that will be requested in the API
-        ArrayList<OsmTag> tags = FilterCategory.getFilters(position);
+        ArrayList<OsmTag> tags = FilterCategory.getFilters(type);
         for (OsmTag tag : tags) {
             queryPois.loadPois(tag.getKey(), tag.getValue());
         }

@@ -10,114 +10,125 @@ import java.util.ArrayList;
  */
 public class FilterCategory {
 
+    private static final String OSM_KEY_SHOP = "shop";
+    private static final String OSM_KEY_AMENITY = "amenity";
+    private static final String OSM_KEY_TOURISM = "tourism";
+    private static final String OSM_KEY_BUILDING = "building";
+    private static final String OSM_KEY_INDUSTRIAL = "industrial";
+    private static final String OSM_KEY_HEALTHCARE = "healthcare";
+    private static final String OSM_KEY_HISTORIC = "historic";
+    private static final String OSM_KEY_RAILWAY = "railway";
+    private static final String OSM_KEY_HIGHWAY = "highway";
+    private static final String OSM_KEY_PUBLIC_TRANSPORT = "public_transport";
+
     /**
      * retrieve the {@link OsmTag}s for the POI id.
      *
-     * based on arrays <code>poi_titles</code> and <code>poi_id</code>.
+     * based on array <code>poi_types</code>.
      *
-     * @param poiId the POI id
+     * @param type the type of category
      * @return list of corresponding {@link OsmTag}s
      */
-    public static ArrayList<OsmTag> getFilters(int poiId) {
+    public static ArrayList<OsmTag> getFilters(String type) {
         ArrayList<OsmTag> tags = new ArrayList<>();
-        switch (poiId) {
-            case 0:
-                tags.add(new OsmTag("shop", "bakery"));
-                tags.add(new OsmTag("shop", "pastry"));
-                tags.add(new OsmTag("shop", "confectionery"));
-                tags.add(new OsmTag("industrial", "bakery"));
+        switch (type) {
+            case "bakeries":
+                tags.add(new OsmTag(OSM_KEY_SHOP, "bakery"));
+                tags.add(new OsmTag(OSM_KEY_SHOP, "pastry"));
+                tags.add(new OsmTag(OSM_KEY_SHOP, "confectionery"));
+                tags.add(new OsmTag(OSM_KEY_INDUSTRIAL, "bakery"));
                 break;
-            case 1:
-                tags.add(new OsmTag("amenity", "bar"));
-                tags.add(new OsmTag("amenity", "nightclub"));
-                tags.add(new OsmTag("amenity", "pub"));
+            case "bars":
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "bar"));
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "nightclub"));
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "pub"));
                 break;
-            case 2:
-                tags.add(new OsmTag("amenity", "bicycle_rental"));
+            case "bike_rental":
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "bicycle_rental"));
                 break;
-            case 3:
-                tags.add(new OsmTag("amenity", "cafe"));
-                tags.add(new OsmTag("shop", "coffee"));
+            case "cafes":
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "cafe"));
+                tags.add(new OsmTag(OSM_KEY_SHOP, "coffee"));
                 break;
-            case 4:
-                tags.add(new OsmTag("amenity", "car_rental"));
-                tags.add(new OsmTag("amenity", "car_sharing"));
+            case "car_rental":
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "car_rental"));
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "car_sharing"));
                 break;
-            case 5:
-                tags.add(new OsmTag("amenity", "fast_food"));
+            case "fast_food":
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "fast_food"));
                 break;
-            case 6:
-                tags.add(new OsmTag("amenity", "atm"));
-                tags.add(new OsmTag("amenity", "bank"));
-                tags.add(new OsmTag("amenity", "bureau_de_change"));
+            case "financial_services":
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "atm"));
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "bank"));
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "bureau_de_change"));
                 break;
-            case 7:
-                tags.add(new OsmTag("amenity", "fuel"));
-                tags.add(new OsmTag("shop", "fuel"));
+            case "gas_stations":
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "fuel"));
+                tags.add(new OsmTag(OSM_KEY_SHOP, "fuel"));
                 break;
-            case 8:
-                tags.add(new OsmTag("building", "hotel"));
-                tags.add(new OsmTag("tourism", "hotel"));
-                tags.add(new OsmTag("tourism", "apartment"));
-                tags.add(new OsmTag("tourism", "hostel"));
-                tags.add(new OsmTag("tourism", "motel"));
-                tags.add(new OsmTag("tourism", "guest_house"));
+            case "hotels":
+                tags.add(new OsmTag(OSM_KEY_BUILDING, "hotel"));
+                tags.add(new OsmTag(OSM_KEY_TOURISM, "hotel"));
+                tags.add(new OsmTag(OSM_KEY_TOURISM, "apartment"));
+                tags.add(new OsmTag(OSM_KEY_TOURISM, "hostel"));
+                tags.add(new OsmTag(OSM_KEY_TOURISM, "motel"));
+                tags.add(new OsmTag(OSM_KEY_TOURISM, "guest_house"));
                 break;
-            case 9:
-                tags.add(new OsmTag("amenity", "marketplace"));
-                tags.add(new OsmTag("building", "retail"));
-                tags.add(new OsmTag("building", "kiosks"));
-                tags.add(new OsmTag("shop", "convenience"));
-                tags.add(new OsmTag("shop", "kiosks"));
-                tags.add(new OsmTag("shop", "supermarket"));
-                tags.add(new OsmTag("shop", "general"));
-                tags.add(new OsmTag("shop", "variety_store"));
-                tags.add(new OsmTag("shop", "tabacco"));
+            case "markets":
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "marketplace"));
+                tags.add(new OsmTag(OSM_KEY_BUILDING, "retail"));
+                tags.add(new OsmTag(OSM_KEY_BUILDING, "kiosks"));
+                tags.add(new OsmTag(OSM_KEY_SHOP, "convenience"));
+                tags.add(new OsmTag(OSM_KEY_SHOP, "kiosks"));
+                tags.add(new OsmTag(OSM_KEY_SHOP, "supermarket"));
+                tags.add(new OsmTag(OSM_KEY_SHOP, "general"));
+                tags.add(new OsmTag(OSM_KEY_SHOP, "variety_store"));
+                tags.add(new OsmTag(OSM_KEY_SHOP, "tabacco"));
                 break;
-            case 10:
-                tags.add(new OsmTag("shop", "mobile_phone"));
+            case "mobile_stores":
+                tags.add(new OsmTag(OSM_KEY_SHOP, "mobile_phone"));
                 break;
-            case 11:
-                tags.add(new OsmTag("amenity", "parking"));
-                tags.add(new OsmTag("amenity", "parking_space"));
-                tags.add(new OsmTag("building", "parking"));
+            case "parking":
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "parking"));
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "parking_space"));
+                tags.add(new OsmTag(OSM_KEY_BUILDING, "parking"));
                 break;
-            case 12:
-                tags.add(new OsmTag("amenity", "clinic"));
-                tags.add(new OsmTag("amenity", "doctors"));
-                tags.add(new OsmTag("amenity", "dentist"));
-                tags.add(new OsmTag("amenity", "pharmacy"));
-                tags.add(new OsmTag("amenity", "hospital"));
-                tags.add(new OsmTag("shop", "herbalist"));
-                tags.add(new OsmTag("healthcare", "alternative"));
+            case "pharmacies":
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "clinic"));
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "doctors"));
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "dentist"));
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "pharmacy"));
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "hospital"));
+                tags.add(new OsmTag(OSM_KEY_SHOP, "herbalist"));
+                tags.add(new OsmTag(OSM_KEY_HEALTHCARE, "alternative"));
                 break;
-            case 13:
-                tags.add(new OsmTag("amenity", "post_office"));
+            case "post_offices":
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "post_office"));
                 break;
-            case 14:
-                tags.add(new OsmTag("amenity", "restaurant"));
-                tags.add(new OsmTag("amenity", "food_court"));
+            case "restaurants":
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "restaurant"));
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "food_court"));
                 break;
-            case 15:
-                tags.add(new OsmTag("shop", "department_store"));
-                tags.add(new OsmTag("shop", "mall"));
+            case "shopping":
+                tags.add(new OsmTag(OSM_KEY_SHOP, "department_store"));
+                tags.add(new OsmTag(OSM_KEY_SHOP, "mall"));
                 break;
-            case 16:
-                tags.add(new OsmTag("tourism", "museum"));
-                tags.add(new OsmTag("tourism", "information"));
-                tags.add(new OsmTag("tourism", "attraction"));
-                tags.add(new OsmTag("tourism", "yes"));
-                tags.add(new OsmTag("historic", "monument"));
-                tags.add(new OsmTag("tourism", "zoo"));
+            case "tourism":
+                tags.add(new OsmTag(OSM_KEY_TOURISM, "museum"));
+                tags.add(new OsmTag(OSM_KEY_TOURISM, "information"));
+                tags.add(new OsmTag(OSM_KEY_TOURISM, "attraction"));
+                tags.add(new OsmTag(OSM_KEY_TOURISM, "yes"));
+                tags.add(new OsmTag(OSM_KEY_HISTORIC, "monument"));
+                tags.add(new OsmTag(OSM_KEY_TOURISM, "zoo"));
                 break;
-            case 17:
-                tags.add(new OsmTag("amenity", "taxi"));
-                tags.add(new OsmTag("amenity", "bus_station"));
-                tags.add(new OsmTag("railway", "station"));
-                tags.add(new OsmTag("highway", "bus_stop"));
-                tags.add(new OsmTag("railway", "tram_stop"));
-                tags.add(new OsmTag("public_transport", "station"));
-                tags.add(new OsmTag("railway", "subway_entrance"));
+            case "transportation":
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "taxi"));
+                tags.add(new OsmTag(OSM_KEY_AMENITY, "bus_station"));
+                tags.add(new OsmTag(OSM_KEY_RAILWAY, "station"));
+                tags.add(new OsmTag(OSM_KEY_HIGHWAY, "bus_stop"));
+                tags.add(new OsmTag(OSM_KEY_RAILWAY, "tram_stop"));
+                tags.add(new OsmTag(OSM_KEY_PUBLIC_TRANSPORT, "station"));
+                tags.add(new OsmTag(OSM_KEY_RAILWAY, "subway_entrance"));
                 break;
             default:
                 break;
