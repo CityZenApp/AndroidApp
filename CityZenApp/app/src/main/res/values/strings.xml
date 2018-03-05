@@ -136,4 +136,7 @@ The app is open source licensed because we want the project to be empowered by t
 
     <string name="search_hint">Search&#8230;</string>
 
+    <string name="address_label">Address:</string>
+    <string name="empty_timestamp" translatable="false">--:--</string>
+
 </resources>
