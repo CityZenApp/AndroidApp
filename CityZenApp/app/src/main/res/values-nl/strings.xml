@@ -68,7 +68,7 @@
     <string name="yes">Ja</string>
     <string name="no">Nee</string>
     <string name="wired">Bekabeld</string>
-    <string name="wlan">Draadloos</string>
+    <string name="wlan">Wi-Fi</string>
     <string name="created_succesfully">succesvol gecreëerd</string>
     <string name="sort_by_name">Sorteren op naam</string>
     <string name="add_a_new_marker_on_the_map">Markering toevoegen op kaart</string>
@@ -94,23 +94,34 @@
 
 
     <string name="Cafes">Café\'s</string>
-    <string name="Bars_Clubs">Bars/Discotheken</string>
+    <string name="Bars_Clubs">Bars</string>
     <string name="Restaurants">Restaurants</string>
     <string name="FastFood">Fast-food</string>
     <string name="Tourism">Toerisme</string>
-    <string name="Hotels_Hostels">Hotels/Hostels</string>
+    <string name="Hotels_Hostels">Hotels</string>
     <string name="Transportation">Vervoer</string>
     <string name="GasStations">Tankstations</string>
-    <string name="Pharmacy_Healthcare">Drogisterijen/Gezondheidscentra</string>
-    <string name="Banks_ATMs_Exchange">Banken/Geldautomaten/GWK\'s</string>
-    <string name="MobilePhoneStore">Mobiele telefoonwinkel</string>
-    <string name="Markets_Kiosks">Markten/Kiosken</string>
-    <string name="Shopping_Malls">Winkelcentra</string>
+    <string name="Pharmacy_Healthcare">Drogisterijen</string>
+    <string name="Banks_ATMs_Exchange">Financiële dienstverlening</string>
+    <string name="MobilePhoneStore">Mobiele telefoonwinkels</string>
+    <string name="Markets_Kiosks">Markten</string>
+    <string name="Shopping_Malls">Winkelen</string>
     <string name="Parkings">Parkeerplaatsen</string>
-    <string name="RentBicycle">Fiets huren</string>
-    <string name="RentCar_CareSharing">Auto huren en delen</string>
+    <string name="RentBicycle">Fietsverhuur</string>
+    <string name="RentCar_CareSharing">Autoverhuur</string>
     <string name="logged_in_as">Ingelogd als:</string>
 
     <string name="login_to_osm">Inloggen op OSM</string>
     <string name="logout">Uitloggen</string>
+<string name="Bakeries">(Banket)bakkerijen</string>
+    <string name="Post_Offices">Postkantoren</string>
+    <string name="Parking">Parkeren</string>
+    <string name="no_results">Geen resultaten</string>
+    <string name="search_again">Probeer een andere zoekopdracht</string>
+    <string name="search_icon">zoekpictogram</string>
+
+    <string name="no_favorites">Geen favorieten</string>
+    <string name="mark_locations_as_favorites">Locaties die u markeert als favoriet, zullen hier verschijnen</string>
+    <string name="favorites_icon">favorietpictogram</string>
+
 </resources>
