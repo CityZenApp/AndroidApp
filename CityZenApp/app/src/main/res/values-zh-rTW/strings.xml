@@ -50,7 +50,7 @@
     <string name="closing">休息中</string>
     <string name="done">完成</string>
     <string name="no_internet_to_update_poi">沒有網際網路接入。繼續連接到網際網路</string>
-    <string name="session_expired_toast">您的對話已過期。請登錄以繼續</string>
+    <string name="session_expired_toast">您的對話已過期。請登入以繼續</string>
     <string name="internet_access">網際網路存取</string>
     <string name="edit">編輯</string>
     <string name="street">街道</string>
@@ -68,7 +68,7 @@
     <string name="yes">是</string>
     <string name="no">否</string>
     <string name="wired">有線網路</string>
-    <string name="wlan">無線網路</string>
+    <string name="wlan">Wi-Fi</string>
     <string name="created_succesfully">已建立成功</string>
     <string name="sort_by_name">按名稱排序</string>
     <string name="add_a_new_marker_on_the_map">在地圖上增加一個標記</string>
@@ -81,7 +81,7 @@
     <string name="license">授權</string>
     <string name="privacy_policy">隱私政策</string>
     <string name="contact">聯絡</string>
-    <string name="alert_message">CityZen 必須定位，以提供地圖服務。您想啟用定位嗎？</string>
+    <string name="alert_message">CityZen 需要您的位置，以提供地圖服務。您想啟用定位嗎？</string>
     <string name="osm_routing_unavailable">OSM 路徑目前不能使用。稍後再試</string>
     <string name="house_number">門牌號碼</string>
     <string name="postcode">郵遞區號</string>
@@ -94,23 +94,34 @@
 
 
     <string name="Cafes">咖啡館</string>
-    <string name="Bars_Clubs">酒吧/俱樂部</string>
+    <string name="Bars_Clubs">酒吧</string>
     <string name="Restaurants">餐廳</string>
     <string name="FastFood">速食</string>
     <string name="Tourism">旅遊</string>
-    <string name="Hotels_Hostels">旅館/民宿</string>
+    <string name="Hotels_Hostels">旅館</string>
     <string name="Transportation">交通運輸</string>
     <string name="GasStations">加油站</string>
-    <string name="Pharmacy_Healthcare">藥房/醫療</string>
-    <string name="Banks_ATMs_Exchange">銀行/ATM/匯兌</string>
+    <string name="Pharmacy_Healthcare">藥房</string>
+    <string name="Banks_ATMs_Exchange">金融服務</string>
     <string name="MobilePhoneStore">手機商店</string>
-    <string name="Markets_Kiosks">市場/報攤</string>
-    <string name="Shopping_Malls">購物商場</string>
+    <string name="Markets_Kiosks">市場</string>
+    <string name="Shopping_Malls">購物</string>
     <string name="Parkings">停車場</string>
     <string name="RentBicycle">自行車租借</string>
-    <string name="RentCar_CareSharing">汽車租賃和汽車共享</string>
+    <string name="RentCar_CareSharing">汽車租借</string>
     <string name="logged_in_as">已登錄為：</string>
 
-    <string name="login_to_osm">登錄到 OSM</string>
+    <string name="login_to_osm">登入到 OSM</string>
     <string name="logout">登出</string>
+<string name="Bakeries">麵包和糕點店</string>
+    <string name="Post_Offices">郵局</string>
+    <string name="Parking">停車場</string>
+    <string name="no_results">無結果</string>
+    <string name="search_again">請嘗試其他搜尋字詞</string>
+    <string name="search_icon">搜尋圖示</string>
+
+    <string name="no_favorites">没有我的最愛</string>
+    <string name="mark_locations_as_favorites">位置標記為我的最愛會顯示在這裡</string>
+    <string name="favorites_icon">我的最愛圖示</string>
+
 </resources>
