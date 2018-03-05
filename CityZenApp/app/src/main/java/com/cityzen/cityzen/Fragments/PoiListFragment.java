@@ -153,9 +153,9 @@ public class PoiListFragment extends Fragment {
      * Toolbar and POI filtering layout setup
      */
     private void setupToolbarAndFilter() {
-        toolbar = (Toolbar) getActivity().findViewById(R.id.poiListToolbar);
-        filterCheckBox = (CheckBox) getActivity().findViewById(R.id.filterCheckBox);
-        filterCheckBoxSortByName = (CheckBox) getActivity().findViewById(R.id.filterCheckBoxName);
+        toolbar = getActivity().findViewById(R.id.poiListToolbar);
+        filterCheckBox = getActivity().findViewById(R.id.filterCheckBox);
+        filterCheckBoxSortByName = getActivity().findViewById(R.id.filterCheckBoxName);
         filterCheckBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -166,9 +166,9 @@ public class PoiListFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if (filterCheckBoxSortByName.isChecked()) {
-                    List<Element> sortedElements = sortByName(new ArrayList<Element>(adapterElements));
+                    List<Element> sortedElements = sortByName(new ArrayList<>(adapterElements));
                     adapterElements.clear();
-                    adapterElements = new ArrayList<Element>(sortedElements);
+                    adapterElements = new ArrayList<>(sortedElements);
                     adapter.resetAdapter(adapterElements);
                     setupMapMarkers(adapterElements);
                 } else {
@@ -177,7 +177,7 @@ public class PoiListFragment extends Fragment {
                 }
             }
         });
-        filterLayoutContainer = (LinearLayout) getActivity().findViewById(R.id.filterPoiListContainer);
+        filterLayoutContainer = getActivity().findViewById(R.id.filterPoiListContainer);
         toolbar.setTitle(poiName);
         toolbar.inflateMenu(R.menu.filter);
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener()
@@ -218,31 +218,36 @@ public class PoiListFragment extends Fragment {
     private void filterByOpeningHours() {
         if (filterCheckBox.isChecked()) {
             //filter Elements by opening hours
-            List<Element> filteredElements = new ArrayList<Element>();
+            List<Element> filteredElements = new ArrayList<>();
             for (Element element : adapterElements) {
-                for (Map.Entry<String, String> tag : element.tags.entrySet()) {
-                    if (tag.getKey().equals("opening_hours")) {
-                        if (OpeningHoursUtils.isOpenNow(tag.getValue()))
-                            filteredElements.add(element);
+                if (!element.tags.containsKey("opening_hours")) {
+                    filteredElements.add(element);
+                } else {
+                    for (Map.Entry<String, String> tag : element.tags.entrySet()) {
+                        if (tag.getKey().equals("opening_hours")) {
+                            if (OpeningHoursUtils.isOpenNow(tag.getValue()) ||
+                                    tag.getValue() == null || tag.getValue().equals(""))
+                                filteredElements.add(element);
+                        }
                     }
                 }
             }
             adapterElements.clear();
-            adapterElements = new ArrayList<Element>(filteredElements);
+            adapterElements = new ArrayList<>(filteredElements);
             //check if sort by name is checked
             if (filterCheckBoxSortByName.isChecked())
                 adapterElements = sortByName(adapterElements);
             else {
-                /**
+                /*
                  * rest by location in not set sort by name
                  * implement sort by location
                  *
                  */
                 List<Element> sortedByLocation = sortByClosestToLocation(
-                        new ArrayList<Element>(adapterElements),
+                        new ArrayList<>(adapterElements),
                         ((MainActivity) getActivity()).getLastKnownLocation());
                 adapterElements.clear();
-                adapterElements = new ArrayList<Element>(sortedByLocation);
+                adapterElements = new ArrayList<>(sortedByLocation);
             }
             adapter.resetAdapter(adapterElements);
             setupMapMarkers(adapterElements);
@@ -250,7 +255,7 @@ public class PoiListFragment extends Fragment {
         } else {
             //reset adapter to its original state
             adapterElements.clear();
-            adapterElements = new ArrayList<Element>(poiElements);
+            adapterElements = new ArrayList<>(poiElements);
             //check if sort by name is checked
             if (filterCheckBoxSortByName.isChecked())
                 adapterElements = sortByName(adapterElements);

@@ -206,10 +206,15 @@ public class SearchFragment extends Fragment {
             //filter Elements by opening hours
             List<Place> filteredElements = new ArrayList<>();
             for (Place place : adapterElements) {
-                for (Map.Entry<String, String> tag : place.getTags().entrySet()) {
-                    if (tag.getKey().equals("opening_hours")) {
-                        if (OpeningHoursUtils.isOpenNow(tag.getValue()))
-                            filteredElements.add(place);
+                if (!place.getTags().containsKey("opening_hours")) {
+                    filteredElements.add(place);
+                } else {
+                    for (Map.Entry<String, String> tag : place.getTags().entrySet()) {
+                        if (tag.getKey().equals("opening_hours")) {
+                            if (OpeningHoursUtils.isOpenNow(tag.getValue()) ||
+                                    tag.getValue() == null || tag.getValue().equals(""))
+                                filteredElements.add(place);
+                        }
                     }
                 }
             }
