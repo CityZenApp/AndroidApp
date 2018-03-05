@@ -61,7 +61,7 @@
         <item>@drawable/ic_local_pharmacy_white</item>
         <item>@drawable/ic_local_post_office</item>
         <item>@drawable/ic_restaurant_white</item>
-        <item>@drawable/ic_room_service_white_24dp</item>
+        <item>@drawable/ic_local_mall_white_24dp</item>
         <item>@drawable/ic_nature_people_white</item>
         <item>@drawable/ic_directions_bus_white</item>
     </array>
