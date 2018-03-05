@@ -83,27 +83,44 @@
 
 
     <string name="Cafes">Cafés</string>
-    <string name="Bars_Clubs">Bars/Clubs</string>
+    <string name="Bars_Clubs">Bars</string>
     <string name="Restaurants">Restaurants</string>
     <string name="FastFood">Restauration rapide</string>
     <string name="Tourism">Tourisme</string>
-    <string name="Hotels_Hostels">Hôtels/Auberges</string>
+    <string name="Hotels_Hostels">Hôtels</string>
     <string name="Transportation">Transport</string>
     <string name="GasStations">Stations-service</string>
-    <string name="Pharmacy_Healthcare">Pharmacie/Soins de santé</string>
-    <string name="Banks_ATMs_Exchange">Banques/ATMs/Bureaux de change</string>
+    <string name="Pharmacy_Healthcare">Pharmacies</string>
+    <string name="Banks_ATMs_Exchange">Services financiers</string>
     <string name="MobilePhoneStore">Magasins de téléphonie mobile</string>
-    <string name="Markets_Kiosks">Marchés/Kiosques</string>
+    <string name="Markets_Kiosks">Marchés</string>
     <string name="Shopping_Malls">Centres commerciaux</string>
     <string name="Parkings">Parkings</string>
     <string name="RentBicycle">Location de vélo</string>
-    <string name="RentCar_CareSharing">Location de voiture &amp; Voitures partagées</string>
+    <string name="RentCar_CareSharing">Location de voiture</string>
     <string name="logged_in_as">Connecté comme :</string>
 
     <string name="login_to_osm">Se connecter à OSM</string>
     <string name="logout">Se déconnecter</string>
 <string name="later">Plus tard</string>
     <string name="filter">Filtrer</string>
-    <string name="wlan">WLAN</string>
+    <string name="wlan">Wi-Fi</string>
     <string name="created_succesfully">créé avec succès</string>
-    </resources>
+    <string name="directions_to_here">directions en voiture</string>
+    <string name="opening">Heures d\'ouverture</string>
+    <string name="closing">Heures de fermeture</string>
+    <string name="select_amenity_type">Choisir le type de lieux</string>
+    <string name="select_amenity_type_to_continue">Choisir le type de lieux pour continuer</string>
+    <string name="wired">Câblé</string>
+    <string name="Bakeries">Boulangeries &amp; Pâtisseries</string>
+    <string name="Post_Offices">Bureaux de poste</string>
+    <string name="Parking">Parking</string>
+    <string name="no_results">Aucun résultat</string>
+    <string name="search_again">Veuillez essayer un autre terme de recherche</string>
+    <string name="search_icon">icône de recherche</string>
+
+    <string name="no_favorites">Aucun favori</string>
+    <string name="mark_locations_as_favorites">Les lieux marqués comme favoris apparaîtront ici</string>
+    <string name="favorites_icon">icône favoris</string>
+
+</resources>
