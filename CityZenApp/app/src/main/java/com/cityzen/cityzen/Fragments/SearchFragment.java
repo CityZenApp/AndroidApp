@@ -1,12 +1,10 @@
 package com.cityzen.cityzen.Fragments;
 
-import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
@@ -15,24 +13,25 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
 
-import com.cityzen.cityzen.Adapters.PlaceListAdapter;
 import com.cityzen.cityzen.Activities.MainActivity;
+import com.cityzen.cityzen.Adapters.PlaceListAdapter;
+import com.cityzen.cityzen.ApplicationConstants;
 import com.cityzen.cityzen.Models.DeviceLocationData;
 import com.cityzen.cityzen.Models.ParcelablePOI;
 import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Utils.DeviceUtils.Connectivity;
 import com.cityzen.cityzen.Utils.DeviceUtils.DeviceUtils;
 import com.cityzen.cityzen.Utils.MapUtils.OpeningHours.OpeningHoursUtils;
-import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewItemClickInterface;
-import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewTouchListener;
+import com.cityzen.cityzen.Utils.MapUtils.OsmTags;
 import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Action;
 import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Pair;
 import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Place;
 import com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser.Request;
+import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewItemClickInterface;
+import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewTouchListener;
 import com.cityzen.cityzen.Utils.RecyclerView.SimpleDividerItemDecoration;
 
 import org.osmdroid.bonuspack.location.NominatimPOIProvider;
@@ -66,10 +65,8 @@ public class SearchFragment extends Fragment {
     }
 
     public static SearchFragment newInstance() {
-        SearchFragment fragment = new SearchFragment();
-        return fragment;
+        return new SearchFragment();
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -206,10 +203,15 @@ public class SearchFragment extends Fragment {
             //filter Elements by opening hours
             List<Place> filteredElements = new ArrayList<>();
             for (Place place : adapterElements) {
-                for (Map.Entry<String, String> tag : place.getTags().entrySet()) {
-                    if (tag.getKey().equals("opening_hours")) {
-                        if (OpeningHoursUtils.isOpenNow(tag.getValue()))
-                            filteredElements.add(place);
+                if (!place.getTags().containsKey(OsmTags.OPENING_HOURS)) {
+                    filteredElements.add(place);
+                } else {
+                    for (Map.Entry<String, String> tag : place.getTags().entrySet()) {
+                        if (tag.getKey().equals(OsmTags.OPENING_HOURS)) {
+                            if (OpeningHoursUtils.isOpenNow(tag.getValue()) ||
+                                    tag.getValue() == null || tag.getValue().equals(""))
+                                filteredElements.add(place);
+                        }
                     }
                 }
             }
@@ -220,7 +222,7 @@ public class SearchFragment extends Fragment {
         } else {
             //reset adapter to its original state
             adapterElements.clear();
-            adapterElements = new ArrayList<Place>(searchedPlaces);
+            adapterElements = new ArrayList<>(searchedPlaces);
             adapter.resetAdapter(adapterElements);
         }
 
@@ -274,7 +276,7 @@ public class SearchFragment extends Fragment {
             @Override
             protected Void doInBackground(Void... voids) {
                 //altitude set to 13 or smth.... ???
-                NominatimPOIProvider poiProvider = new NominatimPOIProvider("CityZen");
+                NominatimPOIProvider poiProvider = new NominatimPOIProvider(ApplicationConstants.USER_AGENT);
                 ArrayList<POI> pois = poiProvider.getPOICloseTo(new GeoPoint(lat, lon, altitude), poiType, 50, 0.1);
                 //or : ArrayList<POI> pois = poiProvider.getPOIAlong(road.getRouteLow(), "fuel", 50, 2.0);
                 return null;

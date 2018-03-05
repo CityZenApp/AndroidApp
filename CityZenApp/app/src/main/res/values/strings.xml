@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name" translatable="false">CityZen</string>
+    <string name="nav_categories">Categories</string>
+    <string name="nav_map">Map</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_settings">Settings</string>
     <string name="oauth_communication_error">"Unable to reach the authorization server"</string>
     <string name="loading">"Loading"</string>
     <string name="retry">"Retry"</string>
@@ -18,8 +22,7 @@
     <string name="deny_permission">Deny</string>
     <string name="no_pois_near_user_location">no services found near your location</string>
     <string name="enable_gps_to_continue">Can\'t find your location. \nEnable GPS to continue</string>
-    <string name="calculating_device_location">We are figuring out your location. \nPlease wait. </string>
-    <string name="user_agent">CityZen</string>
+    <string name="calculating_device_location">We are figuring out your location. \nPlease wait.</string>
     <string name="add_new_poi_toast">Click on the map to add \n Points of Interest</string>
     <string name="add">Add</string>
     <string name="cancel">Cancel</string>
@@ -32,7 +35,7 @@
     <string name="opening_hours">Opening hours</string>
     <string name="monday">Mon</string>
     <string name="tuesday">Tue</string>
-    <string name="wednesday">Wen</string>
+    <string name="wednesday">Wed</string>
     <string name="thursday">Thu</string>
     <string name="friday">Fri</string>
     <string name="saturday">Sat</string>
@@ -125,5 +128,12 @@ The app is open source licensed because we want the project to be empowered by t
     <string name="no_favorites">No favorites</string>
     <string name="mark_locations_as_favorites">Locations marked as favorites will show up here</string>
     <string name="favorites_icon">favorites icon</string>
+
+    <!-- FAB -->
+    <string name="search">Search</string>
+    <string name="my_location">My location</string>
+    <string name="clear_map">Clear map</string>
+
+    <string name="search_hint">Search&#8230;</string>
 
 </resources>
