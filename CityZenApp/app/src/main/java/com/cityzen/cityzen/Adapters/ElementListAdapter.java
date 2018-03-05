@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Utils.Development.AppLog;
+import com.cityzen.cityzen.Utils.MapUtils.OsmTags;
 
 import java.util.List;
 import java.util.Map;
@@ -54,7 +55,7 @@ public class ElementListAdapter extends RecyclerView.Adapter<ElementListAdapter.
                     holder.title.setText(tag.getValue());
                     hasName = true;
                 }
-                if (tag.getKey().equals("opening_hours")) {
+                if (tag.getKey().equals(OsmTags.OPENING_HOURS)) {
                     holder.openingHours.setText(tag.getValue());
                     hasOpeningHours = true;
                 }

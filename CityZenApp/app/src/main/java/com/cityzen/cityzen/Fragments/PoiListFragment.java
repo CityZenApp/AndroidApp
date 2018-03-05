@@ -28,6 +28,7 @@ import com.cityzen.cityzen.Models.ParcelablePOI;
 import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Utils.MapUtils.MapUtils;
 import com.cityzen.cityzen.Utils.MapUtils.OpeningHours.OpeningHoursUtils;
+import com.cityzen.cityzen.Utils.MapUtils.OsmTags;
 import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewItemClickInterface;
 import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewTouchListener;
 
@@ -61,7 +62,6 @@ public class PoiListFragment extends Fragment {
     private CheckBox filterCheckBox;
     private CheckBox filterCheckBoxSortByName;
     private ElementListAdapter adapter;
-    private RecyclerView recyclerView;
 
     public PoiListFragment() {
         // Required empty public constructor
@@ -114,13 +114,14 @@ public class PoiListFragment extends Fragment {
         setupMapMarkers(adapterElements);
 
         //set color to the toolbar
-        TypedArray colors = getActivity().getResources().obtainTypedArray(R.array.poi_colors);
         if (categoryId >= 0) {
+            TypedArray colors = getActivity().getResources().obtainTypedArray(R.array.poi_colors);
             toolbar.setBackgroundColor(colors.getColor(categoryId, 0));
             filterLayoutContainer.setBackgroundColor(colors.getColor(categoryId, 0));
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 getActivity().getWindow().setStatusBarColor(colors.getColor(categoryId, 0));
             }
+            colors.recycle();
         }
     }
 
@@ -220,11 +221,11 @@ public class PoiListFragment extends Fragment {
             //filter Elements by opening hours
             List<Element> filteredElements = new ArrayList<>();
             for (Element element : adapterElements) {
-                if (!element.tags.containsKey("opening_hours")) {
+                if (!element.tags.containsKey(OsmTags.OPENING_HOURS)) {
                     filteredElements.add(element);
                 } else {
                     for (Map.Entry<String, String> tag : element.tags.entrySet()) {
-                        if (tag.getKey().equals("opening_hours")) {
+                        if (tag.getKey().equals(OsmTags.OPENING_HOURS)) {
                             if (OpeningHoursUtils.isOpenNow(tag.getValue()) ||
                                     tag.getValue() == null || tag.getValue().equals(""))
                                 filteredElements.add(element);
@@ -336,7 +337,7 @@ public class PoiListFragment extends Fragment {
      * lat1, lon1 Start point lat2, lon2 End point el1 Start altitude in meters
      * el2 End altitude in meters
      *
-     * @returns Distance in Meters
+     * @return Distance in Meters
      */
     private static double distance(double lat1, double lat2, double lon1,
                                    double lon2, double el1, double el2) {
@@ -364,11 +365,12 @@ public class PoiListFragment extends Fragment {
      */
     private void setupRecyclerView() {
         if (adapter == null) {
-            recyclerView = getActivity().findViewById(R.id.poiListRecyclerview);
+            RecyclerView recyclerView = getActivity().findViewById(R.id.poiListRecyclerview);
             adapter = new ElementListAdapter(getActivity(), poiName, categoryId, adapterElements);
             recyclerView.setAdapter(adapter);
             recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 2));
-            recyclerView.addOnItemTouchListener(new RecyclerViewTouchListener(getActivity(), recyclerView, new RecyclerViewItemClickInterface() {
+            recyclerView.addOnItemTouchListener(new RecyclerViewTouchListener(
+                    getActivity(), recyclerView, new RecyclerViewItemClickInterface() {
                 @Override
                 public void onClick(View view, int position) {
                     openDetailedInfo(new ParcelablePOI(adapterElements.get(position)));
@@ -392,11 +394,11 @@ public class PoiListFragment extends Fragment {
      * Setup {@link PoiListFragment} static views and their click listeners
      */
     private void setupView() {
-        TextView osmCopyright = (TextView) getActivity().findViewById(R.id.osmCopyright);
+        TextView osmCopyright = getActivity().findViewById(R.id.osmCopyright);
         osmCopyright.setText(Html.fromHtml(getString(R.string.osm_copyright)));
 
-        relativeLayout = (RelativeLayout) getActivity().findViewById(R.id.mapViewPoiListContainer);
-        floatingActionButton = (FloatingActionButton) getActivity().findViewById(R.id.fabPoiList);
+        relativeLayout = getActivity().findViewById(R.id.mapViewPoiListContainer);
+        floatingActionButton = getActivity().findViewById(R.id.fabPoiList);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -434,7 +436,7 @@ public class PoiListFragment extends Fragment {
             //important! set your user agent to prevent getting banned from the osm servers
             Configuration.getInstance().load(getActivity(), PreferenceManager.getDefaultSharedPreferences(getActivity()));
 
-            map = (MapView) getActivity().findViewById(R.id.mapPoiList);
+            map = getActivity().findViewById(R.id.mapPoiList);
             map.setTileSource(TileSourceFactory.MAPNIK);
             map.setTilesScaledToDpi(true);
 
@@ -467,7 +469,7 @@ public class PoiListFragment extends Fragment {
         //clear existing markers
         if (map != null)
             map.getOverlays().clear();
-        map = (MapView) getActivity().findViewById(R.id.mapPoiList);
+        map = getActivity().findViewById(R.id.mapPoiList);
         map.setTileSource(TileSourceFactory.MAPNIK);
         map.setTilesScaledToDpi(true);
         map.setMultiTouchControls(true);
