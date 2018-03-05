@@ -68,7 +68,7 @@
     <string name="yes">Si</string>
     <string name="no">No</string>
     <string name="wired">Connessione via cavo</string>
-    <string name="wlan">Wlan</string>
+    <string name="wlan">Wi-Fi</string>
     <string name="created_succesfully">Creato con successo</string>
     <string name="sort_by_name">Ordinare secondo nome</string>
     <string name="add_a_new_marker_on_the_map">Aggiungere un marker alla mappa</string>
@@ -94,17 +94,17 @@
 
 
     <string name="Cafes">Caffé</string>
-    <string name="Bars_Clubs">Bar/Club</string>
+    <string name="Bars_Clubs">Barre</string>
     <string name="Restaurants">Ristoranti</string>
     <string name="FastFood">Fast food</string>
     <string name="Tourism">Turismo</string>
-    <string name="Hotels_Hostels">Hotel/Hostel</string>
+    <string name="Hotels_Hostels">Hotels</string>
     <string name="Transportation">Transporto</string>
     <string name="GasStations">Stazione di servizio</string>
     <string name="Pharmacy_Healthcare">Farmacia</string>
     <string name="Banks_ATMs_Exchange">Banche/ATM/Exhange</string>
     <string name="MobilePhoneStore">Negozio di telefoni</string>
-    <string name="Markets_Kiosks">Market/Chioschi</string>
+    <string name="Markets_Kiosks">Mercati</string>
     <string name="Shopping_Malls">Centri commerciali</string>
     <string name="Parkings">Parcheggi</string>
     <string name="RentBicycle">Noleggiare una bicicletta</string>
@@ -113,4 +113,6 @@
 
     <string name="login_to_osm">Collegati a OSM</string>
     <string name="logout">Scollegati</string>
-</resources>
+<string name="Post_Offices">Ufficio postale</string>
+    <string name="Parking">Parcheggio</string>
+    </resources>
