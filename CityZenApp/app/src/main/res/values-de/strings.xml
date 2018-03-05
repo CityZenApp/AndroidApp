@@ -124,4 +124,15 @@
     <string name="mark_locations_as_favorites">Orte markiert als Favoriten erscheinen hier</string>
     <string name="favorites_icon">Favoriten Icon</string>
 
-</resources>
+<string name="nav_categories">Kategorien</string>
+    <string name="nav_map">Karte</string>
+    <string name="nav_favorites">Favoriten</string>
+    <string name="nav_settings">Einstellungen</string>
+    <string name="search">Suche</string>
+    <string name="my_location">Mein Standort</string>
+    <string name="clear_map">Karte leeren</string>
+
+    <string name="search_hint">Suchen…</string>
+
+    <string name="address_label">Adresse:</string>
+    </resources>
