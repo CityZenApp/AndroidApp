@@ -18,6 +18,7 @@ import android.widget.LinearLayout;
 
 import com.cityzen.cityzen.Activities.MainActivity;
 import com.cityzen.cityzen.Adapters.PlaceListAdapter;
+import com.cityzen.cityzen.ApplicationConstants;
 import com.cityzen.cityzen.Models.DeviceLocationData;
 import com.cityzen.cityzen.Models.ParcelablePOI;
 import com.cityzen.cityzen.R;
@@ -275,7 +276,7 @@ public class SearchFragment extends Fragment {
             @Override
             protected Void doInBackground(Void... voids) {
                 //altitude set to 13 or smth.... ???
-                NominatimPOIProvider poiProvider = new NominatimPOIProvider("CityZen");
+                NominatimPOIProvider poiProvider = new NominatimPOIProvider(ApplicationConstants.USER_AGENT);
                 ArrayList<POI> pois = poiProvider.getPOICloseTo(new GeoPoint(lat, lon, altitude), poiType, 50, 0.1);
                 //or : ArrayList<POI> pois = poiProvider.getPOIAlong(road.getRouteLow(), "fuel", 50, 2.0);
                 return null;

@@ -18,8 +18,7 @@
     <string name="deny_permission">Deny</string>
     <string name="no_pois_near_user_location">no services found near your location</string>
     <string name="enable_gps_to_continue">Can\'t find your location. \nEnable GPS to continue</string>
-    <string name="calculating_device_location">We are figuring out your location. \nPlease wait. </string>
-    <string name="user_agent">CityZen</string>
+    <string name="calculating_device_location">We are figuring out your location. \nPlease wait.</string>
     <string name="add_new_poi_toast">Click on the map to add \n Points of Interest</string>
     <string name="add">Add</string>
     <string name="cancel">Cancel</string>
