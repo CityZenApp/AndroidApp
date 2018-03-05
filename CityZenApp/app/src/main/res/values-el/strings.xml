@@ -38,7 +38,7 @@
     <string name="license">Άδεια</string>
     <string name="get_involved_link">www.github.com/CityZenApp</string>
     <string name="credits_link">www.cityzenapp.co/credits</string>
-    <string name="Pharmacy_Healthcare">Φαρμακεία/φροντίδα υγείας</string>
+    <string name="Pharmacy_Healthcare">Φαρμακεία</string>
     <string name="loading">Φόρτωση</string>
     <string name="write_storage_request">Για την παροχή υπηρεσιών χάρτη, το CityZen χρειάζεται άδειες εγγραφής</string>
     <string name="write_storage_request_toast">Για την παροχή υπηρεσιών χάρτη, το CityZen χρειάζεται άδειες εγγραφής</string>
@@ -72,31 +72,56 @@
     <string name="yes">Ναι</string>
     <string name="no">Όχι</string>
     <string name="wired">Ενσύρματο</string>
-    <string name="wlan">Ασύρματο τοπικό δίκτυο (Wlan)</string>
+    <string name="wlan">Wi-Fi</string>
     <string name="created_succesfully">δημιουργήθηκε επιτυχώς</string>
     <string name="sort_by_name">Ταξινόμηση κατά όνομα</string>
     <string name="add_a_new_marker_on_the_map">Προσθήκη δείκτη στο χάρτη</string>
     <string name="privacy_policy">Πολιτική απορρήτου</string>
     <string name="contact">Επικοινωνία</string>
-    <string name="alert_message">Για την παροχή υπηρεσιών χάρτη, το CityZen πρέπει να έχει τοποθεσία. Θέλετε να την ενεργοποιήσετε;</string>
+    <string name="alert_message">Για την παροχή υπηρεσιών χάρτη, το CityZen χρειάζεται την τοποθεσία σας. Θέλετε να την ενεργοποιήσετε;</string>
     <string name="osm_routing_unavailable">Η δρομολόγηση του OSM δεν είναι διαθέσιμη αυτήν τη στιγμή. Δοκιμάστε αργότερα</string>
     <string name="postcode">Τ.Κ.</string>
     <string name="Cafes">Λίστα Σημείων Ενδιαφέροντος</string>
-    <string name="Bars_Clubs">Μπαρ/Club</string>
+    <string name="Bars_Clubs">Μπαρ</string>
     <string name="Restaurants">Εστιατόρια</string>
     <string name="Tourism">Τουρισμός</string>
-    <string name="Hotels_Hostels">Ξενοδοχεία/Ξενώνες</string>
+    <string name="Hotels_Hostels">Ξενοδοχεία</string>
     <string name="Transportation">Μέσα Μεταφοράς</string>
     <string name="GasStations">Βενζινάδικα</string>
-    <string name="Banks_ATMs_Exchange">Τράπεζες/ΑΤΜ/Συνάλλαγμα</string>
-    <string name="MobilePhoneStore">Κατάστημα κινητής τηλεφωνίας</string>
-    <string name="Markets_Kiosks">Αγορές/Περίπτερα</string>
-    <string name="Shopping_Malls">Εμπορικά κέντρα</string>
+    <string name="Banks_ATMs_Exchange">Τραπεζικές υπηρεσίες</string>
+    <string name="MobilePhoneStore">Καταστήματα κινητής τηλεφωνίας</string>
+    <string name="Markets_Kiosks">Αγορές</string>
+    <string name="Shopping_Malls">Ψώνια</string>
     <string name="Parkings">Χώροι στάθμευσης</string>
     <string name="RentBicycle">Ενοικίαση ποδηλάτων</string>
-    <string name="RentCar_CareSharing">Ενοικίαση αυτοκινήτων &amp; Car sharing</string>
+    <string name="RentCar_CareSharing">Ενοικίαση αυτοκινήτων</string>
     <string name="logged_in_as">Έχετε συνδεθεί ως:</string>
 
     <string name="login_to_osm">Σύνδεση στο OSM</string>
     <string name="logout">Αποσύνδεση</string>
+<string name="oauth_failed_permissions">Η εξουσιοδότηση απέτυχε:όλα τα αναφερόμενα δικαιώματα πρέπει να δοθούν</string>
+    <string name="offline">Είστε εκτός σύνδεσης</string>
+    <string name="confirmation_authorize_now">Θα πρέπει να συνδεθείτε με τον OSM λογαριασμό σας για να εφαρμόσετε αλλαγές στο ΟpenStreetMap. Σύνδεση τώρα;</string>
+    <string name="only_currently_opened">Μόνο τρεχόντως ανοιχτά</string>
+    <string name="about_us">Σχετικά με το CityZen</string>
+    <string name="about_text">To CityZen είναι μια εφαρμογή ανοιχτού λογισμικού για Android που σας βοηθά να περιηγηθείτε και να εξερευνήσετε εύκολα την πόλη. Με το CityZen, μπορείτε να βρείτε Σημεία Ενδιαφέροντος (ΣΕ) όπως ΑΤΜ, βενζινάδικα, φαρμακεία, καταστήματα κινητής τηλεφωνίας και άλλες ενδιαφέρουσες υπηρεσίες που βρίσκονται κοντά σας. Η εφαρμογή δείχνει αυτά τα ΣΕ με βάση την τοποθεσία σας από το smartphone σας, σεβόμενη ωστόσο την ιδιωτικότητά σας καθώς δεν κρατάμε τα δεδομένα της πλοήγησής σας. Η εφαρμογή λειτουργεί με άδεια ανοιχτού κώδικα καθώς επιδιώκουμε την ενδυνάμωσή της από και για την κοινότητα. Ξεκινήσαμε αυτό το έργο ως ένα μέσο για να ενισχύσουμε εργαλεία και πλατφόρμες, όπως το OpenStreetMap, που σέβονται την ελευθερία μας. Αν είστε OpenStreetMap contributor, μπορείτε εύκολα να προσθέσετε πληροφορίες στα SE, με επεξεργασία μέσα από το CityZen.</string>
+    <string name="house_number">Τηλεφωνο Οικίας</string>
+    <string name="get_involved">Πάρτε μέρος</string>
+    <string name="credits">Συντελεστές</string>
+    <string name="open_source_culture">Η εφαρμογή CityZen ξεκίνησε στην Αλβανία με πολλή ♥
+\nγια την κουλτούρα του Ελεύθερου Λογισμικού.</string>
+
+
+    <string name="Bakeries">Αρτοποιεία &amp; Φούρνοι</string>
+    <string name="Post_Offices">Ταχυδρομεία</string>
+    <string name="FastFood">Γρήγορο φαγητό</string>
+    <string name="Parking">Χώρος στάθμευσης</string>
+    <string name="no_results">Δεν υπάρχουν αποτελέσματα</string>
+    <string name="search_again">Παρακαλώ δοκιμάστε έναν άλλο όρο αναζήτησης</string>
+    <string name="search_icon">Εικονίδιο αναζήτησης</string>
+
+    <string name="no_favorites">Κανένα Αγαπημένο</string>
+    <string name="mark_locations_as_favorites">"Τοποθεσίες με τη σήμανση \"Αγαπημένο\" θα εμφανίζονται εδώ. "</string>
+    <string name="favorites_icon">εικονίδιο \"Αγαπημένα\"</string>
+
 </resources>
