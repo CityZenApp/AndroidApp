@@ -124,4 +124,15 @@
     <string name="mark_locations_as_favorites">"Τοποθεσίες με τη σήμανση \"Αγαπημένο\" θα εμφανίζονται εδώ. "</string>
     <string name="favorites_icon">εικονίδιο \"Αγαπημένα\"</string>
 
-</resources>
+<string name="nav_categories">Κατηγορίες</string>
+    <string name="nav_map">Χάρτης</string>
+    <string name="nav_favorites">Αγαπημένα</string>
+    <string name="nav_settings">Ρυθμίσεις</string>
+    <string name="search">Αναζήτηση</string>
+    <string name="my_location">Η τοποθεσία μου</string>
+    <string name="clear_map">Καθαρισμός χάρτη</string>
+
+    <string name="search_hint">Αναζήτηση…</string>
+
+    <string name="address_label">Διεύθυνση:</string>
+    </resources>
