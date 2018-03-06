@@ -624,7 +624,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void showLoadingScreen() {
-        FrameLayout loaderContainer = (FrameLayout) findViewById(R.id.loaderContainer);
+        FrameLayout loaderContainer = findViewById(R.id.loaderContainer);
         loaderContainer.setVisibility(View.VISIBLE);
         hideNavigation();
     }
