@@ -15,6 +15,7 @@
         android:paddingLeft="@dimen/fab_padding"
         android:paddingRight="@dimen/fab_padding"
         android:textColor="@android:color/white"
+        fab:menu_animationDelayPerItem="25"
         fab:fab_colorNormal="@color/colorPrimary"
         fab:menu_backgroundColor="#997D7D7D"
         fab:menu_colorNormal="@color/colorWhite"

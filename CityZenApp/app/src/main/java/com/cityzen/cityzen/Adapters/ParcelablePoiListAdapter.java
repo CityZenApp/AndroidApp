@@ -53,9 +53,17 @@ public class ParcelablePoiListAdapter extends RecyclerView.Adapter<ParcelablePoi
             }
         }
 
-        CategoryColoringUtil.setupPlaceIcon(
-                context, data.get(position).getPoiClassType(), holder.coverImage
-        );
+        if (data.get(position).getTags().containsKey("cuisine")) {
+            CategoryColoringUtil.setupPlaceIcon(
+                    context, data.get(position).getPoiClassType(),
+                    data.get(position).getTags().get("cuisine"), holder.coverImage
+            );
+        } else {
+            CategoryColoringUtil.setupPlaceIcon(
+                    context, data.get(position).getPoiClassType(), holder.coverImage
+            );
+        }
+
         if (holder.openingHours.getText() != null && !holder.openingHours.getText().equals("")) {
             holder.openingHours.setVisibility(View.VISIBLE);
         }

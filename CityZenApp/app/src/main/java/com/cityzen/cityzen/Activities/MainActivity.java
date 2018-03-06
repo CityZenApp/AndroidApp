@@ -35,6 +35,7 @@ import android.widget.TextView;
 import com.cityzen.cityzen.OsmModule;
 import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Utils.Development.AppLog;
+import com.cityzen.cityzen.Utils.RecyclerView.CategoryDisplayConfig;
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
@@ -608,9 +609,9 @@ public class MainActivity extends AppCompatActivity
      * Used variables:
      * 1. poiElementsOfCategory
      *******************************************************************************************/
-    public void openCategoryList(String poiTitle, int categoryId, List<Element> elements) {
+    public void openCategoryList(CategoryDisplayConfig displayConfig, List<Element> elements) {
         poiElementsOfCategory = elements;
-        Fragment fragment = PoiListFragment.newInstance(poiTitle, categoryId);
+        Fragment fragment = PoiListFragment.newInstance(this.getString(displayConfig.title), displayConfig.id, displayConfig.color);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.container, fragment, "PoiListFragment");// give your fragment container id in first parameter
         transaction.addToBackStack(null);  // if written, this transaction will be added to backstack
@@ -623,7 +624,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void showLoadingScreen() {
-        FrameLayout loaderContainer = (FrameLayout) findViewById(R.id.loaderContainer);
+        FrameLayout loaderContainer = findViewById(R.id.loaderContainer);
         loaderContainer.setVisibility(View.VISIBLE);
         hideNavigation();
     }

@@ -14,6 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.cityzen.cityzen.R;
+import com.cityzen.cityzen.Utils.RecyclerView.CategoryDisplayConfig;
 
 
 /**
@@ -24,17 +25,14 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
     private final int height;
     private final int width;
     private Context context;
-    private TypedArray icons, colors, titles, types;
+    private TypedArray categories;
 
-    public CategoryAdapter(Context context, Display display) {
+    public CategoryAdapter(Context context, Display display, TypedArray categories) {
         this.context = context;
 
         //get POI data from resources
         Resources res = context.getResources();
-        icons = res.obtainTypedArray(R.array.poi_icons);
-        colors = res.obtainTypedArray(R.array.poi_colors);
-        titles = res.obtainTypedArray(R.array.poi_titles);
-        types = res.obtainTypedArray(R.array.poi_types);
+        this.categories = categories;
         Point size = new Point();
         display.getSize(size);
         width = size.x;
@@ -51,18 +49,21 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         //Use the provided View Holder on the onCreateViewHolder method to populate the current row on the RecyclerView
-        holder.container.setBackgroundColor(colors.getColor(position, 0));
-        holder.title.setText(titles.getText(position));
-        holder.imageView.setImageResource(icons.getResourceId(position, R.drawable.ic_local_atm_white));
+        CategoryDisplayConfig categoryDisplayConfig = CategoryDisplayConfig.getById(categories.getInt(position,0));
+
+        holder.container.setBackgroundColor(
+                context.getResources().getColor(categoryDisplayConfig.color));
+        holder.title.setText(categoryDisplayConfig.title);
+        holder.imageView.setImageResource(categoryDisplayConfig.icon);
 
         //set the height manually to RecyclerView items
         holder.container.getLayoutParams().height = width / 3;
-        holder.itemView.setTag(types.getString(position));
+        holder.itemView.setTag(categoryDisplayConfig.id);
     }
 
     @Override
     public int getItemCount() {
-        return titles.length();
+        return categories.length();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

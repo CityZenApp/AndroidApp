@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- category identifier (need to match enum values: CategoryDisplayConfig) -->
+    <integer name="category_id_education" translatable="false">-3</integer>
+    <integer name="category_id_building" translatable="false">-2</integer>
+    <integer name="category_id_undefined" translatable="false">-1</integer>
+    <integer name="category_id_bakeries" translatable="false">0</integer>
+    <integer name="category_id_bars" translatable="false">1</integer>
+    <integer name="category_id_bike_rental" translatable="false">2</integer>
+    <integer name="category_id_cafes" translatable="false">3</integer>
+    <integer name="category_id_car_rental" translatable="false">4</integer>
+    <integer name="category_id_fast_food" translatable="false">5</integer>
+    <integer name="category_id_financial_services" translatable="false">6</integer>
+    <integer name="category_id_gas_stations" translatable="false">7</integer>
+    <integer name="category_id_hotels" translatable="false">8</integer>
+    <integer name="category_id_markets" translatable="false">9</integer>
+    <integer name="category_id_mobile_stores" translatable="false">10</integer>
+    <integer name="category_id_parking" translatable="false">11</integer>
+    <integer name="category_id_pharmacies" translatable="false">12</integer>
+    <integer name="category_id_post_offices" translatable="false">13</integer>
+    <integer name="category_id_restaurants" translatable="false">14</integer>
+    <integer name="category_id_shopping" translatable="false">15</integer>
+    <integer name="category_id_tourism" translatable="false">16</integer>
+    <integer name="category_id_transportation" translatable="false">17</integer>
+
+    <!-- category order based on identifiers (from above) -->
+    <array name="category_order" translatable="false">
+        <item>@integer/category_id_bakeries</item>
+        <item>@integer/category_id_restaurants</item>
+        <item>@integer/category_id_fast_food</item>
+
+        <item>@integer/category_id_cafes</item>
+        <item>@integer/category_id_bars</item>
+        <item>@integer/category_id_transportation</item>
+
+        <item>@integer/category_id_parking</item>
+        <item>@integer/category_id_gas_stations</item>
+        <item>@integer/category_id_bike_rental</item>
+
+        <item>@integer/category_id_financial_services</item>
+        <item>@integer/category_id_markets</item>
+        <item>@integer/category_id_shopping</item>
+
+        <item>@integer/category_id_pharmacies</item>
+        <item>@integer/category_id_post_offices</item>
+        <item>@integer/category_id_mobile_stores</item>
+
+        <item>@integer/category_id_tourism</item>
+        <item>@integer/category_id_car_rental</item>
+        <item>@integer/category_id_hotels</item>
+    </array>
+</resources>

@@ -3,7 +3,7 @@
     <string name="nav_categories">Categories</string>
     <string name="nav_map">Map</string>
     <string name="nav_favorites">Favorites</string>
-    <string name="nav_settings">Settings</string>
+    <string name="nav_about">About</string>
     <string name="oauth_communication_error">"Unable to reach the authorization server"</string>
     <string name="loading">"Loading"</string>
     <string name="retry">"Retry"</string>
@@ -114,6 +114,9 @@ The app is open source licensed because we want the project to be empowered by t
     <string name="Parking">Parking</string>
     <string name="RentBicycle">Bike rental</string>
     <string name="RentCar_CareSharing">Car rental</string>
+    <string name="Buildings">Buildings</string>
+    <string name="Education">Education</string>
+    <string name="Location">Location</string>
     <string name="logged_in_as">Logged in as:</string>
 
     <string name="login_to_osm">Log in to OSM</string>
