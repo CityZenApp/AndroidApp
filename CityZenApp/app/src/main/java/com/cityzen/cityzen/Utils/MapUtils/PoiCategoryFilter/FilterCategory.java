@@ -15,7 +15,7 @@ import java.util.Map;
  * @author Andy Scherzinger
  */
 public class FilterCategory {
-    private static final Map<String, List<OsmTag>> filterCategories = new HashMap<>();
+    private static final Map<Integer, List<OsmTag>> filterCategories = new HashMap<>();
 
     static {
         List<OsmTag> tags = new ArrayList<>();
@@ -143,7 +143,7 @@ public class FilterCategory {
      * @param type the type of category
      * @return list of corresponding {@link OsmTag}s
      */
-    public static List<OsmTag> getFilters(String type) {
+    public static List<OsmTag> getFilters(int type) {
         if (filterCategories.containsKey(type)) {
             return filterCategories.get(type);
         } else {
@@ -158,7 +158,7 @@ public class FilterCategory {
      *
      * @return list of all categories and their {@link OsmTag}s
      */
-    public static Map<String, List<OsmTag>> getAllFilters() {
+    public static Map<Integer, List<OsmTag>> getAllFilters() {
         return filterCategories;
     }
 }

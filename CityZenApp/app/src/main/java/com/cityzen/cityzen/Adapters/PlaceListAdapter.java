@@ -54,9 +54,17 @@ public class PlaceListAdapter extends RecyclerView.Adapter<PlaceListAdapter.View
             }
         }
 
-        CategoryColoringUtil.setupPlaceIcon(
-                context, data.get(position).getType(), holder.coverImage
-        );
+        if (data.get(position).getTags().containsKey("cuisine")) {
+            CategoryColoringUtil.setupPlaceIcon(
+                    context, data.get(position).getType(),
+                    data.get(position).getTags().get("cuisine"), holder.coverImage
+            );
+        } else {
+            CategoryColoringUtil.setupPlaceIcon(
+                    context, data.get(position).getType(), holder.coverImage
+            );
+        }
+
         if (hasOpeningHours)
             holder.openingHours.setVisibility(View.VISIBLE);
         else

@@ -21,12 +21,13 @@ import java.util.Set;
  */
 public abstract class CategoryColoringUtil {
     private static final Map<String, CategoryDisplayConfig> iconMapping = new HashMap<>();
+    private static final Map<String, Integer> customIconMapping = new HashMap<>();
 
     static {
-        Map<String, List<OsmTag>> categories = FilterCategory.getAllFilters();
-        Set<String> keys = categories.keySet();
+        Map<Integer, List<OsmTag>> categories = FilterCategory.getAllFilters();
+        Set<Integer> keys = categories.keySet();
         CategoryDisplayConfig categoryDisplayConfig;
-        for (String key : keys) {
+        for (int key : keys) {
             categoryDisplayConfig = CategoryDisplayConfig.getById(key);
             List<OsmTag> tags = categories.get(key);
             for (OsmTag tag : tags) {
@@ -40,9 +41,13 @@ public abstract class CategoryColoringUtil {
         iconMapping.put("residential", CategoryDisplayConfig.BUILDINGS);
         iconMapping.put("locality", CategoryDisplayConfig.BUILDINGS);
         iconMapping.put("village", CategoryDisplayConfig.BUILDINGS);
-        iconMapping.put("university", CategoryDisplayConfig.BUILDINGS);
+        iconMapping.put("university", CategoryDisplayConfig.SCHOOL);
         iconMapping.put("pedestrian", CategoryDisplayConfig.TOURISM);
         iconMapping.put("mobile_shop", CategoryDisplayConfig.MOBILE_STORES);
+
+        // special definition for cuisine
+        customIconMapping.put("pizza", R.drawable.ic_cuisine_pizza);
+        customIconMapping.put("burger", R.drawable.ic_cuisine_hamburger);
     }
 
     public static void setupPlaceIcon(Context context, String type, ImageView categoryImageView) {
@@ -53,8 +58,28 @@ public abstract class CategoryColoringUtil {
         }
     }
 
+    public static void setupPlaceIcon(Context context, String type, String cuisine, ImageView categoryImageView) {
+        if (customIconMapping.containsKey(cuisine) && iconMapping.containsKey(type)) {
+            setupItemIcon(context, customIconMapping.get(cuisine), iconMapping.get(type).color, categoryImageView);
+        } else {
+            setupPlaceIcon(context, type, categoryImageView);
+        }
+    }
+
     private static void setupItemIcon(Context context, CategoryDisplayConfig displayConfig, ImageView categoryImageView) {
-        categoryImageView.setImageResource(displayConfig.icon);
-        categoryImageView.getBackground().setColorFilter(ContextCompat.getColor(context, displayConfig.color), PorterDuff.Mode.SRC_IN);
+        setupItemIcon(context, displayConfig.icon, displayConfig.color, categoryImageView);
+    }
+
+    private static void setupItemIcon(Context context, @DrawableRes int icon, @ColorRes int color, ImageView categoryImageView) {
+        categoryImageView.setImageResource(icon);
+        categoryImageView.getBackground().setColorFilter(ContextCompat.getColor(context, color), PorterDuff.Mode.SRC_IN);
+    }
+
+    private class CustomCategoryConfig {
+        public @DrawableRes int icon;
+
+        private CustomCategoryConfig(@ColorRes int icon) {
+            this.icon = icon;
+        }
     }
 }

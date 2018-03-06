@@ -24,6 +24,7 @@ import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Utils.MapUtils.PoiCategoryFilter.FilterCategory;
 import com.cityzen.cityzen.Utils.MapUtils.PoiCategoryFilter.PoiResponseListener;
 import com.cityzen.cityzen.Utils.MapUtils.PoiCategoryFilter.QueryPois;
+import com.cityzen.cityzen.Utils.RecyclerView.CategoryDisplayConfig;
 import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewItemClickInterface;
 import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewTouchListener;
 
@@ -35,7 +36,6 @@ import info.metadude.java.library.overpass.models.Element;
 
 public class CategoriesFragment extends Fragment {
     private static final String TAG = CategoriesFragment.class.getName();
-    private TypedArray titles;
     //integer to keep track of the number of OSM tag requests
     int poiTagsReceived = 0;
 
@@ -51,9 +51,6 @@ public class CategoriesFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //get POI data from resources
-        Resources res = getActivity().getResources();
-        titles = res.obtainTypedArray(R.array.poi_titles);
     }
 
     @Override
@@ -75,7 +72,7 @@ public class CategoriesFragment extends Fragment {
     private void setupRecyclerView() {
         RecyclerView recyclerView = getActivity().findViewById(R.id.recyclerview);
         Display display = getActivity().getWindowManager().getDefaultDisplay();
-        CategoryAdapter adapter = new CategoryAdapter(getActivity(), display);
+        CategoryAdapter adapter = new CategoryAdapter(getActivity(), display, getResources().obtainTypedArray(R.array.category_order));
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 3));
 
@@ -85,7 +82,8 @@ public class CategoriesFragment extends Fragment {
             public void onClick(View view, int position) {
                 try {
                     ((MainActivity) getActivity()).showLoadingScreen();
-                    openCategory(position, ((MainActivity) getActivity()).getLastKnownLocation(),(String) view.getTag());
+                    int categoryId = (Integer) view.getTag();
+                    openCategory(position, ((MainActivity) getActivity()).getLastKnownLocation(),categoryId);
                     poiTagsReceived = 0;// reset the number
                 } catch (IOException e) {
                     Log.e(TAG, "Error opening category");
@@ -105,7 +103,7 @@ public class CategoriesFragment extends Fragment {
      * @param lastKnownLocation Devices last known location, around which to query points of interest
      * @throws IOException
      */
-    private void openCategory(final int position, DeviceLocationData lastKnownLocation, final String type) throws IOException {
+    private void openCategory(final int position, DeviceLocationData lastKnownLocation, final Integer categoyId) throws IOException {
         boolean isGpsEnabled;
         boolean isNetworkEnabled;
         if (lastKnownLocation == null) {
@@ -122,6 +120,7 @@ public class CategoriesFragment extends Fragment {
             return;
         }
         final List<Element> poiElements = new ArrayList<>();
+        final CategoryDisplayConfig categoryDisplayConfig = CategoryDisplayConfig.getById(categoyId);
         QueryPois queryPois = new QueryPois(lastKnownLocation.getLatitude(), lastKnownLocation.getLongitude(), new PoiResponseListener() {
             @Override
             public void onPoiReceived(List<Element> elements) {
@@ -129,9 +128,9 @@ public class CategoriesFragment extends Fragment {
                     poiElements.add(element);
                 poiTagsReceived++;
                 //if there are POI available, display them
-                if (poiTagsReceived == FilterCategory.getFilters(type).size() && poiElements.size() > 0)
-                    displayPOIs(titles.getString(position), poiElements, position);
-                else if (poiTagsReceived == FilterCategory.getFilters(type).size() && poiElements.size() == 0) {
+                if (poiTagsReceived == FilterCategory.getFilters(categoryDisplayConfig.id).size() && poiElements.size() > 0)
+                    displayPOIs(categoryDisplayConfig, poiElements);
+                else if (poiTagsReceived == FilterCategory.getFilters(categoryDisplayConfig.id).size() && poiElements.size() == 0) {
                     try {
                         new AppToast(getActivity()).longToast(getString(R.string.no_pois_near_user_location));
                     } catch (Exception e) {
@@ -146,9 +145,9 @@ public class CategoriesFragment extends Fragment {
                     poiTagsReceived++;
                     // in case there are separate network calls and some fail
                     //if there are POI available, display them
-                    if (poiTagsReceived == FilterCategory.getFilters(type).size() && poiElements.size() > 0)
-                        displayPOIs(titles.getString(position), poiElements, position);
-                    else if (poiTagsReceived == FilterCategory.getFilters(type).size() && poiElements.size() == 0) {
+                    if (poiTagsReceived == FilterCategory.getFilters(categoyId).size() && poiElements.size() > 0)
+                        displayPOIs(categoryDisplayConfig, poiElements);
+                    else if (poiTagsReceived == FilterCategory.getFilters(categoyId).size() && poiElements.size() == 0) {
                         new AppToast(getActivity()).toast(getString(R.string.no_pois_near_user_location));
                         ((MainActivity) getActivity()).hideLoadingScreenWithNavigation();
                     }
@@ -159,7 +158,7 @@ public class CategoriesFragment extends Fragment {
         });
 
         //get the filter tags that will be requested in the API
-        List<OsmTag> tags = FilterCategory.getFilters(type);
+        List<OsmTag> tags = FilterCategory.getFilters(categoryDisplayConfig.id);
         for (OsmTag tag : tags) {
             queryPois.loadPois(tag.getKey(), tag.getValue());
         }
@@ -168,13 +167,12 @@ public class CategoriesFragment extends Fragment {
     /**
      * Display list of POIs
      *
-     * @param poiTitle   Category Title
+     * @param displayConfig  the display config of the category
      * @param elements   List of {@link Element}s to be displayed
-     * @param categoryId
      */
-    private void displayPOIs(String poiTitle, List<Element> elements, int categoryId) {
+    private void displayPOIs(CategoryDisplayConfig displayConfig, List<Element> elements) {
         try {
-            ((MainActivity) getActivity()).openCategoryList(poiTitle, categoryId, elements);
+            ((MainActivity) getActivity()).openCategoryList(displayConfig, elements);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -50,6 +50,7 @@ public class PoiListFragment extends Fragment {
 
     private String poiName = "";
     private int categoryId = -1;
+    private int color = 0;
     private List<Element> poiElements;
     private List<Element> adapterElements;
     private MapView map;
@@ -67,11 +68,12 @@ public class PoiListFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static PoiListFragment newInstance(String poiName, int categoryId) {
+    public static PoiListFragment newInstance(String poiName, int categoryId, int color) {
         PoiListFragment fragment = new PoiListFragment();
         Bundle args = new Bundle();
         args.putString("poiName", poiName);
         args.putInt("categoryId", categoryId);
+        args.putInt("color", color);
         fragment.setArguments(args);
         return fragment;
     }
@@ -82,6 +84,7 @@ public class PoiListFragment extends Fragment {
         if (getArguments() != null) {
             poiName = getArguments().getString("poiName");
             categoryId = getArguments().getInt("categoryId");
+            color = getArguments().getInt("color");
         }
 
         //get form MainActivity
@@ -115,13 +118,12 @@ public class PoiListFragment extends Fragment {
 
         //set color to the toolbar
         if (categoryId >= 0) {
-            TypedArray colors = getActivity().getResources().obtainTypedArray(R.array.poi_colors);
-            toolbar.setBackgroundColor(colors.getColor(categoryId, 0));
-            filterLayoutContainer.setBackgroundColor(colors.getColor(categoryId, 0));
+            int categoryColor = getResources().getColor(color);
+            toolbar.setBackgroundColor(categoryColor);
+            filterLayoutContainer.setBackgroundColor(categoryColor);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                getActivity().getWindow().setStatusBarColor(colors.getColor(categoryId, 0));
+                getActivity().getWindow().setStatusBarColor(categoryColor);
             }
-            colors.recycle();
         }
     }
 
