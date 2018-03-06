@@ -159,7 +159,7 @@ public class CategoriesFragment extends Fragment {
         });
 
         //get the filter tags that will be requested in the API
-        ArrayList<OsmTag> tags = FilterCategory.getFilters(type);
+        List<OsmTag> tags = FilterCategory.getFilters(type);
         for (OsmTag tag : tags) {
             queryPois.loadPois(tag.getKey(), tag.getValue());
         }

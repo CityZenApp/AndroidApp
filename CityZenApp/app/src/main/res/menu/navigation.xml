@@ -21,7 +21,7 @@
         android:title="@string/nav_favorites" />
     <item
         android:id="@+id/navigation_settings"
-        android:icon="@drawable/ic_settings_black_24dp"
-        android:title="@string/nav_settings" />
+        android:icon="@drawable/ic_information_outline"
+        android:title="@string/nav_about" />
 
 </menu>
