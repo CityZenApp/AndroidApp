@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- category identifier -->
+    <!-- category identifier (need to match enum values: CategoryDisplayConfig) -->
     <integer name="category_id_education" translatable="false">-3</integer>
     <integer name="category_id_building" translatable="false">-2</integer>
     <integer name="category_id_undefined" translatable="false">-1</integer>
@@ -23,7 +23,7 @@
     <integer name="category_id_tourism" translatable="false">16</integer>
     <integer name="category_id_transportation" translatable="false">17</integer>
 
-    <!-- category order based on identifiers -->
+    <!-- category order based on identifiers (from above) -->
     <array name="category_order" translatable="false">
         <item>@integer/category_id_bakeries</item>
         <item>@integer/category_id_restaurants</item>
