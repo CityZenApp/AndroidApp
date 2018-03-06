@@ -124,4 +124,15 @@
     <string name="mark_locations_as_favorites">位置標記為我的最愛會顯示在這裡</string>
     <string name="favorites_icon">我的最愛圖示</string>
 
-</resources>
+<string name="nav_categories">類別</string>
+    <string name="nav_map">地圖</string>
+    <string name="nav_favorites">我的最愛</string>
+    <string name="nav_settings">設定</string>
+    <string name="search">搜尋</string>
+    <string name="my_location">我的位置</string>
+    <string name="clear_map">清除地圖</string>
+
+    <string name="search_hint">搜尋…</string>
+
+    <string name="address_label">地址：</string>
+    </resources>
