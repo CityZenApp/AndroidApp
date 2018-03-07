@@ -135,4 +135,8 @@
     <string name="search_hint">Suchen…</string>
 
     <string name="address_label">Adresse:</string>
+    <string name="nav_about">Über</string>
+    <string name="Buildings">Gebäude</string>
+    <string name="Education">Bildungseinrichtungen</string>
+    <string name="Location">Ort</string>
     </resources>
