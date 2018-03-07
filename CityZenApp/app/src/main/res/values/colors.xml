@@ -7,6 +7,8 @@
     <color name="colorAppGreen">#D8331D</color>
     <color name="darkBackground">#cbcbcb</color>
     <color name="logoBackground">#D8331D</color>
+    <color name="open">#2f9e44</color>
+    <color name="closed">#e03131</color>
 
     <!-- category item colors -->
     <color name="category_bakery">#FAB005</color>

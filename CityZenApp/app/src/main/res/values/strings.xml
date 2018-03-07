@@ -132,6 +132,11 @@ The app is open source licensed because we want the project to be empowered by t
     <string name="mark_locations_as_favorites">Locations marked as favorites will show up here</string>
     <string name="favorites_icon">favorites icon</string>
 
+    <!-- Opening hours display -->
+    <string name="no_info_available">No info available</string>
+    <string name="open">Open</string>
+    <string name="closed">Closed</string>
+
     <!-- FAB -->
     <string name="search">Search</string>
     <string name="my_location">My location</string>

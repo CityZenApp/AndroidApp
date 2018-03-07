@@ -19,6 +19,7 @@ import com.cityzen.cityzen.Models.ParcelablePOI;
 import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Utils.Development.AppLog;
 import com.cityzen.cityzen.Utils.MapUtils.MapUtils;
+import com.cityzen.cityzen.Utils.PoiHelper;
 import com.cityzen.cityzen.Utils.StorageUtil;
 
 import org.osmdroid.api.IMapController;
@@ -160,7 +161,7 @@ public class PoiDetailsFragment extends DialogFragment {
 
     private void loadDataToUI() {
         poiTitleDialog.setText(POI.getPoiName());
-        poiDialogAddress.setText(createAddressDisplayString(POI));
+        poiDialogAddress.setText(PoiHelper.createAddressDisplayString(POI));
         //display tags to view
         if (POI.getTags() != null)
             for (Map.Entry<String, String> tag : POI.getTags().entrySet()) {
@@ -182,31 +183,6 @@ public class PoiDetailsFragment extends DialogFragment {
                             ));
             }
         updateFavoriteButton();
-    }
-
-    private String createAddressDisplayString(ParcelablePOI poi) {
-        String address = "";
-        if (poi.getTags().containsKey("addr:street")) {
-            if (poi.getTags().containsKey("addr:housenumber")) {
-                address += poi.getTags().get("addr:street") + " " + poi.getTags().get("addr:housenumber");
-            } else {
-                address = poi.getTags().get("addr:street");
-            }
-        }
-
-        if ((poi.getTags().containsKey("addr:postcode") || poi.getTags().containsKey("addr:city")) && address.length() > 0) {
-            address += "\n";
-        }
-
-        if (poi.getTags().containsKey("addr:postcode") && poi.getTags().containsKey("addr:city")) {
-            address += poi.getTags().get("addr:postcode") + " " + poi.getTags().get("addr:city");
-        } else if (poi.getTags().containsKey("addr:postcode")) {
-            address += poi.getTags().get("addr:postcode");
-        } else if (poi.getTags().containsKey("addr:city")) {
-            address += poi.getTags().get("addr:city");
-        }
-
-        return address;
     }
 
     private void updateFavoriteButton() {

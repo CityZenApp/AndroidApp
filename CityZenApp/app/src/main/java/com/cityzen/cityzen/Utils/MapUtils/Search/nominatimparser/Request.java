@@ -58,7 +58,7 @@ public class Request {
         protected Void doInBackground(Pair... params) {
             StringBuilder jsonResult = new StringBuilder();
             StringBuilder sb = new StringBuilder(QUERY);
-            sb.append("format=json&polygon=0&addressdetails=0&extratags=1&limit=50&");
+            sb.append("format=json&polygon=0&addressdetails=1&extratags=1&limit=50&");
             for (ArrayList<Pair> pairs : parameters) {
                 for (Pair p : pairs) {
                     sb.append(p.first + "=" + p.second + "&");
@@ -102,8 +102,11 @@ public class Request {
                             String type = jsonObject.optString("type");
                             float importance = (float) jsonObject.optDouble("importance");
                             //extract tags
-                            String extraTags = jsonObject.getString("extratags");
-                            Map<String, String> tags = parseExtraTags(extraTags);
+                            Map<String, String> tags = new HashMap<>();
+                            if (jsonObject.has("address")) {
+                                parseAndAddAdressTags(tags, jsonObject.getString("address"));
+                            }
+                            parseExtraTags(tags, jsonObject.getString("extratags"));
 
                             quriedPlaces.add(new Place(
                                     place_id,
@@ -131,17 +134,32 @@ public class Request {
             return null;
         }
 
-
-        private Map<String, String> parseExtraTags(String s) throws JSONException {
-            JSONObject jObject = new JSONObject(s);
-            Map<String, String> map = new HashMap<String, String>();
+        private void parseAndAddAdressTags(Map<String, String> tags, String address) throws JSONException {
+            JSONObject jObject = new JSONObject(address);
             Iterator iter = jObject.keys();
             while (iter.hasNext()) {
                 String key = (String) iter.next();
                 String value = jObject.getString(key);
-                map.put(key, value);
+                if ("road".equals(key)) {
+                    tags.put("addr:street", value);
+                } else if ("house_number".equals(key)) {
+                    tags.put("addr:housenumber", value);
+                } else {
+                    tags.put("addr:" + key, value);
+                }
             }
-            return map;
+        }
+
+
+        private void parseExtraTags(Map<String, String> tags, String s) throws JSONException {
+            JSONObject jObject = new JSONObject(s);
+
+            Iterator iter = jObject.keys();
+            while (iter.hasNext()) {
+                String key = (String) iter.next();
+                String value = jObject.getString(key);
+                tags.put(key, value);
+            }
         }
 
         @Override

@@ -33,12 +33,23 @@
             android:id="@+id/placeTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
             android:maxLines="4"
             android:textAppearance="@style/TextAppearance.AppCompat"
             android:textColor="#3C3C3C"
             android:textSize="16sp"
-            tools:text="Frankfurt\nFrankfurt" />
+            tools:text="Bully's Burger" />
+
+        <TextView
+            android:id="@+id/placeAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#7D7D7D"
+            android:textSize="14sp"
+            android:visibility="visible"
+            android:layout_marginTop="4dp"
+            tools:text="Wikimedian Street 675\n60318 Frankfurt am Main" />
 
         <TextView
             android:id="@+id/placeOpeningHours"
@@ -49,8 +60,8 @@
             android:textColor="#7D7D7D"
             android:textSize="14sp"
             android:visibility="visible"
-            android:layout_marginBottom="4dp"
-            tools:text="Frankfurt\nFrankfurt" />
+            android:layout_marginTop="4dp"
+            tools:text="Mo-Fr 11:30-15:00, 18:00-21:30;Sa 15:00-22:00;Su 15:00-21:00" />
     </LinearLayout>
 
 </LinearLayout>
