@@ -134,4 +134,8 @@
     <string name="search_hint">Recherche…</string>
 
     <string name="address_label">Adresse:</string>
+    <string name="nav_about">A propos</string>
+    <string name="Buildings">Bâtiments</string>
+    <string name="Education">Education</string>
+    <string name="Location">Position</string>
     </resources>
