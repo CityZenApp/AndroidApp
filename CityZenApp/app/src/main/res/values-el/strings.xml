@@ -135,4 +135,8 @@
     <string name="search_hint">Αναζήτηση…</string>
 
     <string name="address_label">Διεύθυνση:</string>
+    <string name="nav_about">Σχετικά</string>
+    <string name="Buildings">Κτήρια</string>
+    <string name="Education">Εκπαίδευση</string>
+    <string name="Location">Τοποθεσία</string>
     </resources>
