@@ -98,13 +98,13 @@
     <string name="Restaurants">Restorante</string>
     <string name="FastFood">Ushqim i shpejtë</string>
     <string name="Tourism">Turizëm</string>
-    <string name="Hotels_Hostels">Hotele/Hostele</string>
+    <string name="Hotels_Hostels">Hotele</string>
     <string name="Transportation">Transport</string>
     <string name="GasStations">Stacionet e karburantit</string>
-    <string name="Pharmacy_Healthcare">Farmaci/Kujdesi për shëndetin</string>
-    <string name="Banks_ATMs_Exchange">Banka/ATM/Këmbim valute</string>
+    <string name="Pharmacy_Healthcare">Farmaci</string>
+    <string name="Banks_ATMs_Exchange">Shërbime bankare</string>
     <string name="MobilePhoneStore">Dyqan telefoni</string>
-    <string name="Markets_Kiosks">Market/Kioska</string>
+    <string name="Markets_Kiosks">Markete</string>
     <string name="Shopping_Malls">Qendra Tregtare</string>
     <string name="Parkings">Parking</string>
     <string name="RentBicycle">Biçikleta me qira</string>
@@ -113,4 +113,29 @@
 
     <string name="login_to_osm">Hyni në OSM</string>
     <string name="logout">Dilni</string>
-</resources>
+<string name="nav_categories">Kategoritë</string>
+    <string name="nav_map">Harta</string>
+    <string name="nav_favorites">Të preferuara</string>
+    <string name="nav_about">Rreth</string>
+    <string name="Bakeries">Furrë buke &amp; pasta</string>
+    <string name="Post_Offices">Zyra postare</string>
+    <string name="Parking">Parkim</string>
+    <string name="Buildings">Ndërtesa</string>
+    <string name="Education">Edukim</string>
+    <string name="Location">Vendndodhje</string>
+    <string name="no_results">Nuk ka rezultate</string>
+    <string name="search_again">Ju lutem provoni të kërkoni me një fjalë tjetër</string>
+    <string name="search_icon">ikona e kërkimit</string>
+
+    <string name="no_favorites">Nuk ka të preferuara</string>
+    <string name="mark_locations_as_favorites">Vendndodhjet e shënjuara si të preferuara do të shfaqen këtu</string>
+    <string name="favorites_icon">ikona e të preferuarave</string>
+
+    <string name="search">Kërkoni</string>
+    <string name="my_location">Vendndodhja ime</string>
+    <string name="clear_map">Pastroni hartën</string>
+
+    <string name="search_hint">Kërkoni…</string>
+
+    <string name="address_label">Adresa:</string>
+    </resources>
