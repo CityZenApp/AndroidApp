@@ -2,12 +2,12 @@
 <resources>
     <color name="colorPrimary">#D8331D</color>
     <color name="colorPrimaryDark">#9E0000</color>
-    <color name="colorAccent">#D8331D</color>
-    <color name="colorWhite">#ffffff</color>
+    <color name="colorAccent">#FF6948</color>
+    <color name="colorWhite">#FFFFFF</color>
     <color name="colorAppGreen">#D8331D</color>
-    <color name="darkBackground">#cbcbcb</color>
+    <color name="darkBackground">#CBCBCB</color>
     <color name="logoBackground">#D8331D</color>
-    <color name="open">#2f9e44</color>
+    <color name="open">#2F9E44</color>
     <color name="closed">#e03131</color>
 
     <!-- category item colors -->

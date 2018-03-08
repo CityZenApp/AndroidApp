@@ -1,7 +1,11 @@
 package com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.widget.Toast;
+
+import com.cityzen.cityzen.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -20,9 +24,9 @@ import java.util.Map;
 public class Request {
     private static final String TAG = Request.class.getName();
 
-    public static void getPlaces(Action a, ArrayList<Pair>... parameters) {
+    public static void getPlaces(Context context, Action a, ArrayList<Pair>... parameters) {
         try {
-            new GetPlaces(a, parameters).execute();
+            new GetPlaces(context, a, parameters).execute();
         } catch (IllegalStateException e) {
         }
     }
@@ -43,6 +47,7 @@ public class Request {
         private ArrayList<Place> queriedPlaces = new ArrayList<>();
         private final String QUERY = "http://nominatim.openstreetmap.org/search?";
         private Action action;
+        private Context context;
         private ArrayList<Pair>[] parameters;
 
         /**
@@ -50,7 +55,8 @@ public class Request {
          * @param parameters A set of keys and values to provide to the request. Each map will be triggered in a different request
          * @see Action
          */
-        public GetPlaces(Action action, ArrayList<Pair>... parameters) {
+        public GetPlaces(Context context, Action action, ArrayList<Pair>... parameters) {
+            this.context = context;
             this.action = action;
             this.parameters = parameters;
         }
@@ -127,9 +133,11 @@ public class Request {
 
                     } catch (JSONException e) {
                         Log.e(TAG, "Error reading server response", e);
+                        Toast.makeText(context, R.string.server_response_error, Toast.LENGTH_SHORT).show();
                     }
                 } catch (IOException e) {
                     Log.e(TAG, "Error communicating with server", e);
+                    Toast.makeText(context, R.string.server_error, Toast.LENGTH_SHORT).show();
                 }
             }
             return null;

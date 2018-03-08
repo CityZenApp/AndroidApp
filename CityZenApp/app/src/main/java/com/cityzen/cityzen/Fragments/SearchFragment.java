@@ -309,8 +309,9 @@ public class SearchFragment extends Fragment {
         if (deviceLocationData != null && deviceLocationData.getLocality() != null)
             pairs.add(new Pair("q=", searchString + " " + deviceLocationData.getLocality()));
 //        pairs.add(new Pair("q=", searchString + " " + deviceLocationData.getCountryName()));
-        if (DeviceUtils.isInternetConnected(getActivity()))
-            Request.getPlaces(action, pairs);
+        if (DeviceUtils.isInternetConnected(getActivity())) {
+            Request.getPlaces(getContext(), action, pairs);
+        }
     }
 
 
