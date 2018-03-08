@@ -25,10 +25,7 @@ public class Request {
     private static final String TAG = Request.class.getName();
 
     public static void getPlaces(Context context, Action a, ArrayList<Pair>... parameters) {
-        try {
-            new GetPlaces(context, a, parameters).execute();
-        } catch (IllegalStateException e) {
-        }
+        new GetPlaces(context, a, parameters).execute();
     }
 
     private static class GetPlaces extends AsyncTask<Pair, Place, Void> {
