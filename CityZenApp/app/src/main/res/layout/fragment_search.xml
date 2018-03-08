@@ -72,7 +72,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_below="@+id/filterPoiListContainer"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorWhite"/>
 
     <LinearLayout
         android:id="@+id/emptySearchResult"
