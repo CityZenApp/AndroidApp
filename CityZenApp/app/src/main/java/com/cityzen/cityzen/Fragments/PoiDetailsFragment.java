@@ -1,6 +1,8 @@
 package com.cityzen.cityzen.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.DialogFragment;
@@ -30,6 +32,7 @@ import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.compass.CompassOverlay;
 import org.osmdroid.views.overlay.compass.InternalCompassOrientationProvider;
 
+import java.util.Locale;
 import java.util.Map;
 
 
@@ -44,6 +47,7 @@ public class PoiDetailsFragment extends DialogFragment {
     private LinearLayout poiDialogContent;
     private Button poiDialogDirectionsButton;
     private ImageButton poiDialogEdit;
+    private ImageButton poiDialogShare;
 
     public PoiDetailsFragment() {
         // Required empty public constructor
@@ -110,6 +114,7 @@ public class PoiDetailsFragment extends DialogFragment {
         poiDialogDirectionsButton = getDialog().findViewById(R.id.poiDialogDirectionsButton);
         favoriteImageButton = getDialog().findViewById(R.id.poiDialogFavorite);
         poiDialogEdit = getDialog().findViewById(R.id.poiDialogEdit);
+        poiDialogShare = getDialog().findViewById(R.id.poiDialogShare);
         poiTitleDialog = getDialog().findViewById(R.id.poiTitleDialog);
         poiDialogAddress = getDialog().findViewById(R.id.poiDialogAddress);
         poiDialogContent = getDialog().findViewById(R.id.poiDialogContent);
@@ -154,6 +159,21 @@ public class PoiDetailsFragment extends DialogFragment {
                             .beginTransaction()
                             .remove(PoiDetailsFragment.this)
                             .commit();
+                }
+            }
+        });
+        poiDialogShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (POI != null) {
+                    String geoUri = String.format(
+                            Locale.ENGLISH,
+                            "geo:%f,%f?z=18",
+                            POI.getLatitude(),
+                            POI.getLongitude()
+                    );
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoUri));
+                    startActivity(intent);
                 }
             }
         });

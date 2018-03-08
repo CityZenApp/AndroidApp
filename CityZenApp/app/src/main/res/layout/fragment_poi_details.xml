@@ -60,10 +60,20 @@
                     android:id="@+id/poiDialogEdit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/poiDialogShare"
+                    android:layout_toStartOf="@+id/poiDialogShare"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/ic_mode_edit_dialog" />
+
+                <ImageButton
+                    android:id="@+id/poiDialogShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:background="@android:color/transparent"
-                    app:srcCompat="@drawable/ic_mode_edit_dialog" />
+                    app:srcCompat="@drawable/ic_share_variant" />
             </RelativeLayout>
 
             <LinearLayout
