@@ -10,22 +10,19 @@ import java.util.Map;
 import info.metadude.java.library.overpass.models.Element;
 
 /**
- * Created by Valdio Veliu on 01/05/2017.
- * <p>
- * This class is used as a middle ground PO-JO object
- * to convert both {@link Element} and {@link Place} object
- * into a parcelable object to pass between fragments and store in shared preferences
+ * This class is used as a middle ground PO-JO object to convert both
+ * {@link Element} and {@link Place} object into a parcelable object
+ * to pass between fragments and store in shared preferences.
+ *
+ * @author Valdio Veliu
  */
-
 public class ParcelablePOI implements Parcelable {
 
-    /**
-     *
+    /*
      * Element
      *
      * {type='node', id=2608288886, lat=41.3296753, lon=19.8145024,
      * tags={addr:city=Tirana, addr:street=Rruga e Durresit, amenity=bar, name=Kafe Flora, wheelchair=limited}}
-     *
      */
 
     /**
@@ -86,56 +83,48 @@ public class ParcelablePOI implements Parcelable {
         this.lon = element.lon;
         this.tags = element.tags;
         boolean hasName = false;
-        boolean isAtm = false;
-        if (tags != null)
+        if (tags != null) {
+            if (tags.containsKey("name")) {
+                this.poiName = tags.get("name");
+                this.fullName = tags.get("name");
+                hasName = true;
+            }
             for (Map.Entry<String, String> tag : tags.entrySet()) {
-                if (tag.getKey().equals("name")) {
-                    this.poiName = tag.getValue();
-                    this.fullName = tag.getValue();
-                    hasName = true;
-                }
-                /**
-                 * If added more tags to filter in {@link com.openstreetmap.opencity.opencity.Utils.MapUtils.PoiCategoryFilter.FilterCategory} add the new tags in the if statement
+                /*
+                 * If added more tags to filter in
+                 * {@link com.openstreetmap.opencity.opencity.Utils.MapUtils.PoiCategoryFilter.FilterCategory}
+                 * add the new tags in the if statement
                  */
                 if (tag.getKey().equals("amenity") || tag.getKey().equals("tourism") || tag.getKey().equals("historic") || tag.getKey().equals("building") || tag.getKey().equals("shop")) {
-                    this.poiClassName = tag.getKey();//amenity
+                    this.poiClassName = tag.getKey();
                     this.poiClassType = tag.getValue();
                 }
-                if (tag.getKey().equals("amenity") && tag.getValue().equals("atm")) {
-                    isAtm = true;
+            }
+
+            //filter ATM names, set name to me the Atm operator
+            if (tags.containsKey("amenity") && "atm".equals(tags.get("amenity")) && !hasName) {
+                if (tags.containsKey("operator")) {
+                    this.poiName = tags.get("operator");
+                    this.fullName = tags.get("operator");
                 }
             }
 
-        //filter ATM names, set name to me the Atm operator
-        if (isAtm && !hasName && tags != null)
-            for (Map.Entry<String, String> tag : tags.entrySet()) {
-                if (tag.getKey().equals("operator")) {
-                    this.poiName = tag.getValue();
-                    this.fullName = tag.getValue();
+            // extract tags for fullName
+            if (tags.containsKey("addr:street")) {
+                if (fullName.equals("")) {
+                    fullName = tags.get("addr:street");
+                } else {
+                    fullName = fullName + ", " + tags.get("addr:street");
                 }
             }
-
-        // extract tags for fullName
-        if (tags != null)
-            for (Map.Entry<String, String> tag : tags.entrySet()) {
-                if (tag.getKey().equals("addr:street")) {
-                    if (fullName.equals(""))
-                        fullName = tag.getValue();
-                    else
-                        fullName = fullName + ", " + tag.getValue();
-                    break;
+            if (tags.containsKey("addr:city")) {
+                if (fullName.equals("")) {
+                    fullName = tags.get("addr:city");
+                } else {
+                    fullName = fullName + ", " + tags.get("addr:city");
                 }
             }
-        if (tags != null)
-            for (Map.Entry<String, String> tag : tags.entrySet()) {
-                if (tag.getKey().equals("addr:city")) {
-                    if (fullName.equals(""))
-                        fullName = tag.getValue();
-                    else
-                        fullName = fullName + ", " + tag.getValue();
-                    break;
-                }
-            }
+        }
     }
 
     @Override

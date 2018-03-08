@@ -305,10 +305,10 @@ public class SearchFragment extends Fragment {
             }
         };
         ArrayList<Pair> pairs = new ArrayList<>();
-        pairs.add(new Pair("q=", searchString));
+        pairs.add(new Pair("q", searchString));
         if (deviceLocationData != null && deviceLocationData.getLocality() != null)
-            pairs.add(new Pair("q=", searchString + " " + deviceLocationData.getLocality()));
-//        pairs.add(new Pair("q=", searchString + " " + deviceLocationData.getCountryName()));
+            pairs.add(new Pair("q", searchString + " " + deviceLocationData.getLocality()));
+//        pairs.add(new Pair("q", searchString + " " + deviceLocationData.getCountryName()));
         if (DeviceUtils.isInternetConnected(getActivity())) {
             Request.getPlaces(getContext(), action, pairs);
         }

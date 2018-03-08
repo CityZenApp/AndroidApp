@@ -68,7 +68,7 @@ public class Request {
             sb.append("format=json&polygon=0&addressdetails=1&extratags=1&limit=50&");
             for (ArrayList<Pair> pairs : parameters) {
                 for (Pair p : pairs) {
-                    sb.append(p.first).append("=").append(p.second).append("&");
+                    sb.append(p.first).append("=").append(p.second.replace(" ", "+")).append("&");
                 }
                 try {
                     URL url = new URL(sb.toString().substring(0, sb.toString().length() - 1));//remove last '&', crashes the request in some devices
