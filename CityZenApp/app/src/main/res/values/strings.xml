@@ -147,4 +147,7 @@ The app is open source licensed because we want the project to be empowered by t
     <string name="address_label">Address:</string>
     <string name="empty_timestamp" translatable="false">--:--</string>
 
+    <string name="server_error">Error communicating with server</string>
+    <string name="server_response_error">Error reading server response</string>
+
 </resources>

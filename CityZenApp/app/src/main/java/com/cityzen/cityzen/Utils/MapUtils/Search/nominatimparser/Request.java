@@ -1,6 +1,7 @@
 package com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser;
 
 import android.os.AsyncTask;
+import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -17,6 +18,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class Request {
+    private static final String TAG = Request.class.getName();
 
     public static void getPlaces(Action a, ArrayList<Pair>... parameters) {
         try {
@@ -26,7 +28,6 @@ public class Request {
     }
 
     private static class GetPlaces extends AsyncTask<Pair, Place, Void> {
-
         /*
             wiki : http://wiki.openstreetmap.org/wiki/Nominatim
 
@@ -39,7 +40,7 @@ public class Request {
 
             use q= if you don't know whether the user type an address, a city a county or whatever
         */
-        private ArrayList<Place> quriedPlaces = new ArrayList<>();
+        private ArrayList<Place> queriedPlaces = new ArrayList<>();
         private final String QUERY = "http://nominatim.openstreetmap.org/search?";
         private Action action;
         private ArrayList<Pair>[] parameters;
@@ -61,7 +62,7 @@ public class Request {
             sb.append("format=json&polygon=0&addressdetails=1&extratags=1&limit=50&");
             for (ArrayList<Pair> pairs : parameters) {
                 for (Pair p : pairs) {
-                    sb.append(p.first + "=" + p.second + "&");
+                    sb.append(p.first).append("=").append(p.second).append("&");
                 }
                 try {
                     URL url = new URL(sb.toString().substring(0, sb.toString().length() - 1));//remove last '&', crashes the request in some devices
@@ -69,10 +70,11 @@ public class Request {
                     int status = conn.getResponseCode();
                     InputStreamReader in;
                     //make sure the connection is successful
-                    if (status != HttpURLConnection.HTTP_OK)
+                    if (status != HttpURLConnection.HTTP_OK) {
                         in = new InputStreamReader(conn.getErrorStream());
-                    else
+                    } else {
                         in = new InputStreamReader(conn.getInputStream());
+                    }
 
                     BufferedReader jsonReader = new BufferedReader(in);
                     String lineIn;
@@ -80,7 +82,6 @@ public class Request {
                         jsonResult.append(lineIn);
                     }
 
-                    JSONObject jsonObj;
                     try {
                         JSONArray jsonArray = new JSONArray(jsonResult.toString());
                         int length = jsonArray.length();
@@ -108,7 +109,7 @@ public class Request {
                             }
                             parseExtraTags(tags, jsonObject.getString("extratags"));
 
-                            quriedPlaces.add(new Place(
+                            queriedPlaces.add(new Place(
                                     place_id,
                                     osm_id,
                                     lat,
@@ -125,10 +126,10 @@ public class Request {
                         }
 
                     } catch (JSONException e) {
-                        e.printStackTrace();
+                        Log.e(TAG, "Error reading server response", e);
                     }
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    Log.e(TAG, "Error communicating with server", e);
                 }
             }
             return null;
@@ -150,7 +151,6 @@ public class Request {
             }
         }
 
-
         private void parseExtraTags(Map<String, String> tags, String s) throws JSONException {
             JSONObject jObject = new JSONObject(s);
 
@@ -165,7 +165,7 @@ public class Request {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            action.action(quriedPlaces);
+            action.action(queriedPlaces);
         }
     }
 }

@@ -61,13 +61,14 @@ public class ParcelablePoiListAdapter extends RecyclerView.Adapter<ParcelablePoi
             }
 
             // Opening hours
-            if (tags.containsKey(OsmTags.OPENING_HOURS) &&
-                    OpeningHoursUtils.isOpenNow(tags.get(OsmTags.OPENING_HOURS))) {
-                holder.openingHours.setText(R.string.open);
-                holder.openingHours.setTextColor(context.getResources().getColor(R.color.open));
-            } else {
-                holder.openingHours.setText(R.string.closed);
-                holder.openingHours.setTextColor(context.getResources().getColor(R.color.closed));
+            if (tags.containsKey(OsmTags.OPENING_HOURS)) {
+                if (OpeningHoursUtils.isOpenNow(tags.get(OsmTags.OPENING_HOURS))) {
+                    holder.openingHours.setText(R.string.open);
+                    holder.openingHours.setTextColor(context.getResources().getColor(R.color.open));
+                } else {
+                    holder.openingHours.setText(R.string.closed);
+                    holder.openingHours.setTextColor(context.getResources().getColor(R.color.closed));
+                }
             }
 
             if (holder.openingHours.getText() != null && !holder.openingHours.getText().equals("")) {
