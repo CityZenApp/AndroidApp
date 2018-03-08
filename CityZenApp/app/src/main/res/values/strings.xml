@@ -132,6 +132,11 @@ The app is open source licensed because we want the project to be empowered by t
     <string name="mark_locations_as_favorites">Locations marked as favorites will show up here</string>
     <string name="favorites_icon">favorites icon</string>
 
+    <!-- Opening hours display -->
+    <string name="no_info_available">No info available</string>
+    <string name="open">Open</string>
+    <string name="closed">Closed</string>
+
     <!-- FAB -->
     <string name="search">Search</string>
     <string name="my_location">My location</string>
@@ -141,5 +146,13 @@ The app is open source licensed because we want the project to be empowered by t
 
     <string name="address_label">Address:</string>
     <string name="empty_timestamp" translatable="false">--:--</string>
+
+    <string name="server_error">Error communicating with server</string>
+    <string name="server_response_error">Error reading server response</string>
+
+    <string name="poi_details_close">Close POI</string>
+    <string name="poi_details_mark_as_favorite">Mark POI as favorite</string>
+    <string name="poi_details_edit">Edit POI</string>
+    <string name="poi_details_share">Share POI as geo-link</string>
 
 </resources>

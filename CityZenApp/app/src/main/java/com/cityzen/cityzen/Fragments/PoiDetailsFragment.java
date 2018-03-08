@@ -1,6 +1,8 @@
 package com.cityzen.cityzen.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v4.app.DialogFragment;
@@ -19,6 +21,7 @@ import com.cityzen.cityzen.Models.ParcelablePOI;
 import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Utils.Development.AppLog;
 import com.cityzen.cityzen.Utils.MapUtils.MapUtils;
+import com.cityzen.cityzen.Utils.PoiHelper;
 import com.cityzen.cityzen.Utils.StorageUtil;
 
 import org.osmdroid.api.IMapController;
@@ -29,6 +32,7 @@ import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.compass.CompassOverlay;
 import org.osmdroid.views.overlay.compass.InternalCompassOrientationProvider;
 
+import java.util.Locale;
 import java.util.Map;
 
 
@@ -43,6 +47,7 @@ public class PoiDetailsFragment extends DialogFragment {
     private LinearLayout poiDialogContent;
     private Button poiDialogDirectionsButton;
     private ImageButton poiDialogEdit;
+    private ImageButton poiDialogShare;
 
     public PoiDetailsFragment() {
         // Required empty public constructor
@@ -109,6 +114,7 @@ public class PoiDetailsFragment extends DialogFragment {
         poiDialogDirectionsButton = getDialog().findViewById(R.id.poiDialogDirectionsButton);
         favoriteImageButton = getDialog().findViewById(R.id.poiDialogFavorite);
         poiDialogEdit = getDialog().findViewById(R.id.poiDialogEdit);
+        poiDialogShare = getDialog().findViewById(R.id.poiDialogShare);
         poiTitleDialog = getDialog().findViewById(R.id.poiTitleDialog);
         poiDialogAddress = getDialog().findViewById(R.id.poiDialogAddress);
         poiDialogContent = getDialog().findViewById(R.id.poiDialogContent);
@@ -156,11 +162,26 @@ public class PoiDetailsFragment extends DialogFragment {
                 }
             }
         });
+        poiDialogShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (POI != null) {
+                    String geoUri = String.format(
+                            Locale.ENGLISH,
+                            "geo:%f,%f?z=18",
+                            POI.getLatitude(),
+                            POI.getLongitude()
+                    );
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoUri));
+                    startActivity(intent);
+                }
+            }
+        });
     }
 
     private void loadDataToUI() {
         poiTitleDialog.setText(POI.getPoiName());
-        poiDialogAddress.setText(createAddressDisplayString(POI));
+        poiDialogAddress.setText(PoiHelper.createAddressDisplayString(POI));
         //display tags to view
         if (POI.getTags() != null)
             for (Map.Entry<String, String> tag : POI.getTags().entrySet()) {
@@ -182,31 +203,6 @@ public class PoiDetailsFragment extends DialogFragment {
                             ));
             }
         updateFavoriteButton();
-    }
-
-    private String createAddressDisplayString(ParcelablePOI poi) {
-        String address = "";
-        if (poi.getTags().containsKey("addr:street")) {
-            if (poi.getTags().containsKey("addr:housenumber")) {
-                address += poi.getTags().get("addr:street") + " " + poi.getTags().get("addr:housenumber");
-            } else {
-                address = poi.getTags().get("addr:street");
-            }
-        }
-
-        if ((poi.getTags().containsKey("addr:postcode") || poi.getTags().containsKey("addr:city")) && address.length() > 0) {
-            address += "\n";
-        }
-
-        if (poi.getTags().containsKey("addr:postcode") && poi.getTags().containsKey("addr:city")) {
-            address += poi.getTags().get("addr:postcode") + " " + poi.getTags().get("addr:city");
-        } else if (poi.getTags().containsKey("addr:postcode")) {
-            address += poi.getTags().get("addr:postcode");
-        } else if (poi.getTags().containsKey("addr:city")) {
-            address += poi.getTags().get("addr:city");
-        }
-
-        return address;
     }
 
     private void updateFavoriteButton() {

@@ -1,7 +1,9 @@
 package com.cityzen.cityzen.Fragments;
 
+import android.location.Location;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -9,12 +11,14 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.cityzen.cityzen.Activities.MainActivity;
 import com.cityzen.cityzen.Adapters.PlaceListAdapter;
@@ -40,12 +44,15 @@ import org.osmdroid.util.GeoPoint;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class SearchFragment extends Fragment {
+    private static final String TAG = SearchFragment.class.getName();
 
     private RecyclerView recyclerView;
     private PlaceListAdapter adapter;
@@ -79,6 +86,11 @@ public class SearchFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         setupView();
+        try {
+            setupRecyclerView();
+        } catch (Exception e) {
+            Log.w(TAG,"error setting up search result list view");
+        }
         setupToolbarAndFilter();
         clearSearchView();
     }
@@ -168,6 +180,7 @@ public class SearchFragment extends Fragment {
                 searchView.setIconified(false);//open searchView
             }
         });
+
         filterCheckBox = getActivity().findViewById(R.id.filterCheckBox);
         filterCheckBox.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -198,7 +211,9 @@ public class SearchFragment extends Fragment {
     }
 
     private void filterElements() {
-        if (adapter == null) return;
+        if (adapter == null) {
+            return;
+        }
         if (filterCheckBox.isChecked()) {
             //filter Elements by opening hours
             List<Place> filteredElements = new ArrayList<>();
@@ -224,14 +239,6 @@ public class SearchFragment extends Fragment {
             adapterElements.clear();
             adapterElements = new ArrayList<>(searchedPlaces);
             adapter.resetAdapter(adapterElements);
-        }
-
-        if (adapter.getItemCount() < 1) {
-            emptyView.setVisibility(View.VISIBLE);
-            recyclerView.setVisibility(View.GONE);
-        } else {
-            emptyView.setVisibility(View.GONE);
-            recyclerView.setVisibility(View.VISIBLE);
         }
     }
 
@@ -290,27 +297,71 @@ public class SearchFragment extends Fragment {
      * @param searchString Name of the place to be searched
      */
     private void search(String searchString) {
-        DeviceLocationData deviceLocationData = ((MainActivity) getActivity()).getLastKnownLocation();
+        final DeviceLocationData deviceLocationData = ((MainActivity) getActivity()).getLastKnownLocation();
         Action action = new Action() {
             @Override
-            public void action(ArrayList<Place> places) {
-                searchedPlaces = places;
+            public void action(ArrayList<Place> places, String error) {
                 adapterElements.clear();
-                adapterElements = new ArrayList<>(searchedPlaces);
-                try {
-                    setupRecyclerView();
-                } catch (Exception ignored) {
+
+                if (error == null) {
+                    searchedPlaces = sortByDistance(deviceLocationData, places);
+                    adapterElements = new ArrayList<>(searchedPlaces);
+                    try {
+                        setupRecyclerView();
+                    } catch (Exception ignored) {
+                    }
+                    filterElements();//filter elements if needed
                 }
-                filterElements();//filter elements if needed
+
+                if (adapter == null || adapter.getItemCount() < 1) {
+                    emptyView.setVisibility(View.VISIBLE);
+                    recyclerView.setVisibility(View.GONE);
+                } else {
+                    emptyView.setVisibility(View.GONE);
+                    recyclerView.setVisibility(View.VISIBLE);
+                }
+
+                if (error != null) {
+                    Toast.makeText(getContext(), error, Toast.LENGTH_SHORT).show();
+                }
             }
         };
         ArrayList<Pair> pairs = new ArrayList<>();
-        pairs.add(new Pair("q=", searchString));
-        if (deviceLocationData != null && deviceLocationData.getLocality() != null)
-            pairs.add(new Pair("q=", searchString + " " + deviceLocationData.getLocality()));
-//        pairs.add(new Pair("q=", searchString + " " + deviceLocationData.getCountryName()));
-        if (DeviceUtils.isInternetConnected(getActivity()))
-            Request.getPlaces(action, pairs);
+        pairs.add(new Pair("q", searchString));
+        if (deviceLocationData != null && deviceLocationData.getLocality() != null) {
+            pairs.add(new Pair("q", searchString + " " + deviceLocationData.getLocality()));
+            //pairs.add(new Pair("q", searchString + " " + deviceLocationData.getCountryName()));
+        }
+        if (DeviceUtils.isInternetConnected(getActivity())) {
+            Request.getPlaces(getContext(), action, pairs);
+        }
+    }
+
+    private List<Place> sortByDistance(DeviceLocationData deviceLocationData, ArrayList<Place> places) {
+        if (places != null && places.size() > 0 && deviceLocationData != null) {
+            final Location deviceLocation = new Location("actualLocation");
+            deviceLocation.setLatitude(deviceLocationData.getLatitude());
+            deviceLocation.setLongitude(deviceLocationData.getLongitude());
+
+            Collections.sort(places, new Comparator<Place>() {
+                @Override
+                public int compare(Place lhs, Place rhs) {
+                    Location locationLhs = new Location("lhs");
+                    locationLhs.setLatitude(lhs.getLatitude());
+                    locationLhs.setLongitude(lhs.getLongitude());
+
+                    Location locationRhs = new Location("rhs");
+                    locationRhs.setLatitude(rhs.getLatitude());
+                    locationRhs.setLongitude(rhs.getLongitude());
+
+                    Float distanceLhs = locationLhs.distanceTo(deviceLocation);
+                    Float distanceRhs = locationRhs.distanceTo(deviceLocation);
+                    return distanceLhs.compareTo(distanceRhs);
+                }
+            });
+        }
+
+        return places;
     }
 
 
