@@ -3,7 +3,6 @@ package com.cityzen.cityzen.Utils.MapUtils.Search.nominatimparser;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.cityzen.cityzen.R;
 
@@ -42,6 +41,7 @@ public class Request {
             use q= if you don't know whether the user type an address, a city a county or whatever
         */
         private ArrayList<Place> queriedPlaces = new ArrayList<>();
+        private String error = null;
         private final String QUERY = "http://nominatim.openstreetmap.org/search?";
         private Action action;
         private Context context;
@@ -85,56 +85,60 @@ public class Request {
                         jsonResult.append(lineIn);
                     }
 
-                    try {
-                        JSONArray jsonArray = new JSONArray(jsonResult.toString());
-                        int length = jsonArray.length();
-                        for (int i = 0; i < length; i++) {
-                            JSONObject jsonObject = jsonArray.getJSONObject(i);
-                            long place_id = jsonObject.optLong("place_id");
-                            String license = jsonObject.optString("license");
-                            String osm_type = jsonObject.optString("osm_type");
-                            long osm_id = jsonObject.optLong("osm_id");
-                            JSONArray boundingArray = jsonObject.getJSONArray("boundingbox");
-                            BoundingBox boundingBox = new BoundingBox();
-                            for (int j = 0; j < boundingArray.length(); j++) {
-                                boundingBox.setBound(j, boundingArray.optDouble(j));
-                            }
-                            double lat = jsonObject.optDouble("lat");
-                            double lon = jsonObject.optDouble("lon");
-                            String display_name = jsonObject.optString("display_name");
-                            String entityClass = jsonObject.optString("class");
-                            String type = jsonObject.optString("type");
-                            float importance = (float) jsonObject.optDouble("importance");
-                            //extract tags
-                            Map<String, String> tags = new HashMap<>();
-                            if (jsonObject.has("address")) {
-                                parseAndAddAdressTags(tags, jsonObject.getString("address"));
-                            }
-                            parseExtraTags(tags, jsonObject.getString("extratags"));
+                    if (status == HttpURLConnection.HTTP_OK) {
+                        try {
+                            JSONArray jsonArray = new JSONArray(jsonResult.toString());
+                            int length = jsonArray.length();
+                            for (int i = 0; i < length; i++) {
+                                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                                long place_id = jsonObject.optLong("place_id");
+                                String license = jsonObject.optString("license");
+                                String osm_type = jsonObject.optString("osm_type");
+                                long osm_id = jsonObject.optLong("osm_id");
+                                JSONArray boundingArray = jsonObject.getJSONArray("boundingbox");
+                                BoundingBox boundingBox = new BoundingBox();
+                                for (int j = 0; j < boundingArray.length(); j++) {
+                                    boundingBox.setBound(j, boundingArray.optDouble(j));
+                                }
+                                double lat = jsonObject.optDouble("lat");
+                                double lon = jsonObject.optDouble("lon");
+                                String display_name = jsonObject.optString("display_name");
+                                String entityClass = jsonObject.optString("class");
+                                String type = jsonObject.optString("type");
+                                float importance = (float) jsonObject.optDouble("importance");
+                                //extract tags
+                                Map<String, String> tags = new HashMap<>();
+                                if (jsonObject.has("address")) {
+                                    parseAndAddAdressTags(tags, jsonObject.getString("address"));
+                                }
+                                parseExtraTags(tags, jsonObject.getString("extratags"));
 
-                            queriedPlaces.add(new Place(
-                                    place_id,
-                                    osm_id,
-                                    lat,
-                                    lon,
-                                    importance,
-                                    license,
-                                    osm_type,
-                                    display_name,
-                                    entityClass,
-                                    type,
-                                    boundingBox,
-                                    tags)
-                            );
+                                queriedPlaces.add(new Place(
+                                        place_id,
+                                        osm_id,
+                                        lat,
+                                        lon,
+                                        importance,
+                                        license,
+                                        osm_type,
+                                        display_name,
+                                        entityClass,
+                                        type,
+                                        boundingBox,
+                                        tags)
+                                );
+                            }
+
+                        } catch (JSONException e) {
+                            Log.e(TAG, "Error reading server response", e);
+                            error = context.getString(R.string.server_response_error);
                         }
-
-                    } catch (JSONException e) {
-                        Log.e(TAG, "Error reading server response", e);
-                        Toast.makeText(context, R.string.server_response_error, Toast.LENGTH_SHORT).show();
+                    } else {
+                        error = context.getString(R.string.server_error)+": "+jsonResult.toString();
                     }
                 } catch (IOException e) {
                     Log.e(TAG, "Error communicating with server", e);
-                    Toast.makeText(context, R.string.server_error, Toast.LENGTH_SHORT).show();
+                    error = context.getString(R.string.server_error);
                 }
             }
             return null;
@@ -170,7 +174,7 @@ public class Request {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            action.action(queriedPlaces);
+            action.action(queriedPlaces, error);
         }
     }
 }

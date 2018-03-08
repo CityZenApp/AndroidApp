@@ -11,12 +11,14 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.cityzen.cityzen.Activities.MainActivity;
 import com.cityzen.cityzen.Adapters.PlaceListAdapter;
@@ -50,6 +52,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class SearchFragment extends Fragment {
+    private static final String TAG = SearchFragment.class.getName();
 
     private RecyclerView recyclerView;
     private PlaceListAdapter adapter;
@@ -83,6 +86,11 @@ public class SearchFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         setupView();
+        try {
+            setupRecyclerView();
+        } catch (Exception e) {
+            Log.w(TAG,"error setting up search result list view");
+        }
         setupToolbarAndFilter();
         clearSearchView();
     }
@@ -172,6 +180,7 @@ public class SearchFragment extends Fragment {
                 searchView.setIconified(false);//open searchView
             }
         });
+
         filterCheckBox = getActivity().findViewById(R.id.filterCheckBox);
         filterCheckBox.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -202,7 +211,9 @@ public class SearchFragment extends Fragment {
     }
 
     private void filterElements() {
-        if (adapter == null) return;
+        if (adapter == null) {
+            return;
+        }
         if (filterCheckBox.isChecked()) {
             //filter Elements by opening hours
             List<Place> filteredElements = new ArrayList<>();
@@ -228,14 +239,6 @@ public class SearchFragment extends Fragment {
             adapterElements.clear();
             adapterElements = new ArrayList<>(searchedPlaces);
             adapter.resetAdapter(adapterElements);
-        }
-
-        if (adapter.getItemCount() < 1) {
-            emptyView.setVisibility(View.VISIBLE);
-            recyclerView.setVisibility(View.GONE);
-        } else {
-            emptyView.setVisibility(View.GONE);
-            recyclerView.setVisibility(View.VISIBLE);
         }
     }
 
@@ -297,16 +300,30 @@ public class SearchFragment extends Fragment {
         final DeviceLocationData deviceLocationData = ((MainActivity) getActivity()).getLastKnownLocation();
         Action action = new Action() {
             @Override
-            public void action(ArrayList<Place> places) {
-                searchedPlaces = sortByDistance(deviceLocationData, places);
-
+            public void action(ArrayList<Place> places, String error) {
                 adapterElements.clear();
-                adapterElements = new ArrayList<>(searchedPlaces);
-                try {
-                    setupRecyclerView();
-                } catch (Exception ignored) {
+
+                if (error == null) {
+                    searchedPlaces = sortByDistance(deviceLocationData, places);
+                    adapterElements = new ArrayList<>(searchedPlaces);
+                    try {
+                        setupRecyclerView();
+                    } catch (Exception ignored) {
+                    }
+                    filterElements();//filter elements if needed
                 }
-                filterElements();//filter elements if needed
+
+                if (adapter == null || adapter.getItemCount() < 1) {
+                    emptyView.setVisibility(View.VISIBLE);
+                    recyclerView.setVisibility(View.GONE);
+                } else {
+                    emptyView.setVisibility(View.GONE);
+                    recyclerView.setVisibility(View.VISIBLE);
+                }
+
+                if (error != null) {
+                    Toast.makeText(getContext(), error, Toast.LENGTH_SHORT).show();
+                }
             }
         };
         ArrayList<Pair> pairs = new ArrayList<>();
