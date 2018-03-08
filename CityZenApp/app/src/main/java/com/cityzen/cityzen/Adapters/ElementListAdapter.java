@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Utils.Development.AppLog;
+import com.cityzen.cityzen.Utils.MapUtils.OpeningHours.OpeningHoursUtils;
 import com.cityzen.cityzen.Utils.MapUtils.OsmTags;
 
 import java.util.List;
@@ -55,8 +56,15 @@ public class ElementListAdapter extends RecyclerView.Adapter<ElementListAdapter.
                     holder.title.setText(tag.getValue());
                     hasName = true;
                 }
-                if (tag.getKey().equals(OsmTags.OPENING_HOURS)) {
-                    holder.openingHours.setText(tag.getValue());
+
+                if (tags.containsKey(OsmTags.OPENING_HOURS)) {
+                    if (OpeningHoursUtils.isOpenNow(tags.get(OsmTags.OPENING_HOURS))) {
+                        holder.openingHours.setText(R.string.open);
+                        holder.openingHours.setTextColor(context.getResources().getColor(R.color.open));
+                    } else {
+                        holder.openingHours.setText(R.string.closed);
+                        holder.openingHours.setTextColor(context.getResources().getColor(R.color.closed));
+                    }
                     hasOpeningHours = true;
                 }
 
@@ -77,6 +85,7 @@ public class ElementListAdapter extends RecyclerView.Adapter<ElementListAdapter.
 
         if (!hasName && tags != null)
             updatePoiNameIfNeeded(categoryId, tags, holder);
+
         if (hasOpeningHours)
             holder.openingHours.setVisibility(View.VISIBLE);
         else
