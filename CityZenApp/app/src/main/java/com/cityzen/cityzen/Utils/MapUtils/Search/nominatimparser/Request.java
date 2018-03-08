@@ -96,8 +96,8 @@ public class Request {
                             long osm_id = jsonObject.optLong("osm_id");
                             JSONArray boundingArray = jsonObject.getJSONArray("boundingbox");
                             BoundingBox boundingBox = new BoundingBox();
-                            for (int j = 0; i < boundingArray.length(); i++) {
-                                boundingBox.setBound(i, boundingArray.optDouble(i));
+                            for (int j = 0; j < boundingArray.length(); j++) {
+                                boundingBox.setBound(j, boundingArray.optDouble(j));
                             }
                             double lat = jsonObject.optDouble("lat");
                             double lon = jsonObject.optDouble("lon");
