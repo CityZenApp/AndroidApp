@@ -91,7 +91,7 @@ The app is open source licensed because we want the project to be empowered by t
     <string name="get_involved">Get involved</string>
     <string name="get_involved_link" translatable="false">www.github.com/CityZenApp</string>
     <string name="credits">Credits</string>
-    <string name="credits_link" translatable="false">www.cityzenapp.co/credits</string>
+    <string name="credits_link" translatable="false">www.cityzenapp.co/credits/</string>
     <string name="open_source_culture">CityZen app was initiated in Albania with a lot of ♥\n for free and open source culture.</string>
 
 
