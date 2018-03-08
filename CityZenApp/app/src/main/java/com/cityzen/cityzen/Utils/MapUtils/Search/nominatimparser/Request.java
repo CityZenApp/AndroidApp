@@ -13,6 +13,7 @@ import org.json.JSONObject;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.ref.WeakReference;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
@@ -44,7 +45,7 @@ public class Request {
         private String error = null;
         private final String QUERY = "http://nominatim.openstreetmap.org/search?";
         private Action action;
-        private Context context;
+        private WeakReference<Context> context;
         private ArrayList<Pair>[] parameters;
 
         /**
@@ -53,7 +54,7 @@ public class Request {
          * @see Action
          */
         public GetPlaces(Context context, Action action, ArrayList<Pair>... parameters) {
-            this.context = context;
+            this.context = new WeakReference<>(context);
             this.action = action;
             this.parameters = parameters;
         }
@@ -131,14 +132,26 @@ public class Request {
 
                         } catch (JSONException e) {
                             Log.e(TAG, "Error reading server response", e);
-                            error = context.getString(R.string.server_response_error);
+                            if (context.get() != null) {
+                                error = context.get().getString(R.string.server_response_error);
+                            } else {
+                                error = "Error reading server response";
+                            }
                         }
                     } else {
-                        error = context.getString(R.string.server_error)+": "+jsonResult.toString();
+                        if (context.get() != null) {
+                            error = context.get().getString(R.string.server_error) + ": " + jsonResult.toString();
+                        } else {
+                            error = "Error communicating with server: " + jsonResult.toString();
+                        }
                     }
                 } catch (IOException e) {
                     Log.e(TAG, "Error communicating with server", e);
-                    error = context.getString(R.string.server_error);
+                    if (context.get() != null) {
+                        error = context.get().getString(R.string.server_error);
+                    } else {
+                        error = "Error communicating with server";
+                    }
                 }
             }
             return null;
@@ -175,6 +188,7 @@ public class Request {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
             action.action(queriedPlaces, error);
+            context = null;
         }
     }
 }
