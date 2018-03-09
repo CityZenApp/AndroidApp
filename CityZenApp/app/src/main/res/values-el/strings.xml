@@ -139,4 +139,14 @@
     <string name="Buildings">Κτήρια</string>
     <string name="Education">Εκπαίδευση</string>
     <string name="Location">Τοποθεσία</string>
+    <string name="no_info_available">Δεν υπάρχουν διαθέσιμες πληροφορίες</string>
+    <string name="open">Ανοιχτό</string>
+    <string name="closed">Κλειστό</string>
+
+    <string name="server_error">Σφάλμα κατά την επικοινωνία με τον διακομιστή</string>
+    <string name="server_response_error">Σφάλμα κατά την ανάγνωση της απόκρισης διακομιστή</string>
+
+    <string name="poi_details_close">Κλείσιμο ΣΕ</string>
+    <string name="poi_details_mark_as_favorite">Σήμανση ΣΕ ως Αγαπημένο</string>
+    <string name="poi_details_edit">Επεξεργασία ΣΕ</string>
     </resources>
