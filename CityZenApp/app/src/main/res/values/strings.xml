@@ -106,7 +106,7 @@ The app is open source licensed because we want the project to be empowered by t
     <string name="Hotels_Hostels">Hotels</string>
     <string name="Transportation">Transportation</string>
     <string name="GasStations">Gas stations</string>
-    <string name="Pharmacy_Healthcare">Pharmacies</string>
+    <string name="Pharmacy_Healthcare">Health services</string>
     <string name="Banks_ATMs_Exchange">Financial services</string>
     <string name="MobilePhoneStore">Mobile stores</string>
     <string name="Markets_Kiosks">Markets</string>
