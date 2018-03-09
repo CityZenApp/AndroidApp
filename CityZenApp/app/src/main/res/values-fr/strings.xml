@@ -138,4 +138,16 @@
     <string name="Buildings">Bâtiments</string>
     <string name="Education">Education</string>
     <string name="Location">Position</string>
-    </resources>
+    <string name="no_info_available">Aucune information disponible</string>
+    <string name="open">Ouvert</string>
+    <string name="closed">Fermé</string>
+
+    <string name="server_error">Erreur de communication avec le serveur</string>
+    <string name="server_response_error">Erreur d\'interprétation de la réponse du serveur</string>
+
+    <string name="poi_details_close">Fermer la fiche d\'information</string>
+    <string name="poi_details_mark_as_favorite">Marquer cet endroit comme favori</string>
+    <string name="poi_details_edit">Modifier les informations</string>
+    <string name="poi_details_share">Partager cet endroit</string>
+
+</resources>
