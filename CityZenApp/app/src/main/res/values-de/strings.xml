@@ -139,4 +139,16 @@
     <string name="Buildings">Gebäude</string>
     <string name="Education">Bildungseinrichtungen</string>
     <string name="Location">Ort</string>
-    </resources>
+    <string name="no_info_available">Keine Information verfügbar</string>
+    <string name="open">Offen</string>
+    <string name="closed">Geschlossen</string>
+
+    <string name="server_error">Fehler bei der Serverkommunikation</string>
+    <string name="server_response_error">Fehler bei der Verarbeitung der Serverantwort</string>
+
+    <string name="poi_details_close">POI schliessen</string>
+    <string name="poi_details_mark_as_favorite">POI als Favorit markieren</string>
+    <string name="poi_details_edit">POI ändern</string>
+    <string name="poi_details_share">POI als Geo-Link teilen</string>
+
+</resources>
