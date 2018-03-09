@@ -7,20 +7,21 @@
     android:background="@color/colorWhite"
     android:minHeight="72dp"
     android:orientation="horizontal"
+    android:paddingBottom="12dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:paddingBottom="12dp">
+    android:paddingTop="16dp">
 
     <ImageView
         android:id="@+id/placeImage"
-        android:layout_marginTop="2dp"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        app:srcCompat="@drawable/ic_map_marker"
-        android:tint="@color/colorWhite"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/circular_background"
+        android:contentDescription="@null"
         android:padding="6dp"
-        android:background="@drawable/circular_background"/>
+        android:tint="@color/colorWhite"
+        app:srcCompat="@drawable/ic_map_marker" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,24 +44,24 @@
             android:id="@+id/placeAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:maxLines="2"
             android:textAppearance="@style/TextAppearance.AppCompat"
             android:textColor="#7D7D7D"
             android:textSize="14sp"
             android:visibility="visible"
-            android:layout_marginTop="4dp"
             tools:text="Wikimedian Street 675\n60318 Frankfurt am Main" />
 
         <TextView
             android:id="@+id/placeOpeningHours"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
             android:maxLines="2"
             android:textAppearance="@style/TextAppearance.AppCompat"
             android:textColor="#7D7D7D"
             android:textSize="14sp"
             android:visibility="visible"
-            android:layout_marginTop="4dp"
             tools:text="Mo-Fr 11:30-15:00, 18:00-21:30;Sa 15:00-22:00;Su 15:00-21:00" />
     </LinearLayout>
 
