@@ -139,4 +139,16 @@
     <string name="Buildings">建築物</string>
     <string name="Education">教育</string>
     <string name="Location">位置</string>
-    </resources>
+    <string name="no_info_available">無可用的資訊</string>
+    <string name="open">開啟</string>
+    <string name="closed">關閉</string>
+
+    <string name="server_error">與伺服器通信時出錯</string>
+    <string name="server_response_error">讀取伺服器回應時錯誤</string>
+
+    <string name="poi_details_close">關閉 POI</string>
+    <string name="poi_details_mark_as_favorite">標記為我的最愛</string>
+    <string name="poi_details_edit">編輯 POI</string>
+    <string name="poi_details_share">將 POI 分享為地理連結</string>
+
+</resources>
