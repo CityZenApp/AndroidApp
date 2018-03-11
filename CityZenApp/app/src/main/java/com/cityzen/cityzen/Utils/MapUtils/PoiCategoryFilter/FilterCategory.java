@@ -99,7 +99,7 @@ public class FilterCategory {
         tags.add(new OsmTag(OsmTags.OSM_KEY_AMENITY, "hospital"));
         tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "herbalist"));
         tags.add(new OsmTag(OsmTags.OSM_KEY_HEALTHCARE, "alternative"));
-        filterCategories.put(CategoryDisplayConfig.PHARMACIES.id, tags);
+        filterCategories.put(CategoryDisplayConfig.HEALTH_SERVICES.id, tags);
 
         tags = new ArrayList<>();
         tags.add(new OsmTag(OsmTags.OSM_KEY_AMENITY, "post_office"));

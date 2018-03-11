@@ -5,6 +5,7 @@ import android.graphics.PorterDuff;
 import android.support.annotation.ColorRes;
 import android.support.annotation.DrawableRes;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.widget.ImageView;
 
 import com.cityzen.cityzen.R;
@@ -45,12 +46,52 @@ public abstract class CategoryColoringUtil {
         iconMapping.put("pedestrian", CategoryDisplayConfig.TOURISM);
         iconMapping.put("mobile_shop", CategoryDisplayConfig.MOBILE_STORES);
 
+        iconMapping.put("library", CategoryDisplayConfig.LIBRARY);
+        iconMapping.put("books", CategoryDisplayConfig.LIBRARY);
+        iconMapping.put("photo", CategoryDisplayConfig.PHOTO);
+        iconMapping.put("jewelry", CategoryDisplayConfig.JEWELERY);
+        iconMapping.put("nightclub", CategoryDisplayConfig.NIGHTCLUB);
+        iconMapping.put("convenience", CategoryDisplayConfig.CONVENIENCE);
+        iconMapping.put("supermarket", CategoryDisplayConfig.SUPERMARKET);
+        iconMapping.put("cinema", CategoryDisplayConfig.CINEMA);
+        iconMapping.put("pet", CategoryDisplayConfig.PET);
+        iconMapping.put("department_store", CategoryDisplayConfig.DEPARTMENT_STORE);
+        iconMapping.put("hifi", CategoryDisplayConfig.HIFI);
+        iconMapping.put("florist", CategoryDisplayConfig.FLORIST);
+        iconMapping.put("chemist", CategoryDisplayConfig.CHEMIST);
+        iconMapping.put("clothes", CategoryDisplayConfig.CLOTHING);
+        iconMapping.put("newsagent", CategoryDisplayConfig.NEWSAGENT);
+        iconMapping.put("stationery", CategoryDisplayConfig.STATIONERY);
+        iconMapping.put("dry_cleaning", CategoryDisplayConfig.LAUNDRY);
+        iconMapping.put("hairdresser", CategoryDisplayConfig.HAIRDRESSER);
+        iconMapping.put("optician", CategoryDisplayConfig.OPTICIAN);
+        iconMapping.put("shoes", CategoryDisplayConfig.SHOES);
+        iconMapping.put("wine", CategoryDisplayConfig.WINE);
+        iconMapping.put("pub", CategoryDisplayConfig.PUB);
+        iconMapping.put("cosmetics", CategoryDisplayConfig.COSMETICS);
+        iconMapping.put("beauty", CategoryDisplayConfig.COSMETICS);
+        iconMapping.put("alcohol", CategoryDisplayConfig.ALCOHOL);
+        iconMapping.put("beverages", CategoryDisplayConfig.BEVERAGES);
+        iconMapping.put("pharmacy", CategoryDisplayConfig.PHARMACIES);
+        iconMapping.put("butcher", CategoryDisplayConfig.BUTCHER);
+        iconMapping.put("parfumery", CategoryDisplayConfig.PARFUMERY);
+        iconMapping.put("theatre", CategoryDisplayConfig.THEATRE);
+        iconMapping.put("art", CategoryDisplayConfig.ART);
+        iconMapping.put("basin", CategoryDisplayConfig.FOUNTAIN);
+        iconMapping.put("museum", CategoryDisplayConfig.MUSEUM);
+
+        //customIconMapping.put("museum", CategoryDisplayConfig.MOBILE_STORES);
+        //customIconMapping.put("theater", R.drawable.ic_local_);
+
         // special definition for cuisine
         customIconMapping.put("pizza", R.drawable.ic_cuisine_pizza);
         customIconMapping.put("burger", R.drawable.ic_cuisine_hamburger);
+        customIconMapping.put("asian", R.drawable.ic_cuisine_asian);
+        customIconMapping.put("ice_cream", R.drawable.ic_local_ice_cream);
     }
 
     public static void setupPlaceIcon(Context context, String type, ImageView categoryImageView) {
+        Log.e("TYPE", type);
         if (iconMapping.containsKey(type)) {
             setupItemIcon(context, iconMapping.get(type), categoryImageView);
         } else {
@@ -59,6 +100,7 @@ public abstract class CategoryColoringUtil {
     }
 
     public static void setupPlaceIcon(Context context, String type, String cuisine, ImageView categoryImageView) {
+        Log.e("TYPE", type + " - " + cuisine);
         if (customIconMapping.containsKey(cuisine) && iconMapping.containsKey(type)) {
             setupItemIcon(context, customIconMapping.get(cuisine), iconMapping.get(type).color, categoryImageView);
         } else {
@@ -73,13 +115,5 @@ public abstract class CategoryColoringUtil {
     private static void setupItemIcon(Context context, @DrawableRes int icon, @ColorRes int color, ImageView categoryImageView) {
         categoryImageView.setImageResource(icon);
         categoryImageView.getBackground().setColorFilter(ContextCompat.getColor(context, color), PorterDuff.Mode.SRC_IN);
-    }
-
-    private class CustomCategoryConfig {
-        public @DrawableRes int icon;
-
-        private CustomCategoryConfig(@ColorRes int icon) {
-            this.icon = icon;
-        }
     }
 }
