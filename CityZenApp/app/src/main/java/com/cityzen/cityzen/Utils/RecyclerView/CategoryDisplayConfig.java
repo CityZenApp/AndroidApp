@@ -66,6 +66,7 @@ public enum CategoryDisplayConfig {
     PHARMACIES(-1028, R.string.Location, R.drawable.ic_local_pharmacy_white, R.color.category_pharmacy),
     MUSEUM(-1029, R.string.Location, R.drawable.ic_local_museum, R.color.category_tourism),
     MONUMENT(-1030, R.string.Location, R.drawable.ic_local_monument, R.color.category_tourism),
+    EMBASSY(-1030, R.string.Location, R.drawable.ic_local_embassy, R.color.category_building),
     NIGHTCLUB(-1031, R.string.Location, R.drawable.ic_local_music, R.color.category_bar);
 
     private static final Map<Integer, CategoryDisplayConfig> reverseMap = new HashMap<>();

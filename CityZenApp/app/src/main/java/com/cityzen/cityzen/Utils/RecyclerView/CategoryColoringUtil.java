@@ -80,20 +80,20 @@ public abstract class CategoryColoringUtil {
         iconMapping.put("basin", CategoryDisplayConfig.FOUNTAIN);
         iconMapping.put("museum", CategoryDisplayConfig.MUSEUM);
         iconMapping.put("monument", CategoryDisplayConfig.MONUMENT);
+        iconMapping.put("embassy", CategoryDisplayConfig.EMBASSY);
 
-
-        //customIconMapping.put("museum", CategoryDisplayConfig.MOBILE_STORES);
-        //customIconMapping.put("theater", R.drawable.ic_local_);
 
         // special definition for cuisine
         customIconMapping.put("pizza", R.drawable.ic_cuisine_pizza);
         customIconMapping.put("burger", R.drawable.ic_cuisine_hamburger);
         customIconMapping.put("asian", R.drawable.ic_cuisine_asian);
         customIconMapping.put("ice_cream", R.drawable.ic_local_ice_cream);
+        customIconMapping.put("seafood", R.drawable.ic_local_seafood);
+        customIconMapping.put("fish", R.drawable.ic_local_seafood);
     }
 
     public static void setupPlaceIcon(Context context, String type, ImageView categoryImageView) {
-        //Log.e("TYPE", type);
+        Log.e("TYPE", type);
         if (iconMapping.containsKey(type)) {
             setupItemIcon(context, iconMapping.get(type), categoryImageView);
         } else {
