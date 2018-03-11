@@ -91,7 +91,7 @@ public abstract class CategoryColoringUtil {
     }
 
     public static void setupPlaceIcon(Context context, String type, ImageView categoryImageView) {
-        Log.e("TYPE", type);
+        //Log.e("TYPE", type);
         if (iconMapping.containsKey(type)) {
             setupItemIcon(context, iconMapping.get(type), categoryImageView);
         } else {
@@ -100,7 +100,7 @@ public abstract class CategoryColoringUtil {
     }
 
     public static void setupPlaceIcon(Context context, String type, String cuisine, ImageView categoryImageView) {
-        Log.e("TYPE", type + " - " + cuisine);
+        //Log.e("TYPE", type + " - " + cuisine);
         if (customIconMapping.containsKey(cuisine) && iconMapping.containsKey(type)) {
             setupItemIcon(context, customIconMapping.get(cuisine), iconMapping.get(type).color, categoryImageView);
         } else {
