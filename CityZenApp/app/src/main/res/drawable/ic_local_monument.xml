@@ -1,0 +1,8 @@
+<!-- drawable/palette.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path android:fillColor="#fff" android:pathData="m 12.050848,3.1694921 c 0,0 -2.5084751,1.8771367 -2.5084751,2.5084746 V 15.711865 H 14.559322 V 5.6779667 c 0,-0.6012751 -2.508474,-2.5084746 -2.508474,-2.5084746 z M 8.2881357,16.966102 c -1.2542373,0 -1.2542373,1.254237 -1.2542373,2.508475 H 5.7796611 L 4.5254238,20.728814 H 19.57627 l -1.254237,-1.254237 h -1.254237 c 0,-1.254238 0,-2.508475 -1.254238,-2.508475 z" />
+</vector>

@@ -79,6 +79,8 @@ public abstract class CategoryColoringUtil {
         iconMapping.put("art", CategoryDisplayConfig.ART);
         iconMapping.put("basin", CategoryDisplayConfig.FOUNTAIN);
         iconMapping.put("museum", CategoryDisplayConfig.MUSEUM);
+        iconMapping.put("monument", CategoryDisplayConfig.MONUMENT);
+
 
         //customIconMapping.put("museum", CategoryDisplayConfig.MOBILE_STORES);
         //customIconMapping.put("theater", R.drawable.ic_local_);
