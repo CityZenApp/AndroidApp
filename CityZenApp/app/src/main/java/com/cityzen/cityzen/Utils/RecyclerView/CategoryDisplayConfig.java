@@ -24,7 +24,7 @@ public enum CategoryDisplayConfig {
     FAST_FOOD(5, R.string.FastFood, R.drawable.ic_local_fast_food, R.color.category_fast_food),
     FINANCIAL_SERVICES(6, R.string.Banks_ATMs_Exchange, R.drawable.ic_local_atm_white, R.color.category_atm),
     GAS_STATIONS(7, R.string.GasStations, R.drawable.ic_local_gas_station_white, R.color.category_gas_station),
-    HOTELS(8, R.string.Hotels_Hostels, R.drawable.ic_home_white, R.color.category_accomodation),
+    HOTELS(8, R.string.Hotels_Hostels, R.drawable.ic_local_hotel, R.color.category_accomodation),
     MARKETS(9, R.string.Markets_Kiosks, R.drawable.ic_store_white_24dp, R.color.category_market),
     MOBILE_STORES(10, R.string.MobilePhoneStore, R.drawable.ic_phonelink_setup_white, R.color.category_mobile_phone_store),
     PARKING(11, R.string.Parking, R.drawable.ic_local_parking, R.color.category_parking),
