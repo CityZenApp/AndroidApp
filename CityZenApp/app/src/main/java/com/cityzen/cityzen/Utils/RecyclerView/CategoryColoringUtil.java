@@ -82,7 +82,6 @@ public abstract class CategoryColoringUtil {
         iconMapping.put("monument", CategoryDisplayConfig.MONUMENT);
         iconMapping.put("embassy", CategoryDisplayConfig.EMBASSY);
 
-
         // special definition for cuisine
         customIconMapping.put("pizza", R.drawable.ic_cuisine_pizza);
         customIconMapping.put("burger", R.drawable.ic_cuisine_hamburger);
