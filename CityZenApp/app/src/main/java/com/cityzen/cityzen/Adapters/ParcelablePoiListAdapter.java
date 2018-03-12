@@ -80,6 +80,7 @@ public class ParcelablePoiListAdapter extends RecyclerView.Adapter<ParcelablePoi
                     holder.openingHours.setVisibility(View.GONE);
                 } else {
                     holder.openingHours.setText(R.string.no_info_available);
+                    holder.openingHours.setTextColor(context.getResources().getColor(R.color.grey600));
                 }
             }
         }

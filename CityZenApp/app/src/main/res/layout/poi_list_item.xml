@@ -20,7 +20,7 @@
             android:ellipsize="end"
             android:maxLines="2"
             android:textAppearance="@style/TextAppearance.AppCompat"
-            android:textColor="#3C3C3C"
+            android:textColor="@color/grey900"
             android:textSize="16sp"
             android:textStyle="bold"
             tools:text="Pizzeria Alfonso" />
@@ -29,10 +29,10 @@
             android:id="@+id/poiOpeningHours"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:maxLines="2"
             android:textAppearance="@style/TextAppearance.AppCompat"
-            android:textColor="#7D7D7D"
+            android:textColor="@color/grey600"
             android:textSize="16sp"
             android:visibility="gone"
             tools:text="Pizzeria Alfonso" />

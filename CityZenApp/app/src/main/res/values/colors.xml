@@ -31,4 +31,8 @@
     <color name="category_transportation">#B197FC</color>
     <color name="category_building">#20C997</color>
     <color name="category_undefined">#495057</color>
+
+    <!-- further material design colors -->
+    <color name="grey600">#757575</color>
+    <color name="grey900">#212121</color>
 </resources>

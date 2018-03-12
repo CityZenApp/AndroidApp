@@ -1,0 +1,8 @@
+<!-- drawable/beverages.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path android:fillColor="#fff" android:pathData="m 15.08339,2.8005571 c -0.13,0 -0.26,0.09 -0.38,0.16 l -3.5,2.09 V 8.8005575 H 7.2033898 v 2.0000005 h 1 l 1,9.999999 H 15.20339 l 1,-9.999999 h 1 V 8.8005575 h -4 v -2.66 l 2.5,-1.5000004 c 0.5,-0.28 0.63,-0.84 0.34,-1.34 -0.21,-0.36 -0.58,-0.55 -0.96,-0.5 z" />
+</vector>
