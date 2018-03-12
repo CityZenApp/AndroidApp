@@ -79,6 +79,7 @@ public class FilterCategory {
         tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "general"));
         tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "variety_store"));
         tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "tabacco"));
+        tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "butcher"));
         filterCategories.put(CategoryDisplayConfig.MARKETS.id, tags);
 
         tags = new ArrayList<>();
@@ -99,7 +100,7 @@ public class FilterCategory {
         tags.add(new OsmTag(OsmTags.OSM_KEY_AMENITY, "hospital"));
         tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "herbalist"));
         tags.add(new OsmTag(OsmTags.OSM_KEY_HEALTHCARE, "alternative"));
-        filterCategories.put(CategoryDisplayConfig.PHARMACIES.id, tags);
+        filterCategories.put(CategoryDisplayConfig.HEALTH_SERVICES.id, tags);
 
         tags = new ArrayList<>();
         tags.add(new OsmTag(OsmTags.OSM_KEY_AMENITY, "post_office"));
@@ -113,6 +114,14 @@ public class FilterCategory {
         tags = new ArrayList<>();
         tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "department_store"));
         tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "mall"));
+        tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "clothes"));
+        tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "shoes"));
+        tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "jewelry"));
+        tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "chemist"));
+        tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "beauty"));
+        tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "florist"));
+        tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "photo"));
+        tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "cosmetics"));
         filterCategories.put(CategoryDisplayConfig.SHOPPING.id, tags);
 
         tags = new ArrayList<>();
