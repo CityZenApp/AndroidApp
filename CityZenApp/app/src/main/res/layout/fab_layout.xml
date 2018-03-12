@@ -17,7 +17,7 @@
         android:textColor="@android:color/white"
         fab:menu_animationDelayPerItem="25"
         fab:fab_colorNormal="@color/colorPrimary"
-        fab:menu_backgroundColor="#997D7D7D"
+        fab:menu_backgroundColor="@color/grey600"
         fab:menu_colorNormal="@color/colorWhite"
         fab:menu_colorPressed="@color/colorPrimary"
         fab:menu_colorRipple="@color/colorPrimaryDark"

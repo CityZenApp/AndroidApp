@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:maxLines="4"
             android:textAppearance="@style/TextAppearance.AppCompat"
-            android:textColor="#3C3C3C"
+            android:textColor="@color/grey900"
             android:textSize="16sp"
             tools:text="Bully's Burger" />
 
@@ -47,7 +47,7 @@
             android:layout_marginTop="4dp"
             android:maxLines="2"
             android:textAppearance="@style/TextAppearance.AppCompat"
-            android:textColor="#7D7D7D"
+            android:textColor="@color/grey600"
             android:textSize="14sp"
             android:visibility="visible"
             tools:text="Wikimedian Street 675\n60318 Frankfurt am Main" />
@@ -59,7 +59,7 @@
             android:layout_marginTop="4dp"
             android:maxLines="2"
             android:textAppearance="@style/TextAppearance.AppCompat"
-            android:textColor="#7D7D7D"
+            android:textColor="@color/grey600"
             android:textSize="14sp"
             android:visibility="visible"
             tools:text="Mo-Fr 11:30-15:00, 18:00-21:30;Sa 15:00-22:00;Su 15:00-21:00" />

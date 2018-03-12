@@ -82,6 +82,7 @@ public class PlaceListAdapter extends RecyclerView.Adapter<PlaceListAdapter.View
                     holder.openingHours.setVisibility(View.GONE);
                 } else {
                     holder.openingHours.setText(R.string.no_info_available);
+                    holder.openingHours.setTextColor(context.getResources().getColor(R.color.grey600));
                 }
             }
         }

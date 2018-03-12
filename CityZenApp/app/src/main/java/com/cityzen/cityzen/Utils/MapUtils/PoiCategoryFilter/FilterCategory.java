@@ -122,6 +122,7 @@ public class FilterCategory {
         tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "florist"));
         tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "photo"));
         tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "cosmetics"));
+        tags.add(new OsmTag(OsmTags.OSM_KEY_SHOP, "bicycle"));
         filterCategories.put(CategoryDisplayConfig.SHOPPING.id, tags);
 
         tags = new ArrayList<>();
