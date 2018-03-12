@@ -38,7 +38,7 @@
     <string name="license">Άδεια</string>
     <string name="get_involved_link">www.github.com/CityZenApp</string>
     <string name="credits_link">www.cityzenapp.co/credits</string>
-    <string name="Pharmacy_Healthcare">Φαρμακεία</string>
+    <string name="Pharmacy_Healthcare">Υπηρεσίες Υγείας</string>
     <string name="loading">Φόρτωση</string>
     <string name="write_storage_request">Για την παροχή υπηρεσιών χάρτη, το CityZen χρειάζεται άδειες εγγραφής</string>
     <string name="write_storage_request_toast">Για την παροχή υπηρεσιών χάρτη, το CityZen χρειάζεται άδειες εγγραφής</string>
