@@ -138,4 +138,16 @@
     <string name="search_hint">Kërkoni…</string>
 
     <string name="address_label">Adresa:</string>
-    </resources>
+    <string name="no_info_available">Nuk ka informacion</string>
+    <string name="open">Hapur</string>
+    <string name="closed">Mbyllur</string>
+
+    <string name="server_error">Gabim gjatë komunikimit me serverin</string>
+    <string name="server_response_error">Gabim gjetë marrjes së informacionit nga server-i</string>
+
+    <string name="poi_details_close">Mbyll POI</string>
+    <string name="poi_details_mark_as_favorite">Shëno pikën e interesit si të parapëlqyer</string>
+    <string name="poi_details_edit">Përditëso pikën e interesit</string>
+    <string name="poi_details_share">Ndaje pikën e interesit si gjeondërlidhje</string>
+
+</resources>
