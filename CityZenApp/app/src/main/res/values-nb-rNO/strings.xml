@@ -124,4 +124,30 @@
     <string name="mark_locations_as_favorites">Favorittmarkerte plasseringer vil vises her</string>
     <string name="favorites_icon">favorittikon</string>
 
+<string name="nav_categories">Kategorier</string>
+    <string name="nav_map">Kart</string>
+    <string name="nav_favorites">Favoritter</string>
+    <string name="nav_about">Om</string>
+    <string name="Buildings">Bygninger</string>
+    <string name="Education">Utdannelse</string>
+    <string name="Location">Plassering</string>
+    <string name="no_info_available">Ingen info tilgjengelig</string>
+    <string name="open">Åpen</string>
+    <string name="closed">Lukket</string>
+
+    <string name="search">Søk</string>
+    <string name="my_location">Min plassering</string>
+    <string name="clear_map">Tøm kart</string>
+
+    <string name="search_hint">Søk…</string>
+
+    <string name="address_label">Adresse:</string>
+    <string name="server_error">Feil under kommunikasjon med tjener</string>
+    <string name="server_response_error">Feil under lesing av tjenerrespons</string>
+
+    <string name="poi_details_close">Lukk interessepunkter</string>
+    <string name="poi_details_mark_as_favorite">Merk interessepunkt som favoritt</string>
+    <string name="poi_details_edit">Rediger interessepunkt</string>
+    <string name="poi_details_share">Del interessepunkt som geo-lenke</string>
+
 </resources>
