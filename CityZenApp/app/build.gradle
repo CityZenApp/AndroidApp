@@ -10,7 +10,7 @@ repositories {
 def versionMajor = 1
 def versionMinor = 1
 def versionPatch = 0
-def versionBuild = 99 // 0-49=Alpha / 50-98=RC / 99=stable
+def versionBuild = 50 // 0-49=Alpha / 50-98=RC / 99=stable
 
 ext {
     supportLibraryVersion = '26.1.0'
