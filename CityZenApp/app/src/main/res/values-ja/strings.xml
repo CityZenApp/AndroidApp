@@ -1,2 +1,144 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="nav_categories">カテゴリー</string>
+    <string name="nav_map">マップ</string>
+    <string name="nav_favorites">お気に入り</string>
+    <string name="nav_about">アプリについて</string>
+    <string name="oauth_communication_error">認証サーバーに接続できません</string>
+    <string name="loading">読み込んでいます</string>
+    <string name="retry">再試行</string>
+    <string name="oauth_failed_permissions">認証に失敗しました: すべての表示されているアクセス許可を付与する必要があります</string>
+    <string name="offline">オフラインです</string>
+    <string name="confirmation_authorize_now">OpenStreetMap に変更を適用するため OSM ユーザーアカウントでログインする必要があります。今すぐ認証しますか?</string>
+    <string name="later">後で</string>
+    <string name="filter">フィルター</string>
+    <string name="only_currently_opened">現在開いているだけ</string>
+    <string name="write_storage_request">CityZen は、地図サービスを提供するために書き込みアクセス許可が必要です</string>
+    <string name="write_storage_request_toast">CityZen は、地図サービスを提供するために書き込みアクセス許可が必要です</string>
+    <string name="location_request">CityZen は、地図サービスを提供するために場所が必要です</string>
+    <string name="location_request_toast">CityZen は、地図サービスを提供するために場所が必要です</string>
+    <string name="allow_permission">許可する</string>
+    <string name="deny_permission">拒否</string>
+    <string name="no_pois_near_user_location">近くの場所にサービスが見つかりません</string>
+    <string name="enable_gps_to_continue">場所が見つかりません。
+\n続行するには GPS を有効にしてください</string>
+    <string name="calculating_device_location">場所を見つけています。
+\nお待ちください。</string>
+    <string name="add_new_poi_toast">地図をクリックして、
+\n関心のあるポイントを追加します</string>
+    <string name="add">追加</string>
+    <string name="cancel">キャンセル</string>
+    <string name="wifi">Wifi</string>
+    <string name="email">メール</string>
+    <string name="website">Web サイト</string>
+    <string name="phone">電話</string>
+    <string name="name">名前</string>
+    <string name="address">住所</string>
+    <string name="opening_hours">営業時間</string>
+    <string name="monday">月</string>
+    <string name="tuesday">火</string>
+    <string name="wednesday">水</string>
+    <string name="thursday">木</string>
+    <string name="friday">金</string>
+    <string name="saturday">土</string>
+    <string name="sunday">日</string>
+    <string name="all_week_days">すべて</string>
+    <string name="enable">有効</string>
+
+    <string name="directions_to_here">車での道順</string>
+    <string name="create_poi">POI を作成</string>
+    <string name="_24_7">24/7</string>
+    <string name="opening">営業開始</string>
+    <string name="closing">営業終了</string>
+    <string name="done">完了</string>
+    <string name="no_internet_to_update_poi">インターネット接続がありません。インターネットに接続して継続してください</string>
+    <string name="session_expired_toast">セッションが期限切れです。ログインして続行してください</string>
+    <string name="internet_access">インターネット接続</string>
+    <string name="edit">編集</string>
+    <string name="street">番地</string>
+    <string name="city">市区町村</string>
+    <string name="add_closing_hours">営業終了時間を追加</string>
+    <string name="add_opening_hours">営業開始時間を追加</string>
+    <string name="not_valid_website">有効な Web サイトではありません</string>
+    <string name="not_valid_email">有効なメールアドレスではありません</string>
+    <string name="an_error_occurred">エラーが発生しました</string>
+    <string name="updated_successfully">更新に成功しました</string>
+    <string name="editing_is_not_possible">編集は不可能です</string>
+    <string name="poi_type">興味のポイントの種類</string>
+    <string name="select_amenity_type">アメニティの種類を選択</string>
+    <string name="select_amenity_type_to_continue">アメニティの種類を選択して続行します</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+    <string name="wired">有線</string>
+    <string name="wlan">Wi-Fi</string>
+    <string name="created_succesfully">正常に作成されました</string>
+    <string name="sort_by_name">名前順で並べ替え</string>
+    <string name="add_a_new_marker_on_the_map">地図上のマーカーを追加</string>
+    <string name="about_us">プロジェクトについて</string>
+    <string name="about_text">CityZen はオープンソース Android アプリで、市内を簡単に移動して探索することができます。CityZen は、ATM、ガソリンスタンド、ドラッグストア、携帯電話の店、その他近くの興味があるサービスなどの、興味のポイント/ランドマーク (POI) を見つけます。アプリは、お使いのスマートフォンの場所に基づいてこれらの POI を表示しますが、あなたのプライバシーを尊重して、ナビゲーションデータを保存しません。アプリは、コミュニティによって支持されるプロジェクトにするため、オープンソース ライセンスです。私たちは自由を尊重する OpenStreetMap のような、力を与えてくれるツールやプラットフォームとしてこのプロジェクトを開始しました。あなたが OpenStreetMap の貢献者であれば、CityZen 内で POI を編集することによって情報を簡単に追加できます。</string>
+    <string name="license">ライセンス</string>
+    <string name="privacy_policy">プライバシーポリシー</string>
+    <string name="contact">連絡先</string>
+    <string name="alert_message">CityZen は、地図サービスを提供するために場所が必要です。場所を有効にしますか?</string>
+    <string name="osm_routing_unavailable">現時点で OSM のルーティングは使用できません。後でもう一度やり直してください</string>
+    <string name="house_number">住居番号</string>
+    <string name="postcode">郵便番号</string>
+    <string name="get_involved">参加する</string>
+    <string name="credits">クレジット</string>
+    <string name="open_source_culture">CityZen アプリは ♥ たっぷりでアルバニアで開始されました
+\n自由とオープンソース文化のために。</string>
+
+
+    <string name="Cafes">カフェ</string>
+    <string name="Bars_Clubs">バー</string>
+    <string name="Restaurants">レストラン</string>
+    <string name="Bakeries">パン &amp; ケーキ</string>
+    <string name="Post_Offices">郵便局</string>
+    <string name="FastFood">ファーストフード</string>
+    <string name="Tourism">観光</string>
+    <string name="Hotels_Hostels">ホテル</string>
+    <string name="Transportation">交通</string>
+    <string name="GasStations">ガソリンスタンド</string>
+    <string name="Pharmacy_Healthcare">医療サービス</string>
+    <string name="Banks_ATMs_Exchange">金融サービス</string>
+    <string name="MobilePhoneStore">携帯ショップ</string>
+    <string name="Markets_Kiosks">マーケット</string>
+    <string name="Shopping_Malls">ショッピング</string>
+    <string name="Parking">駐車場</string>
+    <string name="RentBicycle">自転車レンタル</string>
+    <string name="RentCar_CareSharing">レンタカー</string>
+    <string name="Buildings">建物</string>
+    <string name="Education">教育</string>
+    <string name="Location">場所</string>
+    <string name="logged_in_as">ログイン中:</string>
+
+    <string name="login_to_osm">OSM にログイン</string>
+    <string name="logout">ログアウト</string>
+
+    <string name="no_results">結果はありません</string>
+    <string name="search_again">別の検索語句を試してみてください</string>
+    <string name="search_icon">検索アイコン</string>
+
+    <string name="no_favorites">お気に入りがありません</string>
+    <string name="mark_locations_as_favorites">お気に入りとしてマークされた場所がここに表示されます</string>
+    <string name="favorites_icon">お気に入りアイコン</string>
+
+    <string name="no_info_available">情報がありません</string>
+    <string name="open">営業中</string>
+    <string name="closed">営業終了</string>
+
+    <string name="search">検索</string>
+    <string name="my_location">現在地</string>
+    <string name="clear_map">地図をクリア</string>
+
+    <string name="search_hint">検索…</string>
+
+    <string name="address_label">住所:</string>
+    <string name="server_error">サーバーとの通信中にエラーが発生しました</string>
+    <string name="server_response_error">サーバーからの応答を読み取り中にエラーが発生しました</string>
+
+    <string name="poi_details_close">POI を閉じる</string>
+    <string name="poi_details_mark_as_favorite">お気に入りとして POI をマーク</string>
+    <string name="poi_details_edit">POI を編集</string>
+    <string name="poi_details_share">地理リンクとして POI を共有</string>
+
+</resources>
