@@ -149,4 +149,6 @@
     <string name="poi_details_close">Κλείσιμο ΣΕ</string>
     <string name="poi_details_mark_as_favorite">Σήμανση ΣΕ ως Αγαπημένο</string>
     <string name="poi_details_edit">Επεξεργασία ΣΕ</string>
-    </resources>
+    <string name="poi_details_share">Κοινοποιήστε το ΣΕ ως γεωσύνδεσμο</string>
+
+</resources>
