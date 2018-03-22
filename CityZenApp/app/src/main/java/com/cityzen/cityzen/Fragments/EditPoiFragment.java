@@ -340,7 +340,13 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                if (!allFieldsValid()) return true;
+                if (!allFieldsValid()) {
+                    return true;
+                }
+                if (!hasChanged()) {
+                    closeFragment();
+                    return true;
+                }
                 editPoi();
                 return true;
             }
@@ -572,6 +578,54 @@ public class EditPoiFragment extends Fragment implements TimeCallback {
         tags.put("created_by", osm.getUserAgent());
         tags.put("comment", buildChangesetComment());
         return tags;
+    }
+
+    //check for data changes
+    private boolean hasChanged() {
+        if (name != null && !name.equalsIgnoreCase(editName.getText().toString()))
+            return true;
+        if (postcode != null && !postcode.equalsIgnoreCase(editPostcode.getText().toString()))
+            return true;
+        if (housenumber != null && !housenumber.equalsIgnoreCase(editHouseNumber.getText().toString()))
+            return true;
+        if (street != null && !street.equalsIgnoreCase(editStreet.getText().toString()))
+            return true;
+        if (city != null && !city.equalsIgnoreCase(editCity.getText().toString()))
+            return true;
+        if (phone != null && !phone.equalsIgnoreCase(editPhone.getText().toString()))
+            return true;
+        if (website != null && !website.equalsIgnoreCase(editWebsite.getText().toString()))
+            return true;
+        if (email != null && !email.equalsIgnoreCase(editEmail.getText().toString()))
+            return true;
+        if (opening_hours != null && openingHoursMainContainer.getVisibility() == View.VISIBLE) {
+            String openingHours = filterOpeningHours();
+            if (openingHours != null && !openingHours.equalsIgnoreCase(getString(R.string.add_opening_hours)) && !openingHours.equalsIgnoreCase(getString(R.string.add_closing_hours)))
+                return true;
+        }
+
+        //if no tags found, they are just being added
+        if (housenumber == null && editHouseNumber.getText().length() > 0)
+            return true;
+        if (postcode == null && editPostcode.getText().length() > 0)
+            return true;
+        if (street == null && editStreet.getText().length() > 0)
+            return true;
+        if (city == null && editCity.getText().length() > 0)
+            return true;
+        if (phone == null && editPhone.getText().length() > 0)
+            return true;
+        if (website == null && editWebsite.getText().length() > 0)
+            return true;
+        if (email == null && editEmail.getText().length() > 0)
+            return true;
+        if (opening_hours == null) {
+            String openingHours = filterOpeningHours();
+            if (openingHours != null && !openingHours.equalsIgnoreCase(getString(R.string.add_opening_hours)) && !openingHours.equalsIgnoreCase(getString(R.string.add_closing_hours)))
+                return true;
+        }
+
+        return false;
     }
 
     //changeset comment builder function
