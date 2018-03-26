@@ -15,7 +15,49 @@
     <string name="email">Електронна пошта</string>
     <string name="website">Веб-сайт</string>
     <string name="phone">Телефон</string>
-    <string name="name">Ім\'я</string>
+    <string name="name">Назва</string>
     <string name="address">Адреса</string>
     <string name="logout">Вийти</string>
-</resources>
+<string name="nav_categories">Категорії</string>
+    <string name="nav_map">Карта</string>
+    <string name="nav_about">Про</string>
+    <string name="oauth_communication_error">Не вдалося підключитися до сервера авторизації</string>
+    <string name="oauth_failed_permissions">Не вдалося виконати авторизацію: всі перераховані дозволи повинні бути надані</string>
+    <string name="only_currently_opened">Тільки в даний час відкрито</string>
+    <string name="no_pois_near_user_location">жодної зі служб не знайдено біля вашого місця розташування</string>
+    <string name="enable_gps_to_continue">Не вдалося знайти вашого місця розташування. 
+\nУвімкнути GPS, щоб продовжити</string>
+    <string name="calculating_device_location">Ми з\'ясовуємо ваше місцезнаходження. 
+\nБудь ласка, зачекайте.</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="opening_hours">Години роботи</string>
+    <string name="_24_7">24/7</string>
+    <string name="done">Виконано</string>
+    <string name="edit">Редагувати</string>
+    <string name="street">Вулиця</string>
+    <string name="city">Місто</string>
+    <string name="yes">Так</string>
+    <string name="no">Ні</string>
+    <string name="sort_by_name">Сортувати за ім\'ям</string>
+    <string name="add_a_new_marker_on_the_map">Додати маркер на карті</string>
+    <string name="about_us">Про проект</string>
+    <string name="license">Ліцензія</string>
+    <string name="privacy_policy">Політіка конфіденційності</string>
+    <string name="house_number">Номер будинку</string>
+    <string name="postcode">Поштовий індекс</string>
+    <string name="Cafes">Кафе</string>
+    <string name="Bars_Clubs">Бари</string>
+    <string name="Restaurants">Ресторани</string>
+    <string name="Tourism">Туризм</string>
+    <string name="Hotels_Hostels">Готелі</string>
+    <string name="GasStations">Автозаправні станції</string>
+    <string name="Pharmacy_Healthcare">Медичні послуги</string>
+    <string name="Banks_ATMs_Exchange">Фінансові послуги</string>
+    <string name="RentBicycle">Прокат велосипедів</string>
+    <string name="RentCar_CareSharing">Прокат автомобілів</string>
+    <string name="no_results">Результатів не знайдено</string>
+    <string name="no_info_available">Немає доступної інформації</string>
+    <string name="clear_map">Очистити карту</string>
+
+    <string name="address_label">Адреса:</string>
+    </resources>
