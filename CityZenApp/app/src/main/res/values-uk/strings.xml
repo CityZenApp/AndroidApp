@@ -75,4 +75,8 @@
     <string name="an_error_occurred">Сталася помилка</string>
     <string name="wlan">Wi-Fi</string>
     <string name="credits">Автори</string>
+    <string name="my_location">Моє місцезнаходження</string>
+    <string name="search_hint">Пошук…</string>
+
+    <string name="server_error">Помилка зв\'язку з сервером</string>
     </resources>
