@@ -72,5 +72,7 @@
     <string name="enable">Активувати</string>
 
     <string name="internet_access">Доступ до Інтернету</string>
-    <string name="an_error_occurred">Сталася помилка.</string>
+    <string name="an_error_occurred">Сталася помилка</string>
+    <string name="wlan">Wi-Fi</string>
+    <string name="credits">Автори</string>
     </resources>
