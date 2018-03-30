@@ -60,4 +60,17 @@
     <string name="clear_map">Очистити карту</string>
 
     <string name="address_label">Адреса:</string>
+    <string name="write_storage_request">CityZen має мати дозволи на запис для надання послуг з карти</string>
+    <string name="monday">Пн</string>
+    <string name="tuesday">Вт</string>
+    <string name="wednesday">Ср</string>
+    <string name="thursday">Чт</string>
+    <string name="friday">Пт</string>
+    <string name="saturday">Сб</string>
+    <string name="sunday">Нед</string>
+    <string name="all_week_days">Усі</string>
+    <string name="enable">Активувати</string>
+
+    <string name="internet_access">Доступ до Інтернету</string>
+    <string name="an_error_occurred">Сталася помилка.</string>
     </resources>
