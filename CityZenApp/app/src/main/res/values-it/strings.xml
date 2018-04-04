@@ -115,4 +115,5 @@
     <string name="logout">Scollegati</string>
 <string name="Post_Offices">Ufficio postale</string>
     <string name="Parking">Parcheggio</string>
+    <string name="nav_favorites">Preferiti</string>
     </resources>
