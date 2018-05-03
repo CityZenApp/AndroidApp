@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources><string name="app_name">CityZen</string>
-    <string name="oauth_communication_error">無法連接至授權伺服器</string>
+    <string name="oauth_communication_error">無法連上授權伺服器</string>
     <string name="loading">載入中</string>
     <string name="retry">重試</string>
-    <string name="oauth_failed_permissions">授權失敗：需要授予下列的存取權</string>
-    <string name="offline">您處於離線</string>
-    <string name="confirmation_authorize_now">您需要登入您的 OSM 帳號，才能將變更套用到 OpenStreetMap。現在授權嗎？</string>
+    <string name="oauth_failed_permissions">授權失敗：請授予下列存取權</string>
+    <string name="offline">您正離線</string>
+    <string name="confirmation_authorize_now">您登入您的OSM帳號後才能更改OpenStreetMap。現在要授權嗎？</string>
     <string name="later">稍後</string>
     <string name="filter">篩選</string>
-    <string name="only_currently_opened">僅目前開啟</string>
-    <string name="write_storage_request">CityZen 需要有寫入權限，才能提供地圖服務</string>
-    <string name="write_storage_request_toast">CityZen 必須要有寫入權限，才能提供地圖服務</string>
-    <string name="location_request">CityZen 需要定位，才能提供地圖服務</string>
-    <string name="location_request_toast">CityZen 必須定位，才能提供地圖服務</string>
+    <string name="only_currently_opened">只顯示營業中的設施</string>
+    <string name="write_storage_request">CityZen需要有寫入權限才能提供地圖服務</string>
+    <string name="write_storage_request_toast">CityZen需要有寫入權限才能提供地圖服務</string>
+    <string name="location_request">CityZen需要位置權限才能提供地圖服務</string>
+    <string name="location_request_toast">CityZen需要位置權限才能提供地圖服務</string>
     <string name="allow_permission">允許</string>
     <string name="deny_permission">拒绝</string>
-    <string name="no_pois_near_user_location">在您位置的附近找不到服務</string>
-    <string name="enable_gps_to_continue">找不到您的位置。
-\n繼續啟用 GPS</string>
-    <string name="calculating_device_location">我們正在弄清楚您的位置。
+    <string name="no_pois_near_user_location">在您附近找不到任何服務</string>
+    <string name="enable_gps_to_continue">找不到您的位置。 
+\n請啟用GPS</string>
+    <string name="calculating_device_location">我們正在確定您的位置。 
 \n請稍候。</string>
     <string name="user_agent">CityZen</string>
     <string name="add_new_poi_toast">在地圖上輕點增加
@@ -124,9 +124,9 @@
     <string name="mark_locations_as_favorites">位置標記為我的最愛會顯示在這裡</string>
     <string name="favorites_icon">我的最愛圖示</string>
 
-<string name="nav_categories">類別</string>
+<string name="nav_categories">分類</string>
     <string name="nav_map">地圖</string>
-    <string name="nav_favorites">我的最愛</string>
+    <string name="nav_favorites">收藏</string>
     <string name="nav_settings">設定</string>
     <string name="search">搜尋</string>
     <string name="my_location">我的位置</string>
