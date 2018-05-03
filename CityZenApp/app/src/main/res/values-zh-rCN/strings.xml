@@ -3,22 +3,22 @@
     <string name="oauth_communication_error">未能连上授权服务器</string>
     <string name="loading">载入中</string>
     <string name="retry">重试</string>
-    <string name="oauth_failed_permissions">授权失败：请允许下列权限</string>
-    <string name="offline">你正离线</string>
-    <string name="confirmation_authorize_now">登录你的OSM帐号后才能更改OpenStreetMap。现在要授权码？</string>
+    <string name="oauth_failed_permissions">授权失败：请授予下列权限</string>
+    <string name="offline">您正离线</string>
+    <string name="confirmation_authorize_now">您登录您的OSM帐号后才能更改OpenStreetMap。现在要授权码？</string>
     <string name="later">稍后</string>
     <string name="filter">筛选</string>
     <string name="only_currently_opened">只显示营业中的设施</string>
-    <string name="write_storage_request">CityZen需要写入权限，以提供地图服务</string>
-    <string name="write_storage_request_toast">CityZen必需写入权限，以提供地图服务</string>
-    <string name="location_request">CityZen需要位置权限，以提供地图服务</string>
-    <string name="location_request_toast">CityZen必需位置权限，以提供地图服务</string>
+    <string name="write_storage_request">CityZen需要写入权限才能提供地图服务</string>
+    <string name="write_storage_request_toast">CityZen需要写入权限才能提供地图服务</string>
+    <string name="location_request">CityZen需要位置权限才能提供地图服务</string>
+    <string name="location_request_toast">CityZen需要位置权限才能提供地图服务</string>
     <string name="allow_permission">允许</string>
     <string name="deny_permission">拒绝</string>
-    <string name="no_pois_near_user_location">你的位置附近找不到任何服务</string>
-    <string name="enable_gps_to_continue">找不到你的位置。
-\n请开启GPS功能</string>
-    <string name="calculating_device_location">我们正在确定你的位置。
+    <string name="no_pois_near_user_location">在您附近找不到任何服务</string>
+    <string name="enable_gps_to_continue">找不到您的位置。 
+\n请开启GPS</string>
+    <string name="calculating_device_location">我们正在确定您的位置。 
 \n请稍候。</string>
     <string name="user_agent">CityZen</string>
     <string name="add_new_poi_toast">轻触地图上任何一处
@@ -113,4 +113,8 @@
 
     <string name="login_to_osm">登录OSM</string>
     <string name="logout">登出</string>
-</resources>
+<string name="nav_categories">分类</string>
+    <string name="nav_map">地图</string>
+    <string name="nav_favorites">收藏</string>
+    <string name="nav_about">关于</string>
+    </resources>
