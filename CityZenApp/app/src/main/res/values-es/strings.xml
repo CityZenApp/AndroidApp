@@ -4,4 +4,21 @@
     <string name="user_agent">CityZen</string>
     <string name="wifi">Wifi</string>
     <string name="name">Nombre</string>
+    <string name="nav_categories">categorías</string>
+    <string name="nav_map">Mapa</string>
+    <string name="nav_favorites">favoritos</string>
+    <string name="nav_about">Sobre</string>
+    <string name="oauth_communication_error">"No se pudo conectar con el servicio de aoturización "</string>
+    <string name="loading">Cargando</string>
+    <string name="retry">Probar de nuevo</string>
+    <string name="oauth_failed_permissions">Falló la autorización: Todos los permisos listados deben ser otorgados</string>
+    <string name="offline">Usted esta fuera de linea</string>
+    <string name="confirmation_authorize_now">Para aplicar los cambios a Open Street Map usted tiene que iniciar la sesión en su cuenta de usuario OSM. Autorizar ahora?</string>
+    <string name="filter">Filtro</string>
+    <string name="write_storage_request">City Zen necesita acceder a su almacenamiento para ofrezer el servicio de mapas</string>
+    <string name="write_storage_request_toast">City Zen necesita acceder a su almacenamiento para ofrezer el servicio de mapas</string>
+    <string name="location_request">CitiZen necesita acceder a su locación para ofrecer los servicios de mapa</string>
+    <string name="location_request_toast">CitiZen necesita acceder a su locación para ofrecer los servicios de mapa</string>
+    <string name="allow_permission">"Permitir acceso "</string>
+    <string name="deny_permission">"Negar acceso "</string>
     </resources>
