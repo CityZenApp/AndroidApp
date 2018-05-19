@@ -11,13 +11,13 @@
     <string name="only_currently_opened">只有已營業的</string>
     <string name="write_storage_request">CityZen 需要有寫入權限才能提供地圖服務</string>
     <string name="write_storage_request_toast">CityZen 必須有寫入權限才能提供地圖服務</string>
-    <string name="location_request">CityZen 需要有位置才能提供地圖服務</string>
-    <string name="location_request_toast">CityZen 必須有位置才能提供地圖服務</string>
+    <string name="location_request">CityZen 需要定位才能提供地圖服務</string>
+    <string name="location_request_toast">CityZen 必須定位才能提供地圖服務</string>
     <string name="allow_permission">允許</string>
     <string name="deny_permission">拒绝</string>
-    <string name="no_pois_near_user_location">在您附近找不到任何服務</string>
+    <string name="no_pois_near_user_location">在您位置的附近找不到任何服務</string>
     <string name="enable_gps_to_continue">找不到您的位置。 
-\n請啟用 GPS</string>
+\n請啟用 GPS 以繼續</string>
     <string name="calculating_device_location">我們正在確定您的位置。 
 \n請稍候。</string>
     <string name="user_agent">CityZen</string>
