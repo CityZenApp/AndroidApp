@@ -6,32 +6,18 @@ repositories {
     maven { url "https://jitpack.io" }
 }
 
-// semantic versioning for version code
-def versionMajor = 1
-def versionMinor = 1
-def versionPatch = 0
-def versionBuild = 50 // 0-49=Alpha / 50-98=RC / 99=stable
-
 ext {
-    supportLibraryVersion = '26.1.0'
+    supportLibraryVersion = '27.1.1'
 }
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    compileSdkVersion 27
     defaultConfig {
         applicationId "com.cityzen.cityzen"
         minSdkVersion 15
-        targetSdkVersion 26
-        versionCode versionMajor * 10000000 + versionMinor * 100000 + versionPatch * 100 + versionBuild
-
-        if (versionBuild > 98) {
-            versionName "${versionMajor}.${versionMinor}.${versionPatch}"
-        } else if (versionBuild > 49) {
-            versionName "${versionMajor}.${versionMinor}.${versionPatch} RC"+(versionBuild-49)
-        } else {
-            versionName "${versionMajor}.${versionMinor}.${versionPatch} Alpha"+(versionBuild+1)
-        }
+        targetSdkVersion 27
+        versionName "1.1.0"
+        versionCode 10100099
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -42,31 +28,33 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     //OAuth service and OSM API connection
-    compile "com.android.support:appcompat-v7:${supportLibraryVersion}"
-    compile "com.android.support:design:${supportLibraryVersion}"
-    compile "com.android.support:recyclerview-v7:${supportLibraryVersion}"
-    compile "com.android.support:cardview-v7:${supportLibraryVersion}"
-    compile "com.android.support:support-vector-drawable:${supportLibraryVersion}"
-    compile "com.android.support:support-v4:${supportLibraryVersion}"
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation "com.android.support:appcompat-v7:${supportLibraryVersion}"
+    implementation "com.android.support:design:${supportLibraryVersion}"
+    implementation "com.android.support:recyclerview-v7:${supportLibraryVersion}"
+    implementation "com.android.support:cardview-v7:${supportLibraryVersion}"
+    implementation "com.android.support:support-vector-drawable:${supportLibraryVersion}"
+    implementation "com.android.support:support-v4:${supportLibraryVersion}"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
 
-    compile('de.westnordost:osmapi:1.6')
-            {
-                exclude group: 'net.sf.kxml', module: 'kxml2' // already included in Android
-            }
-    compile 'info.metadude.java.library.overpass:overpass-library:2.0.0'
-    compile 'oauth.signpost:signpost-core:1.2.1.2'
-    compile 'org.osmdroid:osmdroid-android:6.0.1'
-    compile 'com.github.MKergall:osmbonuspack:6.3'
-    compile 'com.google.code.gson:gson:2.8.2'
-    compile 'com.github.clans:fab:1.6.4'
-    compile 'com.github.ittianyu:BottomNavigationViewEx:1.1.7'
-    compile 'pub.devrel:easypermissions:0.4.3'
-    compile 'io.github.rockerhieu:emojicon:1.4.0'
-    testCompile 'junit:junit:4.12'
+    implementation('de.westnordost:osmapi:1.6') {
+        exclude group: 'net.sf.kxml', module: 'kxml2' // already included in Android
+    }
+    implementation 'info.metadude.java.library.overpass:overpass-library:2.0.0'
+    implementation 'oauth.signpost:signpost-core:1.2.1.2'
+    implementation 'org.osmdroid:osmdroid-android:6.0.1'
+    implementation 'com.github.MKergall:osmbonuspack:6.3'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:1.1.7'
+    implementation 'pub.devrel:easypermissions:0.4.3'
+    implementation 'io.github.rockerhieu:emojicon:1.4.0'
+    testImplementation 'junit:junit:4.12'
 }

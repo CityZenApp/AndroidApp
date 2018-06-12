@@ -43,7 +43,7 @@ public class Request {
         */
         private ArrayList<Place> queriedPlaces = new ArrayList<>();
         private String error = null;
-        private final String QUERY = "http://nominatim.openstreetmap.org/search?";
+        private final String QUERY = "https://nominatim.openstreetmap.org/search?";
         private Action action;
         private WeakReference<Context> context;
         private ArrayList<Pair>[] parameters;
