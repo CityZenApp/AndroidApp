@@ -31,5 +31,5 @@ repair, or correction. This disclaimer of warranty constitutes an
 essential part of this License. No use of any Covered Software is
 authorized under this License except under this disclaimer.  
 ```
--Geoinformational data are based on [OpenStreetMap](https://www.openstreetmap.org/) platform which is published under a [Open Data Commons Open Database License](https://opendatacommons.org/licenses/odbl/) as documented [here](https://www.openstreetmap.org/copyright).
--Android icons under [APL2](https://material.io/icons/)
+- Geoinformational data are based on [OpenStreetMap](https://www.openstreetmap.org/) platform which is published under a [Open Data Commons Open Database License](https://opendatacommons.org/licenses/odbl/) as documented [here](https://www.openstreetmap.org/copyright).
+- Android icons under [APL2](https://material.io/icons/)
