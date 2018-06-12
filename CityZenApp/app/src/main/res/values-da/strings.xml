@@ -1,2 +1,147 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="nav_categories">Kategorier</string>
+    <string name="nav_map">Kort</string>
+    <string name="nav_favorites">Favoritter</string>
+    <string name="nav_about">Om</string>
+    <string name="oauth_communication_error">Autorisationsserveren kan ikke tilgås</string>
+    <string name="loading">Indlæser</string>
+    <string name="retry">Prøv igen</string>
+    <string name="oauth_failed_permissions">Autorisation fejlede: Alle listede tilladelser skal tildeles</string>
+    <string name="offline">Du er offline</string>
+    <string name="confirmation_authorize_now">Du skal logge ind med din OSM-brugerkonto for at gemme ændringer i OpenStreetMap. Autoriser nu?</string>
+    <string name="later">Senere</string>
+    <string name="filter">Filter</string>
+    <string name="only_currently_opened">Kun åbne nu</string>
+    <string name="write_storage_request">CityZen er nødt til at have skrive-tilladelse for at kunne levere kort-ydelser</string>
+    <string name="write_storage_request_toast">CityZen skal have skrive-tilladelse for at kunne levere kort-ydelser
+\n</string>
+    <string name="location_request">CityZen er nødt til at have lokations-tilladelse for at kunne levere kort-ydelser
+\n</string>
+    <string name="location_request_toast">CityZen skal have lokations-tilladelse for at kunne levere kort-ydelser
+\n</string>
+    <string name="allow_permission">Tillad</string>
+    <string name="deny_permission">Nægt</string>
+    <string name="no_pois_near_user_location">ingen serviceydelser fundet nær din lokation</string>
+    <string name="enable_gps_to_continue">Kan ikke finde dni lokation. 
+\nAktiver GPS for at fortsætte</string>
+    <string name="calculating_device_location">Vi finder din lokation.
+\nVent venligst.</string>
+    <string name="add_new_poi_toast">Klick på kortet for at tilføje 
+\n Interessepunkt</string>
+    <string name="add">Tilføj</string>
+    <string name="cancel">Annuller</string>
+    <string name="wifi">Wifi</string>
+    <string name="email">Email</string>
+    <string name="website">Hjemmeside</string>
+    <string name="phone">Telefon</string>
+    <string name="name">Navn</string>
+    <string name="address">Adresse</string>
+    <string name="opening_hours">Åbningstider</string>
+    <string name="monday">Man</string>
+    <string name="tuesday">Tir</string>
+    <string name="wednesday">Ons</string>
+    <string name="thursday">Tor</string>
+    <string name="friday">Fre</string>
+    <string name="saturday">Lør</string>
+    <string name="sunday">Søn</string>
+    <string name="all_week_days">Alle</string>
+    <string name="enable">Aktiver</string>
+
+    <string name="directions_to_here">rutevejledning med bil</string>
+    <string name="create_poi">Opret interessepunkt</string>
+    <string name="_24_7">24/7</string>
+    <string name="opening">Åbner</string>
+    <string name="closing">Lukker</string>
+    <string name="done">Færdig</string>
+    <string name="no_internet_to_update_poi">Ingen internet-adgang. Forbind til internettet for at fortsætte</string>
+    <string name="session_expired_toast">Din session er udløbet. Log ind for at fortsætte</string>
+    <string name="internet_access">Internet-adgang</string>
+    <string name="edit">Rediger</string>
+    <string name="street">Gade</string>
+    <string name="city">By</string>
+    <string name="add_closing_hours">Tilføj lukketider</string>
+    <string name="add_opening_hours">Tilføj åbningstider</string>
+    <string name="not_valid_website">Ikke en gyldig hjemmeside</string>
+    <string name="not_valid_email">Ikke en gyldig email</string>
+    <string name="an_error_occurred">Der opstod en fejl</string>
+    <string name="updated_successfully">opdatering lykkedes</string>
+    <string name="editing_is_not_possible">Redigering er ikke mulig for</string>
+    <string name="poi_type">Interessepunkt-type</string>
+    <string name="select_amenity_type">Vælg facilitetstype</string>
+    <string name="select_amenity_type_to_continue">Vælg facilitetstype for at fortsætte</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nej</string>
+    <string name="wired">Kablet</string>
+    <string name="wlan">Wi-Fi</string>
+    <string name="created_succesfully">oprettelse lykkedes</string>
+    <string name="sort_by_name">Sorter efter navn</string>
+    <string name="add_a_new_marker_on_the_map">Tilføj markør på kortet</string>
+    <string name="about_us">Om projektet</string>
+    <string name="about_text">CityZen er en open source Android-applikation som hjælper dig med nemt at navigere i og udforske byen. Med CityZen kan du finde interessepunkter såsom hæveautomater, benzintanke, kiosker, mobiltelefonforretninger og andre interessante serviceudbydere nær dig. Applikationen viser interessepunkter ud fra din smartphones lokation, men den gør dette ved at respektere dit privatliv siden vi ikke beholder dine navigationsdata. Applikationen er licenseret som open source fordi vi ønsker at projektet får sin styrke fra fællesskab og at den skal give styrke tilbage til fællesskabet. Vi startede projektet for at hjælpe værktøjer og platforme der respekterer din frihed, såsom OpenStreetMap. Hvis du er en OpenStreetMap-bidragsyder kan du nemt tilføje informationer til interessepunkter ved at redigere dem fra CityZen.</string>
+    <string name="license">Licens</string>
+    <string name="privacy_policy">Privatlivspolitik</string>
+    <string name="contact">Kontakt</string>
+    <string name="alert_message">CityZen har brug for din lokation for at kunne levere kort-ydelser. Vil du aktivere lokation?</string>
+    <string name="osm_routing_unavailable">OSM-navigation er ikke tilgængelig nu. Prøv igen senere</string>
+    <string name="house_number">Husnummer</string>
+    <string name="postcode">Postnummer</string>
+    <string name="get_involved">Involver dig</string>
+    <string name="credits">Krediteringer</string>
+    <string name="open_source_culture">CityZen-applikationen er startet i Albanien med en masse ♥
+\ntil fri software og open source-kultur.</string>
+
+
+    <string name="Cafes">Cafeer</string>
+    <string name="Bars_Clubs">Barer</string>
+    <string name="Restaurants">Restauranter</string>
+    <string name="Bakeries">Bagerier og Konditorier</string>
+    <string name="Post_Offices">Posthuse</string>
+    <string name="FastFood">Fast food</string>
+    <string name="Tourism">Turisme</string>
+    <string name="Hotels_Hostels">Hoteller</string>
+    <string name="Transportation">Transport</string>
+    <string name="GasStations">Benzintanke</string>
+    <string name="Pharmacy_Healthcare">Sunhedsservice</string>
+    <string name="Banks_ATMs_Exchange">Financielle services</string>
+    <string name="MobilePhoneStore">Mobiltelefonforretninger</string>
+    <string name="Markets_Kiosks">Markeder</string>
+    <string name="Shopping_Malls">Indkøb</string>
+    <string name="Parking">Parkering</string>
+    <string name="RentBicycle">Cykeludlejning</string>
+    <string name="RentCar_CareSharing">Biludlejning</string>
+    <string name="Buildings">Bygninger</string>
+    <string name="Education">Uddannelse</string>
+    <string name="Location">Lokation</string>
+    <string name="logged_in_as">Logget ind som:</string>
+
+    <string name="login_to_osm">Log ind i OSM</string>
+    <string name="logout">Log ud</string>
+
+    <string name="no_results">Ingen resultater</string>
+    <string name="search_again">Prøv venligst et andet søgeord</string>
+    <string name="search_icon">søgeikon</string>
+
+    <string name="no_favorites">Ingen favoritter</string>
+    <string name="mark_locations_as_favorites">Lokationer markeret som favoritter vil blive vist her</string>
+    <string name="favorites_icon">favoritikon</string>
+
+    <string name="no_info_available">Ingen information tilgængelig</string>
+    <string name="open">Åben</string>
+    <string name="closed">Lukket</string>
+
+    <string name="search">Søg</string>
+    <string name="my_location">Min lokation</string>
+    <string name="clear_map">Ryd kortet</string>
+
+    <string name="search_hint">Søg…</string>
+
+    <string name="address_label">Adresse:</string>
+    <string name="server_error">Kunne ikke kommunikere med serveren</string>
+    <string name="server_response_error">Kunne ikke læser serverens svar</string>
+
+    <string name="poi_details_close">Luk interessepunkt</string>
+    <string name="poi_details_mark_as_favorite">Marker interessepunkt som favorit</string>
+    <string name="poi_details_edit">Rediger interessepunkt</string>
+    <string name="poi_details_share">Del interessepunkt som geo-link</string>
+
+</resources>
