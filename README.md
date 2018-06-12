@@ -16,7 +16,7 @@ If you want to contribute to [CityZen](http://cityzenapp.co/), you are very welc
 - opening issues and PRs
 
 ## License
-Licensed under a [Mozilla Public License 2.0](https://github.com/CityZenApp/CityZen-Android/blob/master/LICENSE)
+Software code is licensed under a [Mozilla Public License 2.0](https://github.com/CityZenApp/CityZen-Android/blob/master/LICENSE)
 
 ```
 Covered Software is provided under this License on an "as is"
@@ -31,3 +31,5 @@ repair, or correction. This disclaimer of warranty constitutes an
 essential part of this License. No use of any Covered Software is
 authorized under this License except under this disclaimer.  
 ```
+-Geoinformational data are based on [OpenStreetMap](https://www.openstreetmap.org/) platform which is published under a [Open Data Commons Open Database License](https://opendatacommons.org/licenses/odbl/) as documented [here](https://www.openstreetmap.org/copyright).
+-Android icons under [APL2](https://material.io/icons/)
