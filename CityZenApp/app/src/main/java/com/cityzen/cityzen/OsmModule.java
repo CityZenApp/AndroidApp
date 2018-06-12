@@ -11,12 +11,9 @@ import oauth.signpost.OAuthConsumer;
 public class OsmModule {
     public static String OSM_API_URL = "https://api.openstreetmap.org/api/0.6/";
 
-    public static String OVERPASS_API_URL = "http://overpass-api.de/api/";
-
     public static OsmConnection osmConnection(OAuthConsumer consumer) {
         return new OsmConnection(OSM_API_URL, ApplicationConstants.USER_AGENT, consumer);
     }
-
 
     public static OAuthConsumer oAuthConsumer(SharedPreferences prefs) {
         return OAuth.loadConsumer(prefs);
