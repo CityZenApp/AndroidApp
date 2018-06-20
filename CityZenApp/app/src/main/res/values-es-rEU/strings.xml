@@ -62,7 +62,7 @@
     <string name="not_valid_email">Ez da baliozko e-mail bat</string>
     <string name="an_error_occurred">Errorea gertatu da</string>
     <string name="updated_successfully">ongi eguneratu da</string>
-    <string name="editing_is_not_possible">Ezin da hau editatu:</string>
+    <string name="editing_is_not_possible">Ezin da editatu</string>
     <string name="poi_type">Intereseko puntu mota</string>
     <string name="select_amenity_type">Hautatu zerbitzu mota</string>
     <string name="select_amenity_type_to_continue">Hautatu zerbitzu mota jarraitzeko</string>
