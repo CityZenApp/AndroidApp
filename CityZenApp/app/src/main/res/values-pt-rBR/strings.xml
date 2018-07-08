@@ -49,7 +49,7 @@
     <string name="closing">Fechamento</string>
     <string name="done">Feito</string>
     <string name="no_internet_to_update_poi">Sem acesso a internet. Conecte para continuar</string>
-    <string name="session_expired_toast">Sua sessão expirou. Por favor, faça login para continuar</string>
+    <string name="session_expired_toast">Sua sessão expirou. Por favor, logue para continuar</string>
     <string name="internet_access">Acesso à Internet</string>
     <string name="edit">Editar</string>
     <string name="street">Rua</string>
@@ -66,7 +66,7 @@
     <string name="select_amenity_type_to_continue">Selecione o tipo de facilidade para continuar</string>
     <string name="yes">Sim</string>
     <string name="no">Não</string>
-    <string name="wlan">Rede local sem fio</string>
+    <string name="wlan">Wireless</string>
     <string name="created_succesfully">Criado com sucesso</string>
     <string name="sort_by_name">Classificar por nome</string>
     <string name="add_a_new_marker_on_the_map">Adicionar um marcador no mapa</string>
@@ -77,11 +77,11 @@
     <string name="privacy_policy_link">www.cityzenapp.co/app-privacy-policy</string>
     <string name="email_contact">ping@cityzenapp.co</string>
     <string name="license">Licença</string>
-    <string name="oauth_communication_error">Servidor de autorização indisponível</string>
+    <string name="oauth_communication_error">Sem acesso ao servidor de autorização</string>
     <string name="wired">Conexão via cabo</string>
     <string name="privacy_policy">Política de privacidade</string>
     <string name="contact">Contato</string>
-    <string name="alert_message">CityZen deve saber sua localização para providenciar serviços de mapa. Deseja habilitar?</string>
+    <string name="alert_message">CityZen necessita da sua localização para usar serviços de mapa. Deseja habilitar?</string>
     <string name="osm_routing_unavailable">Roteamento do OSM está indisponível agora. Tente mais tarde</string>
     <string name="house_number">Número</string>
     <string name="postcode">CEP</string>
@@ -94,23 +94,60 @@
 
 
     <string name="Cafes">Lista de POIs</string>
-    <string name="Bars_Clubs">Pubs/Clubes</string>
+    <string name="Bars_Clubs">Bares</string>
     <string name="Restaurants">Restaurantes</string>
-    <string name="FastFood">Fast food</string>
+    <string name="FastFood">Comida rápida</string>
     <string name="Tourism">Turismo</string>
-    <string name="Hotels_Hostels">Hotéis/Pousadas</string>
+    <string name="Hotels_Hostels">Hotéis</string>
     <string name="Transportation">Transporte</string>
     <string name="GasStations">Postos de Combustíveis</string>
-    <string name="Pharmacy_Healthcare">Farmácia/Tratamento de Saúde</string>
-    <string name="Banks_ATMs_Exchange">Bancos/Autoatendimentos/Casas de Câmbio</string>
-    <string name="MobilePhoneStore">Loja de Celulares</string>
-    <string name="Markets_Kiosks">Mercados/Quiosques</string>
+    <string name="Pharmacy_Healthcare">Hospital</string>
+    <string name="Banks_ATMs_Exchange">Agência Financeira</string>
+    <string name="MobilePhoneStore">Lojas de Celulares</string>
+    <string name="Markets_Kiosks">Mercados</string>
     <string name="Shopping_Malls">Shoppings</string>
     <string name="Parkings">Estacionamentos</string>
-    <string name="RentBicycle">Locadora de bike</string>
-    <string name="RentCar_CareSharing">Locadora de carro &amp; Compartilhamento de carro</string>
+    <string name="RentBicycle">Aluguel de bicicleta</string>
+    <string name="RentCar_CareSharing">Locadora de veículos</string>
     <string name="logged_in_as">Logado como:</string>
 
     <string name="login_to_osm">Logar ao OSM</string>
-    <string name="logout">Sair</string>
+    <string name="logout">Deslogar</string>
+<string name="nav_categories">Categorias</string>
+    <string name="nav_map">Mapa</string>
+    <string name="nav_favorites">Favoritos</string>
+    <string name="nav_about">Sobre</string>
+    <string name="Bakeries">Padarias e Doces</string>
+    <string name="Post_Offices">Correios</string>
+    <string name="Parking">Estacionamento</string>
+    <string name="Buildings">Construções</string>
+    <string name="Education">Educação</string>
+    <string name="Location">Localização</string>
+    <string name="no_results">Sem resultados</string>
+    <string name="search_again">Por favor tentar com outro termo</string>
+    <string name="search_icon">ícone de procura</string>
+
+    <string name="no_favorites">Sem favoritos</string>
+    <string name="mark_locations_as_favorites">Localizações marcadas como favoritos irá aparecer aqui</string>
+    <string name="favorites_icon">ícone favoritos</string>
+
+    <string name="no_info_available">"Sem info disponível "</string>
+    <string name="open">Aberto</string>
+    <string name="closed">Fechado</string>
+
+    <string name="search">Procurar</string>
+    <string name="my_location">Minha localização</string>
+    <string name="clear_map">Limpar mapa</string>
+
+    <string name="search_hint">Procurando…</string>
+
+    <string name="address_label">Endereço:</string>
+    <string name="server_error">Erro de comunicação com o server</string>
+    <string name="server_response_error">Erro ao ler a resposta do servidor</string>
+
+    <string name="poi_details_close">Fechar POI</string>
+    <string name="poi_details_mark_as_favorite">Marcar POI como favorito</string>
+    <string name="poi_details_edit">Editar POI</string>
+    <string name="poi_details_share">Compartilhar POI como geo-link</string>
+
 </resources>
