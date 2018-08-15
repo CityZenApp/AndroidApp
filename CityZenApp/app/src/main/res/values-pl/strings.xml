@@ -127,4 +127,5 @@
     <string name="search_again">Spróbuj użyć innego wyszukiwanego hasła</string>
     <string name="search_icon">ikona wyszukiwania</string>
 
+    <string name="about_text">"CityZen to otwarte (open source) oprogramowanie na Androida, które ułatwia nawigację po mieście i jego eksplorację. Dzięki CityZen odnajdziesz ważne obiekty (POI) takie jak: bankomaty, stacje benzynowe, apteki, sklepy z telefonami i inne typy usług, znajdujące się w Twoim pobliżu. Aplikacja pokazuje POI dzięki lokalizowaniu twojego telefonu komórkowego --- szanujemy jednak Twoją prywatność i nie przechowujemy Twoich danych nawigacyjnych. Aplikacja udostępniona została na licencji otwartego oprogramowania (open source) ponieważ chcemy, aby był to projekt tworzony przez społeczność dla społeczności interntowej. Projekt został zainicjowany jako sposób na wzmocnienie narzędzi i platform takich jak OpenStreetMap, które szanują naszą wolność. Jeżeli już współpracujesz przy OpenStreetMap, możesz łatwo dodawać informacje o ważnych obiektach edytując je bezpośrednio w CityZen. "</string>
     </resources>
