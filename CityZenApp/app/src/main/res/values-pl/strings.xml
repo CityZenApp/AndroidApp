@@ -34,7 +34,7 @@
     <string name="opening_hours">Godziny otwarcia</string>
     <string name="monday">Pon</string>
     <string name="tuesday">Wto</string>
-    <string name="wednesday">Śro</string>
+    <string name="wednesday">Śr</string>
     <string name="thursday">Czw</string>
     <string name="friday">Pią</string>
     <string name="saturday">Sob</string>
@@ -103,7 +103,7 @@
     <string name="GasStations">Stacje benzynowe</string>
     <string name="Pharmacy_Healthcare">Służba zdrowia</string>
     <string name="Banks_ATMs_Exchange">Usługi finansowe</string>
-    <string name="MobilePhoneStore">Sklep z telefonami komórkowymi</string>
+    <string name="MobilePhoneStore">Sklepy mobilne</string>
     <string name="Markets_Kiosks">Kioski</string>
     <string name="Shopping_Malls">Sklepy</string>
     <string name="Parkings">Parkingi</string>
@@ -127,5 +127,28 @@
     <string name="search_again">Spróbuj użyć innego wyszukiwanego hasła</string>
     <string name="search_icon">ikona wyszukiwania</string>
 
-    <string name="about_text">"CityZen to otwarte (open source) oprogramowanie na Androida, które ułatwia nawigację po mieście i jego eksplorację. Dzięki CityZen odnajdziesz ważne obiekty (POI) takie jak: bankomaty, stacje benzynowe, apteki, sklepy z telefonami i inne typy usług, znajdujące się w Twoim pobliżu. Aplikacja pokazuje POI dzięki lokalizowaniu twojego telefonu komórkowego --- szanujemy jednak Twoją prywatność i nie przechowujemy Twoich danych nawigacyjnych. Aplikacja udostępniona została na licencji otwartego oprogramowania (open source) ponieważ chcemy, aby był to projekt tworzony przez społeczność dla społeczności interntowej. Projekt został zainicjowany jako sposób na wzmocnienie narzędzi i platform takich jak OpenStreetMap, które szanują naszą wolność. Jeżeli już współpracujesz przy OpenStreetMap, możesz łatwo dodawać informacje o ważnych obiektach edytując je bezpośrednio w CityZen. "</string>
-    </resources>
+    <string name="about_text">CityZen to otwarte (open source) oprogramowanie na Androida, które ułatwia nawigację po mieście i jego eksplorację. Dzięki CityZen odnajdziesz ważne obiekty (POI) takie jak: bankomaty, stacje benzynowe, apteki, sklepy z telefonami i inne typy usług, znajdujące się w Twoim pobliżu. Aplikacja pokazuje POI dzięki lokalizowaniu twojego telefonu komórkowego --- szanujemy jednak Twoją prywatność i nie przechowujemy Twoich danych nawigacyjnych. Aplikacja udostępniona została na licencji otwartego oprogramowania (open source) ponieważ chcemy, aby był to projekt tworzony przez społeczność dla społeczności interntowej. Projekt został zainicjowany jako sposób na wzmocnienie narzędzi i platform takich jak OpenStreetMap, które szanują naszą wolność. Jeżeli już współpracujesz przy OpenStreetMap, możesz łatwo dodawać informacje o ważnych obiektach edytując je bezpośrednio w CityZen.</string>
+    <string name="no_favorites">Brak ulubionych</string>
+    <string name="mark_locations_as_favorites">Lokalizacje oznaczone jako ulubione pojawią się tutaj</string>
+    <string name="favorites_icon">ikona ulubionych</string>
+
+    <string name="no_info_available">Brak dostępnych informacji</string>
+    <string name="open">Otwarte</string>
+    <string name="closed">Zamknięte</string>
+
+    <string name="search">Szukaj</string>
+    <string name="my_location">Moja lokacja</string>
+    <string name="clear_map">Wyczyść mapę</string>
+
+    <string name="search_hint">Szukanie…</string>
+
+    <string name="address_label">Adres:</string>
+    <string name="server_error">Błąd komunikacji z serwerem</string>
+    <string name="server_response_error">Błąd podczas odczytu odpowiedzi serwera</string>
+
+    <string name="poi_details_close">Zamknij POI</string>
+    <string name="poi_details_mark_as_favorite">Oznacz POI jako ulubione</string>
+    <string name="poi_details_edit">Edytuj punkt POI</string>
+    <string name="poi_details_share">Udostępnij POI jako geo-link</string>
+
+</resources>
