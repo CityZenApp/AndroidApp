@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources><string name="app_name">CityZen</string>
-    <string name="oauth_communication_error">Brak połączenia z serwerem uwierzytelniającym</string>
+    <string name="oauth_communication_error">Brak dostępu do serwera autoryzującego</string>
     <string name="loading">Ładowanie</string>
     <string name="retry">Ponów</string>
-    <string name="oauth_failed_permissions">Uwierzytelnianie nieudane: Musisz posiadać wszystkie podane uprawnienia</string>
-    <string name="offline">Brak połączenia z siecią</string>
+    <string name="oauth_failed_permissions">Autoryzacja nieudana: Musisz posiadać wszystkie podane uprawnienia</string>
+    <string name="offline">Nie połączono z siecią</string>
     <string name="confirmation_authorize_now">Aby wprowadzić zmiany do OpenStreetMap musisz zalogować się na konto OSM. Zezwolić teraz?</string>
     <string name="later">Później</string>
     <string name="filter">Filtr</string>
-    <string name="only_currently_opened">Tylko obecnie otwarte</string>
+    <string name="only_currently_opened">Tylko aktualnie otwarte</string>
     <string name="write_storage_request">CityZen musi mieć uprawnienia do zapisu, aby świadczyć usługi mapowe</string>
     <string name="write_storage_request_toast">CityZen musi mieć uprawnienia do zapisu, aby świadczyć usługi mapowe</string>
     <string name="location_request">CityZen potrzebuje danych o lokalizacji aby zapewnić obsługę map</string>
