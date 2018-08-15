@@ -5,12 +5,12 @@
     <string name="retry">Ponów</string>
     <string name="oauth_failed_permissions">Uwierzytelnianie nieudane: Musisz posiadać wszystkie podane uprawnienia</string>
     <string name="offline">Brak połączenia z siecią</string>
-    <string name="confirmation_authorize_now">Aby wprowadzić zmiany do OpenStreetMap musisz zalogować się na konto OSM. Wykonać?</string>
-    <string name="later">Potem</string>
+    <string name="confirmation_authorize_now">Aby wprowadzić zmiany do OpenStreetMap musisz zalogować się na konto OSM. Zezwolić teraz?</string>
+    <string name="later">Później</string>
     <string name="filter">Filtr</string>
     <string name="only_currently_opened">Tylko obecnie otwarte</string>
-    <string name="write_storage_request">Prośba o nadanie uprawnień</string>
-    <string name="write_storage_request_toast">CityZen potrzebuje prawa do zapisu aby zapewnić obsługę map</string>
+    <string name="write_storage_request">CityZen musi mieć uprawnienia do zapisu, aby świadczyć usługi mapowe</string>
+    <string name="write_storage_request_toast">CityZen musi mieć uprawnienia do zapisu, aby świadczyć usługi mapowe</string>
     <string name="location_request">CityZen potrzebuje danych o lokalizacji aby zapewnić obsługę map</string>
     <string name="location_request_toast">CityZen potrzebuje danych o lokalizacji aby zapewnić obsługę map</string>
     <string name="allow_permission">Zezwól</string>
@@ -50,7 +50,7 @@
     <string name="closing">Godzina zamknięcia</string>
     <string name="done">Gotowe</string>
     <string name="no_internet_to_update_poi">Brak połączenia internetowego. Aby kontynuować, połącz z internetem</string>
-    <string name="session_expired_toast">Sesja wygasła. Aby kontynuować, zaloguj się ponownie</string>
+    <string name="session_expired_toast">Twoja sesja wygasła. Aby kontynuować, zaloguj się ponownie</string>
     <string name="internet_access">Połączenie z internetem</string>
     <string name="edit">Edytuj</string>
     <string name="street">Ulica</string>
@@ -68,7 +68,7 @@
     <string name="yes">Tak</string>
     <string name="no">Nie</string>
     <string name="wired">Przewodowe</string>
-    <string name="wlan">Bezprzewodowe</string>
+    <string name="wlan">Wi-Fi</string>
     <string name="created_succesfully">stworzono pomyślnie</string>
     <string name="sort_by_name">Posortuj wg nazw</string>
     <string name="add_a_new_marker_on_the_map">Dodaj znacznik na mapie</string>
@@ -93,24 +93,38 @@
 
 
     <string name="Cafes">Lista POI</string>
-    <string name="Bars_Clubs">Bary/Kluby</string>
+    <string name="Bars_Clubs">Bary</string>
     <string name="Restaurants">Restauracje</string>
     <string name="FastFood">"
 \n"</string>
     <string name="Tourism">Turystka</string>
-    <string name="Hotels_Hostels">Hotele/Hostele</string>
+    <string name="Hotels_Hostels">Hotele</string>
     <string name="Transportation">Trasport</string>
     <string name="GasStations">Stacje benzynowe</string>
-    <string name="Pharmacy_Healthcare">Apteki/Służba zdrowia</string>
-    <string name="Banks_ATMs_Exchange">Banki/Bankomaty/Kantory</string>
+    <string name="Pharmacy_Healthcare">Służba zdrowia</string>
+    <string name="Banks_ATMs_Exchange">Usługi finansowe</string>
     <string name="MobilePhoneStore">Sklep z telefonami komórkowymi</string>
     <string name="Markets_Kiosks">Kioski</string>
-    <string name="Shopping_Malls">Domy handlowe</string>
+    <string name="Shopping_Malls">Sklepy</string>
     <string name="Parkings">Parkingi</string>
-    <string name="RentBicycle">Wypożyczlnie rowerów</string>
-    <string name="RentCar_CareSharing">Wypożyczalnie samochodów</string>
+    <string name="RentBicycle">Wypożyczalnia rowerów</string>
+    <string name="RentCar_CareSharing">Wypożyczalnia samochodów</string>
     <string name="logged_in_as">Zalogowan(y/a) jako:</string>
 
-    <string name="login_to_osm">Nazwa użytkownika OSM</string>
+    <string name="login_to_osm">Zaloguj się do OSM</string>
     <string name="logout">Wyloguj</string>
-</resources>
+<string name="nav_categories">Kategorie</string>
+    <string name="nav_map">Mapa</string>
+    <string name="nav_favorites">Ulubione</string>
+    <string name="nav_about">O aplikacji</string>
+    <string name="Bakeries">Piekarnie i Wypieki</string>
+    <string name="Post_Offices">Urzędy pocztowe</string>
+    <string name="Parking">Parking</string>
+    <string name="Buildings">Budynki</string>
+    <string name="Education">Edukacja</string>
+    <string name="Location">Lokalizacja</string>
+    <string name="no_results">"Brak wyników "</string>
+    <string name="search_again">Spróbuj użyć innego wyszukiwanego hasła</string>
+    <string name="search_icon">ikona wyszukiwania</string>
+
+    </resources>
