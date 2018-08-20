@@ -101,7 +101,7 @@
     <string name="Hotels_Hostels">Hotels</string>
     <string name="Transportation">Vervoer</string>
     <string name="GasStations">Tankstations</string>
-    <string name="Pharmacy_Healthcare">Drogisterijen</string>
+    <string name="Pharmacy_Healthcare">Gezondheidszorg</string>
     <string name="Banks_ATMs_Exchange">Financiële dienstverlening</string>
     <string name="MobilePhoneStore">Mobiele telefoonwinkels</string>
     <string name="Markets_Kiosks">Markten</string>
@@ -123,5 +123,31 @@
     <string name="no_favorites">Geen favorieten</string>
     <string name="mark_locations_as_favorites">Locaties die u markeert als favoriet, zullen hier verschijnen</string>
     <string name="favorites_icon">favorietpictogram</string>
+
+<string name="nav_categories">Categorieën</string>
+    <string name="nav_map">Kaart</string>
+    <string name="nav_favorites">Favorieten</string>
+    <string name="nav_about">Over</string>
+    <string name="Buildings">Gebouwen</string>
+    <string name="Education">Onderwijs</string>
+    <string name="Location">Locatie</string>
+    <string name="no_info_available">Geen informatie beschikbaar</string>
+    <string name="open">Open</string>
+    <string name="closed">Gesloten</string>
+
+    <string name="search">Zoeken</string>
+    <string name="my_location">Mijn locatie</string>
+    <string name="clear_map">Kaart opruimen</string>
+
+    <string name="search_hint">Zoeken…</string>
+
+    <string name="address_label">Adres:</string>
+    <string name="server_error">Fout bij communicatie met server</string>
+    <string name="server_response_error">Fout bij het lezen van serverantwoord</string>
+
+    <string name="poi_details_close">POI sluiten</string>
+    <string name="poi_details_mark_as_favorite">POI als favoriet markeren</string>
+    <string name="poi_details_edit">POI bewerken</string>
+    <string name="poi_details_share">POI als geo-link delen</string>
 
 </resources>
