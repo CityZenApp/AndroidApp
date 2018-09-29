@@ -82,4 +82,15 @@
     <string name="nav_favorites">Уподобання</string>
     <string name="confirmation_authorize_now">Щоб застосувати зміни до OpenStreetMap, вам потрібно ввійти в обліковий запис користувача OSM. Авторизувати зараз?</string>
     <string name="write_storage_request_toast">CityZen потрібні дозволи на запис для надання послуг з карти</string>
+    <string name="directions_to_here">маршрути на машині</string>
+    <string name="create_poi">Створити POI</string>
+    <string name="opening">Відкриття</string>
+    <string name="closing">Закриття</string>
+    <string name="no_internet_to_update_poi">Немає доступу до Інтернету. Під\'єднайтеся до Інтернету, щоб продовжити</string>
+    <string name="session_expired_toast">Ваш сеанс минув. Будь ласка, увійдіть, щоб продовжити</string>
+    <string name="add_closing_hours">Додати години закриття</string>
+    <string name="add_opening_hours">Додати години роботи</string>
+    <string name="not_valid_website">Недійсний веб-сайт</string>
+    <string name="not_valid_email">Не дійсна електронна адреса</string>
+    <string name="updated_successfully">оновлено успішно</string>
     </resources>
