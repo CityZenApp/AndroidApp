@@ -102,12 +102,12 @@
     <string name="Transportation">Transporto</string>
     <string name="GasStations">Stazione di servizio</string>
     <string name="Pharmacy_Healthcare">Farmacia</string>
-    <string name="Banks_ATMs_Exchange">Banche/ATM/Exhange</string>
+    <string name="Banks_ATMs_Exchange">Servizi bancari</string>
     <string name="MobilePhoneStore">Negozio di telefoni</string>
     <string name="Markets_Kiosks">Mercati</string>
     <string name="Shopping_Malls">Centri commerciali</string>
     <string name="Parkings">Parcheggi</string>
-    <string name="RentBicycle">Noleggiare una bicicletta</string>
+    <string name="RentBicycle">Noleggio biciclette</string>
     <string name="RentCar_CareSharing">Rent a car &amp; Care sharing</string>
     <string name="logged_in_as">Collegato come:</string>
 
@@ -116,4 +116,12 @@
 <string name="Post_Offices">Ufficio postale</string>
     <string name="Parking">Parcheggio</string>
     <string name="nav_favorites">Preferiti</string>
+    <string name="nav_categories">Categorie</string>
+    <string name="nav_map">Mappa</string>
+    <string name="no_info_available">Nessuna informazione disponibile</string>
+    <string name="open">Aperto</string>
+    <string name="closed">Chiuso</string>
+
+    <string name="search">Cerca</string>
+    <string name="address_label">Indirizzo:</string>
     </resources>
