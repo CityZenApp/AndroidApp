@@ -60,7 +60,7 @@
     <string name="clear_map">Очистити карту</string>
 
     <string name="address_label">Адреса:</string>
-    <string name="write_storage_request">CityZen має мати дозволи на запис для надання послуг з карти</string>
+    <string name="write_storage_request">CityZen обов\'язково потрібні дозволи на запис для надання послуг з карти</string>
     <string name="monday">Пн</string>
     <string name="tuesday">Вт</string>
     <string name="wednesday">Ср</string>
@@ -79,4 +79,7 @@
     <string name="search_hint">Пошук…</string>
 
     <string name="server_error">Помилка зв\'язку з сервером</string>
+    <string name="nav_favorites">Уподобання</string>
+    <string name="confirmation_authorize_now">Щоб застосувати зміни до OpenStreetMap, вам потрібно ввійти в обліковий запис користувача OSM. Авторизувати зараз?</string>
+    <string name="write_storage_request_toast">CityZen потрібні дозволи на запис для надання послуг з карти</string>
     </resources>
