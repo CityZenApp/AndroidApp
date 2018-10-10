@@ -21,4 +21,57 @@
     <string name="location_request_toast">CitiZen necesita acceder a su locación para ofrecer los servicios de mapa</string>
     <string name="allow_permission">"Permitir acceso "</string>
     <string name="deny_permission">"Negar acceso "</string>
+    <string name="only_currently_opened">Solo abiertos ahora</string>
+    <string name="no_pois_near_user_location">No se han encontrado servicios junto a su ubicación</string>
+    <string name="enable_gps_to_continue">No podemos encontrar su ubicación.
+\nEncienda el GPS para continuar</string>
+    <string name="calculating_device_location">Estamos calculando su ubicación.
+\nPor favor espere.</string>
+    <string name="add_new_poi_toast">Haga clic en el mapa para añadir
+\nPuntos de Interes</string>
+    <string name="add">Añadir</string>
+    <string name="cancel">Cancelar</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="website">Pagina Web</string>
+    <string name="phone">Teléfono</string>
+    <string name="address">Dirección</string>
+    <string name="opening_hours">Horario de apertura</string>
+    <string name="monday">Lun</string>
+    <string name="tuesday">Mar</string>
+    <string name="wednesday">Mie</string>
+    <string name="thursday">Jue</string>
+    <string name="friday">Vie</string>
+    <string name="saturday">Sab</string>
+    <string name="sunday">Dom</string>
+    <string name="all_week_days">Todos</string>
+    <string name="enable">Habilitar</string>
+
+    <string name="directions_to_here">direcciones en coche</string>
+    <string name="create_poi">Crear PDI</string>
+    <string name="_24_7">24/7</string>
+    <string name="opening">Apertura</string>
+    <string name="closing">Cierre</string>
+    <string name="done">Hecho</string>
+    <string name="no_internet_to_update_poi">No hay acceso a Internet. Conéctese a Internet para continuar</string>
+    <string name="session_expired_toast">Tu sesión ha expirado. Por favor inicie sesión para continuar</string>
+    <string name="internet_access">Acceso a Internet</string>
+    <string name="edit">Editar</string>
+    <string name="street">Calle</string>
+    <string name="city">Ciudad</string>
+    <string name="add_closing_hours">Añadir horarios de cierre</string>
+    <string name="add_opening_hours">Añadir horarios de apertura</string>
+    <string name="not_valid_website">Pagina web invalida</string>
+    <string name="not_valid_email">Correo electrónico invalido</string>
+    <string name="an_error_occurred">Ha ocurrido un error</string>
+    <string name="updated_successfully">actualizado correctamente</string>
+    <string name="editing_is_not_possible">Edición no permitida para</string>
+    <string name="poi_type">Punto de Interés de tipo</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="wired">Cableado</string>
+    <string name="wlan">Wi-Fi</string>
+    <string name="created_succesfully">creado satisfactoriamente</string>
+    <string name="sort_by_name">Ordenado por nombre</string>
+    <string name="add_a_new_marker_on_the_map">Añadir marcador en el mapa</string>
+    <string name="about_us">Acerca del proyecto</string>
     </resources>
