@@ -20,4 +20,124 @@
     <string name="_24_7">24/7</string>
     <string name="street">தெரு</string>
     <string name="city">நகரம்</string>
-    </resources>
+    <string name="nav_categories">பிரிவுகள்</string>
+    <string name="nav_about">விவரங்கள்</string>
+    <string name="oauth_communication_error">வழங்கியை தொடர்புகொள்ள இயலவில்லை</string>
+    <string name="retry">மீண்டும் முயற்சி செய்</string>
+    <string name="oauth_failed_permissions">சரிபார்த்தல் தோல்வி அடைந்தது: அனைத்து அனுமதிகளும் கொடுக்கப்பட வேண்டும்</string>
+    <string name="offline">நீங்கள் இணையத்தொடர்பில் இல்லை</string>
+    <string name="confirmation_authorize_now">உங்கள் மாற்றங்களை பதிவு செய்ய, நீங்கள் உங்கள் OSM கணக்கினுள் நுழைய வேண்டும். சம்மதமா\?</string>
+    <string name="later">பின்னர்</string>
+    <string name="filter">வடிகட்டு</string>
+    <string name="only_currently_opened">தற்ப்போது திறக்கப்பட்டவை</string>
+    <string name="write_storage_request">வரைப்பட சேவைகளை வழங்க, CityZen-க்கு மாற்றம் செய்ய அனுமதி தேவை</string>
+    <string name="write_storage_request_toast">வரைப்பட சேவைகளை வழங்க, CityZen-க்கு மாற்றம் செய்ய கண்டிப்பாக அனுமதி தேவை</string>
+    <string name="location_request">வரைப்பட சேவைகளை வழங்க, CityZen-க்கு உங்கள் இருப்பிட அனுமதி தேவை</string>
+    <string name="location_request_toast">வரைப்பட சேவைகளை வழங்க, CityZen-க்கு உங்கள் இருப்பிட அனுமதி கண்டிப்பாக தேவை</string>
+    <string name="allow_permission">அனுமதி</string>
+    <string name="deny_permission">மறு</string>
+    <string name="no_pois_near_user_location">உங்கள் இருப்பிடத்திற்கு அருகில் எந்த சேவைகளும் இல்லை</string>
+    <string name="enable_gps_to_continue">உங்கள் இருப்பிடத்தை அறிய இயலவில்லை
+\nஉங்கள் GPS-ஐ செயல்படுத்துங்கள்</string>
+    <string name="calculating_device_location">உங்கள் இருப்பிடத்தை அறிய முயற்ச்சிக்கிறோம்.
+\nகாத்திருங்கள்.</string>
+    <string name="add_new_poi_toast">சேர்க்க வரைபடத்தை அழுத்துங்கள்
+\nPOI</string>
+    <string name="add">சேர்</string>
+    <string name="cancel">நீக்கு</string>
+    <string name="wifi">இணையம்</string>
+    <string name="email">மின்னஞ்சல்</string>
+    <string name="website">இணையதளம்</string>
+    <string name="create_poi">POI உருவாக்கவும்</string>
+    <string name="opening">திறக்க</string>
+    <string name="closing">மூட</string>
+    <string name="done">முடிந்தது</string>
+    <string name="no_internet_to_update_poi">இணைய தொடர்பு இல்லை. இணையத்தில் சேரவும்</string>
+    <string name="session_expired_toast">உங்கள் நேரம் முடிவடைந்தது. மேலும் தொடர உள்நுழையவும்</string>
+    <string name="internet_access">இணைய சேவை</string>
+    <string name="edit">தொகு</string>
+    <string name="add_closing_hours">மூடும் நேரம்</string>
+    <string name="add_opening_hours">திறக்கும் நேரம்</string>
+    <string name="not_valid_website">சரியான இணையதளம் இல்லை</string>
+    <string name="not_valid_email">சரியான மின்னஞ்சல் இல்லை</string>
+    <string name="an_error_occurred">தவறு நடந்தது</string>
+    <string name="updated_successfully">மாற்றங்கள் நிறைவேறியது</string>
+    <string name="editing_is_not_possible">இதனை தொகுக்க முடியாது</string>
+    <string name="poi_type">POI வகை</string>
+    <string name="select_amenity_type">வாய்ப்பு வகையை தேர்ந்தெடுக</string>
+    <string name="select_amenity_type_to_continue">தொடர்வதற்க்கு வாய்ப்பு வகையை தேர்ந்தெடுக</string>
+    <string name="yes">ஆம்</string>
+    <string name="no">இல்லை</string>
+    <string name="wired">கேபில் மூலம்</string>
+    <string name="wlan">இணையம்</string>
+    <string name="created_succesfully">வெற்றிகரமாக உருவாக்கப்பட்டது</string>
+    <string name="sort_by_name">பெயரின்படி வரிசைப்படுத்து</string>
+    <string name="add_a_new_marker_on_the_map">வரைபடத்தில் குறிப்பை சேர்</string>
+    <string name="about_us">திட்டப்பணியைப் பற்றி</string>
+    <string name="about_text">CityZen ஒரு திறந்த மூல ஆன்டிராய்டு செயலி. இது நம் நகரத்தை எளிதாக அறிவதற்கு உதவுகிறது. CityZen மூலம் நீங்கள் ATM, எரிவாயு நிலையம், மரிந்து கடைகள் போன்றவற்றை அறியலாம். இது உங்கள் இருப்பிடத்தைக் கொண்டு இவை அனைத்தையும் காண்பிக்கும். குழுவாய் செயல்படுவதை வலுப்படுத்துவதற்க்காக நாம் இதனை திறந்த மூல மென்பொருளில் வெளிவிடுகிறோம். இது பயனரின் சுதந்திரத்தைப் பாதுகாக்கும் OpenStreetMap போன்ற கருவிகளைக் கொண்டு உருவாக்கப்பட்டது.</string>
+    <string name="license">உரிமம்</string>
+    <string name="privacy_policy">தனியுரிமைக் கொள்கை</string>
+    <string name="contact">தொடர்பு</string>
+    <string name="alert_message">CityZen வரைபட சேவைகளை வழங்க உங்கள் இருப்பிடம் அறிய வேண்டும். நீங்கள் தயாரா\?</string>
+    <string name="osm_routing_unavailable">OSM வழியிடல் தற்ப்போது இல்லை. சிறிது நேரம் கழித்து முயற்ச்சியுங்கள்</string>
+    <string name="house_number">வீட்டு எண்</string>
+    <string name="postcode">தபால் எண்</string>
+    <string name="get_involved">பங்கு பெற</string>
+    <string name="credits">நன்றி</string>
+    <string name="open_source_culture">CityZen செயலி ♥-லுடன் ஆல்பேனியாவில் துவங்கப்பட்டது, திறந்த மூல கலாச்சாரத்துடன்.</string>
+
+
+    <string name="Cafes">தேநீர் விடுதி</string>
+    <string name="Bars_Clubs">மதுக்கடை</string>
+    <string name="Restaurants">உணவகங்கள்</string>
+    <string name="Bakeries">பேக்கரி மற்றும் பால் சார்ந்த பொருட்கள்</string>
+    <string name="Post_Offices">தபால் நிலையங்கள்</string>
+    <string name="FastFood">துரித உணவு</string>
+    <string name="Tourism">சுற்றுலா</string>
+    <string name="Hotels_Hostels">விடுதிகள்</string>
+    <string name="Transportation">போக்குவரத்து</string>
+    <string name="GasStations">எரிவாயு நிலையங்கள்</string>
+    <string name="Pharmacy_Healthcare">சிகிச்சை நிலையங்கள்</string>
+    <string name="Banks_ATMs_Exchange">நிதி சேவைகள்</string>
+    <string name="MobilePhoneStore">கைபேசி விற்பனை நிலையம்</string>
+    <string name="Markets_Kiosks">சந்தை</string>
+    <string name="Shopping_Malls">கடைகள்</string>
+    <string name="Parking">நிறுத்தங்கள்</string>
+    <string name="RentBicycle">வண்டி வாடகை</string>
+    <string name="RentCar_CareSharing">கார் வாடகை</string>
+    <string name="Buildings">கட்டிடங்கள்</string>
+    <string name="Education">கல்வி</string>
+    <string name="Location">இருப்பிடம்</string>
+    <string name="logged_in_as">உள்நுழைந்த பயனர்:</string>
+
+    <string name="login_to_osm">OSM-ல் நுழை</string>
+    <string name="logout">வெளியேறு</string>
+
+    <string name="no_results">முடிவுகள் இல்லை</string>
+    <string name="search_again">வேறொரு வார்த்தயை தேடவும்</string>
+    <string name="search_icon">தேடல் படம்</string>
+
+    <string name="no_favorites">பிடித்தவைகள் இல்லை</string>
+    <string name="mark_locations_as_favorites">விருப்பமுள்ள இருப்பிடங்கள் இங்கே காண்பிக்கப்படும்</string>
+    <string name="favorites_icon">பிடித்தவைகள் படம்</string>
+
+    <string name="no_info_available">எந்த தகவலும் இல்லை</string>
+    <string name="open">திறந்து</string>
+    <string name="closed">மூடி</string>
+
+    <string name="search">தேடு</string>
+    <string name="my_location">என் இருப்பிடம்</string>
+    <string name="clear_map">வரைபடம் துடை</string>
+
+    <string name="search_hint">தேடு…</string>
+
+    <string name="address_label">முகவரி:</string>
+    <string name="server_error">வழங்கியிடம் தொடர்பு கொள்வதில் பிரச்சனை</string>
+    <string name="server_response_error">வழங்கியின் பதிலை அறிவதில் சிரமம்</string>
+
+    <string name="poi_details_close">POI மூடு</string>
+    <string name="poi_details_mark_as_favorite">POI-ஐ விருப்பமானதாக்கு</string>
+    <string name="poi_details_edit">POI-ஐ தொகு</string>
+    <string name="poi_details_share">POI-ஐ geo-link ஆக பகிரவும்</string>
+
+</resources>
