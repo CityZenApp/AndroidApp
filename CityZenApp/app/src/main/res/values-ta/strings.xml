@@ -1,2 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version='1.0' encoding='UTF-8'?>
+<resources><string name="nav_map">வரைப்படம்</string>
+    <string name="nav_favorites">பிரியமானவை</string>
+    <string name="loading">காத்திருக்கவும்</string>
+    <string name="phone">தொலைப்பேசி</string>
+    <string name="name">பெயர்</string>
+    <string name="address">முகவரி</string>
+    <string name="opening_hours">செயல்படும் நேரம்</string>
+    <string name="monday">திங்கள்</string>
+    <string name="tuesday">செவ்வாய்</string>
+    <string name="wednesday">புதன்</string>
+    <string name="thursday">விழாயன்</string>
+    <string name="friday">வெள்ளி</string>
+    <string name="saturday">சனி</string>
+    <string name="sunday">ஞாயிறு</string>
+    <string name="all_week_days">எல்லா நாளும்</string>
+    <string name="enable">செயல்படுத்து</string>
+
+    <string name="directions_to_here">car மூலம் செல்ல</string>
+    <string name="_24_7">24/7</string>
+    <string name="street">தெரு</string>
+    <string name="city">நகரம்</string>
+    </resources>
