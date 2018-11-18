@@ -12,8 +12,8 @@
     <string name="later">Depois</string>
     <string name="filter">Filtro</string>
     <string name="only_currently_opened">Apenas atualmente aberto</string>
-    <string name="write_storage_request">CityZen precisa ter permissões escritas para fornecer serviços de mapa</string>
-    <string name="write_storage_request_toast">CityZen deve ter permissões escrita para fornecer serviços de mapa</string>
+    <string name="write_storage_request">CityZen precisa ter permissões de gravação para fornecer serviços de mapa</string>
+    <string name="write_storage_request_toast">CityZen deve ter permissões de gravação para fornecer serviços de mapa</string>
     <string name="allow_permission">Permitir</string>
     <string name="deny_permission">Negar</string>
     <string name="no_pois_near_user_location">Nenhum serviço encontrado perto da sua localização</string>
@@ -54,8 +54,8 @@
     <string name="edit">Editar</string>
     <string name="street">Rua</string>
     <string name="city">Cidade</string>
-    <string name="add_closing_hours">Add hora de fechamento</string>
-    <string name="add_opening_hours">Add hora de abertura</string>
+    <string name="add_closing_hours">Adicionar horas de encerramento</string>
+    <string name="add_opening_hours">Adicionar horas de abertura</string>
     <string name="not_valid_website">Site não é válido</string>
     <string name="not_valid_email">E-mail não é válido</string>
     <string name="an_error_occurred">Um erro ocorreu</string>
@@ -129,4 +129,16 @@
     <string name="poi_details_edit">Editar POI</string>
     <string name="poi_details_share">Compartilhar POI como um geo-link</string>
 
-</resources>
+<string name="location_request">CityZen precisa de localização para fornecer serviços de mapa</string>
+    <string name="location_request_toast">CityZen precisa da localização para fornecer serviços de mapa</string>
+    <string name="select_amenity_type_to_continue">Selecione o tipo de amenidade para continuar</string>
+    <string name="about_text">CityZen é um aplicativo Android de código aberto que lhe ajuda a facilmente navegar e explorar a cidade. Com CityZen você encontra pontos de interesse (POIs), tais como caixas eletrônicos, postos de gasolina, farmácias, lojas de telefonia móvel e outros serviços interessantes perto de si. A aplicação mostra estes POIs com base na sua localização do seu smartphone, mas fá-lo respeitando a sua privacidade, uma vez que não mantemos os seus dados de navegação. O aplicativo é licenciado em código aberto porque queremos que o projeto seja habilitado pela comunidade para a comunidade. Iniciamos este projeto como uma forma de capacitar ferramentas e plataformas como o OpenStreetMap que respeitam nossas liberdades. Se você é um colaborador do OpenStreetMap, você pode facilmente adicionar informações aos POIs editando-as dentro do CityZen.</string>
+    <string name="alert_message">CityZen precisa de sua localização para fornecer serviços de mapa. Deseja ativar a localização\?</string>
+    <string name="osm_routing_unavailable">O roteamento OSM não está disponível neste momento. Tente novamente mais tarde</string>
+    <string name="open_source_culture">CityZen app foi iniciada na Albânia com um monte de ♥
+\n para uma cultura livre e de código aberto.</string>
+
+
+    <string name="Cafes">Cafés</string>
+    <string name="Bakeries">Padarias e pastelarias</string>
+    </resources>
