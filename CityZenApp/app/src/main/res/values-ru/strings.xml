@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources><string name="nav_categories">Категории</string>
+    <string name="nav_map">Карта</string>
+    <string name="nav_favorites">Избранное</string>
+    <string name="nav_about">О программе</string>
+    <string name="oauth_communication_error">Невозможно подключится к серверу авторизации</string>
+    <string name="loading">Загрузка</string>
+    <string name="retry">Повторить</string>
+    <string name="oauth_failed_permissions">Авторизация провалена: Все перечисленные разрешения должны быть предоставлены</string>
+    <string name="offline">Вы не в сети</string>
+    <string name="confirmation_authorize_now">Для внесения изменений в OpenStreetMap вам нужно войти в систему под своей учетной записью пользователя OSM. Авторизоваться сейчас\?</string>
+    <string name="later">Позже</string>
+    <string name="filter">Фильтр</string>
+    <string name="only_currently_opened">"Открыт только в настоящее время "</string>
+</resources>
