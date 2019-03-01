@@ -1,5 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<resources><string name="nav_categories">Kategorier</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_categories">Kategorier</string>
     <string name="nav_map">Kort</string>
     <string name="nav_favorites">Favoritter</string>
     <string name="nav_about">Om</string>
@@ -22,7 +23,7 @@
     <string name="allow_permission">Tillad</string>
     <string name="deny_permission">Nægt</string>
     <string name="no_pois_near_user_location">ingen serviceydelser fundet nær din lokation</string>
-    <string name="enable_gps_to_continue">Kan ikke finde dni lokation. 
+    <string name="enable_gps_to_continue">Kan ikke finde din lokation. 
 \nAktiver GPS for at fortsætte</string>
     <string name="calculating_device_location">Vi finder din lokation.
 \nVent venligst.</string>
@@ -46,7 +47,6 @@
     <string name="sunday">Søn</string>
     <string name="all_week_days">Alle</string>
     <string name="enable">Aktiver</string>
-
     <string name="directions_to_here">rutevejledning med bil</string>
     <string name="create_poi">Opret interessepunkt</string>
     <string name="_24_7">24/7</string>
@@ -89,8 +89,6 @@
     <string name="credits">Krediteringer</string>
     <string name="open_source_culture">CityZen-applikationen er startet i Albanien med en masse ♥
 \ntil fri software og open source-kultur.</string>
-
-
     <string name="Cafes">Cafeer</string>
     <string name="Bars_Clubs">Barer</string>
     <string name="Restaurants">Restauranter</string>
@@ -100,7 +98,7 @@
     <string name="Tourism">Turisme</string>
     <string name="Hotels_Hostels">Hoteller</string>
     <string name="Transportation">Transport</string>
-    <string name="GasStations">Benzintanke</string>
+    <string name="GasStations">Tankstationer</string>
     <string name="Pharmacy_Healthcare">Sunhedsservice</string>
     <string name="Banks_ATMs_Exchange">Financielle services</string>
     <string name="MobilePhoneStore">Mobiltelefonforretninger</string>
@@ -113,35 +111,26 @@
     <string name="Education">Uddannelse</string>
     <string name="Location">Lokation</string>
     <string name="logged_in_as">Logget ind som:</string>
-
     <string name="login_to_osm">Log ind i OSM</string>
     <string name="logout">Log ud</string>
-
     <string name="no_results">Ingen resultater</string>
     <string name="search_again">Prøv venligst et andet søgeord</string>
     <string name="search_icon">søgeikon</string>
-
     <string name="no_favorites">Ingen favoritter</string>
     <string name="mark_locations_as_favorites">Lokationer markeret som favoritter vil blive vist her</string>
     <string name="favorites_icon">favoritikon</string>
-
     <string name="no_info_available">Ingen information tilgængelig</string>
     <string name="open">Åben</string>
     <string name="closed">Lukket</string>
-
     <string name="search">Søg</string>
     <string name="my_location">Min lokation</string>
     <string name="clear_map">Ryd kortet</string>
-
     <string name="search_hint">Søg…</string>
-
     <string name="address_label">Adresse:</string>
     <string name="server_error">Kunne ikke kommunikere med serveren</string>
     <string name="server_response_error">Kunne ikke læser serverens svar</string>
-
     <string name="poi_details_close">Luk interessepunkt</string>
     <string name="poi_details_mark_as_favorite">Marker interessepunkt som favorit</string>
     <string name="poi_details_edit">Rediger interessepunkt</string>
     <string name="poi_details_share">Del interessepunkt som geo-link</string>
-
 </resources>
