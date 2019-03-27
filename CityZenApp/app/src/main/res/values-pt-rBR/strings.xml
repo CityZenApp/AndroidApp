@@ -1,5 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<resources><string name="app_name">CityZen</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CityZen</string>
     <string name="loading">Carregando</string>
     <string name="retry">Tentar novamente</string>
     <string name="oauth_failed_permissions">Autorização falhou: Todas as permissões listadas precisam ser concedidas</string>
@@ -40,8 +41,6 @@
     <string name="sunday">Dom</string>
     <string name="all_week_days">Todos</string>
     <string name="enable">Ativar</string>
-
-
     <string name="directions_to_here">Rotas de carro</string>
     <string name="create_poi">Criar Ponto de Interesse</string>
     <string name="_24_7">24/7</string>
@@ -91,9 +90,7 @@
     <string name="credits_link">www.cityzenapp.co/credits</string>
     <string name="open_source_culture">O aplicativo CityZen iniciou na Albânia com muito ♥
 \npela cultura do código livre e aberto.</string>
-
-
-    <string name="Cafes">Lista de POIs</string>
+    <string name="Cafes">Cafés</string>
     <string name="Bars_Clubs">Bares</string>
     <string name="Restaurants">Restaurantes</string>
     <string name="FastFood">Comida rápida</string>
@@ -110,10 +107,9 @@
     <string name="RentBicycle">Aluguel de bicicleta</string>
     <string name="RentCar_CareSharing">Locadora de veículos</string>
     <string name="logged_in_as">Logado como:</string>
-
     <string name="login_to_osm">Logar ao OSM</string>
     <string name="logout">Deslogar</string>
-<string name="nav_categories">Categorias</string>
+    <string name="nav_categories">Categorias</string>
     <string name="nav_map">Mapa</string>
     <string name="nav_favorites">Favoritos</string>
     <string name="nav_about">Sobre</string>
@@ -126,28 +122,21 @@
     <string name="no_results">Sem resultados</string>
     <string name="search_again">Por favor tentar com outro termo</string>
     <string name="search_icon">ícone de procura</string>
-
     <string name="no_favorites">Sem favoritos</string>
     <string name="mark_locations_as_favorites">Localizações marcadas como favoritos irá aparecer aqui</string>
     <string name="favorites_icon">ícone favoritos</string>
-
     <string name="no_info_available">"Sem info disponível "</string>
     <string name="open">Aberto</string>
     <string name="closed">Fechado</string>
-
     <string name="search">Procurar</string>
     <string name="my_location">Minha localização</string>
     <string name="clear_map">Limpar mapa</string>
-
     <string name="search_hint">Procurando…</string>
-
     <string name="address_label">Endereço:</string>
     <string name="server_error">Erro de comunicação com o server</string>
     <string name="server_response_error">Erro ao ler a resposta do servidor</string>
-
     <string name="poi_details_close">Fechar POI</string>
     <string name="poi_details_mark_as_favorite">Marcar POI como favorito</string>
     <string name="poi_details_edit">Editar POI</string>
     <string name="poi_details_share">Compartilhar POI como geo-link</string>
-
 </resources>
