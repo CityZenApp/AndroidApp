@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Point;
-import android.support.v7.widget.RecyclerView;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +14,8 @@ import android.widget.TextView;
 
 import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Utils.RecyclerView.CategoryDisplayConfig;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 
 /**

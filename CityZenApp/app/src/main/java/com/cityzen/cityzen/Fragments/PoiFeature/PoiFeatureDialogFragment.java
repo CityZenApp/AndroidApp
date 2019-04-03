@@ -1,10 +1,6 @@
 package com.cityzen.cityzen.Fragments.PoiFeature;
 
 import android.os.Bundle;
-import android.support.v4.app.DialogFragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +14,11 @@ import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewItemClickInterface;
 import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewTouchListener;
 
 import java.util.ArrayList;
+
+import androidx.appcompat.widget.SearchView;
+import androidx.fragment.app.DialogFragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by Valdio Veliu on 14/05/2017.

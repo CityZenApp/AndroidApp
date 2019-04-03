@@ -1,16 +1,8 @@
 package com.cityzen.cityzen.Fragments;
 
-import android.content.res.TypedArray;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -21,8 +13,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.cityzen.cityzen.Adapters.ElementListAdapter;
 import com.cityzen.cityzen.Activities.MainActivity;
+import com.cityzen.cityzen.Adapters.ElementListAdapter;
 import com.cityzen.cityzen.Models.DeviceLocationData;
 import com.cityzen.cityzen.Models.ParcelablePOI;
 import com.cityzen.cityzen.R;
@@ -31,6 +23,7 @@ import com.cityzen.cityzen.Utils.MapUtils.OpeningHours.OpeningHoursUtils;
 import com.cityzen.cityzen.Utils.MapUtils.OsmTags;
 import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewItemClickInterface;
 import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewTouchListener;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.osmdroid.api.IMapController;
 import org.osmdroid.config.Configuration;
@@ -44,6 +37,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import info.metadude.java.library.overpass.models.Element;
 
 public class PoiListFragment extends Fragment {

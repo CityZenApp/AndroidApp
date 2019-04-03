@@ -5,8 +5,6 @@ import android.app.Activity;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +18,7 @@ import com.cityzen.cityzen.R;
 
 import java.util.List;
 
+import androidx.annotation.NonNull;
 import de.westnordost.osmapi.OsmConnection;
 import de.westnordost.osmapi.user.PermissionsDao;
 import oauth.signpost.OAuthConsumer;

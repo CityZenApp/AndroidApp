@@ -2,9 +2,6 @@ package com.cityzen.cityzen.Utils.RecyclerView;
 
 import android.content.Context;
 import android.graphics.PorterDuff;
-import android.support.annotation.ColorRes;
-import android.support.annotation.DrawableRes;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.widget.ImageView;
 
@@ -16,6 +13,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import androidx.annotation.ColorRes;
+import androidx.annotation.DrawableRes;
+import androidx.core.content.ContextCompat;
 
 /**
  * Utilities implementation for coloring category image view items.
