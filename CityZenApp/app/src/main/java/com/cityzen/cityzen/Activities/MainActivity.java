@@ -361,8 +361,6 @@ public class MainActivity extends AppCompatActivity
             // Do not have permissions, request permissions
             EasyPermissions.requestPermissions(MainActivity.this,
                     getString(R.string.write_storage_request),
-                    R.string.allow_permission,
-                    R.string.deny_permission,
                     WRITE_EXTERNAL_STORAGE_PERMISSION,
                     permissions);
         }
@@ -377,8 +375,6 @@ public class MainActivity extends AppCompatActivity
             // Do not have permissions, request permissions
             EasyPermissions.requestPermissions(MainActivity.this,
                     getString(R.string.location_request),
-                    R.string.allow_permission,
-                    R.string.deny_permission,
                     LOCATION_PERMISSION,
                     permissions);
         }
