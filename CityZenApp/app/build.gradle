@@ -16,8 +16,8 @@ android {
         applicationId "com.cityzen.cityzen"
         minSdkVersion 15
         targetSdkVersion 27
-        versionName "1.1.1"
-        versionCode 10100199
+        versionName "1.1.2"
+        versionCode 10100299
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
