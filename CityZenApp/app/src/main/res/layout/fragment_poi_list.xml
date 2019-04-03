@@ -7,7 +7,7 @@
     android:clickable="true"
     tools:context="com.cityzen.cityzen.Fragments.PoiListFragment">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/poiListToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
             android:buttonTint="@color/colorWhite" />
     </LinearLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/poiListRecyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -74,7 +74,7 @@
         android:padding="4dp"
         android:background="#80C7C7C7" />
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabPoiList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

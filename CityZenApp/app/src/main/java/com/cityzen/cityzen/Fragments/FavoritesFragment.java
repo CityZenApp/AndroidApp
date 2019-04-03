@@ -1,13 +1,6 @@
 package com.cityzen.cityzen.Fragments;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +13,12 @@ import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewItemClickInterface;
 import com.cityzen.cityzen.Utils.RecyclerView.RecyclerViewTouchListener;
 import com.cityzen.cityzen.Utils.RecyclerView.SimpleDividerItemDecoration;
 import com.cityzen.cityzen.Utils.StorageUtil;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class FavoritesFragment extends Fragment {
 

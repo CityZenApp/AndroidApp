@@ -3,10 +3,6 @@ package com.cityzen.cityzen.Fragments;
 import android.content.Context;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -22,17 +18,17 @@ import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import com.cityzen.cityzen.Activities.MainActivity;
 import com.cityzen.cityzen.Fragments.PoiFeature.FeatureSelectedCallback;
 import com.cityzen.cityzen.Fragments.PoiFeature.PoiFeatureDialogFragment;
-import com.cityzen.cityzen.Activities.MainActivity;
+import com.cityzen.cityzen.Fragments.Timer.TimeCallback;
+import com.cityzen.cityzen.Fragments.Timer.TimePickerFragment;
 import com.cityzen.cityzen.Models.OsmFeature;
 import com.cityzen.cityzen.Network.ChangesetCallback;
 import com.cityzen.cityzen.Network.CreateChangesetTask;
 import com.cityzen.cityzen.Network.CreatePoiTask;
 import com.cityzen.cityzen.Network.OsmOperationCallback;
 import com.cityzen.cityzen.R;
-import com.cityzen.cityzen.Fragments.Timer.TimeCallback;
-import com.cityzen.cityzen.Fragments.Timer.TimePickerFragment;
 import com.cityzen.cityzen.Utils.Development.AppToast;
 import com.cityzen.cityzen.Utils.MapUtils.MapUtils;
 import com.cityzen.cityzen.Utils.MapUtils.OsmTags;
@@ -48,6 +44,10 @@ import org.osmdroid.views.overlay.compass.InternalCompassOrientationProvider;
 import java.util.HashMap;
 import java.util.Map;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
 import de.westnordost.osmapi.OsmConnection;
 
 public class CreatePoiFragment extends Fragment implements TimeCallback, FeatureSelectedCallback {

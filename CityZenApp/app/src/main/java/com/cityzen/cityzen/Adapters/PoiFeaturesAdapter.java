@@ -1,7 +1,6 @@
 package com.cityzen.cityzen.Adapters;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,13 +9,13 @@ import android.widget.TextView;
 import com.cityzen.cityzen.Models.OsmFeature;
 import com.cityzen.cityzen.R;
 
-
 import java.util.ArrayList;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by Valdio Veliu on 26/04/2017.
  */
-
 public class PoiFeaturesAdapter extends RecyclerView.Adapter<PoiFeaturesAdapter.ViewHolder> {
 
     private Context context;
@@ -65,6 +64,4 @@ public class PoiFeaturesAdapter extends RecyclerView.Adapter<PoiFeaturesAdapter.
             featureTextView = (TextView) itemView.findViewById(R.id.featureTextView);
         }
     }
-
-
 }

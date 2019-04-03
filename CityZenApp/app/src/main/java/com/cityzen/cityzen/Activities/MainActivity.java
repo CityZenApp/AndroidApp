@@ -17,14 +17,6 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.app.AppCompatDelegate;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -32,30 +24,28 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.cityzen.cityzen.OsmModule;
-import com.cityzen.cityzen.R;
-import com.cityzen.cityzen.Utils.Development.AppLog;
-import com.cityzen.cityzen.Utils.RecyclerView.CategoryDisplayConfig;
-import com.github.clans.fab.FloatingActionButton;
-import com.github.clans.fab.FloatingActionMenu;
-import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.cityzen.cityzen.Fragments.CategoriesFragment;
 import com.cityzen.cityzen.Fragments.EditPoiFragment;
-import com.cityzen.cityzen.Fragments.PoiDetailsFragment;
-import com.cityzen.cityzen.Fragments.PoiListFragment;
-
 import com.cityzen.cityzen.Fragments.FavoritesFragment;
 import com.cityzen.cityzen.Fragments.MapFragment;
+import com.cityzen.cityzen.Fragments.PoiDetailsFragment;
+import com.cityzen.cityzen.Fragments.PoiListFragment;
 import com.cityzen.cityzen.Fragments.SearchFragment;
 import com.cityzen.cityzen.Fragments.SettingsFragment;
 import com.cityzen.cityzen.Models.DeviceLocationData;
 import com.cityzen.cityzen.Models.ParcelablePOI;
+import com.cityzen.cityzen.OsmModule;
+import com.cityzen.cityzen.R;
 import com.cityzen.cityzen.Utils.Development.AppToast;
 import com.cityzen.cityzen.Utils.DeviceUtils.DeviceUtils;
+import com.cityzen.cityzen.Utils.RecyclerView.CategoryDisplayConfig;
 import com.cityzen.cityzen.Utils.StorageUtil;
 import com.cityzen.cityzen.oauth.OAuth;
 import com.cityzen.cityzen.oauth.OAuthComponent;
 import com.cityzen.cityzen.oauth.OAuthWebViewDialogFragment;
+import com.github.clans.fab.FloatingActionButton;
+import com.github.clans.fab.FloatingActionMenu;
+import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.Marker;
@@ -66,6 +56,14 @@ import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import de.westnordost.osmapi.OsmConnection;
 import info.metadude.java.library.overpass.models.Element;
 import oauth.signpost.OAuthConsumer;
@@ -103,7 +101,7 @@ public class MainActivity extends AppCompatActivity
     private Marker routeMarker;
     private Polyline mapRoute;
     private ParcelablePOI destinationPoi;
-    private android.support.design.widget.FloatingActionButton fabPoiDetailsAfterRoute;
+    private com.google.android.material.floatingactionbutton.FloatingActionButton fabPoiDetailsAfterRoute;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -165,15 +163,13 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    /*********************************************************************************************/
-    /*********************************************************************************************/
     /**********************************Setup UI elements and their functionality***********************************/
     private void viewSetup() {
-        fabPoiDetailsAfterRoute = (android.support.design.widget.FloatingActionButton) findViewById(R.id.fabPoiDetailsAfterRoute);
-        floatingActionButton = (FloatingActionMenu) findViewById(R.id.mainFab);
+        fabPoiDetailsAfterRoute = findViewById(R.id.fabPoiDetailsAfterRoute);
+        floatingActionButton = findViewById(R.id.mainFab);
         floatingActionButton.setClosedOnTouchOutside(true);
 
-        navigation = (BottomNavigationViewEx) findViewById(R.id.navigation);
+        navigation = findViewById(R.id.navigation);
         //setup bottom navigation
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         navigation.setSelectedItemId(R.id.navigation_categories);
@@ -181,10 +177,10 @@ public class MainActivity extends AppCompatActivity
         navigation.enableShiftingMode(false);
         navigation.enableItemShiftingMode(false);
 
-        FloatingActionButton fabClearMap = (FloatingActionButton) findViewById(R.id.fabClearMap);
-        FloatingActionButton fabLocation = (FloatingActionButton) findViewById(R.id.fabLocation);
-        FloatingActionButton fabAdd = (FloatingActionButton) findViewById(R.id.fabAdd);
-        FloatingActionButton fabSearch = (FloatingActionButton) findViewById(R.id.fabSearch);
+        FloatingActionButton fabClearMap = findViewById(R.id.fabClearMap);
+        FloatingActionButton fabLocation = findViewById(R.id.fabLocation);
+        FloatingActionButton fabAdd = findViewById(R.id.fabAdd);
+        FloatingActionButton fabSearch = findViewById(R.id.fabSearch);
         fabClearMap.setOnClickListener(clickListenerFAB);
         fabLocation.setOnClickListener(clickListenerFAB);
         fabAdd.setOnClickListener(clickListenerFAB);
@@ -202,11 +198,11 @@ public class MainActivity extends AppCompatActivity
             public void run() {
                 if (navigation.getSelectedItemId() == R.id.navigation_map) {
                     if (destinationPoi != null && mapRoute != null && routeMarker != null)
-                        fabPoiDetailsAfterRoute.setVisibility(View.VISIBLE);
+                        fabPoiDetailsAfterRoute.show();
                     else
-                        fabPoiDetailsAfterRoute.setVisibility(View.GONE);
+                        fabPoiDetailsAfterRoute.hide();
                 } else {
-                    fabPoiDetailsAfterRoute.setVisibility(View.GONE);
+                    fabPoiDetailsAfterRoute.hide();
                 }
             }
         });
@@ -298,7 +294,7 @@ public class MainActivity extends AppCompatActivity
                     transaction.replace(R.id.content, fragment, "CategoriesFragment");
                     transaction.commit();
                     floatingActionButton.setVisibility(View.GONE);
-                    fabPoiDetailsAfterRoute.setVisibility(View.GONE);
+                    fabPoiDetailsAfterRoute.hide();
                     return true;
                 case R.id.navigation_map:
                     if (navigation.getSelectedItemId() != R.id.navigation_map) {
@@ -316,21 +312,21 @@ public class MainActivity extends AppCompatActivity
                     transaction.replace(R.id.content, fragment, "SearchFragment");
                     transaction.commit();
                     floatingActionButton.setVisibility(View.GONE);
-                    fabPoiDetailsAfterRoute.setVisibility(View.GONE);
+                    fabPoiDetailsAfterRoute.hide();
                     return true;
                 case R.id.navigation_favorites:
                     fragment = FavoritesFragment.newInstance();
                     transaction.replace(R.id.content, fragment, "FavoritesFragment");
                     transaction.commit();
                     floatingActionButton.setVisibility(View.GONE);
-                    fabPoiDetailsAfterRoute.setVisibility(View.GONE);
+                    fabPoiDetailsAfterRoute.hide();
                     return true;
                 case R.id.navigation_settings:
                     fragment = SettingsFragment.newInstance();
                     transaction.replace(R.id.content, fragment, "SettingsFragment");
                     transaction.commit();
                     floatingActionButton.setVisibility(View.GONE);
-                    fabPoiDetailsAfterRoute.setVisibility(View.GONE);
+                    fabPoiDetailsAfterRoute.hide();
                     return true;
             }
             return false;

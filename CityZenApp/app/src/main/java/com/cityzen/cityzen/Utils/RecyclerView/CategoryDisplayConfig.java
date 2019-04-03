@@ -1,13 +1,13 @@
 package com.cityzen.cityzen.Utils.RecyclerView;
 
-import android.support.annotation.ColorRes;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.StringRes;
-
 import com.cityzen.cityzen.R;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import androidx.annotation.ColorRes;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.StringRes;
 
 /**
  * Display configuration for all known categories.

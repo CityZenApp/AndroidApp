@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.v4.app.DialogFragment;
 import android.text.Html;
 import android.text.util.Linkify;
 import android.view.LayoutInflater;
@@ -19,7 +18,6 @@ import android.widget.TextView;
 import com.cityzen.cityzen.Activities.MainActivity;
 import com.cityzen.cityzen.Models.ParcelablePOI;
 import com.cityzen.cityzen.R;
-import com.cityzen.cityzen.Utils.Development.AppLog;
 import com.cityzen.cityzen.Utils.MapUtils.MapUtils;
 import com.cityzen.cityzen.Utils.PoiHelper;
 import com.cityzen.cityzen.Utils.StorageUtil;
@@ -34,6 +32,8 @@ import org.osmdroid.views.overlay.compass.InternalCompassOrientationProvider;
 
 import java.util.Locale;
 import java.util.Map;
+
+import androidx.fragment.app.DialogFragment;
 
 
 public class PoiDetailsFragment extends DialogFragment {

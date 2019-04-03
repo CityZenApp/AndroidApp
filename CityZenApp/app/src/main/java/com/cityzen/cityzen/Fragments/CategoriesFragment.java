@@ -1,27 +1,21 @@
 package com.cityzen.cityzen.Fragments;
 
 import android.content.Context;
-import android.content.res.Resources;
-import android.content.res.TypedArray;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.cityzen.cityzen.Adapters.CategoryAdapter;
 import com.cityzen.cityzen.Activities.MainActivity;
+import com.cityzen.cityzen.Adapters.CategoryAdapter;
 import com.cityzen.cityzen.Models.DeviceLocationData;
-import com.cityzen.cityzen.Utils.Development.AppToast;
-import com.cityzen.cityzen.Utils.MapUtils.PoiCategoryFilter.OsmTag;
 import com.cityzen.cityzen.R;
+import com.cityzen.cityzen.Utils.Development.AppToast;
 import com.cityzen.cityzen.Utils.MapUtils.PoiCategoryFilter.FilterCategory;
+import com.cityzen.cityzen.Utils.MapUtils.PoiCategoryFilter.OsmTag;
 import com.cityzen.cityzen.Utils.MapUtils.PoiCategoryFilter.PoiResponseListener;
 import com.cityzen.cityzen.Utils.MapUtils.PoiCategoryFilter.QueryPois;
 import com.cityzen.cityzen.Utils.RecyclerView.CategoryDisplayConfig;
@@ -32,6 +26,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import info.metadude.java.library.overpass.models.Element;
 
 public class CategoriesFragment extends Fragment {
