@@ -1,5 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<resources><string name="app_name">CityZen</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CityZen</string>
     <string name="later">Después</string>
     <string name="user_agent">CityZen</string>
     <string name="wifi">Wifi</string>
@@ -24,7 +25,7 @@
     <string name="only_currently_opened">Solo abiertos ahora</string>
     <string name="no_pois_near_user_location">No se han encontrado servicios junto a su ubicación</string>
     <string name="enable_gps_to_continue">No podemos encontrar su ubicación.
-\nEncienda el GPS para continuar</string>
+\nHabilite el GPS para continuar</string>
     <string name="calculating_device_location">Estamos calculando su ubicación.
 \nPor favor espere.</string>
     <string name="add_new_poi_toast">Haga clic en el mapa para añadir
@@ -45,7 +46,6 @@
     <string name="sunday">Dom</string>
     <string name="all_week_days">Todos</string>
     <string name="enable">Habilitar</string>
-
     <string name="directions_to_here">direcciones en coche</string>
     <string name="create_poi">Crear PDI</string>
     <string name="_24_7">24/7</string>
@@ -74,4 +74,21 @@
     <string name="sort_by_name">Ordenado por nombre</string>
     <string name="add_a_new_marker_on_the_map">Añadir marcador en el mapa</string>
     <string name="about_us">Acerca del proyecto</string>
-    </resources>
+    <string name="license">Licencia</string>
+    <string name="contact">Contacto</string>
+    <string name="postcode">Código postal</string>
+    <string name="Cafes">Cafeterías</string>
+    <string name="Bars_Clubs">Bares</string>
+    <string name="Restaurants">Restaurantes</string>
+    <string name="Post_Offices">Oficinas de correos</string>
+    <string name="Hotels_Hostels">Hoteles</string>
+    <string name="Transportation">Transportes</string>
+    <string name="Markets_Kiosks">Mercados</string>
+    <string name="Buildings">Edificios</string>
+    <string name="Location">Ubicación</string>
+    <string name="open">Abierto</string>
+    <string name="closed">Cerrado</string>
+    <string name="my_location">Mi ubicación</string>
+    <string name="search_hint">Buscar…</string>
+    <string name="address_label">Dirección:</string>
+</resources>
