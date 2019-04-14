@@ -91,4 +91,8 @@
     <string name="my_location">Mi ubicación</string>
     <string name="search_hint">Buscar…</string>
     <string name="address_label">Dirección:</string>
+    <string name="privacy_policy">Política de privacidad</string>
+    <string name="Bakeries">Panaderías / Pastelerías</string>
+    <string name="Tourism">Turismo</string>
+    <string name="GasStations">Gasolineras</string>
 </resources>
