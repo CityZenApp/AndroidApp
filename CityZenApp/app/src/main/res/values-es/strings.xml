@@ -95,4 +95,10 @@
     <string name="Bakeries">Panaderías / Pastelerías</string>
     <string name="Tourism">Turismo</string>
     <string name="GasStations">Gasolineras</string>
+    <string name="Banks_ATMs_Exchange">Servicios financieros</string>
+    <string name="Shopping_Malls">Tiendas</string>
+    <string name="Parking">Aparcamientos</string>
+    <string name="RentCar_CareSharing">Alquiler de coches</string>
+    <string name="Education">Educación</string>
+    <string name="server_error">Error comunicando con el servidor</string>
 </resources>
