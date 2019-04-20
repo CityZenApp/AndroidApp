@@ -101,4 +101,16 @@
     <string name="RentCar_CareSharing">Alquiler de coches</string>
     <string name="Education">Educación</string>
     <string name="server_error">Error comunicando con el servidor</string>
+    <string name="about_text">CityZen es una aplicación Android de fuente abierta que te ayuda a navegar y explorar la ciudad fácilmente. Con CityZen puedes encontrar puntos de interés (PDI) tales como cajeros, gasolineras, farmacias, tiendas de móviles y otros servicios interesantes cercanos. La aplicación muestra estos PDI basándose en la ubicación de tu móvil, pero lo hace respetando tu privacidad dado que no guarda tus datos de navegación. La aplicación está licenciada como fuente abierta porque queremos que el proyecto empodere a la comunidad por la comunidad. Iniciamos este proyecto como forma de potencias herramientas y plataformas tales como OpenStreeMap que respetan nuestras libertades. Si eres contribuyente de OpenStreetMap puedes añadir fácilmente información a los PDI editándolos desde CityZen.</string>
+    <string name="get_involved">Involúcrate</string>
+    <string name="credits">Créditos</string>
+    <string name="open_source_culture">CityZen empezó en Albania con un montón de ♥
+\n por la cultura del código libre y abierto.</string>
+    <string name="Pharmacy_Healthcare">Servicios sanitarios</string>
+    <string name="RentBicycle">Alquiler de bicicletas</string>
+    <string name="login_to_osm">Entrar en OSM</string>
+    <string name="logout">Salir</string>
+    <string name="poi_details_close">Cerrar PDI</string>
+    <string name="poi_details_mark_as_favorite">Marcar PDI como favorito</string>
+    <string name="poi_details_edit">Editar PDI</string>
 </resources>
