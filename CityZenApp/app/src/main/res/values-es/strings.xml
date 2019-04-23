@@ -113,4 +113,15 @@
     <string name="poi_details_close">Cerrar PDI</string>
     <string name="poi_details_mark_as_favorite">Marcar PDI como favorito</string>
     <string name="poi_details_edit">Editar PDI</string>
+    <string name="select_amenity_type">Seleccionar tipo de servicio</string>
+    <string name="select_amenity_type_to_continue">Seleccionar tipo de servicio para continuar</string>
+    <string name="alert_message">CityZen necesita tu ubicación para proporcionar servicios de mapas. ¿Quieres habilitar la ubicación\?</string>
+    <string name="house_number">Número de casa</string>
+    <string name="FastFood">Comida rápida</string>
+    <string name="MobilePhoneStore">Tiendas de móviles</string>
+    <string name="no_results">No hay resultados</string>
+    <string name="no_favorites">No hay favoritos</string>
+    <string name="mark_locations_as_favorites">Las ubicaciones marcadas como favoritas se mostrarán aquí</string>
+    <string name="no_info_available">No hay información disponible</string>
+    <string name="search">Buscar</string>
 </resources>
