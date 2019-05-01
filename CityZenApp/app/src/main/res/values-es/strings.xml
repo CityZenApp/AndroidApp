@@ -124,4 +124,12 @@
     <string name="mark_locations_as_favorites">Las ubicaciones marcadas como favoritas se mostrarán aquí</string>
     <string name="no_info_available">No hay información disponible</string>
     <string name="search">Buscar</string>
+    <string name="osm_routing_unavailable">Enrutamiento OSM no disponible en este momento. Intente más tarde</string>
+    <string name="logged_in_as">Conectado como:</string>
+    <string name="search_again">Por favor, intenta con otro término de búsqueda</string>
+    <string name="search_icon">icono de búsqueda</string>
+    <string name="favorites_icon">icono de favoritos</string>
+    <string name="clear_map">Despejar mapa</string>
+    <string name="server_response_error">Error leyendo la respuesta del servidor</string>
+    <string name="poi_details_share">Compartir PDI como geo-link</string>
 </resources>
