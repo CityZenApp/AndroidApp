@@ -51,7 +51,7 @@
     <string name="no_internet_to_update_poi">Keine Internetverbindung. Mit dem Internet verbinden, um fortzufahren</string>
     <string name="session_expired_toast">Ihre Sitzung ist abgelaufen. Bitte anmelden, um fortzufahren</string>
     <string name="internet_access">Internetzugang</string>
-    <string name="edit">Ändern</string>
+    <string name="edit">Bearbeiten</string>
     <string name="street">Straße</string>
     <string name="city">Ort</string>
     <string name="add_closing_hours">Schließzeiten hinzufügen</string>
@@ -113,19 +113,19 @@
     <string name="Post_Offices">Postamt</string>
     <string name="Parking">Parkplätze</string>
     <string name="no_results">Keine Treffer</string>
-    <string name="search_again">Bitte versuche einen anderen Suchbegriff</string>
-    <string name="search_icon">Suche Icon</string>
+    <string name="search_again">Bitte einen anderen Suchbegriff versuchen</string>
+    <string name="search_icon">Symbol suchen</string>
     <string name="no_favorites">Keine Favoriten</string>
-    <string name="mark_locations_as_favorites">Orte markiert als Favoriten erscheinen hier</string>
-    <string name="favorites_icon">Favoriten Icon</string>
+    <string name="mark_locations_as_favorites">Als Favoriten markierte Orte erscheinen hier</string>
+    <string name="favorites_icon">Favoritensymbol</string>
     <string name="nav_categories">Kategorien</string>
     <string name="nav_map">Karte</string>
     <string name="nav_favorites">Favoriten</string>
     <string name="nav_settings">Einstellungen</string>
-    <string name="search">Suche</string>
+    <string name="search">Suchen</string>
     <string name="my_location">Mein Standort</string>
     <string name="clear_map">Karte leeren</string>
-    <string name="search_hint">Suchen…</string>
+    <string name="search_hint">Suchen …</string>
     <string name="address_label">Adresse:</string>
     <string name="nav_about">Über</string>
     <string name="Buildings">Gebäude</string>
@@ -136,8 +136,8 @@
     <string name="closed">Geschlossen</string>
     <string name="server_error">Fehler bei der Serverkommunikation</string>
     <string name="server_response_error">Fehler bei der Verarbeitung der Serverantwort</string>
-    <string name="poi_details_close">POI schliessen</string>
+    <string name="poi_details_close">POI schließen</string>
     <string name="poi_details_mark_as_favorite">POI als Favorit markieren</string>
-    <string name="poi_details_edit">POI ändern</string>
+    <string name="poi_details_edit">POI bearbeiten</string>
     <string name="poi_details_share">POI als Geo-Link teilen</string>
 </resources>
