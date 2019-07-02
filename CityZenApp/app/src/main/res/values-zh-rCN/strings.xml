@@ -1,5 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<resources><string name="app_name">CityZen</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CityZen</string>
     <string name="oauth_communication_error">未能连上授权服务器</string>
     <string name="loading">载入中</string>
     <string name="retry">重试</string>
@@ -41,8 +42,6 @@
     <string name="sunday">星期日</string>
     <string name="all_week_days">全部</string>
     <string name="enable">启用</string>
-
-
     <string name="directions_to_here">汽车导航</string>
     <string name="create_poi">增添兴趣点</string>
     <string name="_24_7">24/7</string>
@@ -91,8 +90,6 @@
     <string name="credits_link">www.cityzenapp.co/credits</string>
     <string name="open_source_culture">CityZen在阿尔巴尼亚诞生，特别♥
 \n自由和开源文化。</string>
-
-
     <string name="Cafes">咖啡店</string>
     <string name="Bars_Clubs">酒吧和夜总会</string>
     <string name="Restaurants">餐馆</string>
@@ -110,11 +107,12 @@
     <string name="RentBicycle">租赁自行车</string>
     <string name="RentCar_CareSharing">租赁汽车和汽车共享</string>
     <string name="logged_in_as">登录为：</string>
-
     <string name="login_to_osm">登录OSM</string>
     <string name="logout">登出</string>
-<string name="nav_categories">分类</string>
+    <string name="nav_categories">分类</string>
     <string name="nav_map">地图</string>
     <string name="nav_favorites">收藏</string>
     <string name="nav_about">关于</string>
-    </resources>
+    <string name="my_location">我的地点</string>
+    <string name="Location">地点</string>
+</resources>
