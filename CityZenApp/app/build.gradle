@@ -12,8 +12,8 @@ android {
         applicationId "com.cityzen.cityzen"
         minSdkVersion 16
         targetSdkVersion 28
-        versionName "1.2.0"
-        versionCode 10200099
+        versionName "1.2.1"
+        versionCode 10200199
 
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -55,5 +55,6 @@ dependencies {
     implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.2'
     implementation 'pub.devrel:easypermissions:3.0.0'
     implementation 'io.github.rockerhieu:emojicon:1.4.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
     testImplementation 'junit:junit:4.12'
 }
