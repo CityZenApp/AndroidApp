@@ -95,13 +95,13 @@
     <string name="Restaurants">餐馆</string>
     <string name="FastFood">快餐店</string>
     <string name="Tourism">旅游</string>
-    <string name="Hotels_Hostels">酒店和旅社</string>
+    <string name="Hotels_Hostels">酒店</string>
     <string name="Transportation">交通</string>
     <string name="GasStations">加油站</string>
     <string name="Pharmacy_Healthcare">药房和医疗</string>
     <string name="Banks_ATMs_Exchange">银行、自动柜员机和外汇兑换店</string>
     <string name="MobilePhoneStore">手机店</string>
-    <string name="Markets_Kiosks">市场和贩卖亭</string>
+    <string name="Markets_Kiosks">市场</string>
     <string name="Shopping_Malls">商场</string>
     <string name="Parkings">泊车</string>
     <string name="RentBicycle">租赁自行车</string>
