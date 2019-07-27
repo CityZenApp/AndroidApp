@@ -51,4 +51,6 @@
     <string name="closed">Закрыто</string>
     <string name="my_location">Моё местонахождение</string>
     <string name="clear_map">Очистить карту</string>
+    <string name="calculating_device_location">Мы выясняем ваше местоположение.
+\nПожалуйста, подождите.</string>
 </resources>
