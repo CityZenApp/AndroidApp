@@ -1,15 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources><string name="nav_categories">Категории</string>
+<resources>
+    <string name="nav_categories">Категории</string>
     <string name="nav_map">Карта</string>
     <string name="nav_favorites">Избранное</string>
     <string name="nav_about">О программе</string>
     <string name="oauth_communication_error">Невозможно подключится к серверу авторизации</string>
     <string name="loading">Загрузка</string>
     <string name="retry">Повторить</string>
-    <string name="oauth_failed_permissions">Авторизация провалена: Все перечисленные разрешения должны быть предоставлены</string>
+    <string name="oauth_failed_permissions">Не удалось авторизоваться: должны быть предоставлены все перечисленные разрешения</string>
     <string name="offline">Вы не в сети</string>
     <string name="confirmation_authorize_now">Для внесения изменений в OpenStreetMap вам нужно войти в систему под своей учетной записью пользователя OSM. Авторизоваться сейчас\?</string>
     <string name="later">Позже</string>
     <string name="filter">Фильтр</string>
     <string name="only_currently_opened">"Открыт только в настоящее время "</string>
+    <string name="write_storage_request">CityZen необходимо разрешение на запись для предоставления карт</string>
+    <string name="write_storage_request_toast">CityZen должен иметь разрешение на запись для предоставления карт</string>
+    <string name="allow_permission">Разрешить</string>
+    <string name="deny_permission">Отклонить</string>
+    <string name="add">Добавить</string>
+    <string name="cancel">Сбросить</string>
+    <string name="name">Имя</string>
+    <string name="address">Адрес</string>
+    <string name="opening_hours">Часы работы</string>
+    <string name="opening">Открыто</string>
+    <string name="closing">Закрыто</string>
+    <string name="no_internet_to_update_poi">Нет доступа к интернет. Подключитесь, чтобы продолжить</string>
+    <string name="session_expired_toast">Время соединения истекло. Войдите, чтобы продолжить</string>
+    <string name="edit">Изменить</string>
+    <string name="street">Улица</string>
+    <string name="city">Город</string>
+    <string name="updated_successfully">Обновление прошло успешно</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="add_a_new_marker_on_the_map">Добавить отметку на карте</string>
+    <string name="about_us">О проекте</string>
+    <string name="license">Лицензия</string>
+    <string name="house_number">Номер дома</string>
+    <string name="open_source_culture">Приложение CityZenwas сделано в Албании с большим количеством ♥
+\nдля свободного использования и open source культуры.</string>
+    <string name="Cafes">Кафе</string>
+    <string name="Bars_Clubs">Бары</string>
+    <string name="Restaurants">Рестораны</string>
+    <string name="Post_Offices">Почта</string>
+    <string name="Tourism">Туризм</string>
+    <string name="Markets_Kiosks">Магазины</string>
+    <string name="Parking">Парковка</string>
+    <string name="Education">Образование</string>
+    <string name="logout">Выйти</string>
+    <string name="open">Открыто</string>
+    <string name="closed">Закрыто</string>
+    <string name="my_location">Моё местонахождение</string>
+    <string name="clear_map">Очистить карту</string>
+    <string name="calculating_device_location">Мы выясняем ваше местоположение.
+\nПожалуйста, подождите.</string>
 </resources>
