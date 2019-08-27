@@ -53,4 +53,7 @@
     <string name="clear_map">Очистить карту</string>
     <string name="calculating_device_location">Мы выясняем ваше местоположение.
 \nПожалуйста, подождите.</string>
+    <string name="no_pois_near_user_location">не найдено ни одного сервиса рядом с вами</string>
+    <string name="enable_gps_to_continue">Ваше местоположение не найдено.
+\nВключите GPS что бы продолжить</string>
 </resources>
