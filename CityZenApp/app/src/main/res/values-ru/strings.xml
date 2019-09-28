@@ -56,4 +56,25 @@
     <string name="no_pois_near_user_location">не найдено ни одного сервиса рядом с вами</string>
     <string name="enable_gps_to_continue">Ваше местоположение не найдено.
 \nВключите GPS что бы продолжить</string>
+    <string name="wifi">Беспроводной доступ в интернет</string>
+    <string name="email">Электронная почта</string>
+    <string name="website">Веб-сайт</string>
+    <string name="phone">Телефон</string>
+    <string name="monday">Пн</string>
+    <string name="tuesday">Вт</string>
+    <string name="wednesday">Ср</string>
+    <string name="thursday">Чт</string>
+    <string name="friday">Пт</string>
+    <string name="saturday">Сб</string>
+    <string name="sunday">Вс</string>
+    <string name="all_week_days">Все</string>
+    <string name="enable">Включить</string>
+    <string name="directions_to_here">маршрут на машине</string>
+    <string name="create_poi">Создать POI</string>
+    <string name="_24_7">24/7</string>
+    <string name="done">Готово</string>
+    <string name="internet_access">Доступ в интернет</string>
+    <string name="add_closing_hours">Добавить часы закрытия</string>
+    <string name="add_opening_hours">Добавить часы работы</string>
+    <string name="not_valid_website">Неправильный веб-сайт</string>
 </resources>
