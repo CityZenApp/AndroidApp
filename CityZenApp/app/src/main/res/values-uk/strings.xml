@@ -1,5 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<resources><string name="app_name">CityZen</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CityZen</string>
     <string name="loading">Завантаження</string>
     <string name="retry">Повторити</string>
     <string name="offline">Ви в автономному режимі</string>
@@ -18,7 +19,7 @@
     <string name="name">Назва</string>
     <string name="address">Адреса</string>
     <string name="logout">Вийти</string>
-<string name="nav_categories">Категорії</string>
+    <string name="nav_categories">Категорії</string>
     <string name="nav_map">Карта</string>
     <string name="nav_about">Про</string>
     <string name="oauth_communication_error">Не вдалося підключитися до сервера авторизації</string>
@@ -58,7 +59,6 @@
     <string name="no_results">Результатів не знайдено</string>
     <string name="no_info_available">Немає доступної інформації</string>
     <string name="clear_map">Очистити карту</string>
-
     <string name="address_label">Адреса:</string>
     <string name="write_storage_request">CityZen обов\'язково потрібні дозволи на запис для надання послуг з карти</string>
     <string name="monday">Пн</string>
@@ -70,14 +70,12 @@
     <string name="sunday">Нед</string>
     <string name="all_week_days">Усі</string>
     <string name="enable">Активувати</string>
-
     <string name="internet_access">Доступ до Інтернету</string>
     <string name="an_error_occurred">Сталася помилка</string>
     <string name="wlan">Wi-Fi</string>
     <string name="credits">Автори</string>
     <string name="my_location">Моє місцезнаходження</string>
     <string name="search_hint">Пошук…</string>
-
     <string name="server_error">Помилка зв\'язку з сервером</string>
     <string name="nav_favorites">Уподобання</string>
     <string name="confirmation_authorize_now">Щоб застосувати зміни до OpenStreetMap, вам потрібно ввійти в обліковий запис користувача OSM. Авторизувати зараз?</string>
@@ -93,4 +91,5 @@
     <string name="not_valid_website">Недійсний веб-сайт</string>
     <string name="not_valid_email">Не дійсна електронна адреса</string>
     <string name="updated_successfully">оновлено успішно</string>
-    </resources>
+    <string name="location_request">CityZen повинен мати місцезнаходження користувача для надання послуг карт</string>
+</resources>
