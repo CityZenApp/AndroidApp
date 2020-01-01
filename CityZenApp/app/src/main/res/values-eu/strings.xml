@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources><string name="nav_categories">Kategoriak</string>
+<resources>
+    <string name="nav_categories">Kategoriak</string>
     <string name="nav_map">Mapa</string>
     <string name="nav_favorites">Gogokoak</string>
     <string name="nav_about">Honi buruz</string>
@@ -43,7 +44,6 @@
     <string name="sunday">Ig</string>
     <string name="all_week_days">Guztiak</string>
     <string name="enable">Gaitu</string>
-
     <string name="directions_to_here">Kotxerako jarraibideak</string>
     <string name="create_poi">Sortu POI bat</string>
     <string name="_24_7">24/7</string>
@@ -83,8 +83,6 @@
     <string name="credits">Kredituak</string>
     <string name="open_source_culture">"CityZen aplikazioa Albanian hasi zen, 
 \nsoftware libre eta irekiarekiko  ♥ askoz."</string>
-
-
     <string name="Cafes">Kafetegiak</string>
     <string name="Bars_Clubs">Tabernak</string>
     <string name="Restaurants">Jatetxeak</string>
@@ -107,38 +105,29 @@
     <string name="Education">Hezkuntza</string>
     <string name="Location">Kokalekua</string>
     <string name="logged_in_as">Saioa honela hasita:</string>
-
     <string name="login_to_osm">Hasi saioa OSM-n</string>
     <string name="logout">Amaitu saioa</string>
-
     <string name="no_results">Ez dago emaitzarik</string>
     <string name="search_again">Saiatu bilaketaren hitzak aldatzen</string>
     <string name="search_icon">bilaketa ikonoa</string>
-
     <string name="no_favorites">Gogokorik ez</string>
     <string name="mark_locations_as_favorites">Gogoko gisa markatutako kokalekuak hemen agertuko dira</string>
     <string name="favorites_icon">gogokoen ikonoa</string>
-
     <string name="no_info_available">Ez dago informaziorik eskuragarri</string>
     <string name="open">Irekita</string>
     <string name="closed">Itxita</string>
-
     <string name="search">Bilatu</string>
     <string name="my_location">Nire kokalekua</string>
     <string name="clear_map">Garbitu mapa</string>
-
     <string name="search_hint">Bilatu…</string>
-
     <string name="address_label">Helbidea:</string>
     <string name="server_error">Errorea zerbitzariarekin komunikatzean</string>
     <string name="server_response_error">Errorea zerbitzariaren erantzuna irakurtzean</string>
-
     <string name="poi_details_close">Itxi POI-a</string>
     <string name="poi_details_mark_as_favorite">Markatu POI-a gogoko gisa</string>
     <string name="poi_details_edit">Editatu POI-a</string>
     <string name="poi_details_share">Partekatu POI-a geo-esteka gisa</string>
-
-<string name="about_text">CitiZen hirian erraz mugitu eta hau ikertzen laguntzeko kode irekiko Android aplikazio bat da. CityZen erabilita interesezko puntuak aurkitu ditzakezu (POI), esaterako kutxazainak, gasolindegiak, farmaziak, mugikor dendak eta interesezkoak diren inguruko beste toki batzuk. Aplikazioak zure mugikorraren kokalekuaren arabera erakusten ditu POI hauek, baina zure pribatutasunari begirunea dio eta ez du zure nondik norakoen daturik gordetzen. Aplikazioa kode irekiko lizentzia du proiektuak komunitateak komunitatearentzat egina izate nahi dugulako. Zure askatasunei begirunea dieten OpenStreeMap bezalako proiektuak bultzatzeko abiatu dugu proiektu hau. OpenStreetMap proiektuan parte hartzen baduzu informazioa erraz gehitu dezakezu POI hauek CityZen aplikazioan bertan editatuz.</string>
+    <string name="about_text">CityZen hirian erraz mugitu eta hau ikertzen laguntzeko kode irekiko Android aplikazio bat da. CityZen erabilita interesezko puntuak aurkitu ditzakezu (POI), esaterako kutxazainak, gasolindegiak, farmaziak, mugikor dendak eta interesezkoak diren inguruko beste toki batzuk. Aplikazioak zure mugikorraren kokalekuaren arabera erakusten ditu POI hauek, baina zure pribatutasunari begirunea dio eta ez du zure nondik norakoen daturik gordetzen. Aplikazioa kode irekiko lizentzia du proiektuak komunitateak komunitatearentzat egina izate nahi dugulako. Zure askatasunei begirunea dieten OpenStreetMap bezalako proiektuak bultzatzeko abiatu dugu proiektu hau. OpenStreetMap proiektuan parte hartzen baduzu informazioa erraz gehitu dezakezu POI hauek CityZen aplikazioan bertan editatuz.</string>
     <string name="alert_message">CityZen aplikazioak zure kokalekua behar du mapen zerbitzua emateko. Gaitu kokapena?</string>
     <string name="osm_routing_unavailable">OSM bide-argibideak ez daude eskuragarri une honetan. Saiatu geroago</string>
-    </resources>
+</resources>
