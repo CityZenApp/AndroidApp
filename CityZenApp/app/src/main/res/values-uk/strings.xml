@@ -92,4 +92,5 @@
     <string name="not_valid_email">Не дійсна електронна адреса</string>
     <string name="updated_successfully">оновлено успішно</string>
     <string name="location_request">CityZen повинен мати місцезнаходження користувача для надання послуг карт</string>
+    <string name="Location">Місцезнаходження</string>
 </resources>
