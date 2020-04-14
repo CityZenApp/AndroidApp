@@ -1,10 +1,11 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<resources><string name="app_name">CityZen</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CityZen</string>
     <string name="oauth_communication_error">Impossible de se connecter au serveur d\'autorisation</string>
     <string name="loading">En cours de chargement</string>
     <string name="retry">Réessayer</string>
-    <string name="oauth_failed_permissions">Autorisation échouée: Toutes les permissions listées doivent être acceptées</string>
-    <string name="offline">Vous êtes hors-ligne</string>
+    <string name="oauth_failed_permissions">Autorisation échouée : toutes les permissions listées doivent être acceptées</string>
+    <string name="offline">Vous êtes hors ligne</string>
     <string name="confirmation_authorize_now">Vous devez vous connecter avec votre compte OSM pour modifier les données. Se connecter maintenant ?</string>
     <string name="only_currently_opened">Uniquement ceux ouverts pour le moment</string>
     <string name="write_storage_request">CityZen a besoin des permissions d\'écriture pour fournir les services cartographiques</string>
@@ -24,8 +25,8 @@
     <string name="add">Ajouter</string>
     <string name="cancel">Annuler</string>
     <string name="wifi">WiFi</string>
-    <string name="email">E-mail</string>
-    <string name="website">Site internet</string>
+    <string name="email">Courriel</string>
+    <string name="website">Site web</string>
     <string name="phone">Téléphone</string>
     <string name="name">Nom</string>
     <string name="address">Adresse</string>
@@ -39,8 +40,6 @@
     <string name="sunday">Dim</string>
     <string name="all_week_days">Tous</string>
     <string name="enable">Activer</string>
-
-
     <string name="create_poi">Créer un POI</string>
     <string name="_24_7">24/7</string>
     <string name="done">Terminé</string>
@@ -52,8 +51,8 @@
     <string name="city">Ville</string>
     <string name="add_closing_hours">Ajouter les heures de fermeture</string>
     <string name="add_opening_hours">Ajouter les heures d\'ouverture</string>
-    <string name="not_valid_website">Site internet invalide</string>
-    <string name="not_valid_email">E-mail invalide</string>
+    <string name="not_valid_website">Site web invalide</string>
+    <string name="not_valid_email">Courriel invalide</string>
     <string name="an_error_occurred">Une erreur est survenue</string>
     <string name="updated_successfully">mise à jour réussie</string>
     <string name="editing_is_not_possible">La mise à jour n\'est pas possible pour</string>
@@ -62,7 +61,7 @@
     <string name="no">Non</string>
     <string name="sort_by_name">Trier par nom</string>
     <string name="add_a_new_marker_on_the_map">Ajouter un marqueur sur la carte</string>
-    <string name="about_us">A propos du projet</string>
+    <string name="about_us">À propos du projet</string>
     <string name="about_text">CityZen est une application Android open source qui vous aide à naviguer et à explorer facilement la ville. Avec CityZen, vous trouverez des points d\'intérêt tels que des guichets automatiques, des stations-service, des pharmacies, des magasins de téléphonie mobile et d\'autres services intéressants près de chez vous. L\'application affiche ces POI en fonction de le votre position, mais elle le fait en respectant votre vie privée car nous ne conservons pas vos données de navigation. L\'application est sous licence open source car nous voulons que le projet soit habilité par la communauté pour la communauté. Nous avons initié ce projet comme un moyen d\'habiliter des outils et des plateformes telles que OpenStreetMap qui respectent nos libertés. Si vous êtes un contributeur OpenStreetMap, vous pouvez facilement ajouter des informations aux POI en les éditant dans CityZen.</string>
     <string name="domain">www.cityzenapp.co</string>
     <string name="license_link">www.cityzenapp.co/license</string>
@@ -79,9 +78,8 @@
     <string name="get_involved_link">www.github.com/CityZenApp</string>
     <string name="credits">Crédits</string>
     <string name="credits_link">www.cityzenapp.co/credits</string>
-    <string name="open_source_culture">L\'application CityZen a été initiée en Albanie avec beaucoup d\'♥ pour la culture libre et open source.</string>
-
-
+    <string name="open_source_culture">L\'application CityZen a été lancée en Albanie avec beaucoup d\'♥
+\npour la culture libre et open source.</string>
     <string name="Cafes">Cafés</string>
     <string name="Bars_Clubs">Bars</string>
     <string name="Restaurants">Restaurants</string>
@@ -99,10 +97,9 @@
     <string name="RentBicycle">Location de vélo</string>
     <string name="RentCar_CareSharing">Location de voiture</string>
     <string name="logged_in_as">Connecté comme :</string>
-
     <string name="login_to_osm">Se connecter à OSM</string>
     <string name="logout">Se déconnecter</string>
-<string name="later">Plus tard</string>
+    <string name="later">Plus tard</string>
     <string name="filter">Filtrer</string>
     <string name="wlan">Wi-Fi</string>
     <string name="created_succesfully">créé avec succès</string>
@@ -118,36 +115,29 @@
     <string name="no_results">Aucun résultat</string>
     <string name="search_again">Veuillez essayer un autre terme de recherche</string>
     <string name="search_icon">icône de recherche</string>
-
     <string name="no_favorites">Aucun favori</string>
     <string name="mark_locations_as_favorites">Les lieux marqués comme favoris apparaîtront ici</string>
     <string name="favorites_icon">icône favoris</string>
-
-<string name="nav_categories">Catégories</string>
+    <string name="nav_categories">Catégories</string>
     <string name="nav_map">Carte</string>
     <string name="nav_favorites">Favoris</string>
     <string name="nav_settings">Paramètres</string>
-    <string name="search">Recherche</string>
+    <string name="search">Rechercher</string>
     <string name="my_location">Ma position</string>
     <string name="clear_map">Vider la carte</string>
-
     <string name="search_hint">Recherche…</string>
-
-    <string name="address_label">Adresse:</string>
-    <string name="nav_about">A propos</string>
+    <string name="address_label">Adresse :</string>
+    <string name="nav_about">À propos</string>
     <string name="Buildings">Bâtiments</string>
-    <string name="Education">Education</string>
+    <string name="Education">Éducation</string>
     <string name="Location">Position</string>
     <string name="no_info_available">Aucune information disponible</string>
     <string name="open">Ouvert</string>
     <string name="closed">Fermé</string>
-
     <string name="server_error">Erreur de communication avec le serveur</string>
     <string name="server_response_error">Erreur d\'interprétation de la réponse du serveur</string>
-
     <string name="poi_details_close">Fermer la fiche d\'information</string>
     <string name="poi_details_mark_as_favorite">Marquer cet endroit comme favori</string>
     <string name="poi_details_edit">Modifier les informations</string>
     <string name="poi_details_share">Partager cet endroit</string>
-
 </resources>
