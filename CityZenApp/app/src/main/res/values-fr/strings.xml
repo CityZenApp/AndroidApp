@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">CityZen</string>
     <string name="oauth_communication_error">Impossible de se connecter au serveur d\'autorisation</string>
-    <string name="loading">En cours de chargement</string>
+    <string name="loading">Chargement</string>
     <string name="retry">Réessayer</string>
     <string name="oauth_failed_permissions">Autorisation échouée : toutes les permissions listées doivent être acceptées</string>
     <string name="offline">Vous êtes hors ligne</string>
