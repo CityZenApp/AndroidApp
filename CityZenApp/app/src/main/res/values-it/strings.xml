@@ -124,7 +124,7 @@
     <string name="search_again">Prova un altro termine di ricerca</string>
     <string name="search_icon">icona ricerca</string>
     <string name="no_favorites">Nessun preferito</string>
-    <string name="mark_locations_as_favorites">I preferiti saranno visualizzati qui</string>
+    <string name="mark_locations_as_favorites">Le località preferite verranno visualizzate qui</string>
     <string name="favorites_icon">icona preferiti</string>
     <string name="my_location">La mia posizione</string>
     <string name="clear_map">Pulisci la mappa</string>
