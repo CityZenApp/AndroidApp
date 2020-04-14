@@ -100,7 +100,7 @@
     <string name="login_to_osm">Se connecter à OSM</string>
     <string name="logout">Se déconnecter</string>
     <string name="later">Plus tard</string>
-    <string name="filter">Filtrer</string>
+    <string name="filter">Filtre</string>
     <string name="wlan">Wi-Fi</string>
     <string name="created_succesfully">créé avec succès</string>
     <string name="directions_to_here">directions en voiture</string>
