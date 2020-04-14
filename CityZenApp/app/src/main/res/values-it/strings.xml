@@ -131,7 +131,7 @@
     <string name="search_hint">Ricerca…</string>
     <string name="nav_about">Informazioni</string>
     <string name="Buildings">Edifici</string>
-    <string name="Education">Istruzione</string>
+    <string name="Education">Educazione</string>
     <string name="Location">Posizione</string>
     <string name="server_error">Errore di comunicazione con il server</string>
     <string name="server_response_error">Errore di lettura della risposta del server</string>
