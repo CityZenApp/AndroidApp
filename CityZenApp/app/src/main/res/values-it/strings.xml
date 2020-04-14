@@ -28,7 +28,7 @@
     <string name="cancel">Cancella</string>
     <string name="wifi">Wifi</string>
     <string name="email">Email</string>
-    <string name="website">Indirizzo web</string>
+    <string name="website">Sito web</string>
     <string name="phone">Telefono</string>
     <string name="name">Nome</string>
     <string name="address">Indirizzo</string>
@@ -56,7 +56,7 @@
     <string name="city">Città</string>
     <string name="add_closing_hours">Aggiungere orario di chiusura</string>
     <string name="add_opening_hours">Aggiungere orario di apertura</string>
-    <string name="not_valid_website">Indirizzo web non valido</string>
+    <string name="not_valid_website">Sito web non valido</string>
     <string name="not_valid_email">Indirizzo email non valido</string>
     <string name="an_error_occurred">Errore</string>
     <string name="updated_successfully">Aggiornamento andato a buon fine</string>
@@ -64,7 +64,7 @@
     <string name="poi_type">Tipo di punto di interesse</string>
     <string name="select_amenity_type">Selezionare il tipo di servizio</string>
     <string name="select_amenity_type_to_continue">Selezionare il tipo di servizio per continuare</string>
-    <string name="yes">Si</string>
+    <string name="yes">Sì</string>
     <string name="no">No</string>
     <string name="wired">Connessione via cavo</string>
     <string name="wlan">Wi-Fi</string>
@@ -90,7 +90,7 @@
     <string name="credits_link">www.cityzenapp.co/credits</string>
     <string name="open_source_culture">L\'app CityZen è stata avviata in Albania con tanto ♥
 \nper la cultura libera e open source.</string>
-    <string name="Cafes">Caffé</string>
+    <string name="Cafes">Caffè</string>
     <string name="Bars_Clubs">Locali</string>
     <string name="Restaurants">Ristoranti</string>
     <string name="FastFood">Fast food</string>
