@@ -1,5 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<resources><string name="app_name">CityZen</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CityZen</string>
     <string name="oauth_communication_error">Δεν ήταν δυνατή η σύνδεση με τον διακομιστή ταυτοποίησης</string>
     <string name="retry">Δοκιμάστε ξανά</string>
     <string name="later">Αργότερα</string>
@@ -53,8 +54,6 @@
 \nΠαρακαλώ περιμένετε.</string>
     <string name="add">Προσθήκη</string>
     <string name="enable">Ενεργοποίηση</string>
-
-
     <string name="directions_to_here">οδηγίες με αυτοκίνητο</string>
     <string name="create_poi">Δημιουργία Σημείου Ενδιαφέροντος</string>
     <string name="opening">Άνοιγμα</string>
@@ -80,7 +79,7 @@
     <string name="contact">Επικοινωνία</string>
     <string name="alert_message">Για την παροχή υπηρεσιών χάρτη, το CityZen χρειάζεται την τοποθεσία σας. Θέλετε να την ενεργοποιήσετε;</string>
     <string name="osm_routing_unavailable">Η δρομολόγηση του OSM δεν είναι διαθέσιμη αυτήν τη στιγμή. Δοκιμάστε αργότερα</string>
-    <string name="postcode">Τ.Κ.</string>
+    <string name="postcode">Ταχυδρομικός κώδικας</string>
     <string name="Cafes">Λίστα Σημείων Ενδιαφέροντος</string>
     <string name="Bars_Clubs">Μπαρ</string>
     <string name="Restaurants">Εστιατόρια</string>
@@ -96,10 +95,9 @@
     <string name="RentBicycle">Ενοικίαση ποδηλάτων</string>
     <string name="RentCar_CareSharing">Ενοικίαση αυτοκινήτων</string>
     <string name="logged_in_as">Έχετε συνδεθεί ως:</string>
-
     <string name="login_to_osm">Σύνδεση στο OSM</string>
     <string name="logout">Αποσύνδεση</string>
-<string name="oauth_failed_permissions">Η εξουσιοδότηση απέτυχε:όλα τα αναφερόμενα δικαιώματα πρέπει να δοθούν</string>
+    <string name="oauth_failed_permissions">Η εξουσιοδότηση απέτυχε:όλα τα αναφερόμενα δικαιώματα πρέπει να δοθούν</string>
     <string name="offline">Είστε εκτός σύνδεσης</string>
     <string name="confirmation_authorize_now">Θα πρέπει να συνδεθείτε με τον OSM λογαριασμό σας για να εφαρμόσετε αλλαγές στο ΟpenStreetMap. Σύνδεση τώρα;</string>
     <string name="only_currently_opened">Μόνο τρεχόντως ανοιχτά</string>
@@ -110,8 +108,6 @@
     <string name="credits">Συντελεστές</string>
     <string name="open_source_culture">Η εφαρμογή CityZen ξεκίνησε στην Αλβανία με πολλή ♥
 \nγια την κουλτούρα του Ελεύθερου Λογισμικού.</string>
-
-
     <string name="Bakeries">Αρτοποιεία &amp; Φούρνοι</string>
     <string name="Post_Offices">Ταχυδρομεία</string>
     <string name="FastFood">Γρήγορο φαγητό</string>
@@ -119,21 +115,17 @@
     <string name="no_results">Δεν υπάρχουν αποτελέσματα</string>
     <string name="search_again">Παρακαλώ δοκιμάστε έναν άλλο όρο αναζήτησης</string>
     <string name="search_icon">Εικονίδιο αναζήτησης</string>
-
     <string name="no_favorites">Κανένα Αγαπημένο</string>
     <string name="mark_locations_as_favorites">"Τοποθεσίες με τη σήμανση \"Αγαπημένο\" θα εμφανίζονται εδώ. "</string>
     <string name="favorites_icon">εικονίδιο \"Αγαπημένα\"</string>
-
-<string name="nav_categories">Κατηγορίες</string>
+    <string name="nav_categories">Κατηγορίες</string>
     <string name="nav_map">Χάρτης</string>
     <string name="nav_favorites">Αγαπημένα</string>
     <string name="nav_settings">Ρυθμίσεις</string>
     <string name="search">Αναζήτηση</string>
     <string name="my_location">Η τοποθεσία μου</string>
     <string name="clear_map">Καθαρισμός χάρτη</string>
-
     <string name="search_hint">Αναζήτηση…</string>
-
     <string name="address_label">Διεύθυνση:</string>
     <string name="nav_about">Σχετικά</string>
     <string name="Buildings">Κτήρια</string>
@@ -142,13 +134,10 @@
     <string name="no_info_available">Δεν υπάρχουν διαθέσιμες πληροφορίες</string>
     <string name="open">Ανοιχτό</string>
     <string name="closed">Κλειστό</string>
-
     <string name="server_error">Σφάλμα κατά την επικοινωνία με τον διακομιστή</string>
     <string name="server_response_error">Σφάλμα κατά την ανάγνωση της απόκρισης διακομιστή</string>
-
     <string name="poi_details_close">Κλείσιμο ΣΕ</string>
     <string name="poi_details_mark_as_favorite">Σήμανση ΣΕ ως Αγαπημένο</string>
     <string name="poi_details_edit">Επεξεργασία ΣΕ</string>
     <string name="poi_details_share">Κοινοποιήστε το ΣΕ ως γεωσύνδεσμο</string>
-
 </resources>
