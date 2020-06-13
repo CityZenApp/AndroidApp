@@ -1,5 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<resources><string name="app_name">CityZen</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CityZen</string>
     <string name="nav_categories">Kategoriler</string>
     <string name="nav_map">Harita</string>
     <string name="nav_favorites">Favoriler</string>
@@ -44,8 +45,7 @@
     <string name="sunday">Paz</string>
     <string name="all_week_days">Tüm</string>
     <string name="enable">Etkin</string>
-
-    <string name="directions_to_here">"araba ile yol tarifi "</string>
+    <string name="directions_to_here">araba ile yol tarifi</string>
     <string name="create_poi">POI oluştur</string>
     <string name="_24_7">7/24</string>
     <string name="opening">Açılıyor</string>
@@ -57,8 +57,8 @@
     <string name="edit">Düzen</string>
     <string name="street">Cadde</string>
     <string name="city">Şehir</string>
-    <string name="add_closing_hours">"Kapanış saatleri ekleyin "</string>
-    <string name="add_opening_hours">"Açılış saatleri ekleyin "</string>
+    <string name="add_closing_hours">Kapanış saatleri ekleyin</string>
+    <string name="add_opening_hours">Açılış saatleri ekleyin</string>
     <string name="not_valid_website">Geçerli bir web sitesi değil</string>
     <string name="not_valid_email">Geçerli bir e-posta değil</string>
     <string name="an_error_occurred">Bir hata oluştu</string>
@@ -74,7 +74,7 @@
     <string name="created_succesfully">başarıyla oluşturuldu</string>
     <string name="sort_by_name">İsme göre sırala</string>
     <string name="add_a_new_marker_on_the_map">Haritada bir işaretçi ekle</string>
-    <string name="about_us">"Proje hakkında "</string>
+    <string name="about_us">Proje hakkında</string>
     <string name="about_text">CityZen kolayca gezinmek ve şehri keşfetmeye yardımcı olan açık kaynak kodlu bir Android uygulamasıdır. CityZen ile ATM\'ler, benzin istasyonları, eczaneler, cep telefonu mağazaları ve yakınınızdaki diğer ilginç hizmetler gibi ilgi çekici noktaları (POI\'ler) bulabilirsiniz. Uygulama, akıllı telefonunuzun bulunduğu yere göre bu POI\'leri gösterir, ancak gezinme verilerinizi saklamamamız nedeniyle gizliliğinize saygı göstererek bunu yapar. Uygulama, açık kaynak lisanslıdır, çünkü projenin topluluk için topluluk tarafından yetkilendirilmesini istiyoruz. Bu projeyi, özgürlüklerimize saygılı OpenStreetMap gibi araçları ve platformları güçlendirmenin bir yolu olarak başlattık. Bir OpenStreetMap katılımcısı iseniz, CityZen içinde düzenleyerek POI\'lere kolayca bilgi ekleyebilirsiniz.</string>
     <string name="license">Lisans</string>
     <string name="privacy_policy">Gizlilik İlkesi</string>
@@ -87,8 +87,6 @@
     <string name="credits">Emeği geçenler</string>
     <string name="open_source_culture">CityZen uygulaması, özgür ve açık kaynak kültürü için
 \n çok sayıda ♥ ile Arnavutluk\'ta başlatıldı.</string>
-
-
     <string name="Cafes">Kafeler</string>
     <string name="Bars_Clubs">Barlar</string>
     <string name="Restaurants">Lokantalar</string>
@@ -111,35 +109,26 @@
     <string name="Education">Eğitim</string>
     <string name="Location">Konum</string>
     <string name="logged_in_as">Şu şekilde giriş yaptı:</string>
-
     <string name="login_to_osm">OSM\'ye giriş yap</string>
     <string name="logout">Çıkış yap</string>
-
     <string name="no_results">Sonuç yok</string>
     <string name="search_again">Lütfen başka bir arama terimi deneyin</string>
     <string name="search_icon">arama simgesi</string>
-
     <string name="no_favorites">Favori yok</string>
     <string name="mark_locations_as_favorites">Favori olarak işaretlenen yerler burada görünecek</string>
     <string name="favorites_icon">Sık Kullanılanlar simgesi</string>
-
     <string name="no_info_available">Bilgi yok</string>
     <string name="open">Aç</string>
     <string name="closed">Kapalı</string>
-
     <string name="search">Ara</string>
-    <string name="my_location">"Konumum "</string>
+    <string name="my_location">Konumum</string>
     <string name="clear_map">Haritayı temizle</string>
-
     <string name="search_hint">Ara…</string>
-
     <string name="address_label">Adres:</string>
     <string name="server_error">Sunucuyla iletişim kurulurken hata oluştu</string>
     <string name="server_response_error">Sunucu yanıtı okunurken hata oluştu</string>
-
     <string name="poi_details_close">POI\'yi kapat</string>
     <string name="poi_details_mark_as_favorite">POI\'yi favori olarak işaretle</string>
     <string name="poi_details_edit">POI\'yi düzenle</string>
     <string name="poi_details_share">POI\'yi coğrafi bağlantı olarak paylaş</string>
-
 </resources>
