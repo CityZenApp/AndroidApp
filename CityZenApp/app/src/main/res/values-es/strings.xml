@@ -18,7 +18,7 @@
     <string name="filter">Filtro</string>
     <string name="write_storage_request">CityZen necesita acceder a su almacenamiento para ofrecer el servicio de mapas</string>
     <string name="write_storage_request_toast">CityZen necesita acceder a su almacenamiento para ofrecer el servicio de mapas</string>
-    <string name="location_request">CityZen necesita acceder a su ubicación para proporcionar los servicios de mapa</string>
+    <string name="location_request">CityZen necesita acceder a su ubicación para ofrecer los servicios de mapa</string>
     <string name="location_request_toast">CityZen debe tener su ubicación para proporcionar los servicios de mapa</string>
     <string name="allow_permission">Permitir</string>
     <string name="deny_permission">Denegar</string>
