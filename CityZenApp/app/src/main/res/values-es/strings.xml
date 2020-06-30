@@ -20,11 +20,11 @@
     <string name="write_storage_request_toast">CityZen necesita acceder a su almacenamiento para ofrecer el servicio de mapas</string>
     <string name="location_request">CityZen necesita acceder a su ubicación para proporcionar los servicios de mapa</string>
     <string name="location_request_toast">CityZen debe tener su ubicación para proporcionar los servicios de mapa</string>
-    <string name="allow_permission">"Permitir acceso "</string>
-    <string name="deny_permission">"Negar acceso "</string>
+    <string name="allow_permission">Permitir</string>
+    <string name="deny_permission">Denegar</string>
     <string name="only_currently_opened">Solo abiertos ahora</string>
     <string name="no_pois_near_user_location">No se han encontrado servicios junto a su ubicación</string>
-    <string name="enable_gps_to_continue">No podemos encontrar su ubicación.
+    <string name="enable_gps_to_continue">No puedo encontrar su ubicación.
 \nHabilite el GPS para continuar</string>
     <string name="calculating_device_location">Estamos calculando su ubicación.
 \nPor favor espere.</string>
