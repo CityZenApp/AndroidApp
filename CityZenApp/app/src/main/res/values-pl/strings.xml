@@ -1,5 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<resources><string name="app_name">CityZen</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CityZen</string>
     <string name="oauth_communication_error">Brak dostępu do serwera autoryzującego</string>
     <string name="loading">Ładowanie</string>
     <string name="retry">Ponów</string>
@@ -41,8 +42,6 @@
     <string name="sunday">Nie</string>
     <string name="all_week_days">Wszystko</string>
     <string name="enable">Uruchom</string>
-
-
     <string name="directions_to_here">podróż samochodem</string>
     <string name="create_poi">Stwórz ważne miejsce (POI)</string>
     <string name="_24_7">24/7</string>
@@ -90,13 +89,10 @@
     <string name="credits_link">www.cityzenapp.co/credits</string>
     <string name="open_source_culture">CItyZen zostało stworzone w Albanii, z mnóstwem ♥
 \ndla kultury wolnego i otwartego oprogramowania.</string>
-
-
     <string name="Cafes">Lista POI</string>
     <string name="Bars_Clubs">Bary</string>
     <string name="Restaurants">Restauracje</string>
-    <string name="FastFood">"
-\n"</string>
+    <string name="FastFood">Bar szybkiej obsługi</string>
     <string name="Tourism">Turystka</string>
     <string name="Hotels_Hostels">Hotele</string>
     <string name="Transportation">Trasport</string>
@@ -110,10 +106,9 @@
     <string name="RentBicycle">Wypożyczalnia rowerów</string>
     <string name="RentCar_CareSharing">Wypożyczalnia samochodów</string>
     <string name="logged_in_as">Zalogowan(y/a) jako:</string>
-
     <string name="login_to_osm">Zaloguj się do OSM</string>
     <string name="logout">Wyloguj</string>
-<string name="nav_categories">Kategorie</string>
+    <string name="nav_categories">Kategorie</string>
     <string name="nav_map">Mapa</string>
     <string name="nav_favorites">Ulubione</string>
     <string name="nav_about">O aplikacji</string>
@@ -123,32 +118,25 @@
     <string name="Buildings">Budynki</string>
     <string name="Education">Edukacja</string>
     <string name="Location">Lokalizacja</string>
-    <string name="no_results">"Brak wyników "</string>
+    <string name="no_results">Brak wyników</string>
     <string name="search_again">Spróbuj użyć innego wyszukiwanego hasła</string>
     <string name="search_icon">ikona wyszukiwania</string>
-
     <string name="about_text">CityZen to otwarte (open source) oprogramowanie na Androida, które ułatwia nawigację po mieście i jego eksplorację. Dzięki CityZen odnajdziesz ważne obiekty (POI) takie jak: bankomaty, stacje benzynowe, apteki, sklepy z telefonami i inne typy usług, znajdujące się w Twoim pobliżu. Aplikacja pokazuje POI dzięki lokalizowaniu twojego telefonu komórkowego --- szanujemy jednak Twoją prywatność i nie przechowujemy Twoich danych nawigacyjnych. Aplikacja udostępniona została na licencji otwartego oprogramowania (open source) ponieważ chcemy, aby był to projekt tworzony przez społeczność dla społeczności interntowej. Projekt został zainicjowany jako sposób na wzmocnienie narzędzi i platform takich jak OpenStreetMap, które szanują naszą wolność. Jeżeli już współpracujesz przy OpenStreetMap, możesz łatwo dodawać informacje o ważnych obiektach edytując je bezpośrednio w CityZen.</string>
     <string name="no_favorites">Brak ulubionych</string>
     <string name="mark_locations_as_favorites">Lokalizacje oznaczone jako ulubione pojawią się tutaj</string>
     <string name="favorites_icon">ikona ulubionych</string>
-
     <string name="no_info_available">Brak dostępnych informacji</string>
     <string name="open">Otwarte</string>
     <string name="closed">Zamknięte</string>
-
     <string name="search">Szukaj</string>
     <string name="my_location">Moja lokacja</string>
     <string name="clear_map">Wyczyść mapę</string>
-
     <string name="search_hint">Szukanie…</string>
-
     <string name="address_label">Adres:</string>
     <string name="server_error">Błąd komunikacji z serwerem</string>
     <string name="server_response_error">Błąd podczas odczytu odpowiedzi serwera</string>
-
     <string name="poi_details_close">Zamknij POI</string>
     <string name="poi_details_mark_as_favorite">Oznacz POI jako ulubione</string>
     <string name="poi_details_edit">Edytuj punkt POI</string>
     <string name="poi_details_share">Udostępnij POI jako geo-link</string>
-
 </resources>
