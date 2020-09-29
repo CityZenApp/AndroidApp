@@ -77,7 +77,7 @@
     <string name="house_number">Número da casa</string>
     <string name="postcode">Código postal</string>
     <string name="get_involved">Colabore</string>
-    <string name="credits">Créditos</string>
+    <string name="credits">Méritos</string>
     <string name="Bars_Clubs">Bares</string>
     <string name="Restaurants">Restaurantes</string>
     <string name="Post_Offices">Correios</string>
@@ -123,10 +123,10 @@
     <string name="location_request">CityZen precisa da localização para fornecer serviços de mapas</string>
     <string name="location_request_toast">CityZen tem de ter localização para fornecer serviços de mapas</string>
     <string name="select_amenity_type_to_continue">Selecione o tipo de serviço para continuar</string>
-    <string name="about_text">CityZen é uma aplicação Android de código aberto que lhe ajuda a facilmente navegar e explorar a cidade. Com CityZen pode encontrar pontos de interesse (POIs), tais como terminais bancários, postos de abastecimento de combustível, farmácias, lojas de telemóveis e outros serviços úteis perto de si. A aplicação mostra estes POIs com base na sua localização do seu telemóvel, mas fá-lo respeitando a sua privacidade, uma vez que não mantemos os seus dados de navegação. A aplicação é licenciada em código-fonte aberto porque queremos que o projeto seja feito pela comunidade para a comunidade. Iniciamos este projeto como uma forma de capacitar ferramentas e plataformas como o OpenStreetMap que respeitam nossas liberdades. Se é um colaborador do OpenStreetMap, pode adicionar facilmente informações aos POIs editando-os no CityZen.</string>
+    <string name="about_text">CityZen é uma app Android de código aberto que lhe ajuda a facilmente navegar e explorar a cidade. Com CityZen pode encontrar pontos de interesse (POIs), tais como terminais bancários, postos de abastecimento de combustível, farmácias, lojas de telemóveis e outros serviços úteis perto de si. A app mostra estes POIs com base na sua localização do seu telemóvel, mas fá-lo a respeitar a sua privacidade, uma vez que não mantemos os seus dados de navegação. A app é licenciada em código-fonte aberto porque queremos que o projeto seja feito pela comunidade para a comunidade. Iniciamos este projeto como uma forma de capacitar ferramentas e plataformas como o OpenStreetMap que respeitam as nossas liberdades. Se é um colaborador do OpenStreetMap, pode adicionar facilmente informações aos POIs os editando no CityZen.</string>
     <string name="alert_message">CityZen precisa de aceder à sua localização para fornecer serviços de mapas. Quer ativar a localização\?</string>
     <string name="osm_routing_unavailable">O roteamento do OSM não está disponível neste momento. Tente novamente mais tarde</string>
-    <string name="open_source_culture">A aplicação CityZen foi iniciada na Albânia com um monte de ♥
+    <string name="open_source_culture">A app CityZen foi iniciada na Albânia com um monte de ♥
 \n para uma cultura livre e de código aberto.</string>
     <string name="Cafes">Cafés</string>
     <string name="Bakeries">Padarias e pastelarias</string>
