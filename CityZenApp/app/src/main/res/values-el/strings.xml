@@ -116,7 +116,7 @@
     <string name="search_again">Παρακαλώ δοκιμάστε έναν άλλο όρο αναζήτησης</string>
     <string name="search_icon">Εικονίδιο αναζήτησης</string>
     <string name="no_favorites">Κανένα Αγαπημένο</string>
-    <string name="mark_locations_as_favorites">"Τοποθεσίες με τη σήμανση \"Αγαπημένο\" θα εμφανίζονται εδώ. "</string>
+    <string name="mark_locations_as_favorites">Τοποθεσίες με τη σήμανση αγαπημένο εμφανίζονται εδώ</string>
     <string name="favorites_icon">εικονίδιο \"Αγαπημένα\"</string>
     <string name="nav_categories">Κατηγορίες</string>
     <string name="nav_map">Χάρτης</string>
