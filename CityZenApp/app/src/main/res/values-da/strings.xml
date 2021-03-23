@@ -32,7 +32,7 @@
     <string name="add">Tilføj</string>
     <string name="cancel">Annuller</string>
     <string name="wifi">Wifi</string>
-    <string name="email">Email</string>
+    <string name="email">E-mail</string>
     <string name="website">Hjemmeside</string>
     <string name="phone">Telefon</string>
     <string name="name">Navn</string>
@@ -62,7 +62,7 @@
     <string name="add_closing_hours">Tilføj lukketider</string>
     <string name="add_opening_hours">Tilføj åbningstider</string>
     <string name="not_valid_website">Ikke en gyldig hjemmeside</string>
-    <string name="not_valid_email">Ikke en gyldig email</string>
+    <string name="not_valid_email">Ikke en gyldig e-mail</string>
     <string name="an_error_occurred">Der opstod en fejl</string>
     <string name="updated_successfully">opdatering lykkedes</string>
     <string name="editing_is_not_possible">Redigering er ikke mulig for</string>
