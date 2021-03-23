@@ -7,7 +7,7 @@
 \nPovoliť GPS na pokračovanie</string>
     <string name="create_poi">Vytvorte BZ</string>
     <string name="poi_details_mark_as_favorite">Označiť BZ ako obľúbené</string>
-    <string name="not_valid_email">Neplatný email</string>
+    <string name="not_valid_email">Neplatný e-mail</string>
     <string name="filter">Filter</string>
     <string name="Location">Lokácia</string>
     <string name="calculating_device_location">Zisťujeme vašu polohu.
@@ -35,7 +35,7 @@
     <string name="mark_locations_as_favorites">Tu sa zobrazia miesta označené ako obľúbené</string>
     <string name="Restaurants">Reštaurácie</string>
     <string name="search_icon">ikona vyhľadávania</string>
-    <string name="email">Email</string>
+    <string name="email">E-mail</string>
     <string name="edit">Upraviť</string>
     <string name="my_location">Moja poloha</string>
     <string name="wifi">Wifi</string>
