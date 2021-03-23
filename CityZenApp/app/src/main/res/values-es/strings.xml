@@ -32,8 +32,8 @@
 \nPuntos de Interés</string>
     <string name="add">Añadir</string>
     <string name="cancel">Cancelar</string>
-    <string name="email">Correo Electrónico</string>
-    <string name="website">Pagina Web</string>
+    <string name="email">Correo electrónico</string>
+    <string name="website">Sitio web</string>
     <string name="phone">Teléfono</string>
     <string name="address">Dirección</string>
     <string name="opening_hours">Horario de apertura</string>
