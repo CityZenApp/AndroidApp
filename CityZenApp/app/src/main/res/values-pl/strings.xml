@@ -27,7 +27,7 @@
     <string name="add">Dodaj</string>
     <string name="cancel">Zrezygnuj</string>
     <string name="wifi">Wifi</string>
-    <string name="email">Email</string>
+    <string name="email">E-mail</string>
     <string name="website">Strona www</string>
     <string name="phone">Telefon</string>
     <string name="name">Imię</string>
@@ -57,7 +57,7 @@
     <string name="add_closing_hours">Dodaj godzinę zamknięcia</string>
     <string name="add_opening_hours">Dodaj godziny otwarcia</string>
     <string name="not_valid_website">Nieprawidłowy adres www</string>
-    <string name="not_valid_email">Nieprawidłowy adres email</string>
+    <string name="not_valid_email">Nieprawidłowy adres e-mail</string>
     <string name="an_error_occurred">Wystąpił błąd</string>
     <string name="updated_successfully">uaktualniono pomyślnie</string>
     <string name="editing_is_not_possible">Nie można edytować</string>
