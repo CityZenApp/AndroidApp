@@ -1,5 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<resources><string name="app_name">CityZen</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CityZen</string>
     <string name="oauth_communication_error">無法連到授權伺服器</string>
     <string name="loading">正在載入</string>
     <string name="retry">重試</string>
@@ -26,7 +27,7 @@
     <string name="add">新增</string>
     <string name="cancel">取消</string>
     <string name="wifi">Wi-Fi</string>
-    <string name="email">Email</string>
+    <string name="email">電子郵件地址</string>
     <string name="website">網站</string>
     <string name="phone">電話</string>
     <string name="name">名稱</string>
@@ -41,8 +42,6 @@
     <string name="sunday">星期天</string>
     <string name="all_week_days">全部</string>
     <string name="enable">啟用</string>
-
-
     <string name="directions_to_here">車輛指引</string>
     <string name="create_poi">建立 POI</string>
     <string name="_24_7">24/7</string>
@@ -91,8 +90,6 @@
     <string name="credits_link">www.cityzenapp.co/credits</string>
     <string name="open_source_culture">CityZen 應用程式是在阿爾巴尼亞創始與很多♥
 \n 為免費和開放原始碼精神。</string>
-
-
     <string name="Cafes">咖啡館</string>
     <string name="Bars_Clubs">酒吧</string>
     <string name="Restaurants">餐廳</string>
@@ -110,30 +107,25 @@
     <string name="RentBicycle">自行車租借</string>
     <string name="RentCar_CareSharing">汽車租借</string>
     <string name="logged_in_as">已登錄為：</string>
-
     <string name="login_to_osm">登入到 OSM</string>
     <string name="logout">登出</string>
-<string name="Bakeries">麵包和糕點店</string>
+    <string name="Bakeries">麵包和糕點店</string>
     <string name="Post_Offices">郵局</string>
     <string name="Parking">停車場</string>
     <string name="no_results">無結果</string>
     <string name="search_again">請嘗試其他搜尋字詞</string>
     <string name="search_icon">搜尋圖示</string>
-
     <string name="no_favorites">没有我的收藏</string>
     <string name="mark_locations_as_favorites">位置標記為我的收藏會顯示在這裡</string>
     <string name="favorites_icon">我的收藏圖示</string>
-
-<string name="nav_categories">類別</string>
+    <string name="nav_categories">類別</string>
     <string name="nav_map">地圖</string>
     <string name="nav_favorites">我的收藏</string>
     <string name="nav_settings">設定</string>
     <string name="search">搜尋</string>
     <string name="my_location">我的位置</string>
     <string name="clear_map">清除地圖</string>
-
     <string name="search_hint">搜尋…</string>
-
     <string name="address_label">地址：</string>
     <string name="nav_about">關於</string>
     <string name="Buildings">建築物</string>
@@ -142,13 +134,10 @@
     <string name="no_info_available">無可用的資訊</string>
     <string name="open">開啟</string>
     <string name="closed">關閉</string>
-
     <string name="server_error">與伺服器通信時出錯</string>
     <string name="server_response_error">讀取伺服器回應時錯誤</string>
-
     <string name="poi_details_close">關閉 POI</string>
     <string name="poi_details_mark_as_favorite">標記為我的最愛</string>
     <string name="poi_details_edit">編輯 POI</string>
     <string name="poi_details_share">將 POI 分享為地理連結</string>
-
 </resources>
