@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name" translatable="false">CityZen</string>
     <string name="app_logo" translatable="false">CityZen logo</string>
@@ -8,7 +9,7 @@
     <string name="oauth_communication_error">"Unable to reach the authorization server"</string>
     <string name="loading">"Loading"</string>
     <string name="retry">"Retry"</string>
-    <string name="oauth_failed_permissions">"Authorization failed: All listed permissions need to be granted"</string>
+    <string name="oauth_failed_permissions">Authorization failed: all listed permissions need to be granted</string>
     <string name="offline">"You are offline"</string>
     <string name="confirmation_authorize_now">"You need to login with your OSM user account to apply changes to OpenStreetMap. Authorize now?"</string>
     <string name="later">"Later"</string>
@@ -21,7 +22,7 @@
     <string name="location_request_toast">CityZen must have location to provide map services</string>
     <string name="allow_permission">Allow</string>
     <string name="deny_permission">Deny</string>
-    <string name="no_pois_near_user_location">no services found near your location</string>
+    <string name="no_pois_near_user_location">No services found near your location</string>
     <string name="enable_gps_to_continue">Can\'t find your location. \nEnable GPS to continue</string>
     <string name="calculating_device_location">We are figuring out your location. \nPlease wait.</string>
     <string name="add_new_poi_toast">Click on the map to add \n Points of Interest</string>
@@ -43,7 +44,6 @@
     <string name="sunday">Sun</string>
     <string name="all_week_days">All</string>
     <string name="enable">Enable</string>
-
     <string name="osm_copyright" translatable="false"><![CDATA[<font color=\"#000\">© </font><font color=\"#1565C0\">OpenStreetMap </font><font color=\"#000\">contributors</font>]]></string>
     <string name="directions_to_here">directions by car</string>
     <string name="create_poi">Create POI</string>
@@ -94,8 +94,6 @@ The app is open source licensed because we want the project to be empowered by t
     <string name="credits">Credits</string>
     <string name="credits_link" translatable="false">www.cityzenapp.co/credits/</string>
     <string name="open_source_culture">CityZen app was initiated in Albania with a lot of ♥\n for free and open source culture.</string>
-
-
     <!--POI List-->
     <string name="Cafes">Cafes</string>
     <string name="Bars_Clubs">Bars</string>
@@ -119,41 +117,31 @@ The app is open source licensed because we want the project to be empowered by t
     <string name="Education">Education</string>
     <string name="Location">Location</string>
     <string name="logged_in_as">Logged in as:</string>
-
     <string name="login_to_osm">Log in to OSM</string>
     <string name="logout">Log out</string>
-
     <!--Search List-->
     <string name="no_results">No results</string>
     <string name="search_again">Please try another search term</string>
     <string name="search_icon">search icon</string>
-
     <!--Favorites List-->
     <string name="no_favorites">No favorites</string>
     <string name="mark_locations_as_favorites">Locations marked as favorites will show up here</string>
     <string name="favorites_icon">favorites icon</string>
-
     <!-- Opening hours display -->
-    <string name="no_info_available">No info available</string>
+    <string name="no_info_available">No information available</string>
     <string name="open">Open</string>
     <string name="closed">Closed</string>
-
     <!-- FAB -->
     <string name="search">Search</string>
     <string name="my_location">My location</string>
     <string name="clear_map">Clear map</string>
-
-    <string name="search_hint">Search&#8230;</string>
-
+    <string name="search_hint">Search…</string>
     <string name="address_label">Address:</string>
     <string name="empty_timestamp" translatable="false">--:--</string>
-
     <string name="server_error">Error communicating with server</string>
     <string name="server_response_error">Error reading server response</string>
-
     <string name="poi_details_close">Close POI</string>
     <string name="poi_details_mark_as_favorite">Mark POI as favorite</string>
     <string name="poi_details_edit">Edit POI</string>
     <string name="poi_details_share">Share POI as geo-link</string>
-
 </resources>
