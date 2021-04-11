@@ -97,7 +97,7 @@
     <string name="logged_in_as">Έχετε συνδεθεί ως:</string>
     <string name="login_to_osm">Σύνδεση στο OSM</string>
     <string name="logout">Αποσύνδεση</string>
-    <string name="oauth_failed_permissions">Η εξουσιοδότηση απέτυχε: όλα τα αναφερόμενα δικαιώματα πρέπει να δοθούν</string>
+    <string name="oauth_failed_permissions">Η εξουσιοδότηση απέτυχε: όλα τα αναφερόμενα δικαιώματα πρέπει να χορηγηθούν</string>
     <string name="offline">Είστε εκτός σύνδεσης</string>
     <string name="confirmation_authorize_now">Θα πρέπει να συνδεθείτε με τον OSM λογαριασμό σας για να εφαρμόσετε αλλαγές στο ΟpenStreetMap. Σύνδεση τώρα;</string>
     <string name="only_currently_opened">Μόνο τα τρέχοντα ανοιχτά</string>
