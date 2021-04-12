@@ -19,7 +19,7 @@
     <string name="location_request_toast">CityZen mora imati lokaciju za pružanje usluga za karte</string>
     <string name="allow_permission">Dozvoli</string>
     <string name="deny_permission">Zabrani</string>
-    <string name="no_pois_near_user_location">nema usluga u blizini tvoje lokacije</string>
+    <string name="no_pois_near_user_location">Nema usluga u blizini tvoje lokacije</string>
     <string name="enable_gps_to_continue">Nije moguće pronaći tvoju lokaciju.
 \nAktiviraj GPS</string>
     <string name="calculating_device_location">Otkrivamo tvoju lokaciju. 
