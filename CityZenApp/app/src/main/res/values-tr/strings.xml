@@ -8,7 +8,7 @@
     <string name="oauth_communication_error">Yetkilendirme sunucusuna ulaşılamıyor</string>
     <string name="loading">Yükleniyor</string>
     <string name="retry">Tekrar dene</string>
-    <string name="oauth_failed_permissions">Yetkilendirme başarısız oldu: Listelenen tüm izinlerin verilmesi gerekiyor</string>
+    <string name="oauth_failed_permissions">Yetkilendirme başarısız oldu: listelenen tüm izinlerin verilmesi gerekiyor</string>
     <string name="offline">Çevrimdışısınız</string>
     <string name="confirmation_authorize_now">OpenStreetMap\'taki değişiklikleri uygulamak için OSM kullanıcı hesabınızla giriş yapmanız gerekir. Şimdi yetkilendirilsin mi\?</string>
     <string name="later">Sonra</string>
@@ -20,7 +20,7 @@
     <string name="location_request_toast">CityZen harita hizmetleri sağlamak için bir konuma sahip olmalıdır</string>
     <string name="allow_permission">İzin ver</string>
     <string name="deny_permission">Reddet</string>
-    <string name="no_pois_near_user_location">bulunduğunuz yerin yakınında hiçbir hizmet bulunamadı</string>
+    <string name="no_pois_near_user_location">Bulunduğunuz yerin yakınında hizmet bulunamadı</string>
     <string name="enable_gps_to_continue">Konumunuz bulunamıyor.
 \nDevam etmek için GPS’i etkinleştirin</string>
     <string name="calculating_device_location">Bulunduğunuz yeri belirliyoruz.
