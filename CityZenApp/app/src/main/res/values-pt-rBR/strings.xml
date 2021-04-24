@@ -123,7 +123,7 @@
     <string name="search_again">Por favor tentar com outro termo</string>
     <string name="search_icon">ícone de procura</string>
     <string name="no_favorites">Sem favoritos</string>
-    <string name="mark_locations_as_favorites">Localizações marcadas como favoritos irá aparecer aqui</string>
+    <string name="mark_locations_as_favorites">Locais marcados como favoritos aparecerão aqui</string>
     <string name="favorites_icon">ícone favoritos</string>
     <string name="no_info_available">"Sem info disponível "</string>
     <string name="open">Aberto</string>
