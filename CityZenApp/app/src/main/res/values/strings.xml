@@ -17,7 +17,7 @@
     <string name="only_currently_opened">Only currently opened</string>
     <!--Permission Request-->
     <string name="write_storage_request">CityZen needs to have write permissions to provide map services</string>
-    <string name="write_storage_request_toast">CityZen must have write permissions to provide map services</string>
+    <string name="write_storage_request_toast">CityZen must have written permissions to provide map services</string>
     <string name="location_request">CityZen needs to have location to provide map services</string>
     <string name="location_request_toast">CityZen must have location to provide map services</string>
     <string name="allow_permission">Allow</string>
