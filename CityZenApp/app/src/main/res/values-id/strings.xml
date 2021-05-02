@@ -3,19 +3,19 @@
     <string name="oauth_communication_error">Tidak dapat menjangkau server otorisasi</string>
     <string name="loading">Memuat</string>
     <string name="retry">Coba lagi</string>
-    <string name="oauth_failed_permissions">Otorisasi gagal: Seluruh izin yang terdaftar harus diberikan</string>
+    <string name="oauth_failed_permissions">Otorisasi gagal: seluruh izin yang terdaftar harus diberikan</string>
     <string name="offline">Anda di luring</string>
     <string name="confirmation_authorize_now">Anda harus masuk dengan akun pengguna OSM Anda untuk menerapkan perubahan pada OpenStreetMap. Izinkan sekarang\?</string>
     <string name="later">Nanti</string>
     <string name="filter">Filter</string>
     <string name="only_currently_opened">Hanya saat ini dibuka</string>
     <string name="write_storage_request">CityZen memerlukan izin menulis untuk menyediakan layanan peta</string>
-    <string name="write_storage_request_toast">CityZen harus mempunyai izin menulis untuk menyediakan layanan peta</string>
+    <string name="write_storage_request_toast">CityZen memerlukan izin untuk menyediakan layanan peta</string>
     <string name="location_request">CityZen membutuhkan izin lokasi untuk menyediakan layanan peta</string>
     <string name="location_request_toast">CityZen harus mempunyai izin lokasi untuk menyediakan layanan peta</string>
     <string name="allow_permission">Setujui</string>
     <string name="deny_permission">Tolak</string>
-    <string name="no_pois_near_user_location">tidak ada layanan yang ditemukan disekitar lokasi Anda</string>
+    <string name="no_pois_near_user_location">Tidak ada layanan disekitar lokasi Anda</string>
     <string name="enable_gps_to_continue">Tidak dapat menemukan lokasi Anda.
 \nAktifkan GPS untuk melanjutkan</string>
     <string name="calculating_device_location">Kami sedang mencari lokasi Anda.
@@ -43,7 +43,7 @@
     <string name="directions_to_here">Arah dengan mobil</string>
     <string name="create_poi">Buat POI</string>
     <string name="_24_7">24/7</string>
-    <string name="opening">Pembukaan</string>
+    <string name="opening">Pembuka</string>
     <string name="closing">Penutupan</string>
     <string name="done">Selesai</string>
     <string name="no_internet_to_update_poi">Tidak ada akses internet. Hubungkan ke internet untuk melanjutkan</string>
