@@ -14,7 +14,7 @@
     <string name="filter">Filtar</string>
     <string name="only_currently_opened">Samo trenutačno otvorene</string>
     <string name="write_storage_request">CityZen treba imati dozvole za pisanje, za pružanje usluga za karte</string>
-    <string name="write_storage_request_toast">CityZen mora imati dozvole za pisanje, za pružanje usluga za karte</string>
+    <string name="write_storage_request_toast">Za pružanje kartografskih usluga, CityZen mora imati dozvole za pisanje</string>
     <string name="location_request">CityZen treba imati lokaciju za pružanje usluga za karte</string>
     <string name="location_request_toast">CityZen mora imati lokaciju za pružanje usluga za karte</string>
     <string name="allow_permission">Dozvoli</string>
