@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Education">Utbildning</string>
-    <string name="oauth_failed_permissions">Auktoriseringen misslyckades: Alla listade befogenheter måste ges</string>
+    <string name="oauth_failed_permissions">Auktoriseringen misslyckades: alla listade befogenheter måste ges</string>
     <string name="no_favorites">Inga favoriter</string>
     <string name="enable_gps_to_continue">Kan inte hitta din position.
 \nAktivera GPS för att fortsätta</string>
@@ -31,7 +31,7 @@
     <string name="RentBicycle">Cykeluthyrning</string>
     <string name="Markets_Kiosks">Marknader</string>
     <string name="Banks_ATMs_Exchange">Banker</string>
-    <string name="no_pois_near_user_location">inga tjänster hittades i närheten av din position</string>
+    <string name="no_pois_near_user_location">Inga tjänster hittades i närheten av din position</string>
     <string name="mark_locations_as_favorites">Platser markerade som favoriter kommer att synas här</string>
     <string name="Restaurants">Restauranger</string>
     <string name="search_icon">sökikon</string>
