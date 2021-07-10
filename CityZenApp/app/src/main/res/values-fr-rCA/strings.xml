@@ -13,7 +13,7 @@
     <string name="Bars_Clubs">Bars</string>
     <string name="open_source_culture">L\'application CityZen a été lancée en Albanie avec beaucoup d\'♥
 \npour la culture libre et open source.</string>
-    <string name="oauth_failed_permissions">Autorisation échouée : toutes les permissions listées doivent être acceptées</string>
+    <string name="oauth_failed_permissions">Autorisation échouée : toutes les autorisations listées doivent être accordées</string>
     <string name="poi_details_share">Partager cet endroit</string>
     <string name="poi_details_edit">Modifier les informations</string>
     <string name="poi_details_mark_as_favorite">Marquer cet endroit comme favori</string>
