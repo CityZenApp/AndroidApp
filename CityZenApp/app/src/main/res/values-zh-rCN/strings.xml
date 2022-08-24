@@ -127,12 +127,12 @@
     <string name="search">搜索</string>
     <string name="closed">关闭</string>
     <string name="open">打开</string>
-    <string name="no_info_available">无可用信息</string>
+    <string name="no_info_available">无有效信息</string>
     <string name="favorites_icon">收藏夹图标</string>
     <string name="mark_locations_as_favorites">收藏的位置标记会显示在这里</string>
     <string name="no_favorites">没有收藏</string>
     <string name="search_icon">搜索图标</string>
-    <string name="search_again">请换一个搜索词试试</string>
+    <string name="search_again">请尝试其他搜索词</string>
     <string name="no_results">无结果</string>
     <string name="Education">教育</string>
     <string name="Buildings">建筑物</string>
