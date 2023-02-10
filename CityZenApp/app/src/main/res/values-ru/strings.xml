@@ -7,7 +7,7 @@
     <string name="oauth_communication_error">Невозможно подключится к серверу авторизации</string>
     <string name="loading">Загрузка</string>
     <string name="retry">Повторить</string>
-    <string name="oauth_failed_permissions">Не удалось авторизоваться: должны быть предоставлены перечисленные разрешения</string>
+    <string name="oauth_failed_permissions">Не удалось авторизоваться: предоставьте все перечисленные разрешения</string>
     <string name="offline">Вы не в сети</string>
     <string name="confirmation_authorize_now">Для внесения изменений в OpenStreetMap вам нужно войти в систему под своей учетной записью пользователя OSM. Авторизоваться сейчас\?</string>
     <string name="later">Позже</string>
@@ -55,7 +55,7 @@
 \nПожалуйста, подождите.</string>
     <string name="no_pois_near_user_location">Не найдено ни одного сервиса рядом с вами</string>
     <string name="enable_gps_to_continue">Ваше местоположение не найдено.
-\nВключите GPS что бы продолжить</string>
+\nВключите GPS, чтобы продолжить</string>
     <string name="wifi">Wi-Fi</string>
     <string name="email">Электронная почта</string>
     <string name="website">Веб-сайт</string>
