@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="nav_map">แผนที่</string>
+    <string name="retry">ลองอีกครั้ง</string>
+    <string name="nav_categories">หมวดหมู่</string>
+    <string name="nav_favorites">รายการโปรด</string>
+    <string name="nav_about">เกี่ยวกับ</string>
+    <string name="oauth_communication_error">ไม่สามารถเชื่อมต่อถึงเซิฟเวอร์ยืนยันตัวตนได้</string>
+    <string name="loading">กำลังโหลด</string>
+    <string name="offline">คุณกำลังออฟไลน์</string>
+</resources>
