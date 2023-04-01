@@ -4,7 +4,7 @@
     <string name="nav_map">Карта</string>
     <string name="nav_favorites">Избранное</string>
     <string name="nav_about">О программе</string>
-    <string name="oauth_communication_error">Невозможно подключится к серверу авторизации</string>
+    <string name="oauth_communication_error">Невозможно подключиться к серверу авторизации</string>
     <string name="loading">Загрузка</string>
     <string name="retry">Повторить</string>
     <string name="oauth_failed_permissions">Не удалось авторизоваться: предоставьте все перечисленные разрешения</string>
