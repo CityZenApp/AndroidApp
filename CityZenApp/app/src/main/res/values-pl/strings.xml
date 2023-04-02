@@ -4,7 +4,7 @@
     <string name="oauth_communication_error">Brak dostępu do serwera autoryzującego</string>
     <string name="loading">Ładowanie</string>
     <string name="retry">Ponów</string>
-    <string name="oauth_failed_permissions">Autoryzacja nieudana: Musisz posiadać wszystkie podane uprawnienia</string>
+    <string name="oauth_failed_permissions">Autoryzacja nieudana: musisz posiadać wszystkie podane uprawnienia</string>
     <string name="offline">Nie połączono z siecią</string>
     <string name="confirmation_authorize_now">Aby wprowadzić zmiany do OpenStreetMap musisz zalogować się na konto OSM. Zezwolić teraz?</string>
     <string name="later">Później</string>
@@ -16,7 +16,7 @@
     <string name="location_request_toast">CityZen potrzebuje danych o lokalizacji aby zapewnić obsługę map</string>
     <string name="allow_permission">Zezwól</string>
     <string name="deny_permission">Odrzuć</string>
-    <string name="no_pois_near_user_location">nie odnaleziono żadnej usługi w Twoim pobliżu</string>
+    <string name="no_pois_near_user_location">Nie odnaleziono żadnej usługi w Twoim pobliżu</string>
     <string name="enable_gps_to_continue">Nie mogę odnaleźć Twojej lokacji.
 \nAby kontynuować włącz GPS</string>
     <string name="calculating_device_location">Ustalam Twoje położenie.
