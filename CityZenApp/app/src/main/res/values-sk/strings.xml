@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Education">Vzdelanie</string>
-    <string name="oauth_failed_permissions">Autorizácia zlyhala: Všetky uvedené povolenia musia byť udelené</string>
+    <string name="oauth_failed_permissions">Autorizácia zlyhala: všetky uvedené povolenia musia byť udelené</string>
     <string name="no_favorites">Žiadne obľúbené položky</string>
     <string name="enable_gps_to_continue">Vaša poloha sa nedá nájsť.
 \nPovoliť GPS na pokračovanie</string>
@@ -31,7 +31,7 @@
     <string name="RentBicycle">Požičovňa bicyklov</string>
     <string name="Markets_Kiosks">Tržnice</string>
     <string name="Banks_ATMs_Exchange">Finančné služby</string>
-    <string name="no_pois_near_user_location">vo vašej oblasti sa nenašli žiadne služby</string>
+    <string name="no_pois_near_user_location">Žiadne služby nájdené v blízkosti vašej lokality</string>
     <string name="mark_locations_as_favorites">Tu sa zobrazia miesta označené ako obľúbené</string>
     <string name="Restaurants">Reštaurácie</string>
     <string name="search_icon">ikona vyhľadávania</string>
@@ -85,7 +85,7 @@
     <string name="privacy_policy">Zásady ochrany osobných údajov</string>
     <string name="about_text">CityZen je Androidová aplikácia, ktorá je \"open source\". Taktiež vám uľahčí navigáciu a objavovanie mesta. S CityZen nájdete body záujmu (BZ), ako sú bankomaty, benzínové stanice, drogérie, obchody s mobilnými telefónmi a ďalšie zaujímavé služby vo vašom okolí. Aplikácia zobrazuje tieto BZ na základe vašej polohy vášho smartfónu, ale robí tak, že rešpektuje vaše súkromie, pretože vaše navigačné údaje neuchovávame. Aplikácia je licencovaná s otvoreným zdrojom, pretože chceme, aby bol projekt pre komunitu splnomocnený komunitou. Tento projekt sme iniciovali ako spôsob posilnenia nástrojov a platforiem ako OpenStreetMap, ktoré rešpektujú naše slobody. Ak ste prispievateľom OpenStreetMap, môžete do bodov BZ jednoducho pridať informácie ich úpravou v aplikácii CityZen.</string>
     <string name="address">Adresa</string>
-    <string name="write_storage_request_toast">Na poskytovanie mapových služieb musí mať CityZen povolenie zapisovať</string>
+    <string name="write_storage_request_toast">CityZen musí mať písomné povolenia na poskytovanie mapových služieb</string>
     <string name="sunday">Slnko</string>
     <string name="sort_by_name">Zoradiť podla mena</string>
     <string name="cancel">Zrušit</string>
@@ -112,7 +112,7 @@
     <string name="an_error_occurred">Nastala chyba</string>
     <string name="editing_is_not_possible">Úpravy nie sú možné pre</string>
     <string name="loading">Načitávanie</string>
-    <string name="no_info_available">Nie sú dostupné žiadne informácie</string>
+    <string name="no_info_available">K dispozícii nie sú žiadne informácie</string>
     <string name="not_valid_website">Neplatná webová stránka</string>
     <string name="house_number">Číšlo domu</string>
     <string name="nav_about">O</string>
