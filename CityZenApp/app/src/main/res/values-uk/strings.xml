@@ -25,7 +25,7 @@
     <string name="oauth_communication_error">Не вдалося підключитися до сервера авторизації</string>
     <string name="oauth_failed_permissions">Не вдалося виконати авторизацію: всі перераховані дозволи повинні бути надані</string>
     <string name="only_currently_opened">Тільки в даний час відкрито</string>
-    <string name="no_pois_near_user_location">жодної зі служб не знайдено біля вашого місця розташування</string>
+    <string name="no_pois_near_user_location">Жодної зі служб не знайдено біля вашого місця розташування</string>
     <string name="enable_gps_to_continue">Не вдалося знайти вашого місця розташування. 
 \nУвімкнути GPS, щоб продовжити</string>
     <string name="calculating_device_location">Ми з\'ясовуємо ваше місцезнаходження. 
@@ -93,4 +93,15 @@
     <string name="updated_successfully">оновлено успішно</string>
     <string name="location_request">CityZen повинен мати місцезнаходження користувача для надання послуг карт</string>
     <string name="Location">Місцезнаходження</string>
+    <string name="Education">Освіта</string>
+    <string name="Parking">Стоянка</string>
+    <string name="Buildings">Будівлі</string>
+    <string name="contact">Контакт</string>
+    <string name="logged_in_as">Увійшли як:</string>
+    <string name="open">Відчинено</string>
+    <string name="closed">Зачинено</string>
+    <string name="created_succesfully">успішно створено</string>
+    <string name="search">Пошук</string>
+    <string name="editing_is_not_possible">Редагування не можливе для</string>
+    <string name="select_amenity_type">Виберіть тип зручностей</string>
 </resources>
