@@ -10,7 +10,7 @@
     <string name="filter">Filtrar</string>
     <string name="only_currently_opened">Aberto agora apenas</string>
     <string name="write_storage_request">CityZen necessita ter permissão de escrita para providenciar serviços de mapa</string>
-    <string name="write_storage_request_toast">CityZen deve ter permissão de escrita para providenciar serviços de mapa</string>
+    <string name="write_storage_request_toast">O CityZen requer permissão de armazenamento para fornecer serviços de mapas</string>
     <string name="location_request">CityZen necessita de sua localização para providenciar serviços de mapa</string>
     <string name="location_request_toast">CityZen deve ter sua localização para providenciar serviços de mapa</string>
     <string name="allow_permission">Permitir</string>
