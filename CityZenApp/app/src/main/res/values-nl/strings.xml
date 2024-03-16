@@ -1,5 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<resources><string name="app_name">CityZen</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CityZen</string>
     <string name="oauth_communication_error">Er kan geen verbinding worden gemaakt met de authorisatieserver</string>
     <string name="loading">Bezig met laden</string>
     <string name="retry">Opnieuw proberen</string>
@@ -15,7 +16,7 @@
     <string name="location_request_toast">CityZen heeft uw locatie nodig om kaartdiensten te kunnen leveren</string>
     <string name="allow_permission">Toestaan</string>
     <string name="deny_permission">Weigeren</string>
-    <string name="no_pois_near_user_location">er zijn geen diensten gevonden in de buurt van uw locatie</string>
+    <string name="no_pois_near_user_location">Geen diensten gevonden in de buurt van uw locatie</string>
     <string name="enable_gps_to_continue">Uw locatie kan niet worden gevonden.
 \nSchakel GPS in om door te gaan</string>
     <string name="calculating_device_location">We zijn uw locatie aan het uitvogelen.
@@ -41,8 +42,6 @@
     <string name="sunday">Zo</string>
     <string name="all_week_days">Alle</string>
     <string name="enable">Inschakelen</string>
-
-
     <string name="directions_to_here">routebeschrijving met auto</string>
     <string name="create_poi">POI creëren</string>
     <string name="_24_7">24/7</string>
@@ -91,8 +90,6 @@
     <string name="credits_link">www.cityzenapp.co/credits</string>
     <string name="open_source_culture">CityZen is begonnen in Albanië met veel ♥
 \n voor de vrije en open bron-cultuur.</string>
-
-
     <string name="Cafes">Café\'s</string>
     <string name="Bars_Clubs">Bars</string>
     <string name="Restaurants">Restaurants</string>
@@ -110,21 +107,18 @@
     <string name="RentBicycle">Fietsverhuur</string>
     <string name="RentCar_CareSharing">Autoverhuur</string>
     <string name="logged_in_as">Ingelogd als:</string>
-
     <string name="login_to_osm">Inloggen op OSM</string>
     <string name="logout">Uitloggen</string>
-<string name="Bakeries">(Banket)bakkerijen</string>
+    <string name="Bakeries">(Banket)bakkerijen</string>
     <string name="Post_Offices">Postkantoren</string>
     <string name="Parking">Parkeren</string>
     <string name="no_results">Geen resultaten</string>
     <string name="search_again">Probeer een andere zoekopdracht</string>
     <string name="search_icon">zoekpictogram</string>
-
     <string name="no_favorites">Geen favorieten</string>
     <string name="mark_locations_as_favorites">Locaties die u markeert als favoriet, zullen hier verschijnen</string>
     <string name="favorites_icon">favorietpictogram</string>
-
-<string name="nav_categories">Categorieën</string>
+    <string name="nav_categories">Categorieën</string>
     <string name="nav_map">Kaart</string>
     <string name="nav_favorites">Favorieten</string>
     <string name="nav_about">Over</string>
@@ -134,20 +128,15 @@
     <string name="no_info_available">Geen informatie beschikbaar</string>
     <string name="open">Open</string>
     <string name="closed">Gesloten</string>
-
     <string name="search">Zoeken</string>
     <string name="my_location">Mijn locatie</string>
     <string name="clear_map">Kaart opruimen</string>
-
     <string name="search_hint">Zoeken…</string>
-
     <string name="address_label">Adres:</string>
     <string name="server_error">Fout bij communicatie met server</string>
     <string name="server_response_error">Fout bij het lezen van serverantwoord</string>
-
     <string name="poi_details_close">POI sluiten</string>
     <string name="poi_details_mark_as_favorite">POI als favoriet markeren</string>
     <string name="poi_details_edit">POI bewerken</string>
     <string name="poi_details_share">POI als geo-link delen</string>
-
 </resources>
