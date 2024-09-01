@@ -50,17 +50,17 @@
     <string name="website">Веб сајт</string>
     <string name="phone">Телефон</string>
     <string name="add">Додај</string>
-    <string name="add_new_poi_toast">Click on the map to add 
-\n Points of Interest</string>
-    <string name="calculating_device_location">We are figuring out your location. 
-\nPlease wait.</string>
+    <string name="add_new_poi_toast">Кликните на мапу да бисте додали
+\n Тачке интересовања</string>
+    <string name="calculating_device_location">Тражимо вашу локацију.
+\nМолимо сачекајте.</string>
     <string name="deny_permission">Одбиј</string>
     <string name="allow_permission">Дозволи</string>
     <string name="write_storage_request">CityZen мора да има дозволе за писање да би пружао услуге мапе</string>
     <string name="offline">Ван мреже сте</string>
     <string name="loading">Учитавање</string>
-    <string name="open_source_culture">CityZen app was initiated in Albania with a lot of ♥
-\n for free and open source culture.</string>
+    <string name="open_source_culture">CityZen апликација је покренута у Албанији са пуно ♥
+\n за слободну и културу отвореног кода.</string>
     <string name="Banks_ATMs_Exchange">Финансијске услуге</string>
     <string name="get_involved">Укључи се</string>
     <string name="credits">Заслуге</string>
@@ -74,8 +74,8 @@
     <string name="Parking">Паркинг</string>
     <string name="RentBicycle">Изнајмљивање бицикала</string>
     <string name="RentCar_CareSharing">Изнајмљивање аутомобила</string>
-    <string name="enable_gps_to_continue">Can\'t find your location. 
-\nEnable GPS to continue</string>
+    <string name="enable_gps_to_continue">Није могуће пронаћи вашу локацију.
+\nОмогућите GPS да наставите</string>
     <string name="cancel">Откажи</string>
     <string name="filter">Филтер</string>
     <string name="only_currently_opened">Само тренутно отворено</string>
