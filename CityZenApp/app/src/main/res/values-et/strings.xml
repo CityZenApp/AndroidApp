@@ -1,5 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="website">Veebileht</string>
+    <string name="website">Veebisait</string>
     <string name="email">E-posti aadress</string>
+    <string name="street">Tänav</string>
+    <string name="friday">Reede</string>
+    <string name="address">Aadress</string>
+    <string name="_24_7">24/7</string>
+    <string name="thursday">Neljap</string>
+    <string name="wednesday">Kolmap</string>
+    <string name="nav_categories">Kategooriad</string>
+    <string name="not_valid_email">Pole korrektne e-posti aadress</string>
+    <string name="an_error_occurred">Tekkis viga</string>
+    <string name="not_valid_website">Pole korrektne veebisait</string>
+    <string name="city">Linn</string>
+    <string name="internet_access">Internetiühendus</string>
+    <string name="session_expired_toast">Sinu sessioon aegus. Jätkamiseks palun logi sisse</string>
+    <string name="closing">Suletakse</string>
+    <string name="done">Valmis</string>
+    <string name="opening">Avatakse</string>
+    <string name="directions_to_here">sõidujuhised autoga</string>
+    <string name="enable">Võta kasutusele</string>
+    <string name="sunday">Pühap</string>
+    <string name="all_week_days">Kõik</string>
+    <string name="saturday">Laup</string>
+    <string name="opening_hours">Lahtiolekuaeg</string>
+    <string name="name">Nimi</string>
+    <string name="phone">Telefon</string>
+    <string name="wifi">Wifi</string>
+    <string name="add">Lisa</string>
+    <string name="cancel">Katkesta</string>
+    <string name="loading">Laadime andmeid</string>
+    <string name="oauth_communication_error">Ei õnnestu luua ühendust autentimisserveriga</string>
+    <string name="nav_about">Rakenduse teave</string>
+    <string name="monday">Esmasp</string>
+    <string name="nav_map">Kaart</string>
+    <string name="retry">Proovi uuesti</string>
+    <string name="tuesday">Teisip</string>
+    <string name="create_poi">Loo HP</string>
+    <string name="edit">Muuda</string>
+    <string name="add_closing_hours">Lisa sulgemisaeg</string>
+    <string name="add_opening_hours">Lisa lahtioleku ajad</string>
+    <string name="updated_successfully">muutmine õnnestus</string>
+    <string name="no_internet_to_update_poi">Internetiühendus puudub. Enne jätkamist palun loo oma nutiseadmes internetiühendus</string>
+    <string name="nav_favorites">Lemmikud</string>
 </resources>
