@@ -43,4 +43,13 @@
     <string name="updated_successfully">muutmine õnnestus</string>
     <string name="no_internet_to_update_poi">Internetiühendus puudub. Enne jätkamist palun loo oma nutiseadmes internetiühendus</string>
     <string name="nav_favorites">Lemmikud</string>
+    <string name="later">Hiljem</string>
+    <string name="oauth_failed_permissions">Autentimine ei õnnestunud: kõik loetletud õigused on veel puudu</string>
+    <string name="contact">Kontakt</string>
+    <string name="filter">Filtreeri</string>
+    <string name="only_currently_opened">Vaid hiljuti avatud</string>
+    <string name="offline">Sa oled vallasrežiimis</string>
+    <string name="confirmation_authorize_now">Muudatuste lisamiseks OpenStreetMappi pead sisse logima oma OSMi kasutajakontoga. Kas teeme seda kohe?</string>
+    <string name="license">Litsents</string>
+    <string name="privacy_policy">Privaatsuspoliitika</string>
 </resources>
