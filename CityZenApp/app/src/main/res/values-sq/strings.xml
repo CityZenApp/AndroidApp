@@ -1,5 +1,6 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<resources><string name="app_name">CityZen</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CityZen</string>
     <string name="loading">Duke u ngarkuar</string>
     <string name="later">Më vonë</string>
     <string name="filter">Filtro</string>
@@ -41,8 +42,6 @@
     <string name="sunday">Die</string>
     <string name="all_week_days">Të gjitha</string>
     <string name="enable">Aktivizo</string>
-
-
     <string name="directions_to_here">drejtime me makinë</string>
     <string name="create_poi">Krijo PI</string>
     <string name="_24_7">24/7</string>
@@ -91,8 +90,6 @@
     <string name="credits_link">www.cityzenapp.co/credits</string>
     <string name="open_source_culture">Aplikacioni CityZen u krijua në Shqipëri me shumë dashuri ♥
 \npër kulturën e lirë dhe me kodburim të hapur.</string>
-
-
     <string name="Cafes">Kafene</string>
     <string name="Bars_Clubs">Bare</string>
     <string name="Restaurants">Restorante</string>
@@ -110,10 +107,9 @@
     <string name="RentBicycle">Biçikleta me qira</string>
     <string name="RentCar_CareSharing">Makina me qira</string>
     <string name="logged_in_as">Hyrë si:</string>
-
     <string name="login_to_osm">Hyni në OSM</string>
     <string name="logout">Dilni</string>
-<string name="nav_categories">Kategoritë</string>
+    <string name="nav_categories">Kategoritë</string>
     <string name="nav_map">Harta</string>
     <string name="nav_favorites">Të preferuara</string>
     <string name="nav_about">Rreth</string>
@@ -126,28 +122,21 @@
     <string name="no_results">Nuk ka rezultate</string>
     <string name="search_again">Ju lutem provoni të kërkoni me një fjalë tjetër</string>
     <string name="search_icon">ikona e kërkimit</string>
-
     <string name="no_favorites">Nuk ka të preferuara</string>
     <string name="mark_locations_as_favorites">Vendndodhjet e shënjuara si të preferuara do të shfaqen këtu</string>
     <string name="favorites_icon">ikona e të preferuarave</string>
-
     <string name="search">Kërkoni</string>
     <string name="my_location">Vendndodhja ime</string>
     <string name="clear_map">Pastroni hartën</string>
-
     <string name="search_hint">Kërkoni…</string>
-
     <string name="address_label">Adresa:</string>
     <string name="no_info_available">Nuk ka informacion</string>
     <string name="open">Hapur</string>
     <string name="closed">Mbyllur</string>
-
     <string name="server_error">Gabim gjatë komunikimit me serverin</string>
     <string name="server_response_error">Gabim gjetë marrjes së informacionit nga server-i</string>
-
     <string name="poi_details_close">Mbyll POI</string>
     <string name="poi_details_mark_as_favorite">Shëno pikën e interesit si të parapëlqyer</string>
     <string name="poi_details_edit">Përditëso pikën e interesit</string>
     <string name="poi_details_share">Ndaje pikën e interesit si gjeondërlidhje</string>
-
 </resources>
