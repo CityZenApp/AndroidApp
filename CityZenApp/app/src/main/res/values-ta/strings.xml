@@ -41,8 +41,7 @@
 \nஉங்கள் GPS-ஐ செயல்படுத்துங்கள்</string>
     <string name="calculating_device_location">உங்கள் இருப்பிடத்தை அறிய முயற்ச்சிக்கிறோம்.
 \nகாத்திருங்கள்.</string>
-    <string name="add_new_poi_toast">சேர்க்க வரைபடத்தை அழுத்துங்கள்
-\nPOI</string>
+    <string name="add_new_poi_toast">சேர்க்க வரைபடத்தை அழுத்துங்கள்\nஆர்வமுள்ள புள்ளிகள்</string>
     <string name="add">சேர்</string>
     <string name="cancel">நீக்கு</string>
     <string name="wifi">வைஃபை</string>
@@ -63,7 +62,7 @@
     <string name="an_error_occurred">தவறு நடந்தது</string>
     <string name="updated_successfully">மாற்றங்கள் நிறைவேறியது</string>
     <string name="editing_is_not_possible">இதனை தொகுக்க முடியாது</string>
-    <string name="poi_type">POI வகை</string>
+    <string name="poi_type">ஆர்வமுள்ள புள்ளிகள் வகை</string>
     <string name="select_amenity_type">வாய்ப்பு வகையை தேர்ந்தெடுக</string>
     <string name="select_amenity_type_to_continue">தொடர்வதற்க்கு வாய்ப்பு வகையை தேர்ந்தெடுக</string>
     <string name="yes">ஆம்</string>
